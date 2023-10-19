@@ -10,12 +10,12 @@ cat /etc/os-release
 lscpu
 grep MemTotal /proc/meminfo
 
-EPOCHS=20
+EPOCHS=30
 BATCH=32
 
 # python train.py --epochs=$EPOCHS --batch=$BATCH --phase=1
-python train.py --epochs=$EPOCHS --batch=$BATCH --phase=2 --checkpoint=7
-# python train.py --epochs=$EPOCHS --batch=$BATCH --phase=3
+# python train.py --epochs=$EPOCHS --batch=$BATCH --phase=2 --checkpoint=7
+python train.py --epochs=$EPOCHS --batch=$BATCH --phase=3 --checkpoint=15
 # python train.py --epochs=$EPOCHS --batch=$BATCH --phase=4
 # python train.py --epochs=$EPOCHS --batch=$BATCH --phase=5
 # python train.py --epochs=$EPOCHS --batch=$BATCH --phase=6

@@ -41,7 +41,7 @@ print(
     "classes: ",
     num_classes,
     "\ncheckpoint: ",
-    checkpoint + 1,
+    checkpoint,
     "\nbatch: ",
     batch_size,
     "\nphase: ",
@@ -60,16 +60,11 @@ torch.backends.cudnn.deterministic = True
 
 start_time = time.time()
 
-# set data path
 RESULT_PATH = os.path.join(os.getcwd(), "results/")
-
-# make checkpoint and log dir
-os.makedirs(RESULT_PATH, exist_ok=True)
-
-# set data path
 SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
 
-# make checkpoint and log dir
+# make checkpoints and results dir
+os.makedirs(RESULT_PATH, exist_ok=True)
 os.makedirs(SAVE_PATH, exist_ok=True)
 
 # initialise model instance

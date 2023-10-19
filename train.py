@@ -13,6 +13,7 @@ from utils import (
     device,
     preprocess_image,
     checkpoint_save,
+    checkpoint_load,
     calculate_metrics,
     CustomImageDataset,
     NeuralNetwork,
@@ -26,6 +27,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--phase", type=int, help="Training phase", default=1)
 parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
+parser.add_argument(
+    "-c", "--checkpoint", type=int, help="Checkpoint to load", default=0
+)
 
 # Parse the arguments
 args = parser.parse_args()
@@ -33,6 +37,7 @@ args = parser.parse_args()
 batch_size = args.batch
 num_epochs = args.epochs
 phase = args.phase
+checkpoint = args.checkpoint
 num_classes = NUM_CLASSES_IN_PHASE * phase
 
 print(
@@ -44,6 +49,8 @@ print(
     batch_size,
     "\nphase: ",
     phase,
+    "\ncheckpoint: ",
+    checkpoint,
 )
 
 RANDOM_SEED = 193
@@ -73,6 +80,11 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 # initialise model instance
 # Initialize the model for this run
 model = NeuralNetwork(num_classes)
+
+if checkpoint > 0:
+    path = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase-1}/")
+    checkpoint_load(model, path, checkpoint, num_classes - NUM_CLASSES_IN_PHASE)
+
 
 model.train()
 

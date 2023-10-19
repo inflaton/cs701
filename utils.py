@@ -139,10 +139,9 @@ class NeuralNetwork(nn.Module):
     def __init__(self, n_classes):
         super().__init__()
         resnet = models.resnext101_32x8d(weights=True)
-        resnet.fc = nn.Sequential(
-            nn.Dropout(0.2),
-            nn.Linear(in_features=resnet.fc.in_features, out_features=n_classes),
-        )
+        self.resnet_fc_in_features = resnet.fc.in_features
+        resnet.fc = self.new_fc_layer(n_classes)
+        self.n_classes = n_classes
         self.base_model = resnet
         self.sigm = nn.Sigmoid()
 
@@ -150,21 +149,37 @@ class NeuralNetwork(nn.Module):
         output = self.base_model(x)
         return self.sigm(output)
 
+    def new_fc_layer(self, n_classes):
+        return nn.Sequential(
+            nn.Dropout(0.2),
+            nn.Linear(in_features=self.resnet_fc_in_features, out_features=n_classes),
+        )
+
 
 # save checkpoint function
 def checkpoint_save(model, save_path, epoch):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
     torch.save(model.state_dict(), f)
-    print("saved checkpoint:", filename)
+    print("saved checkpoint:", f)
 
 
 # save checkpoint function
-def checkpoint_load(model, save_path, epoch):
+def checkpoint_load(model, save_path, epoch, n_classes=0):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
+
+    backup = None
+    if n_classes > 0 and n_classes != model.n_classes:
+        backup = model.base_model.fc
+        model.base_model.fc = model.new_fc_layer(n_classes)
+
     model.load_state_dict(torch.load(f))
-    print("loaded checkpoint:", filename)
+
+    if backup is not None:
+        model.base_model.fc = backup
+
+    print("loaded checkpoint:", f)
 
 
 # calculate metrics function

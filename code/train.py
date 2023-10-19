@@ -1,168 +1,161 @@
+import gc
+import os
+import time
 import numpy as np
 import torch
-from torch.utils.data import Dataset, DataLoader
-import torch.nn as nn
+from torch import nn
 import torch.optim as optim
-import torch.nn.functional as F
+from sklearn.metrics import f1_score
 import argparse
 
-# Check if GPU is available
-if torch.cuda.is_available():
-    device = torch.device("cuda")  # Use GPU
-else:
-    device = torch.device("cpu")  # Use CPU
+from utils import (
+    NUM_CLASSES_IN_PHASE,
+    device,
+    preprocess_image,
+    checkpoint_save,
+    calculate_metrics,
+    CustomImageDataset,
+    NeuralNetwork,
+)
+import random
+import warnings
+
+warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser()
+parser.add_argument("-p", "--phase", type=int, help="Training phase", default=1)
 parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
 
 # Parse the arguments
 args = parser.parse_args()
-print(device)
 
-num_classes = 50
 batch_size = args.batch
 num_epochs = args.epochs
+phase = args.phase
+num_classes = NUM_CLASSES_IN_PHASE * phase
 
-print("classes: ", num_classes, "batch", batch_size)
+print(
+    "classes: ",
+    num_classes,
+    "\nepochs: ",
+    num_epochs,
+    "\nbatch: ",
+    batch_size,
+    "\nphase: ",
+    phase,
+)
 
-# Define the dimensions of your images
-image_width, image_height = 56, 56
+RANDOM_SEED = 193
 
-# Define the total number of data points and images per data point
-total_data_points = 2944
-images_per_data_point = 36
-
-preprocessed_data = np.load(f"data/preprocessed_train.npy")
-# Convert the NumPy array to PyTorch tensors
-data = torch.from_numpy(preprocessed_data).float()
-
-
-class JigsawDataset(Dataset):
-    def __init__(self, data, labels):
-        self.data = data
-        self.labels = labels
-
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        puzzle = self.data[idx]
-        label = self.labels[idx]
-        return puzzle, label
+# initialising seed for reproducibility
+torch.manual_seed(RANDOM_SEED)
+torch.cuda.manual_seed(RANDOM_SEED)
+seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+random.seed(RANDOM_SEED)
+torch.backends.cudnn.deterministic = True
 
 
-# Load the labels
-labels = np.loadtxt(f"data/train/label_train.txt")
-labels = torch.from_numpy(labels).long()
-
-# Define the dataset and dataloader
-dataset = JigsawDataset(data, labels)
-
-# Ensure shuffle = False when evaluating on validation and test
-train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=False)
+# SETTING CONSTANTS HERE
+LR = 1e-4
+SAVE_FREQ = 1  # save checkpoint frequency (epochs)
 
 
-# # Define the model architecture
-class JigsawModel(nn.Module):
-    def __init__(self, num_positions):
-        super(JigsawModel, self).__init__()
-        self.num_positions = num_positions
-        self.fc1 = nn.Linear(36 * 2048, 1024)
-        self.fc2 = nn.Linear(1024, 512)
-        self.fc3 = nn.Linear(512, 128)
-        self.fc4 = nn.Linear(128, 50)
-        self.bn4 = nn.BatchNorm1d(50)  # Batch normalization after fc4
+start_time = time.time()
 
-    def forward(self, x):
-        x = x.view(-1, 36 * 2048)
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = F.relu(self.fc3(x))
-        x = F.relu(
-            self.bn4(self.fc4(x))
-        )  # Apply batch normalization after fc4 and before activation
-        x = F.softmax(x, dim=1)
-        return x
+# set data path
+SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
 
+# make checkpoint and log dir
+os.makedirs(SAVE_PATH, exist_ok=True)
 
-# Create the model
-model = JigsawModel(num_positions=num_classes).to(device)
+# initialise model instance
+# Initialize the model for this run
+model = NeuralNetwork(num_classes)
 
-# Define the optimizer and loss function
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+model.train()
+
+# transfer over to gpu
+model = model.to(device)
+
 criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=LR)
 
+# Start training
+torch.cuda.empty_cache()
+gc.collect()
 
-def train_model(model, train_loader, optimizer, num_epochs):
-    for epoch in range(num_epochs):
-        model.train()
-        total_loss = 0.0
-        correct_predictions = 0
-        total_predictions = 0
+epoch = 0
+iteration = 0
 
-        for puzzle, label in train_loader:
-            puzzle, label = puzzle.to(device), label.to(device)
-            optimizer.zero_grad()
-            outputs = model(puzzle)
-            loss = criterion(outputs.float(), label)
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
+# initialise dataset and dataloader instance
+dataset = CustomImageDataset(phase, transform=preprocess_image)
 
-            # Calculate accuracy for this batch
-            _, predicted = torch.max(outputs, 1)
-            total_predictions += label.size(0)
-            correct_predictions += (predicted == label).sum().item()
+train_len = int(len(dataset) * 7 / 10)
+train_set, val_set = torch.utils.data.random_split(
+    dataset, [train_len, len(dataset) - train_len]
+)
 
-        avg_loss = total_loss / len(train_loader)
-        accuracy = correct_predictions / total_predictions
-        print(
-            f"Epoch {epoch + 1}, Loss: {avg_loss:.4f}, Accuracy: {accuracy * 100:.2f}%"
-        )
+# Define data loaders for training and testing data in this fold
+trainloader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)
+testloader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
+running_loss = []
 
+for epoch in range(0, num_epochs):
+    print(f"Starting epoch {epoch+1}")
 
-# Train the model
-train_model(model, train_loader, optimizer, num_epochs)
+    model.train()
+    for inputs, targets in trainloader:
+        inputs, targets = inputs.to(device), targets.to(device)
 
+        # zero the parameter gradients
+        optimizer.zero_grad()
 
-class JigsawValidationDataset(Dataset):
-    def __init__(self, data):
-        self.data = data
+        # forward
+        outputs = model(inputs)
+        loss = criterion(outputs, targets)
 
-    def __len__(self):
-        return len(self.data)
+        batch_loss_value = loss.item()
+        running_loss.append(batch_loss_value)
 
-    def __getitem__(self, idx):
-        puzzle = self.data[idx]
-        return puzzle
+        # backward + optimize
+        loss.backward()
+        optimizer.step()
 
-
-def evaluate_model(model, data_loader):
     model.eval()
-    all_predictions = []  # To store translated predictions
-
     with torch.no_grad():
-        for puzzle in data_loader:
-            puzzle = puzzle.to(device)
-            output = model(puzzle)
-            _, predicted = torch.max(
-                output, 1
-            )  # Get the index of the max log-probability
-            all_predictions.extend(predicted.cpu().detach().numpy())
+        model_result = []
+        total_targets = []
+        for inputs, targets in testloader:
+            inputs = inputs.to(device)
+            model_batch_result = model(inputs)
+            model_result.extend(model_batch_result.cpu().numpy())
+            total_targets.extend(targets.cpu().numpy())
 
-    all_predictions = np.array(all_predictions)
-    all_predictions = all_predictions.astype(int)
+        result = calculate_metrics(np.array(model_result), np.array(total_targets))
 
-    # Save the predicted values to a text file
-    np.savetxt("data/validation.txt", all_predictions, fmt="%d")
+        # Print statistics
+        loss_value = np.mean(running_loss)
+        print("epoch:{:2d} train: loss:{:.3f}".format(epoch + 1, loss_value))
+        print(
+            "epoch:{:2d} test: "
+            "weighted f1 {:.3f}".format(
+                epoch + 1,
+                result["weighted/f1"],
+            ),
+            flush=True,
+        )
+    if epoch % SAVE_FREQ == 0:
+        checkpoint_save(model, SAVE_PATH, epoch + 1)
 
-
-validation_data = np.load(f"data/preprocessed_validation.npy")
-validation_data = torch.from_numpy(validation_data).float()
-
-validation_dataset = JigsawValidationDataset(validation_data)
-validation_loader = DataLoader(validation_dataset, batch_size=batch_size, shuffle=False)
-
-# Evaluate the model and save the results to a text file
-evaluate_model(model, validation_loader)
+# Calculate time elapsed
+end_time = time.time()
+time_difference = end_time - start_time
+hours, rest = divmod(time_difference, 3600)
+minutes, seconds = divmod(rest, 60)
+print(
+    "Training is completed in {} hours, {} minutes, {:.3f} seconds".format(
+        hours, minutes, seconds
+    )
+)

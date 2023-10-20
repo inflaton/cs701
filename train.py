@@ -15,6 +15,7 @@ from utils import (
     preprocess_image,
     checkpoint_save,
     checkpoint_load,
+    checkpoint_delete,
     calculate_metrics,
     CustomImageDataset,
     NeuralNetwork,
@@ -83,9 +84,9 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 model = NeuralNetwork(num_classes)
 
 if phase > 1 and checkpoint == 0:
-    df = pd.read_csv(f"logs/{phase - 1}.csv")
+    df = pd.read_csv(f"logs/phase_{phase - 1}.csv")
     top_row = df.loc[df["accuracy"].idxmax()]
-    checkpoint = top_row["epoch"]
+    checkpoint = int(top_row["epoch"])
 
 if checkpoint > 0:
     path = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase-1}/")
@@ -178,6 +179,12 @@ for epoch in range(0, num_epochs):
 
 df = pd.DataFrame({"epoch": epochs, "loss": losses, "accuracy": accuracies})
 df.to_csv(f"logs/phase_{phase}.csv", index=False)
+
+top_checkpoint = df["accuracy"].idxmax()
+for epoch in range(0, num_epochs):
+    if epoch != top_checkpoint:
+        checkpoint_delete(SAVE_PATH, epoch + 1)
+
 
 # Calculate time elapsed
 end_time = time.time()

@@ -138,7 +138,8 @@ class CustomImageDataset(Dataset):
 class NeuralNetwork(nn.Module):
     def __init__(self, n_classes):
         super().__init__()
-        resnet = models.resnext101_32x8d(weights=True)
+        # resnet = models.resnext101_32x8d(weights=True)
+        resnet = models.resnet152(weights=True)
         self.resnet_fc_in_features = resnet.fc.in_features
         resnet.fc = self.new_fc_layer(n_classes)
         self.n_classes = n_classes

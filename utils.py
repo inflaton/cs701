@@ -242,7 +242,7 @@ class TrainingImageDataset(Dataset):
         return image, label
 
 
-def get_training_datasets(phase, prev_train_sets, prev_val_sets):
+def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
     dataset = TrainingImageDataset(phase, transform=preprocess_image)
 
     train_len = int(len(dataset) * 7 / 10)
@@ -258,13 +258,12 @@ def get_training_datasets(phase, prev_train_sets, prev_val_sets):
             if label not in counts:
                 counts[label] = 1
                 indices.append(i)
-            else:
-                if counts[label] < MEMORY_SIZE:
-                    indices.append(i)
-                    counts[label] += 1
+            elif counts[label] < MEMORY_SIZE:
+                indices.append(i)
+                counts[label] += 1
 
         temp_dataset = torch.utils.data.Subset(prev_train_set, indices)
-        val_set = torch.utils.data.ConcatDataset([val_set, temp_dataset])
+        train_set = torch.utils.data.ConcatDataset([train_set, temp_dataset])
 
     for prev_var_set in prev_val_sets:
         val_set = torch.utils.data.ConcatDataset([val_set, prev_var_set])

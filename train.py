@@ -2,6 +2,7 @@ import gc
 import os
 import time
 import numpy as np
+import pandas as pd
 import torch
 from torch import nn
 import torch.optim as optim
@@ -81,6 +82,11 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 # Initialize the model for this run
 model = NeuralNetwork(num_classes)
 
+if phase > 1 and checkpoint == 0:
+    df = pd.read_csv(f"logs/{phase - 1}.csv")
+    top_row = df.loc[df["accuracy"].idxmax()]
+    checkpoint = top_row["epoch"]
+
 if checkpoint > 0:
     path = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase-1}/")
     checkpoint_load(model, path, checkpoint, num_classes - NUM_CLASSES_IN_PHASE)
@@ -112,10 +118,15 @@ train_set, val_set = torch.utils.data.random_split(
 # Define data loaders for training and testing data in this fold
 trainloader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)
 testloader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
-running_loss = []
+
+epochs = []
+losses = []
+accuracies = []
 
 for epoch in range(0, num_epochs):
     print(f"Starting epoch {epoch+1}")
+
+    running_loss = []
 
     model.train()
     for inputs, targets in trainloader:
@@ -158,8 +169,15 @@ for epoch in range(0, num_epochs):
             ),
             flush=True,
         )
+        epochs.append(epoch + 1)
+        losses.append(loss_value)
+        accuracies.append(result["weighted/f1"])
+
     if epoch % SAVE_FREQ == 0:
         checkpoint_save(model, SAVE_PATH, epoch + 1)
+
+df = pd.DataFrame({"epoch": epochs, "loss": losses, "accuracy": accuracies})
+df.to_csv(f"logs/phase_{phase}.csv", index=False)
 
 # Calculate time elapsed
 end_time = time.time()

@@ -10,6 +10,7 @@ from sklearn.metrics import f1_score
 import argparse
 
 from utils import (
+    NUM_PHASES,
     NUM_CLASSES_IN_PHASE,
     device,
     preprocess_image,
@@ -32,13 +33,19 @@ parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
 parser.add_argument(
     "-c", "--checkpoint", type=int, help="Checkpoint to load", default=0
 )
+parser.add_argument("-i", "--iteration", type=int, help="Training iteration", default=0)
+parser.add_argument(
+    "-f", "--folder", type=str, help="Checkpoint folder to load", default=""
+)
 
 # Parse the arguments
 args = parser.parse_args()
 
 batch_size = args.batch
 num_epochs = args.epochs
+iteration = args.iteration
 phase = args.phase
+folder = args.folder
 checkpoint = args.checkpoint
 num_classes = NUM_CLASSES_IN_PHASE * phase
 
@@ -53,9 +60,12 @@ print(
     phase,
     "\ncheckpoint: ",
     checkpoint,
+    "\niteration: ",
+    iteration,
 )
 
-RANDOM_SEED = 193
+RANDOM_SEEDS = [193, 287, 389]
+RANDOM_SEED = RANDOM_SEEDS[iteration]
 
 # initialising seed for reproducibility
 torch.manual_seed(RANDOM_SEED)
@@ -85,12 +95,20 @@ model = NeuralNetwork(num_classes)
 
 if phase > 1 and checkpoint == 0:
     df = pd.read_csv(f"logs/phase_{phase - 1}.csv")
-    top_row = df.loc[df["accuracy"].idxmax()]
-    checkpoint = int(top_row["epoch"])
+    checkpoint = df["accuracy"].idxmax() + 1
 
-if checkpoint > 0:
-    path = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase-1}/")
-    checkpoint_load(model, path, checkpoint, num_classes - NUM_CLASSES_IN_PHASE)
+if len(folder) == 0 and checkpoint > 0:
+    folder = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase-1}/")
+
+if len(folder) > 0:
+    checkpoint_load(
+        model,
+        folder,
+        checkpoint,
+        num_classes - NUM_CLASSES_IN_PHASE
+        if phase > 1
+        else NUM_CLASSES_IN_PHASE * NUM_PHASES,
+    )
 
 
 model.train()
@@ -106,7 +124,6 @@ torch.cuda.empty_cache()
 gc.collect()
 
 epoch = 0
-iteration = 0
 
 # initialise dataset and dataloader instance
 dataset = CustomImageDataset(phase, transform=preprocess_image)

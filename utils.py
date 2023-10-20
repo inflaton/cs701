@@ -62,7 +62,7 @@ num_images_in_phase = [
     887,
 ]
 
-NUM_PHASES = len(num_images_in_phase)
+NUM_PHASES = len(num_images_in_phase) - 1
 MEMORY_SIZE = 5
 NUM_CLASSES_IN_PHASE = 10
 

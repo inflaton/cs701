@@ -164,6 +164,12 @@ def checkpoint_save(model, save_path, epoch):
     print("saved checkpoint:", f)
 
 
+def checkpoint_delete(save_path, epoch):
+    filename = "checkpoint-{:03d}.pth".format(epoch)
+    f = os.path.join(save_path, filename)
+    os.remove(f)
+
+
 # save checkpoint function
 def checkpoint_load(model, save_path, epoch, n_classes=0):
     filename = "checkpoint-{:03d}.pth".format(epoch)

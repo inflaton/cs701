@@ -1,1 +1,1 @@
-scripts/train-v5.sh
+scripts/train-v6.sh

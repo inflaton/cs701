@@ -1,0 +1,188 @@
+Submitting job: /common/home/users/d/dh.huang.2023/code/cs701/validate.sh
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Fri Oct 20 14:36:20 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:81:00.0 Off |                    0 |
+| N/A   31C    P8              35W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Linux lagoon 4.18.0-477.21.1.el8_8.x86_64 #1 SMP Tue Aug 8 21:30:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="8.8 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.8 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.8"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.8"
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  2
+Core(s) per socket:  64
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          25
+Model:               1
+Model name:          AMD EPYC 7763 64-Core Processor
+Stepping:            1
+CPU MHz:             2450.000
+CPU max MHz:         3529.0520
+CPU min MHz:         1500.0000
+BogoMIPS:            4890.71
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            32768K
+NUMA node0 CPU(s):   0-127
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+MemTotal:       527671624 kB
+Running python validate.py --batch=32 --phase=1
+device:  cuda
+classes:  10 
+checkpoint:  0 
+batch:  32 
+phase:  1
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+checkpoint: 6 test: weighted f1 0.945
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_1.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 9.613 seconds
+Running python validate.py --batch=32 --phase=2
+device:  cuda
+classes:  20 
+checkpoint:  0 
+batch:  32 
+phase:  2
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+checkpoint:16 test: weighted f1 1.000
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_2.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 9.167 seconds
+Running python validate.py --batch=32 --phase=3
+device:  cuda
+classes:  30 
+checkpoint:  0 
+batch:  32 
+phase:  3
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+checkpoint:19 test: weighted f1 0.914
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_3.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.166 seconds
+Running python validate.py --batch=32 --phase=4
+device:  cuda
+classes:  40 
+checkpoint:  0 
+batch:  32 
+phase:  4
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+checkpoint:11 test: weighted f1 0.959
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_4.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 9.493 seconds
+Running python validate.py --batch=32 --phase=5
+device:  cuda
+classes:  50 
+checkpoint:  0 
+batch:  32 
+phase:  5
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+checkpoint:12 test: weighted f1 0.953
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_5.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.844 seconds
+Running python validate.py --batch=32 --phase=6
+device:  cuda
+classes:  60 
+checkpoint:  0 
+batch:  32 
+phase:  6
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+checkpoint:22 test: weighted f1 0.961
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_6.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.585 seconds
+Running python validate.py --batch=32 --phase=7
+device:  cuda
+classes:  70 
+checkpoint:  0 
+batch:  32 
+phase:  7
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+checkpoint: 2 test: weighted f1 0.813
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_7.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 9.441 seconds
+Running python validate.py --batch=32 --phase=8
+device:  cuda
+classes:  80 
+checkpoint:  0 
+batch:  32 
+phase:  8
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+checkpoint:24 test: weighted f1 0.961
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_8.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.626 seconds
+Running python validate.py --batch=32 --phase=9
+device:  cuda
+classes:  90 
+checkpoint:  0 
+batch:  32 
+phase:  9
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+checkpoint:16 test: weighted f1 0.958
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_9.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 9.964 seconds
+Running python validate.py --batch=32 --phase=10
+device:  cuda
+classes:  100 
+checkpoint:  0 
+batch:  32 
+phase:  10
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+checkpoint:22 test: weighted f1 0.967
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_10.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 10.037 seconds
+Job ID: 30249
+Cluster: crimson
+User/Group: dh.huang.2023/dh.huang.2023
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:13:13
+CPU Efficiency: 61.95% of 00:21:20 core-walltime
+Job Wall-clock time: 00:02:08
+Memory Utilized: 1.09 GB
+Memory Efficiency: 1.71% of 64.00 GB

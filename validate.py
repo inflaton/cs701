@@ -72,9 +72,8 @@ df = pd.read_csv(f"logs/phase_{phase}.csv")
 if checkpoint == 0:
     checkpoint = df["accuracy"].idxmax() + 1
 
-print(df[checkpoint - 1])
-
 checkpoint_load(model, SAVE_PATH, checkpoint)
+print("accuracy: ", df["accuracy"][checkpoint - 1])
 
 # transfer over to gpu
 model = model.to(device)

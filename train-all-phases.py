@@ -106,7 +106,7 @@ for i in range(10):
     train_set, val_set = get_training_datasets(phase, train_sets, val_sets)
 
     train_sets.append(train_set)
-    val_sets.append(val_sets)
+    val_sets.append(val_set)
 
     # Define data loaders for training and testing data in this fold
     trainloader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)

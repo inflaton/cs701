@@ -156,6 +156,10 @@ class NeuralNetwork(nn.Module):
             nn.Linear(in_features=self.resnet_fc_in_features, out_features=n_classes),
         )
 
+    def update_num_classes(self, n_classes):
+        self.n_classes = n_classes
+        self.base_model.fc = self.new_fc_layer(n_classes)
+
 
 # save checkpoint function
 def checkpoint_save(model, save_path, epoch):
@@ -195,3 +199,74 @@ def calculate_metrics(pred, target):
     return {
         "weighted/f1": f1_score(y_true=target, y_pred=pred, average="weighted"),
     }
+
+
+class TrainingImageDataset(Dataset):
+    def __init__(self, phase, transform=None):
+        self.phase = phase
+        self.transform = transform
+        self.img_labels = []
+        self.image_paths = []
+
+        for i in range(NUM_CLASSES_IN_PHASE):
+            label = (phase - 1) * NUM_CLASSES_IN_PHASE + i
+            data_dir = f"data/Train/phase_{phase}/{label:03d}"
+
+            # print("data_dir: ", data_dir)
+            for k in range(num_images_in_phase[phase - 1]):
+                image_filename = f"{k:03d}.jpg"
+                image_path = os.path.join(data_dir, image_filename)
+
+                # print("image_path: ", image_path)
+
+                # Check if the image file exists
+                if os.path.exists(image_path):
+                    self.img_labels.append(label)
+                    self.image_paths.append(image_path)
+                else:
+                    break
+
+    def __len__(self):
+        return len(self.img_labels)
+
+    def __getitem__(self, idx):
+        label = self.img_labels[idx]
+        image_path = self.image_paths[idx]
+        # print("image_path: ", image_path)
+
+        image = Image.open(image_path)
+
+        if self.transform:
+            image = self.transform(image)
+
+        return image, label
+
+
+def get_training_datasets(phase, prev_train_sets, prev_val_sets):
+    dataset = TrainingImageDataset(phase, transform=preprocess_image)
+
+    train_len = int(len(dataset) * 7 / 10)
+    train_set, val_set = torch.utils.data.random_split(
+        dataset, [train_len, len(dataset) - train_len]
+    )
+
+    counts = dict()
+    for prev_train_set in prev_train_sets:
+        indices = []
+        for i in range(len(prev_train_set)):
+            _, label = prev_train_set[i]
+            if label not in counts:
+                counts[label] = 1
+                indices.append(i)
+            else:
+                if counts[label] < MEMORY_SIZE:
+                    indices.append(i)
+                    counts[label] += 1
+
+        temp_dataset = torch.utils.data.Subset(prev_train_set, indices)
+        val_set = torch.utils.data.ConcatDataset([val_set, temp_dataset])
+
+    for prev_var_set in prev_val_sets:
+        val_set = torch.utils.data.ConcatDataset([val_set, prev_var_set])
+
+    return train_set, val_set

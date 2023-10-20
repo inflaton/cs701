@@ -266,6 +266,6 @@ def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
         train_set = torch.utils.data.ConcatDataset([train_set, temp_dataset])
 
     if len(prev_val_sets) > 0:
-        val_set = torch.utils.data.ConcatDataset([val_set, prev_var_sets[-1]])
+        val_set = torch.utils.data.ConcatDataset([val_set, prev_val_sets[-1]])
 
     return train_set, val_set

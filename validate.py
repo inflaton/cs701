@@ -4,17 +4,13 @@ import time
 import numpy as np
 import pandas as pd
 import torch
-from torch import nn
-import torch.optim as optim
 import argparse
 
 from utils import (
     NUM_CLASSES_IN_PHASE,
     device,
-    preprocess_image,
     preprocess_val_image,
     checkpoint_load,
-    calculate_metrics,
     CustomImageDataset,
     NeuralNetwork,
 )
@@ -72,9 +68,11 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 # Initialize the model for this run
 model = NeuralNetwork(num_classes)
 
+df = pd.read_csv(f"logs/phase_{phase}.csv")
 if checkpoint == 0:
-    df = pd.read_csv(f"logs/phase_{phase}.csv")
     checkpoint = df["accuracy"].idxmax() + 1
+
+print(df[checkpoint - 1])
 
 checkpoint_load(model, SAVE_PATH, checkpoint)
 
@@ -85,37 +83,8 @@ model = model.to(device)
 torch.cuda.empty_cache()
 gc.collect()
 
-# initialise dataset and dataloader instance
-dataset = CustomImageDataset(phase, transform=preprocess_image)
-
-train_len = int(len(dataset) * 7 / 10)
-_, val_set = torch.utils.data.random_split(
-    dataset, [train_len, len(dataset) - train_len]
-)
-
-testloader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
-
 model.eval()
 with torch.no_grad():
-    model_result = []
-    total_targets = []
-    for inputs, targets in testloader:
-        inputs = inputs.to(device)
-        model_batch_result = model(inputs)
-        model_result.extend(model_batch_result.cpu().numpy())
-        total_targets.extend(targets.cpu().numpy())
-
-    result = calculate_metrics(np.array(model_result), np.array(total_targets))
-
-    print(
-        "checkpoint:{:2d} test: "
-        "weighted f1 {:.3f}".format(
-            checkpoint,
-            result["weighted/f1"],
-        ),
-        flush=True,
-    )
-
     model_result = []
     image_filenames = []
     val_set = CustomImageDataset(0, transform=preprocess_val_image)

@@ -10,7 +10,7 @@ cat /etc/os-release
 lscpu
 grep MemTotal /proc/meminfo
 
-EPOCHS=5
+EPOCHS=50
 BATCH=32
 
 echo Running python train-all-phases.py --epochs=$EPOCHS --batch=$BATCH

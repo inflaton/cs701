@@ -2,6 +2,7 @@ import gc
 import os
 import time
 import numpy as np
+import pandas as pd
 import torch
 from torch import nn
 import torch.optim as optim
@@ -70,6 +71,11 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 # initialise model instance
 # Initialize the model for this run
 model = NeuralNetwork(num_classes)
+
+if checkpoint == 0:
+    df = pd.read_csv(f"logs/phase_{phase}.csv")
+    checkpoint = df["accuracy"].idxmax() + 1
+
 checkpoint_load(model, SAVE_PATH, checkpoint)
 
 # transfer over to gpu

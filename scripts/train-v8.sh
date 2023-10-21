@@ -15,3 +15,5 @@ BATCH=32
 
 echo Running python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH
 python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH
+
+./validate.sh

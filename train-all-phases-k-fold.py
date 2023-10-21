@@ -199,9 +199,9 @@ for i in range(NUM_PHASES):
         all_phases = pd.concat([all_phases, df])
 
         top_checkpoint = df["accuracy"].idxmax()
-        for epoch in range(0, num_epochs):
-            if epoch != top_checkpoint:
-                checkpoint_delete(SAVE_PATH, epoch + 1)
+        for i in range(0, epoch + 1):
+            if i != top_checkpoint:
+                checkpoint_delete(SAVE_PATH, i + 1)
 
 all_phases.to_csv("logs/all_phases.csv", index=False)
 

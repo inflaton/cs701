@@ -5,8 +5,9 @@ import torch
 from torch import nn
 import torchvision.transforms as transforms
 from torchvision import models
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, Subset, ConcatDataset
 from sklearn.metrics import f1_score
+from sklearn.model_selection import KFold
 
 # Check if GPU is available
 if torch.cuda.is_available():
@@ -242,13 +243,17 @@ class TrainingImageDataset(Dataset):
         return image, label
 
 
+trainingImageDatasets = [
+    TrainingImageDataset(phase, transform=preprocess_image)
+    for phase in range(NUM_PHASES)
+]
+
+
 def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
-    dataset = TrainingImageDataset(phase, transform=preprocess_image)
+    dataset = trainingImageDatasets[phase - 1]
 
     train_len = int(len(dataset) * 7 / 10)
-    train_set, val_set = torch.utils.data.random_split(
-        dataset, [train_len, len(dataset) - train_len]
-    )
+    train_set, val_set = random_split(dataset, [train_len, len(dataset) - train_len])
 
     counts = dict()
     for prev_train_set in prev_train_sets:
@@ -262,10 +267,52 @@ def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
                 indices.append(i)
                 counts[label] += 1
 
-        temp_dataset = torch.utils.data.Subset(prev_train_set, indices)
-        train_set = torch.utils.data.ConcatDataset([train_set, temp_dataset])
+        temp_subset = Subset(prev_train_set, indices)
+        train_set = ConcatDataset([train_set, temp_subset])
 
     if len(prev_val_sets) > 0:
-        val_set = torch.utils.data.ConcatDataset([val_set, prev_val_sets[-1]])
+        val_set = ConcatDataset([val_set, prev_val_sets[-1]])
 
     return train_set, val_set
+
+
+# K-Fold Cross-Validation
+kfold = KFold(n_splits=MEMORY_SIZE, shuffle=True)
+
+kfoldSplits = [kfold.split(dataset) for dataset in trainingImageDatasets]
+
+
+def get_memory_subset(dataset, ids, max_count):
+    counts = dict()
+    indices = []
+    for id in ids:
+        _, label = dataset[id]
+
+        if label not in counts:
+            counts[label] = 1
+            indices.append(id)
+        elif counts[label] < max_count:
+            indices.append(id)
+            counts[label] += 1
+
+    return Subset(dataset, indices)
+
+
+def get_k_fold_training_datasets(phase, fold):
+    (train_ids, val_ids) = kfoldSplits[phase - 1][fold]
+    dataset = trainingImageDatasets[phase - 1]
+
+    train_subset = Subset(dataset, train_ids)
+    val_subset = Subset(dataset, val_ids)
+
+    for i in range(phase):
+        (train_ids, val_ids) = kfoldSplits[i][fold]
+        dataset = trainingImageDatasets[i]
+
+        temp_subset = get_memory_subset(dataset, train_ids, MEMORY_SIZE - 1)
+        train_subset = ConcatDataset([train_subset, temp_subset])
+
+        temp_subset = get_memory_subset(dataset, val_ids, 1)
+        val_subset = ConcatDataset([val_subset, temp_subset])
+
+    return train_subset, val_subset

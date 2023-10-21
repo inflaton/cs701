@@ -62,7 +62,7 @@ start_time = time.time()
 model = None
 
 all_phases = pd.DataFrame(
-    {"phase": [], "fold:": [], "epoch": [], "loss": [], "accuracy": []}
+    {"phase": [], "fold": [], "epoch": [], "loss": [], "accuracy": []}
 )
 
 for i in range(NUM_PHASES):
@@ -188,7 +188,7 @@ for i in range(NUM_PHASES):
         df = pd.DataFrame(
             {
                 "phase": phases,
-                "fold:": folds,
+                "fold": folds,
                 "epoch": epochs,
                 "loss": losses,
                 "accuracy": accuracies,

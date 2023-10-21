@@ -276,19 +276,6 @@ def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
     return train_set, val_set
 
 
-# K-Fold Cross-Validation
-kfold = KFold(n_splits=MEMORY_SIZE, shuffle=True)
-
-kfoldSplits = []
-
-for dataset in trainingImageDatasets:
-    kfold_split_ids = []
-    for train_ids, val_ids in kfold.split(dataset):
-        kfold_split_ids.append((train_ids, val_ids))
-
-    kfoldSplits.append(kfold_split_ids)
-
-
 def get_memory_subset(dataset, ids, max_count):
     counts = dict()
     indices = []
@@ -305,7 +292,21 @@ def get_memory_subset(dataset, ids, max_count):
     return Subset(dataset, indices)
 
 
+# K-Fold Cross-Validation
+kfoldSplits = []
+
+
 def get_k_fold_training_datasets(phase, fold):
+    if len(kfoldSplits) == 0:
+        kfold = KFold(n_splits=MEMORY_SIZE, shuffle=True)
+
+        for dataset in trainingImageDatasets:
+            kfold_split_ids = []
+            for train_ids, val_ids in kfold.split(dataset):
+                kfold_split_ids.append((train_ids, val_ids))
+
+            kfoldSplits.append(kfold_split_ids)
+
     (train_ids, val_ids) = kfoldSplits[phase - 1][fold]
     dataset = trainingImageDatasets[phase - 1]
 

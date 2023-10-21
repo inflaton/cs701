@@ -244,7 +244,7 @@ class TrainingImageDataset(Dataset):
 
 
 trainingImageDatasets = [
-    TrainingImageDataset(phase, transform=preprocess_image)
+    TrainingImageDataset(phase + 1, transform=preprocess_image)
     for phase in range(NUM_PHASES)
 ]
 
@@ -279,7 +279,14 @@ def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
 # K-Fold Cross-Validation
 kfold = KFold(n_splits=MEMORY_SIZE, shuffle=True)
 
-kfoldSplits = [kfold.split(dataset) for dataset in trainingImageDatasets]
+kfoldSplits = []
+
+for dataset in trainingImageDatasets:
+    kfold_split_ids = []
+    for train_ids, val_ids in kfold.split(dataset):
+        kfold_split_ids.append((train_ids, val_ids))
+
+    kfoldSplits.append(kfold_split_ids)
 
 
 def get_memory_subset(dataset, ids, max_count):
@@ -305,7 +312,7 @@ def get_k_fold_training_datasets(phase, fold):
     train_subset = Subset(dataset, train_ids)
     val_subset = Subset(dataset, val_ids)
 
-    for i in range(phase):
+    for i in range(phase - 1):
         (train_ids, val_ids) = kfoldSplits[i][fold]
         dataset = trainingImageDatasets[i]
 

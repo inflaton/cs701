@@ -132,8 +132,9 @@ for i in range(10):
                 model_result = []
                 total_targets = []
                 for inputs, targets in testloader:
-                    inputs = inputs.to(device)
+                    inputs, targets = inputs.to(device), targets.to(device)
                     model_batch_result = model(inputs)
+
                     model_result.extend(model_batch_result.cpu().numpy())
                     total_targets.extend(targets.cpu().numpy())
 

@@ -57,6 +57,9 @@ torch.backends.cudnn.deterministic = True
 # SETTING CONSTANTS HERE
 LR = 1e-4
 
+# https://moiseevigor.github.io/software/2022/12/18/one-pager-training-resnet-on-imagenet/
+LR = 1e-3
+
 start_time = time.time()
 
 model = None

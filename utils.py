@@ -21,32 +21,55 @@ IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
 
 
-def preprocess_image(image):
-    image = image.convert("RGB")
-    # Preprocessing transforms
-    preprocess = transforms.Compose(
-        [
-            transforms.Resize((256, 256)),
-            transforms.RandomHorizontalFlip(),
-            transforms.ColorJitter(),
-            transforms.ToTensor(),
-            transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
-        ]
-    )
-    return preprocess(image)
+# def preprocess_image(image):
+#     image = image.convert("RGB")
+#     # Preprocessing transforms
+#     preprocess = transforms.Compose(
+#         [
+#             transforms.Resize((256, 256)),
+#             transforms.RandomHorizontalFlip(),
+#             transforms.ColorJitter(),
+#             transforms.ToTensor(),
+#             transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+#         ]
+#     )
+#     return preprocess(image)
 
 
-def preprocess_val_image(image):
-    image = image.convert("RGB")
-    # Preprocessing transforms
-    preprocess = transforms.Compose(
-        [
-            transforms.Resize((256, 256)),
-            transforms.ToTensor(),
-            transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
-        ]
-    )
-    return preprocess(image)
+# def preprocess_val_image(image):
+#     image = image.convert("RGB")
+#     # Preprocessing transforms
+#     preprocess = transforms.Compose(
+#         [
+#             transforms.Resize((256, 256)),
+#             transforms.ToTensor(),
+#             transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+#         ]
+#     )
+#     return preprocess(image)
+
+# Initialize transformations for data augmentation
+# https://moiseevigor.github.io/software/2022/12/18/one-pager-training-resnet-on-imagenet/
+preprocess_image = transforms.Compose(
+    [
+        transforms.Resize(256),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomVerticalFlip(),
+        transforms.RandomRotation(degrees=45),
+        transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+    ]
+)
+
+preprocess_val_image = transforms.Compose(
+    [
+        transforms.Resize(224),
+        transforms.ToTensor(),
+        transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+    ]
+)
 
 
 num_images_in_phase = [

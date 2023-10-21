@@ -10,8 +10,8 @@ cat /etc/os-release
 lscpu
 grep MemTotal /proc/meminfo
 
-EPOCHS=50
-BATCH=32
+EPOCHS=30
+BATCH=64
 
 echo Running python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH
 python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH

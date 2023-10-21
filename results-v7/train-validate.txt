@@ -1,0 +1,4354 @@
+Submitting job: /common/home/users/d/dh.huang.2023/code/cs701/train.sh
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Sat Oct 21 06:19:12 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   32C    P8              33W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Linux lagoon 4.18.0-477.21.1.el8_8.x86_64 #1 SMP Tue Aug 8 21:30:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="8.8 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.8 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.8"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.8"
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  2
+Core(s) per socket:  64
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          25
+Model:               1
+Model name:          AMD EPYC 7763 64-Core Processor
+Stepping:            1
+CPU MHz:             2450.000
+CPU max MHz:         3529.0520
+CPU min MHz:         1500.0000
+BogoMIPS:            4890.71
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            32768K
+NUMA node0 CPU(s):   0-127
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+MemTotal:       527671624 kB
+Running python train.py --epochs=100 --batch=32 --phase=1 --iteration=2 --folder=data/checkpoints_phase_10/ --checkpoint=39
+device:  cuda
+classes:  10 
+epochs:  100 
+batch:  32 
+phase:  1 
+checkpoint:  39 
+iteration:  2
+loaded checkpoint: data/checkpoints_phase_10/checkpoint-039.pth
+Starting epoch 1
+epoch: 1 train: loss:2.012
+epoch: 1 test: weighted f1 0.967
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:1.665
+epoch: 2 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:1.538
+epoch: 3 test: weighted f1 0.978
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:1.493
+epoch: 4 test: weighted f1 0.967
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:1.477
+epoch: 5 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:1.472
+epoch: 6 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:1.469
+epoch: 7 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:1.468
+epoch: 8 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:1.467
+epoch: 9 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:1.466
+epoch:10 test: weighted f1 0.978
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:1.466
+epoch:11 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:1.465
+epoch:12 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:1.465
+epoch:13 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:1.465
+epoch:14 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:1.464
+epoch:15 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:1.464
+epoch:16 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:1.464
+epoch:17 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:1.464
+epoch:18 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:1.464
+epoch:19 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:1.463
+epoch:20 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:1.463
+epoch:21 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:1.463
+epoch:22 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:1.463
+epoch:23 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:1.463
+epoch:24 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:1.463
+epoch:25 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:1.463
+epoch:26 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:1.463
+epoch:27 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:1.463
+epoch:28 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:1.463
+epoch:29 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:1.463
+epoch:30 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:1.463
+epoch:31 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:1.462
+epoch:32 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:1.462
+epoch:33 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:1.462
+epoch:34 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:1.462
+epoch:35 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:1.462
+epoch:36 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:1.462
+epoch:37 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:1.462
+epoch:38 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:1.462
+epoch:39 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:1.462
+epoch:40 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:1.462
+epoch:41 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:1.462
+epoch:42 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:1.462
+epoch:43 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:1.462
+epoch:44 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:1.462
+epoch:45 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:1.462
+epoch:46 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:1.462
+epoch:47 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:1.462
+epoch:48 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:1.462
+epoch:49 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:1.462
+epoch:50 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:1.462
+epoch:51 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:1.462
+epoch:52 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:1.462
+epoch:53 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:1.462
+epoch:54 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:1.462
+epoch:55 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:1.462
+epoch:56 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:1.462
+epoch:57 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:1.462
+epoch:58 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:1.462
+epoch:59 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:1.462
+epoch:60 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:1.462
+epoch:61 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:1.462
+epoch:62 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:1.462
+epoch:63 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:1.462
+epoch:64 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:1.462
+epoch:65 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:1.462
+epoch:66 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:1.462
+epoch:67 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:1.462
+epoch:68 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:1.462
+epoch:69 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:1.462
+epoch:70 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:1.462
+epoch:71 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:1.462
+epoch:72 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:1.462
+epoch:73 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:1.462
+epoch:74 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:1.462
+epoch:75 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:1.462
+epoch:76 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:1.462
+epoch:77 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:1.462
+epoch:78 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:1.462
+epoch:79 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:1.462
+epoch:80 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:1.462
+epoch:81 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:1.462
+epoch:82 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:1.462
+epoch:83 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:1.462
+epoch:84 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:1.461
+epoch:85 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:1.461
+epoch:86 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:1.461
+epoch:87 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:1.461
+epoch:88 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:1.461
+epoch:89 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:1.461
+epoch:90 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:1.461
+epoch:91 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:1.461
+epoch:92 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:1.461
+epoch:93 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:1.461
+epoch:94 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:1.461
+epoch:95 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:1.461
+epoch:96 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:1.461
+epoch:97 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:1.461
+epoch:98 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:1.461
+epoch:99 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:1.461
+epoch:100 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-100.pth
+Training is completed in 0.0 hours, 5.0 minutes, 50.338 seconds
+Running python train.py --epochs=100 --batch=32 --phase=2
+device:  cuda
+classes:  20 
+epochs:  100 
+batch:  32 
+phase:  2 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 1
+epoch: 1 train: loss:2.307
+epoch: 1 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:2.148
+epoch: 2 test: weighted f1 0.888
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:2.108
+epoch: 3 test: weighted f1 0.891
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:2.096
+epoch: 4 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:2.090
+epoch: 5 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:2.087
+epoch: 6 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:2.086
+epoch: 7 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:2.085
+epoch: 8 test: weighted f1 0.935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:2.083
+epoch: 9 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:2.083
+epoch:10 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:2.082
+epoch:11 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:2.082
+epoch:12 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:2.081
+epoch:13 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:2.081
+epoch:14 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:2.081
+epoch:15 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:2.080
+epoch:16 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:2.080
+epoch:17 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:2.080
+epoch:18 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:2.080
+epoch:19 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:2.080
+epoch:20 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:2.080
+epoch:21 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:2.080
+epoch:22 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:2.080
+epoch:23 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:2.080
+epoch:24 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:2.079
+epoch:25 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:2.079
+epoch:26 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:2.079
+epoch:27 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:2.079
+epoch:28 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:2.079
+epoch:29 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:2.079
+epoch:30 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:2.079
+epoch:31 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:2.079
+epoch:32 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:2.079
+epoch:33 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:2.079
+epoch:34 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:2.079
+epoch:35 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:2.079
+epoch:36 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:2.079
+epoch:37 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:2.079
+epoch:38 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:2.079
+epoch:39 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:2.079
+epoch:40 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:2.079
+epoch:41 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:2.079
+epoch:42 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:2.079
+epoch:43 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:2.079
+epoch:44 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:2.079
+epoch:45 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:2.079
+epoch:46 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:2.079
+epoch:47 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:2.079
+epoch:48 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:2.079
+epoch:49 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:2.079
+epoch:50 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:2.079
+epoch:51 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:2.079
+epoch:52 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:2.079
+epoch:53 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:2.079
+epoch:54 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:2.079
+epoch:55 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:2.079
+epoch:56 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:2.079
+epoch:57 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:2.079
+epoch:58 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:2.079
+epoch:59 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:2.079
+epoch:60 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:2.079
+epoch:61 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:2.079
+epoch:62 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:2.079
+epoch:63 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:2.079
+epoch:64 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:2.079
+epoch:65 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:2.079
+epoch:66 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:2.079
+epoch:67 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:2.079
+epoch:68 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:2.079
+epoch:69 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:2.078
+epoch:70 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:2.078
+epoch:71 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:2.078
+epoch:72 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:2.078
+epoch:73 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:2.078
+epoch:74 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:2.078
+epoch:75 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:2.078
+epoch:76 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:2.078
+epoch:77 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:2.078
+epoch:78 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:2.078
+epoch:79 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:2.078
+epoch:80 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:2.078
+epoch:81 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:2.078
+epoch:82 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:2.078
+epoch:83 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:2.078
+epoch:84 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:2.078
+epoch:85 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:2.078
+epoch:86 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:2.078
+epoch:87 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:2.078
+epoch:88 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:2.078
+epoch:89 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:2.078
+epoch:90 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:2.078
+epoch:91 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:2.078
+epoch:92 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:2.078
+epoch:93 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:2.078
+epoch:94 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:2.078
+epoch:95 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:2.078
+epoch:96 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:2.078
+epoch:97 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:2.078
+epoch:98 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:2.078
+epoch:99 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:2.078
+epoch:100 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-100.pth
+Training is completed in 0.0 hours, 6.0 minutes, 39.402 seconds
+Running python train.py --epochs=100 --batch=32 --phase=3
+device:  cuda
+classes:  30 
+epochs:  100 
+batch:  32 
+phase:  3 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 1
+epoch: 1 train: loss:2.688
+epoch: 1 test: weighted f1 0.878
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:2.537
+epoch: 2 test: weighted f1 0.895
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:2.495
+epoch: 3 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:2.480
+epoch: 4 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:2.472
+epoch: 5 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:2.467
+epoch: 6 test: weighted f1 0.938
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:2.464
+epoch: 7 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:2.463
+epoch: 8 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:2.462
+epoch: 9 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:2.461
+epoch:10 test: weighted f1 0.928
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:2.461
+epoch:11 test: weighted f1 0.928
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:2.460
+epoch:12 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:2.460
+epoch:13 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:2.460
+epoch:14 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:2.459
+epoch:15 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:2.459
+epoch:16 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:2.459
+epoch:17 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:2.459
+epoch:18 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:2.459
+epoch:19 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:2.459
+epoch:20 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:2.459
+epoch:21 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:2.458
+epoch:22 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:2.458
+epoch:23 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:2.458
+epoch:24 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:2.458
+epoch:25 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:2.458
+epoch:26 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:2.458
+epoch:27 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:2.458
+epoch:28 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:2.458
+epoch:29 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:2.458
+epoch:30 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:2.458
+epoch:31 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:2.458
+epoch:32 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:2.458
+epoch:33 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:2.458
+epoch:34 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:2.458
+epoch:35 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:2.458
+epoch:36 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:2.458
+epoch:37 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:2.458
+epoch:38 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:2.458
+epoch:39 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:2.458
+epoch:40 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:2.458
+epoch:41 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:2.458
+epoch:42 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:2.458
+epoch:43 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:2.458
+epoch:44 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:2.458
+epoch:45 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:2.457
+epoch:46 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:2.457
+epoch:47 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:2.457
+epoch:48 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:2.457
+epoch:49 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:2.457
+epoch:50 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:2.457
+epoch:51 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:2.457
+epoch:52 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:2.457
+epoch:53 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:2.457
+epoch:54 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:2.457
+epoch:55 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:2.457
+epoch:56 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:2.457
+epoch:57 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:2.457
+epoch:58 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:2.457
+epoch:59 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:2.457
+epoch:60 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:2.457
+epoch:61 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:2.457
+epoch:62 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:2.457
+epoch:63 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:2.457
+epoch:64 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:2.457
+epoch:65 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:2.457
+epoch:66 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:2.457
+epoch:67 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:2.457
+epoch:68 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:2.457
+epoch:69 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:2.457
+epoch:70 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:2.457
+epoch:71 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:2.457
+epoch:72 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:2.457
+epoch:73 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:2.457
+epoch:74 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:2.457
+epoch:75 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:2.457
+epoch:76 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:2.457
+epoch:77 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:2.457
+epoch:78 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:2.457
+epoch:79 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:2.457
+epoch:80 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:2.457
+epoch:81 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:2.457
+epoch:82 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:2.457
+epoch:83 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:2.457
+epoch:84 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:2.457
+epoch:85 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:2.457
+epoch:86 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:2.457
+epoch:87 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:2.457
+epoch:88 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:2.457
+epoch:89 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:2.457
+epoch:90 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:2.457
+epoch:91 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:2.457
+epoch:92 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:2.457
+epoch:93 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:2.457
+epoch:94 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:2.457
+epoch:95 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:2.457
+epoch:96 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:2.457
+epoch:97 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:2.457
+epoch:98 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:2.457
+epoch:99 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:2.457
+epoch:100 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-100.pth
+Training is completed in 0.0 hours, 7.0 minutes, 17.784 seconds
+Running python train.py --epochs=100 --batch=32 --phase=4
+device:  cuda
+classes:  40 
+epochs:  100 
+batch:  32 
+phase:  4 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 1
+epoch: 1 train: loss:2.931
+epoch: 1 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:2.794
+epoch: 2 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:2.758
+epoch: 3 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:2.745
+epoch: 4 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:2.741
+epoch: 5 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:2.738
+epoch: 6 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:2.737
+epoch: 7 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:2.737
+epoch: 8 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:2.736
+epoch: 9 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:2.736
+epoch:10 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:2.735
+epoch:11 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:2.734
+epoch:12 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:2.734
+epoch:13 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:2.733
+epoch:14 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:2.733
+epoch:15 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:2.733
+epoch:16 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:2.733
+epoch:17 test: weighted f1 0.985
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:2.733
+epoch:18 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:2.733
+epoch:19 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:2.732
+epoch:20 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:2.732
+epoch:21 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:2.732
+epoch:22 test: weighted f1 0.978
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:2.732
+epoch:23 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:2.732
+epoch:24 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:2.732
+epoch:25 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:2.732
+epoch:26 test: weighted f1 0.969
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:2.732
+epoch:27 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:2.732
+epoch:28 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:2.732
+epoch:29 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:2.732
+epoch:30 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:2.732
+epoch:31 test: weighted f1 0.985
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:2.732
+epoch:32 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:2.732
+epoch:33 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:2.732
+epoch:34 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:2.732
+epoch:35 test: weighted f1 0.985
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:2.732
+epoch:36 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:2.732
+epoch:37 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:2.732
+epoch:38 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:2.732
+epoch:39 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:2.732
+epoch:40 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:2.732
+epoch:41 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:2.732
+epoch:42 test: weighted f1 0.985
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:2.731
+epoch:43 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:2.731
+epoch:44 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:2.731
+epoch:45 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:2.731
+epoch:46 test: weighted f1 0.977
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:2.731
+epoch:47 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:2.731
+epoch:48 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:2.731
+epoch:49 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:2.731
+epoch:50 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:2.731
+epoch:51 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:2.731
+epoch:52 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:2.731
+epoch:53 test: weighted f1 0.985
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:2.731
+epoch:54 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:2.731
+epoch:55 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:2.731
+epoch:56 test: weighted f1 0.973
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:2.731
+epoch:57 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:2.731
+epoch:58 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:2.731
+epoch:59 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:2.731
+epoch:60 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:2.731
+epoch:61 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:2.731
+epoch:62 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:2.731
+epoch:63 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:2.731
+epoch:64 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:2.731
+epoch:65 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:2.731
+epoch:66 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:2.731
+epoch:67 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:2.731
+epoch:68 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:2.731
+epoch:69 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:2.731
+epoch:70 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:2.731
+epoch:71 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:2.731
+epoch:72 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:2.731
+epoch:73 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:2.731
+epoch:74 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:2.731
+epoch:75 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:2.731
+epoch:76 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:2.731
+epoch:77 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:2.731
+epoch:78 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:2.731
+epoch:79 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:2.731
+epoch:80 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:2.731
+epoch:81 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:2.731
+epoch:82 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:2.731
+epoch:83 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:2.731
+epoch:84 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:2.731
+epoch:85 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:2.731
+epoch:86 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:2.731
+epoch:87 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:2.731
+epoch:88 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:2.731
+epoch:89 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:2.731
+epoch:90 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:2.731
+epoch:91 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:2.731
+epoch:92 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:2.731
+epoch:93 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:2.731
+epoch:94 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:2.731
+epoch:95 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:2.731
+epoch:96 test: weighted f1 0.974
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:2.731
+epoch:97 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:2.731
+epoch:98 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:2.731
+epoch:99 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:2.731
+epoch:100 test: weighted f1 0.962
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-100.pth
+Training is completed in 0.0 hours, 8.0 minutes, 1.468 seconds
+Running python train.py --epochs=100 --batch=32 --phase=5
+device:  cuda
+classes:  50 
+epochs:  100 
+batch:  32 
+phase:  5 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 1
+epoch: 1 train: loss:3.158
+epoch: 1 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.008
+epoch: 2 test: weighted f1 0.915
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:2.975
+epoch: 3 test: weighted f1 0.947
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:2.962
+epoch: 4 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:2.956
+epoch: 5 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:2.955
+epoch: 6 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:2.952
+epoch: 7 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:2.951
+epoch: 8 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:2.950
+epoch: 9 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:2.949
+epoch:10 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:2.949
+epoch:11 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:2.949
+epoch:12 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:2.948
+epoch:13 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:2.948
+epoch:14 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:2.948
+epoch:15 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:2.948
+epoch:16 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:2.948
+epoch:17 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:2.948
+epoch:18 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:2.947
+epoch:19 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:2.947
+epoch:20 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:2.947
+epoch:21 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:2.947
+epoch:22 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:2.947
+epoch:23 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:2.947
+epoch:24 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:2.947
+epoch:25 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:2.947
+epoch:26 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:2.947
+epoch:27 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:2.947
+epoch:28 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:2.947
+epoch:29 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:2.947
+epoch:30 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:2.947
+epoch:31 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:2.947
+epoch:32 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:2.947
+epoch:33 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:2.947
+epoch:34 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:2.947
+epoch:35 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:2.947
+epoch:36 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:2.946
+epoch:37 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:2.946
+epoch:38 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:2.946
+epoch:39 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:2.946
+epoch:40 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:2.946
+epoch:41 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:2.946
+epoch:42 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:2.946
+epoch:43 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:2.946
+epoch:44 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:2.946
+epoch:45 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:2.946
+epoch:46 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:2.946
+epoch:47 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:2.946
+epoch:48 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:2.946
+epoch:49 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:2.946
+epoch:50 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:2.946
+epoch:51 test: weighted f1 0.950
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:2.946
+epoch:52 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:2.946
+epoch:53 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:2.946
+epoch:54 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:2.946
+epoch:55 test: weighted f1 0.950
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:2.946
+epoch:56 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:2.946
+epoch:57 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:2.946
+epoch:58 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:2.946
+epoch:59 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:2.946
+epoch:60 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:2.946
+epoch:61 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:2.946
+epoch:62 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:2.946
+epoch:63 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:2.946
+epoch:64 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:2.946
+epoch:65 test: weighted f1 0.950
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:2.946
+epoch:66 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:2.946
+epoch:67 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:2.946
+epoch:68 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:2.946
+epoch:69 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:2.946
+epoch:70 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:2.946
+epoch:71 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:2.946
+epoch:72 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:2.946
+epoch:73 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:2.946
+epoch:74 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:2.946
+epoch:75 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:2.946
+epoch:76 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:2.946
+epoch:77 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:2.946
+epoch:78 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:2.946
+epoch:79 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:2.946
+epoch:80 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:2.946
+epoch:81 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:2.946
+epoch:82 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:2.946
+epoch:83 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:2.946
+epoch:84 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:2.946
+epoch:85 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:2.946
+epoch:86 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:2.946
+epoch:87 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:2.946
+epoch:88 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:2.946
+epoch:89 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:2.946
+epoch:90 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:2.946
+epoch:91 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:2.946
+epoch:92 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:2.946
+epoch:93 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:2.946
+epoch:94 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:2.946
+epoch:95 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:2.946
+epoch:96 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:2.946
+epoch:97 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:2.946
+epoch:98 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:2.946
+epoch:99 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:2.946
+epoch:100 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-100.pth
+Training is completed in 0.0 hours, 8.0 minutes, 46.849 seconds
+Running python train.py --epochs=100 --batch=32 --phase=6
+device:  cuda
+classes:  60 
+epochs:  100 
+batch:  32 
+phase:  6 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-034.pth
+Starting epoch 1
+epoch: 1 train: loss:3.310
+epoch: 1 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.175
+epoch: 2 test: weighted f1 0.894
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.146
+epoch: 3 test: weighted f1 0.886
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.136
+epoch: 4 test: weighted f1 0.909
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.134
+epoch: 5 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.133
+epoch: 6 test: weighted f1 0.903
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.129
+epoch: 7 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.128
+epoch: 8 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.126
+epoch: 9 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.126
+epoch:10 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.125
+epoch:11 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.125
+epoch:12 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.125
+epoch:13 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.125
+epoch:14 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.124
+epoch:15 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.124
+epoch:16 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.124
+epoch:17 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.124
+epoch:18 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.124
+epoch:19 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.124
+epoch:20 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.124
+epoch:21 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.124
+epoch:22 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.124
+epoch:23 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.124
+epoch:24 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.124
+epoch:25 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.124
+epoch:26 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.123
+epoch:27 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.123
+epoch:28 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.123
+epoch:29 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.123
+epoch:30 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.123
+epoch:31 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.123
+epoch:32 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.123
+epoch:33 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.123
+epoch:34 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.123
+epoch:35 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.123
+epoch:36 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.123
+epoch:37 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.123
+epoch:38 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.123
+epoch:39 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.123
+epoch:40 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:3.123
+epoch:41 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:3.123
+epoch:42 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:3.123
+epoch:43 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:3.123
+epoch:44 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:3.123
+epoch:45 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:3.123
+epoch:46 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:3.123
+epoch:47 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:3.123
+epoch:48 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:3.123
+epoch:49 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:3.123
+epoch:50 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:3.123
+epoch:51 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:3.123
+epoch:52 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:3.123
+epoch:53 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:3.123
+epoch:54 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:3.123
+epoch:55 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:3.123
+epoch:56 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:3.123
+epoch:57 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:3.123
+epoch:58 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:3.123
+epoch:59 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:3.123
+epoch:60 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:3.123
+epoch:61 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:3.123
+epoch:62 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:3.123
+epoch:63 test: weighted f1 0.961
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:3.123
+epoch:64 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:3.123
+epoch:65 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:3.123
+epoch:66 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:3.123
+epoch:67 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:3.123
+epoch:68 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:3.123
+epoch:69 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:3.123
+epoch:70 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:3.123
+epoch:71 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:3.123
+epoch:72 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:3.123
+epoch:73 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:3.123
+epoch:74 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:3.123
+epoch:75 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:3.123
+epoch:76 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:3.123
+epoch:77 test: weighted f1 0.947
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:3.123
+epoch:78 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:3.123
+epoch:79 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:3.123
+epoch:80 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:3.123
+epoch:81 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:3.123
+epoch:82 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:3.123
+epoch:83 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:3.123
+epoch:84 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:3.123
+epoch:85 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:3.123
+epoch:86 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:3.123
+epoch:87 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:3.123
+epoch:88 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:3.123
+epoch:89 test: weighted f1 0.961
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:3.123
+epoch:90 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:3.123
+epoch:91 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:3.123
+epoch:92 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:3.123
+epoch:93 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:3.123
+epoch:94 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:3.123
+epoch:95 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:3.123
+epoch:96 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:3.123
+epoch:97 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:3.123
+epoch:98 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:3.123
+epoch:99 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:3.123
+epoch:100 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-100.pth
+Training is completed in 0.0 hours, 9.0 minutes, 38.773 seconds
+Running python train.py --epochs=100 --batch=32 --phase=7
+device:  cuda
+classes:  70 
+epochs:  100 
+batch:  32 
+phase:  7 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+Starting epoch 1
+epoch: 1 train: loss:3.521
+epoch: 1 test: weighted f1 0.899
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.365
+epoch: 2 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.324
+epoch: 3 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.300
+epoch: 4 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.291
+epoch: 5 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.288
+epoch: 6 test: weighted f1 0.912
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.288
+epoch: 7 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.285
+epoch: 8 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.282
+epoch: 9 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.280
+epoch:10 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.279
+epoch:11 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.279
+epoch:12 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.278
+epoch:13 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.277
+epoch:14 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.277
+epoch:15 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.276
+epoch:16 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.276
+epoch:17 test: weighted f1 0.968
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.276
+epoch:18 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.276
+epoch:19 test: weighted f1 0.976
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.276
+epoch:20 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.275
+epoch:21 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.275
+epoch:22 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.275
+epoch:23 test: weighted f1 0.971
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.275
+epoch:24 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.275
+epoch:25 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.275
+epoch:26 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.275
+epoch:27 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.275
+epoch:28 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.275
+epoch:29 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.274
+epoch:30 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.274
+epoch:31 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.274
+epoch:32 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.274
+epoch:33 test: weighted f1 0.971
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.274
+epoch:34 test: weighted f1 0.961
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.274
+epoch:35 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.274
+epoch:36 test: weighted f1 0.963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.274
+epoch:37 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.274
+epoch:38 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.274
+epoch:39 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.274
+epoch:40 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:3.274
+epoch:41 test: weighted f1 0.976
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:3.274
+epoch:42 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:3.274
+epoch:43 test: weighted f1 0.976
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:3.274
+epoch:44 test: weighted f1 0.976
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:3.274
+epoch:45 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:3.274
+epoch:46 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:3.274
+epoch:47 test: weighted f1 0.971
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:3.274
+epoch:48 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:3.274
+epoch:49 test: weighted f1 0.966
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:3.274
+epoch:50 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:3.274
+epoch:51 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:3.274
+epoch:52 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:3.274
+epoch:53 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:3.274
+epoch:54 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:3.274
+epoch:55 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:3.274
+epoch:56 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:3.274
+epoch:57 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:3.274
+epoch:58 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:3.274
+epoch:59 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:3.274
+epoch:60 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:3.274
+epoch:61 test: weighted f1 0.981
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:3.273
+epoch:62 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:3.273
+epoch:63 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:3.273
+epoch:64 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:3.273
+epoch:65 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:3.273
+epoch:66 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:3.273
+epoch:67 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:3.273
+epoch:68 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:3.273
+epoch:69 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:3.273
+epoch:70 test: weighted f1 0.975
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:3.273
+epoch:71 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:3.273
+epoch:72 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:3.273
+epoch:73 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:3.273
+epoch:74 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:3.273
+epoch:75 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:3.273
+epoch:76 test: weighted f1 0.975
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:3.273
+epoch:77 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:3.273
+epoch:78 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:3.273
+epoch:79 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:3.273
+epoch:80 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:3.273
+epoch:81 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:3.273
+epoch:82 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:3.273
+epoch:83 test: weighted f1 0.958
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:3.273
+epoch:84 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:3.273
+epoch:85 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:3.273
+epoch:86 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:3.273
+epoch:87 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:3.273
+epoch:88 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:3.273
+epoch:89 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:3.273
+epoch:90 test: weighted f1 0.960
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:3.273
+epoch:91 test: weighted f1 0.965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:3.273
+epoch:92 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:3.273
+epoch:93 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:3.273
+epoch:94 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:3.273
+epoch:95 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:3.273
+epoch:96 test: weighted f1 0.970
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:3.273
+epoch:97 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:3.273
+epoch:98 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:3.273
+epoch:99 test: weighted f1 0.957
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:3.273
+epoch:100 test: weighted f1 0.964
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-100.pth
+Training is completed in 0.0 hours, 10.0 minutes, 36.035 seconds
+Running python train.py --epochs=100 --batch=32 --phase=8
+device:  cuda
+classes:  80 
+epochs:  100 
+batch:  32 
+phase:  8 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-061.pth
+Starting epoch 1
+epoch: 1 train: loss:3.602
+epoch: 1 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.441
+epoch: 2 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.420
+epoch: 3 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.417
+epoch: 4 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.412
+epoch: 5 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.409
+epoch: 6 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.407
+epoch: 7 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.407
+epoch: 8 test: weighted f1 0.935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.406
+epoch: 9 test: weighted f1 0.938
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.406
+epoch:10 test: weighted f1 0.928
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.406
+epoch:11 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.405
+epoch:12 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.405
+epoch:13 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.405
+epoch:14 test: weighted f1 0.926
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.405
+epoch:15 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.405
+epoch:16 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.405
+epoch:17 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.404
+epoch:18 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.404
+epoch:19 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.404
+epoch:20 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.404
+epoch:21 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.404
+epoch:22 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.404
+epoch:23 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.404
+epoch:24 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.404
+epoch:25 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.404
+epoch:26 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.404
+epoch:27 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.404
+epoch:28 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.404
+epoch:29 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.404
+epoch:30 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.404
+epoch:31 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.404
+epoch:32 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.404
+epoch:33 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.404
+epoch:34 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.404
+epoch:35 test: weighted f1 0.938
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.404
+epoch:36 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.404
+epoch:37 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.404
+epoch:38 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.404
+epoch:39 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.404
+epoch:40 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:3.404
+epoch:41 test: weighted f1 0.938
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:3.404
+epoch:42 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:3.404
+epoch:43 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:3.404
+epoch:44 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:3.404
+epoch:45 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:3.404
+epoch:46 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:3.404
+epoch:47 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:3.404
+epoch:48 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:3.404
+epoch:49 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:3.404
+epoch:50 test: weighted f1 0.930
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:3.404
+epoch:51 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:3.404
+epoch:52 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:3.404
+epoch:53 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:3.404
+epoch:54 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:3.404
+epoch:55 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:3.404
+epoch:56 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:3.404
+epoch:57 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:3.404
+epoch:58 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:3.404
+epoch:59 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:3.404
+epoch:60 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:3.404
+epoch:61 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:3.404
+epoch:62 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:3.403
+epoch:63 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:3.403
+epoch:64 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:3.403
+epoch:65 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:3.403
+epoch:66 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:3.403
+epoch:67 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:3.403
+epoch:68 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:3.403
+epoch:69 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:3.403
+epoch:70 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:3.403
+epoch:71 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:3.403
+epoch:72 test: weighted f1 0.937
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:3.403
+epoch:73 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:3.403
+epoch:74 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:3.403
+epoch:75 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:3.403
+epoch:76 test: weighted f1 0.943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:3.403
+epoch:77 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:3.403
+epoch:78 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:3.403
+epoch:79 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:3.403
+epoch:80 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:3.403
+epoch:81 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:3.403
+epoch:82 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:3.403
+epoch:83 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:3.403
+epoch:84 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:3.403
+epoch:85 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:3.403
+epoch:86 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:3.403
+epoch:87 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:3.403
+epoch:88 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:3.403
+epoch:89 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:3.403
+epoch:90 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:3.403
+epoch:91 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:3.403
+epoch:92 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:3.403
+epoch:93 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:3.403
+epoch:94 test: weighted f1 0.924
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:3.403
+epoch:95 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:3.403
+epoch:96 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:3.403
+epoch:97 test: weighted f1 0.936
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:3.403
+epoch:98 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:3.403
+epoch:99 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:3.403
+epoch:100 test: weighted f1 0.935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-100.pth
+Training is completed in 0.0 hours, 11.0 minutes, 21.479 seconds
+Running python train.py --epochs=100 --batch=32 --phase=9
+device:  cuda
+classes:  90 
+epochs:  100 
+batch:  32 
+phase:  9 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+Starting epoch 1
+epoch: 1 train: loss:3.702
+epoch: 1 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.551
+epoch: 2 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.533
+epoch: 3 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.529
+epoch: 4 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.528
+epoch: 5 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.528
+epoch: 6 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.525
+epoch: 7 test: weighted f1 0.933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.529
+epoch: 8 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.525
+epoch: 9 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.523
+epoch:10 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.522
+epoch:11 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.521
+epoch:12 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.521
+epoch:13 test: weighted f1 0.947
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.521
+epoch:14 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.520
+epoch:15 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.520
+epoch:16 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.520
+epoch:17 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.520
+epoch:18 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.520
+epoch:19 test: weighted f1 0.942
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.520
+epoch:20 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.520
+epoch:21 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.520
+epoch:22 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.520
+epoch:23 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.520
+epoch:24 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.519
+epoch:25 test: weighted f1 0.959
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.519
+epoch:26 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.519
+epoch:27 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.519
+epoch:28 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.519
+epoch:29 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.519
+epoch:30 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.519
+epoch:31 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.519
+epoch:32 test: weighted f1 0.953
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.519
+epoch:33 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.519
+epoch:34 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.519
+epoch:35 test: weighted f1 0.935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.519
+epoch:36 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.519
+epoch:37 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.519
+epoch:38 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.519
+epoch:39 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.519
+epoch:40 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:3.519
+epoch:41 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:3.519
+epoch:42 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:3.519
+epoch:43 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:3.519
+epoch:44 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:3.519
+epoch:45 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:3.519
+epoch:46 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:3.519
+epoch:47 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:3.519
+epoch:48 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:3.519
+epoch:49 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:3.519
+epoch:50 test: weighted f1 0.948
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:3.519
+epoch:51 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:3.519
+epoch:52 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:3.519
+epoch:53 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:3.519
+epoch:54 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:3.519
+epoch:55 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:3.519
+epoch:56 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:3.519
+epoch:57 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:3.519
+epoch:58 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:3.519
+epoch:59 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:3.519
+epoch:60 test: weighted f1 0.940
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:3.519
+epoch:61 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:3.519
+epoch:62 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:3.519
+epoch:63 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:3.519
+epoch:64 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:3.519
+epoch:65 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:3.519
+epoch:66 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:3.519
+epoch:67 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:3.519
+epoch:68 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:3.519
+epoch:69 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:3.519
+epoch:70 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:3.519
+epoch:71 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:3.519
+epoch:72 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:3.519
+epoch:73 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:3.519
+epoch:74 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:3.519
+epoch:75 test: weighted f1 0.952
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:3.519
+epoch:76 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:3.519
+epoch:77 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:3.519
+epoch:78 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:3.519
+epoch:79 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:3.519
+epoch:80 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:3.519
+epoch:81 test: weighted f1 0.945
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:3.519
+epoch:82 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:3.519
+epoch:83 test: weighted f1 0.955
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:3.519
+epoch:84 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:3.519
+epoch:85 test: weighted f1 0.941
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:3.519
+epoch:86 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:3.519
+epoch:87 test: weighted f1 0.944
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:3.519
+epoch:88 test: weighted f1 0.949
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:3.519
+epoch:89 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:3.519
+epoch:90 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:3.519
+epoch:91 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:3.519
+epoch:92 test: weighted f1 0.939
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:3.519
+epoch:93 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:3.519
+epoch:94 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:3.519
+epoch:95 test: weighted f1 0.954
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:3.519
+epoch:96 test: weighted f1 0.951
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:3.519
+epoch:97 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:3.519
+epoch:98 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:3.519
+epoch:99 test: weighted f1 0.946
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:3.519
+epoch:100 test: weighted f1 0.956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-100.pth
+Training is completed in 0.0 hours, 12.0 minutes, 4.761 seconds
+Running python train.py --epochs=100 --batch=32 --phase=10
+device:  cuda
+classes:  100 
+epochs:  100 
+batch:  32 
+phase:  10 
+checkpoint:  0 
+iteration:  0
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+Starting epoch 1
+epoch: 1 train: loss:3.795
+epoch: 1 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.653
+epoch: 2 test: weighted f1 0.889
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.637
+epoch: 3 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.631
+epoch: 4 test: weighted f1 0.895
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.628
+epoch: 5 test: weighted f1 0.902
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.627
+epoch: 6 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.626
+epoch: 7 test: weighted f1 0.905
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.625
+epoch: 8 test: weighted f1 0.912
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.625
+epoch: 9 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.624
+epoch:10 test: weighted f1 0.915
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.624
+epoch:11 test: weighted f1 0.920
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.624
+epoch:12 test: weighted f1 0.931
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.624
+epoch:13 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.624
+epoch:14 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.623
+epoch:15 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.623
+epoch:16 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.623
+epoch:17 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.623
+epoch:18 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.623
+epoch:19 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.623
+epoch:20 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.623
+epoch:21 test: weighted f1 0.934
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.623
+epoch:22 test: weighted f1 0.914
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.623
+epoch:23 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.623
+epoch:24 test: weighted f1 0.926
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.623
+epoch:25 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.623
+epoch:26 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.623
+epoch:27 test: weighted f1 0.920
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.623
+epoch:28 test: weighted f1 0.920
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.623
+epoch:29 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.623
+epoch:30 test: weighted f1 0.926
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.623
+epoch:31 test: weighted f1 0.932
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.623
+epoch:32 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.623
+epoch:33 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.623
+epoch:34 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.623
+epoch:35 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.623
+epoch:36 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.623
+epoch:37 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.623
+epoch:38 test: weighted f1 0.928
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.623
+epoch:39 test: weighted f1 0.915
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.623
+epoch:40 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-040.pth
+Starting epoch 41
+epoch:41 train: loss:3.623
+epoch:41 test: weighted f1 0.928
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-041.pth
+Starting epoch 42
+epoch:42 train: loss:3.623
+epoch:42 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-042.pth
+Starting epoch 43
+epoch:43 train: loss:3.623
+epoch:43 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-043.pth
+Starting epoch 44
+epoch:44 train: loss:3.622
+epoch:44 test: weighted f1 0.926
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-044.pth
+Starting epoch 45
+epoch:45 train: loss:3.622
+epoch:45 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-045.pth
+Starting epoch 46
+epoch:46 train: loss:3.622
+epoch:46 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-046.pth
+Starting epoch 47
+epoch:47 train: loss:3.622
+epoch:47 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+Starting epoch 48
+epoch:48 train: loss:3.622
+epoch:48 test: weighted f1 0.920
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-048.pth
+Starting epoch 49
+epoch:49 train: loss:3.622
+epoch:49 test: weighted f1 0.929
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-049.pth
+Starting epoch 50
+epoch:50 train: loss:3.622
+epoch:50 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-050.pth
+Starting epoch 51
+epoch:51 train: loss:3.622
+epoch:51 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-051.pth
+Starting epoch 52
+epoch:52 train: loss:3.622
+epoch:52 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-052.pth
+Starting epoch 53
+epoch:53 train: loss:3.622
+epoch:53 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-053.pth
+Starting epoch 54
+epoch:54 train: loss:3.622
+epoch:54 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-054.pth
+Starting epoch 55
+epoch:55 train: loss:3.622
+epoch:55 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-055.pth
+Starting epoch 56
+epoch:56 train: loss:3.622
+epoch:56 test: weighted f1 0.920
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-056.pth
+Starting epoch 57
+epoch:57 train: loss:3.622
+epoch:57 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-057.pth
+Starting epoch 58
+epoch:58 train: loss:3.622
+epoch:58 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-058.pth
+Starting epoch 59
+epoch:59 train: loss:3.622
+epoch:59 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-059.pth
+Starting epoch 60
+epoch:60 train: loss:3.622
+epoch:60 test: weighted f1 0.912
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-060.pth
+Starting epoch 61
+epoch:61 train: loss:3.622
+epoch:61 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-061.pth
+Starting epoch 62
+epoch:62 train: loss:3.622
+epoch:62 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-062.pth
+Starting epoch 63
+epoch:63 train: loss:3.622
+epoch:63 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-063.pth
+Starting epoch 64
+epoch:64 train: loss:3.622
+epoch:64 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-064.pth
+Starting epoch 65
+epoch:65 train: loss:3.622
+epoch:65 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-065.pth
+Starting epoch 66
+epoch:66 train: loss:3.622
+epoch:66 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-066.pth
+Starting epoch 67
+epoch:67 train: loss:3.622
+epoch:67 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-067.pth
+Starting epoch 68
+epoch:68 train: loss:3.622
+epoch:68 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-068.pth
+Starting epoch 69
+epoch:69 train: loss:3.622
+epoch:69 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-069.pth
+Starting epoch 70
+epoch:70 train: loss:3.622
+epoch:70 test: weighted f1 0.923
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-070.pth
+Starting epoch 71
+epoch:71 train: loss:3.622
+epoch:71 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-071.pth
+Starting epoch 72
+epoch:72 train: loss:3.622
+epoch:72 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-072.pth
+Starting epoch 73
+epoch:73 train: loss:3.622
+epoch:73 test: weighted f1 0.922
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-073.pth
+Starting epoch 74
+epoch:74 train: loss:3.622
+epoch:74 test: weighted f1 0.921
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-074.pth
+Starting epoch 75
+epoch:75 train: loss:3.622
+epoch:75 test: weighted f1 0.924
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-075.pth
+Starting epoch 76
+epoch:76 train: loss:3.622
+epoch:76 test: weighted f1 0.915
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-076.pth
+Starting epoch 77
+epoch:77 train: loss:3.622
+epoch:77 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-077.pth
+Starting epoch 78
+epoch:78 train: loss:3.622
+epoch:78 test: weighted f1 0.916
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-078.pth
+Starting epoch 79
+epoch:79 train: loss:3.622
+epoch:79 test: weighted f1 0.919
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-079.pth
+Starting epoch 80
+epoch:80 train: loss:3.622
+epoch:80 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-080.pth
+Starting epoch 81
+epoch:81 train: loss:3.622
+epoch:81 test: weighted f1 0.925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-081.pth
+Starting epoch 82
+epoch:82 train: loss:3.622
+epoch:82 test: weighted f1 0.912
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-082.pth
+Starting epoch 83
+epoch:83 train: loss:3.622
+epoch:83 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-083.pth
+Starting epoch 84
+epoch:84 train: loss:3.622
+epoch:84 test: weighted f1 0.908
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-084.pth
+Starting epoch 85
+epoch:85 train: loss:3.622
+epoch:85 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-085.pth
+Starting epoch 86
+epoch:86 train: loss:3.622
+epoch:86 test: weighted f1 0.913
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-086.pth
+Starting epoch 87
+epoch:87 train: loss:3.622
+epoch:87 test: weighted f1 0.915
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-087.pth
+Starting epoch 88
+epoch:88 train: loss:3.622
+epoch:88 test: weighted f1 0.908
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-088.pth
+Starting epoch 89
+epoch:89 train: loss:3.622
+epoch:89 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-089.pth
+Starting epoch 90
+epoch:90 train: loss:3.622
+epoch:90 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-090.pth
+Starting epoch 91
+epoch:91 train: loss:3.622
+epoch:91 test: weighted f1 0.909
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-091.pth
+Starting epoch 92
+epoch:92 train: loss:3.622
+epoch:92 test: weighted f1 0.918
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-092.pth
+Starting epoch 93
+epoch:93 train: loss:3.622
+epoch:93 test: weighted f1 0.917
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-093.pth
+Starting epoch 94
+epoch:94 train: loss:3.622
+epoch:94 test: weighted f1 0.909
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-094.pth
+Starting epoch 95
+epoch:95 train: loss:3.622
+epoch:95 test: weighted f1 0.911
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-095.pth
+Starting epoch 96
+epoch:96 train: loss:3.622
+epoch:96 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-096.pth
+Starting epoch 97
+epoch:97 train: loss:3.622
+epoch:97 test: weighted f1 0.927
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-097.pth
+Starting epoch 98
+epoch:98 train: loss:3.622
+epoch:98 test: weighted f1 0.903
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-098.pth
+Starting epoch 99
+epoch:99 train: loss:3.622
+epoch:99 test: weighted f1 0.903
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-099.pth
+Starting epoch 100
+epoch:100 train: loss:3.622
+epoch:100 test: weighted f1 0.910
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-100.pth
+Training is completed in 0.0 hours, 12.0 minutes, 52.811 seconds
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Sat Oct 21 07:53:05 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   51C    P0              85W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Linux lagoon 4.18.0-477.21.1.el8_8.x86_64 #1 SMP Tue Aug 8 21:30:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="8.8 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.8 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.8"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.8"
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  2
+Core(s) per socket:  64
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          25
+Model:               1
+Model name:          AMD EPYC 7763 64-Core Processor
+Stepping:            1
+CPU MHz:             2450.000
+CPU max MHz:         3529.0520
+CPU min MHz:         1500.0000
+BogoMIPS:            4890.71
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            32768K
+NUMA node0 CPU(s):   0-127
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+MemTotal:       527671624 kB
+Running python validate.py --batch=32 --phase=1
+device:  cuda
+classes:  10 
+checkpoint:  0 
+batch:  32 
+phase:  1
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+accuracy:  0.977574615581455
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_1.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.900 seconds
+Running python validate.py --batch=32 --phase=2
+device:  cuda
+classes:  20 
+checkpoint:  0 
+batch:  32 
+phase:  2
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+accuracy:  0.954001670843776
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_2.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.062 seconds
+Running python validate.py --batch=32 --phase=3
+device:  cuda
+classes:  30 
+checkpoint:  0 
+batch:  32 
+phase:  3
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+accuracy:  0.9619134050838936
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_3.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.045 seconds
+Running python validate.py --batch=32 --phase=4
+device:  cuda
+classes:  40 
+checkpoint:  0 
+batch:  32 
+phase:  4
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+accuracy:  0.9848943626033412
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_4.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.087 seconds
+Running python validate.py --batch=32 --phase=5
+device:  cuda
+classes:  50 
+checkpoint:  0 
+batch:  32 
+phase:  5
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-034.pth
+accuracy:  0.9600291882031012
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_5.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.173 seconds
+Running python validate.py --batch=32 --phase=6
+device:  cuda
+classes:  60 
+checkpoint:  0 
+batch:  32 
+phase:  6
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+accuracy:  0.9702984710657344
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_6.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.153 seconds
+Running python validate.py --batch=32 --phase=7
+device:  cuda
+classes:  70 
+checkpoint:  0 
+batch:  32 
+phase:  7
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-061.pth
+accuracy:  0.9809778068359304
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_7.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.143 seconds
+Running python validate.py --batch=32 --phase=8
+device:  cuda
+classes:  80 
+checkpoint:  0 
+batch:  32 
+phase:  8
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+accuracy:  0.949114284408402
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_8.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.090 seconds
+Running python validate.py --batch=32 --phase=9
+device:  cuda
+classes:  90 
+checkpoint:  0 
+batch:  32 
+phase:  9
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+accuracy:  0.9585061175279828
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_9.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.081 seconds
+Running python validate.py --batch=32 --phase=10
+device:  cuda
+classes:  100 
+checkpoint:  0 
+batch:  32 
+phase:  10
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+accuracy:  0.9337412206056708
+not found:  data/Val/789.jpg
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_10.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 8.086 seconds
+Job ID: 30369
+Cluster: crimson
+User/Group: dh.huang.2023/dh.huang.2023
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 14:09:40
+CPU Efficiency: 88.57% of 15:59:20 core-walltime
+Job Wall-clock time: 01:35:56
+Memory Utilized: 1.20 GB
+Memory Efficiency: 1.88% of 64.00 GB

@@ -19,7 +19,8 @@ BATCH=32
 # python train.py --epochs=$EPOCHS --batch=$BATCH --phase=1 --iteration=1 --folder=data/v3-resnext101_32x8d/checkpoints_phase_10/ --checkpoint=22
 
 # v7
-python train.py --epochs=$EPOCHS --batch=$BATCH --phase=1 --iteration=1 --folder=data/checkpoints_phase_10/ --checkpoint=39
+echo Running python train.py --epochs=$EPOCHS --batch=$BATCH --phase=1 --iteration=2 --folder=data/checkpoints_phase_10/ --checkpoint=39
+python train.py --epochs=$EPOCHS --batch=$BATCH --phase=1 --iteration=2 --folder=data/checkpoints_phase_10/ --checkpoint=39
 
 a=2
 until [ $a -gt 10 ]
@@ -30,3 +31,5 @@ do
     # increment the value
     a=`expr $a + 1`
 done
+
+./validate.sh

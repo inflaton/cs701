@@ -65,7 +65,7 @@ preprocess_image = transforms.Compose(
 
 preprocess_val_image = transforms.Compose(
     [
-        transforms.Resize(224),
+        transforms.Resize((224, 224)),
         transforms.ToTensor(),
         transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
     ]

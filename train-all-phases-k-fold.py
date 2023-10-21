@@ -149,12 +149,12 @@ for i in range(10):
                 # Print statistics
                 loss_value = np.mean(val_loss)
                 print(
-                    "phase:{:2d} fold:{;2d} epoch:{:2d} - loss:{:.3f}".format(
+                    "phase:{:2d} fold:{:2d} epoch:{:2d} - loss:{:.3f}".format(
                         phase, fold + 1, epoch + 1, loss_value
                     )
                 )
                 print(
-                    "phase:{:2d} fold:{;2d} epoch:{:2d} - accuracy:{:.3f}".format(
+                    "phase:{:2d} fold:{:2d} epoch:{:2d} - accuracy:{:.3f}".format(
                         phase,
                         fold + 1,
                         epoch + 1,

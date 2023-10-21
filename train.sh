@@ -1,1 +1,1 @@
-scripts/train-v8.sh
+scripts/train-v9.sh

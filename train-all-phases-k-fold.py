@@ -12,6 +12,7 @@ import argparse
 from utils import (
     NUM_CLASSES_IN_PHASE,
     MEMORY_SIZE,
+    NUM_PHASES,
     device,
     checkpoint_save,
     checkpoint_load,
@@ -60,49 +61,58 @@ start_time = time.time()
 
 model = None
 
-for i in range(10):
+all_phases = pd.DataFrame(
+    {"phase": [], "fold:": [], "epoch": [], "loss": [], "accuracy": []}
+)
+
+for i in range(NUM_PHASES):
     phase = i + 1
 
     num_classes = NUM_CLASSES_IN_PHASE * phase
 
-    print(
-        "phase: ",
-        phase,
-        "\nclasses: ",
-        num_classes,
-    )
-
-    # initialise model instance
-    # Initialize the model for this run
-    if model is None:
-        model = NeuralNetwork(num_classes)
-    else:
-        checkpoint_load(model, SAVE_PATH, top_checkpoint + 1)
-        model.update_num_classes(num_classes)
-
-    # set data path
-    SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
-    os.makedirs(SAVE_PATH, exist_ok=True)
-
-    model.train()
-
-    # transfer over to gpu
-    model = model.to(device)
-
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=LR)
-
-    # Start training
-    torch.cuda.empty_cache()
-    gc.collect()
-
     for fold in range(MEMORY_SIZE):
+        print(
+            "phase: ",
+            phase,
+            "\nclasses: ",
+            num_classes,
+            "\nfold: ",
+            fold + 1,
+        )
+
+        # initialise model instance
+        # Initialize the model for this run
+        if model is None:
+            model = NeuralNetwork(num_classes)
+        else:
+            checkpoint_load(model, SAVE_PATH, top_checkpoint + 1)
+            if fold == 0:
+                model.update_num_classes(num_classes)
+
+        # set data path
+        SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
+        os.makedirs(SAVE_PATH, exist_ok=True)
+
+        model.train()
+
+        # transfer over to gpu
+        model = model.to(device)
+
+        criterion = nn.CrossEntropyLoss()
+        optimizer = optim.Adam(model.parameters(), lr=LR)
+
+        # Start training
+        torch.cuda.empty_cache()
+        gc.collect()
+
         train_set, val_set = get_k_fold_training_datasets(phase, fold)
 
         # Define data loaders for training and testing data in this fold
-        trainloader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)
-        testloader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
+        train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)
+        test_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
 
+        phases = []
+        folds = []
         epochs = []
         losses = []
         accuracies = []
@@ -110,8 +120,12 @@ for i in range(10):
         for epoch in range(0, num_epochs):
             print(f"Starting epoch {epoch+1}")
 
+            phases.append(phase)
+            folds.append(fold + 1)
+            epochs.append(epoch + 1)
+
             model.train()
-            for inputs, targets in trainloader:
+            for inputs, targets in train_loader:
                 inputs, targets = inputs.to(device), targets.to(device)
 
                 # zero the parameter gradients
@@ -131,7 +145,7 @@ for i in range(10):
             with torch.no_grad():
                 model_result = []
                 total_targets = []
-                for inputs, targets in testloader:
+                for inputs, targets in test_loader:
                     inputs, targets = inputs.to(device), targets.to(device)
                     model_batch_result = model(inputs)
 
@@ -145,6 +159,7 @@ for i in range(10):
                 result = calculate_metrics(
                     np.array(model_result), np.array(total_targets)
                 )
+                accuracy = result["weighted/f1"]
 
                 # Print statistics
                 loss_value = np.mean(val_loss)
@@ -158,25 +173,37 @@ for i in range(10):
                         phase,
                         fold + 1,
                         epoch + 1,
-                        result["weighted/f1"],
+                        accuracy,
                     ),
                     flush=True,
                 )
-                epochs.append(epoch + 1)
                 losses.append(loss_value)
-                accuracies.append(result["weighted/f1"])
+                accuracies.append(accuracy)
 
-            if fold == MEMORY_SIZE - 1:
-                checkpoint_save(model, SAVE_PATH, epoch + 1)
+            checkpoint_save(model, SAVE_PATH, epoch + 1)
 
-    df = pd.DataFrame({"epoch": epochs, "loss": losses, "accuracy": accuracies})
-    df.to_csv(f"logs/phase_{phase}.csv", index=False)
+            if 1 - accuracy < 1e-8:
+                break
 
-    top_checkpoint = df["accuracy"].idxmax()
-    for epoch in range(0, num_epochs):
-        if epoch != top_checkpoint:
-            checkpoint_delete(SAVE_PATH, epoch + 1)
+        df = pd.DataFrame(
+            {
+                "phase": phases,
+                "fold:": folds,
+                "epoch": epochs,
+                "loss": losses,
+                "accuracy": accuracies,
+            }
+        )
+        df.to_csv(f"logs/phase_{phase}.csv", index=False)
 
+        all_phases = pd.concat([all_phases, df])
+
+        top_checkpoint = df["accuracy"].idxmax()
+        for epoch in range(0, num_epochs):
+            if epoch != top_checkpoint:
+                checkpoint_delete(SAVE_PATH, epoch + 1)
+
+all_phases.to_csv("logs/all_phases.csv", index=False)
 
 # Calculate time elapsed
 end_time = time.time()

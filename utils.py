@@ -166,8 +166,8 @@ class NeuralNetwork(nn.Module):
     def __init__(self, n_classes, model_ver=1):
         super().__init__()
         self.model_ver = model_ver
-        # resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
-        resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
+        resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+        #resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
 
         # for name, param in resnet.named_parameters():
         #     if "bn" not in name:

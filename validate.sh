@@ -15,8 +15,8 @@ BATCH=32
 a=1
 until [ $a -gt 10 ]
 do
-    echo Running python validate.py --batch=$BATCH --phase=$a --model=2
-    python validate.py --batch=$BATCH --phase=$a --model=2
+    echo Running python validate.py --batch=$BATCH --phase=$a --model=1
+    python validate.py --batch=$BATCH --phase=$a --model=1
      
     # increment the value
     a=`expr $a + 1`

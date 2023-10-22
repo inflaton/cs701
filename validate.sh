@@ -10,16 +10,15 @@ cat /etc/os-release
 lscpu
 grep MemTotal /proc/meminfo
 
-BATCH=32
+BATCH=128
+MODEL=1
 
 a=1
 until [ $a -gt 10 ]
 do
-    echo Running python validate.py --batch=$BATCH --phase=$a --model=1
-    python validate.py --batch=$BATCH --phase=$a --model=1
+    echo Running python validate.py --batch=$BATCH --phase=$a --model=$MODEL
+    python validate.py --batch=$BATCH --phase=$a --model=$MODEL
      
     # increment the value
     a=`expr $a + 1`
 done
-
-

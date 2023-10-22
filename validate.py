@@ -1,5 +1,6 @@
 import gc
 import os
+from pathlib import Path
 import time
 import numpy as np
 import pandas as pd
@@ -113,28 +114,38 @@ with torch.no_grad():
 
     print(f"{count} results saved to: {result_filename}")
 
-    if phase == NUM_PHASES:
-        model_result = []
-        total_targets = []
-        test_loader = torch.utils.data.DataLoader(
-            get_final_validation_dataset(), batch_size=batch_size
-        )
-        for inputs, targets in test_loader:
-            inputs, targets = inputs.to(device), targets.to(device)
-            model_batch_result = model(inputs)
+    model_result = []
+    total_targets = []
+    test_loader = torch.utils.data.DataLoader(
+        get_final_validation_dataset(phase), batch_size=batch_size
+    )
+    for inputs, targets in test_loader:
+        inputs, targets = inputs.to(device), targets.to(device)
+        model_batch_result = model(inputs)
 
-            model_result.extend(model_batch_result.cpu().numpy())
-            total_targets.extend(targets.cpu().numpy())
+        model_result.extend(model_batch_result.cpu().numpy())
+        total_targets.extend(targets.cpu().numpy())
 
-        result = calculate_metrics(np.array(model_result), np.array(total_targets))
-        accuracy = result["weighted/f1"]
-        print(
-            "Final accuracy:{:.3f}".format(
-                accuracy,
-            ),
-            flush=True,
-        )
+    result = calculate_metrics(np.array(model_result), np.array(total_targets))
+    accuracy = result["weighted/f1"]
+    print(
+        "phase:{:2d} - final accuracy:{:.3f}".format(
+            phase,
+            accuracy,
+        ),
+        flush=True,
+    )
 
+    filename = f"logs/validation.csv"
+
+    path = Path(filename)
+    file_exists = path.is_file()
+
+    file = open(filename, "a")
+    if not file_exists:
+        file.write("phase,accuracy\n")
+
+    file.write(f"{phase},{accuracy:.3f}\n")
 
 # Calculate time elapsed
 end_time = time.time()

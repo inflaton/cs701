@@ -30,6 +30,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", type=int, help="Model impl version", default=1)
 parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
+parser.add_argument("-s", "--baseline", type=int, help="Training iteration", default=0)
 
 # Parse the arguments
 args = parser.parse_args()
@@ -37,6 +38,7 @@ args = parser.parse_args()
 model_ver = args.model
 batch_size = args.batch
 num_epochs = args.epochs
+baseline = args.baseline == 1
 
 print(
     "model: ",
@@ -109,7 +111,7 @@ for i in range(NUM_PHASES):
         torch.cuda.empty_cache()
         gc.collect()
 
-        train_set, val_set = get_k_fold_training_datasets(phase, fold)
+        train_set, val_set = get_k_fold_training_datasets(phase, fold, not baseline)
 
         # Define data loaders for training and testing data in this fold
         train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)

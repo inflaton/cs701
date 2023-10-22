@@ -16,4 +16,12 @@ BATCH=64
 echo Running python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH --model=2
 python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH --model=2
 
-./validate.sh
+a=1
+until [ $a -gt 10 ]
+do
+    echo Running python validate.py --batch=$BATCH --phase=$a --model=2
+    python validate.py --batch=$BATCH --phase=$a --model=2
+     
+    # increment the value
+    a=`expr $a + 1`
+done

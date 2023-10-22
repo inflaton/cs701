@@ -8,7 +8,10 @@ import argparse
 
 from utils import (
     NUM_CLASSES_IN_PHASE,
+    NUM_PHASES,
+    calculate_metrics,
     device,
+    get_final_validation_dataset,
     preprocess_val_image,
     checkpoint_load,
     CustomImageDataset,
@@ -20,6 +23,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser()
+parser.add_argument("-m", "--model", type=int, help="Model impl version", default=1)
 parser.add_argument("-p", "--phase", type=int, help="Training phase", default=1)
 parser.add_argument(
     "-c", "--checkpoint", type=int, help="Checkpoint to load", default=0
@@ -29,13 +33,16 @@ parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
 # Parse the arguments
 args = parser.parse_args()
 
+model_ver = args.model
 batch_size = args.batch
 checkpoint = args.checkpoint
 phase = args.phase
 num_classes = NUM_CLASSES_IN_PHASE * phase
 
 print(
-    "classes: ",
+    "model: ",
+    model_ver,
+    "\nclasses: ",
     num_classes,
     "\ncheckpoint: ",
     checkpoint,
@@ -66,7 +73,7 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 
 # initialise model instance
 # Initialize the model for this run
-model = NeuralNetwork(num_classes)
+model = NeuralNetwork(num_classes, model_ver=model_ver)
 
 df = pd.read_csv(f"logs/phase_{phase}.csv")
 if checkpoint == 0:
@@ -105,6 +112,28 @@ with torch.no_grad():
             count += 1
 
     print(f"{count} results saved to: {result_filename}")
+
+    if phase == NUM_PHASES:
+        model_result = []
+        total_targets = []
+        test_loader = torch.utils.data.DataLoader(
+            get_final_validation_dataset(), batch_size=batch_size
+        )
+        for inputs, targets in test_loader:
+            inputs, targets = inputs.to(device), targets.to(device)
+            model_batch_result = model(inputs)
+
+            model_result.extend(model_batch_result.cpu().numpy())
+            total_targets.extend(targets.cpu().numpy())
+
+        result = calculate_metrics(np.array(model_result), np.array(total_targets))
+        accuracy = result["weighted/f1"]
+        print(
+            "Final accuracy:{:.3f}".format(
+                accuracy,
+            ),
+            flush=True,
+        )
 
 
 # Calculate time elapsed

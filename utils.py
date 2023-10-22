@@ -370,3 +370,23 @@ def get_k_fold_training_datasets(phase, fold):
         val_subset = ConcatDataset([val_subset, temp_subset])
 
     return train_subset, val_subset
+
+
+def get_final_validation_dataset():
+    datasets = [
+        TrainingImageDataset(phase + 1, transform=preprocess_val_image)
+        for phase in range(NUM_PHASES)
+    ]
+
+    final_val_set = None
+    for dataset in datasets:
+        train_len = int(len(dataset) * 7 / 10)
+        _, val_set = torch.utils.data.random_split(
+            dataset, [train_len, len(dataset) - train_len]
+        )
+        if final_val_set is None:
+            final_val_set = val_set
+        else:
+            final_val_set = ConcatDataset([final_val_set, val_set])
+
+    return final_val_set

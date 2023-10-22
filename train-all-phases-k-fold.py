@@ -27,17 +27,21 @@ import warnings
 warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser()
+parser.add_argument("-m", "--model", type=int, help="Model impl version", default=1)
 parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
 
 # Parse the arguments
 args = parser.parse_args()
 
+model_ver = args.model
 batch_size = args.batch
 num_epochs = args.epochs
 
 print(
-    "epochs: ",
+    "model: ",
+    model_ver,
+    "\nepochs: ",
     num_epochs,
     "\nbatch: ",
     batch_size,
@@ -83,7 +87,7 @@ for i in range(NUM_PHASES):
         # initialise model instance
         # Initialize the model for this run
         if model is None:
-            model = NeuralNetwork(num_classes)
+            model = NeuralNetwork(num_classes, model_ver=model_ver)
         else:
             checkpoint_load(model, SAVE_PATH, top_checkpoint + 1)
             if fold == 0:
@@ -199,6 +203,15 @@ for i in range(NUM_PHASES):
         all_phases = pd.concat([all_phases, df])
 
         top_checkpoint = df["accuracy"].idxmax()
+        print(
+            "*** phase:{:2d} fold:{:2d} epoch:{:2d} - top accuracy:{:.3f}".format(
+                phase,
+                fold + 1,
+                top_checkpoint + 1,
+                df["accuracy"][top_checkpoint],
+            ),
+            flush=True,
+        )
         for epoch in range(len(epochs)):
             if epoch != top_checkpoint:
                 checkpoint_delete(SAVE_PATH, epoch + 1)

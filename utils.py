@@ -52,7 +52,7 @@ IMAGENET_STD = [0.229, 0.224, 0.225]
 # https://moiseevigor.github.io/software/2022/12/18/one-pager-training-resnet-on-imagenet/
 preprocess_image = transforms.Compose(
     [
-        transforms.Resize(256),
+        transforms.RandomResizedCrop((256, 256)),
         transforms.RandomHorizontalFlip(),
         transforms.RandomVerticalFlip(),
         transforms.RandomRotation(degrees=45),
@@ -159,12 +159,20 @@ class CustomImageDataset(Dataset):
         return image, label
 
 
+FC_LINEAR_ONE_OUT_FEATURES = 500
+
+
 class NeuralNetwork(nn.Module):
-    def __init__(self, n_classes):
+    def __init__(self, n_classes, model_ver=1):
         super().__init__()
-        resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
-        # resnet = models.resnext101_32x8d(weights=True)
-        # resnet = models.resnet152(weights=True)
+        self.model_ver = model_ver
+        # resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+        resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
+
+        # for name, param in resnet.named_parameters():
+        #     if "bn" not in name:
+        #         param.requires_grad = False
+
         self.resnet_fc_in_features = resnet.fc.in_features
         resnet.fc = self.new_fc_layer(n_classes)
         self.n_classes = n_classes
@@ -176,14 +184,28 @@ class NeuralNetwork(nn.Module):
         return self.sigm(output)
 
     def new_fc_layer(self, n_classes):
+        if self.model_ver == 1:
+            return nn.Sequential(
+                nn.Dropout(0.2),
+                nn.Linear(
+                    in_features=self.resnet_fc_in_features, out_features=n_classes
+                ),
+            )
         return nn.Sequential(
+            nn.Linear(
+                in_features=self.resnet_fc_in_features,
+                out_features=FC_LINEAR_ONE_OUT_FEATURES,
+            ),
+            nn.ReLU(),
             nn.Dropout(0.2),
-            nn.Linear(in_features=self.resnet_fc_in_features, out_features=n_classes),
+            nn.Linear(in_features=FC_LINEAR_ONE_OUT_FEATURES, out_features=n_classes),
         )
 
     def update_num_classes(self, n_classes):
         self.n_classes = n_classes
-        self.base_model.fc = self.new_fc_layer(n_classes)
+        self.base_model.fc[-1] = nn.Linear(
+            in_features=FC_LINEAR_ONE_OUT_FEATURES, out_features=n_classes
+        )
 
 
 # save checkpoint function
@@ -207,13 +229,13 @@ def checkpoint_load(model, save_path, epoch, n_classes=0):
 
     backup = None
     if n_classes > 0 and n_classes != model.n_classes:
-        backup = model.base_model.fc
-        model.base_model.fc = model.new_fc_layer(n_classes)
+        backup = model.n_classes
+        model.update_num_classes(n_classes)
 
     model.load_state_dict(torch.load(f))
 
     if backup is not None:
-        model.base_model.fc = backup
+        model.update_num_classes(backup)
 
     print("loaded checkpoint:", f)
 

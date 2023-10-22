@@ -167,7 +167,7 @@ class NeuralNetwork(nn.Module):
         super().__init__()
         self.model_ver = model_ver
         resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
-        #resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
+        # resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
 
         # for name, param in resnet.named_parameters():
         #     if "bn" not in name:
@@ -204,7 +204,10 @@ class NeuralNetwork(nn.Module):
     def update_num_classes(self, n_classes):
         self.n_classes = n_classes
         self.base_model.fc[-1] = nn.Linear(
-            in_features=FC_LINEAR_ONE_OUT_FEATURES, out_features=n_classes
+            in_features=FC_LINEAR_ONE_OUT_FEATURES
+            if self.model_ver == 2
+            else self.resnet_fc_in_features,
+            out_features=n_classes,
         )
 
 
@@ -342,7 +345,10 @@ def get_memory_subset(dataset, ids, max_count):
 kfoldSplits = []
 
 
-def get_k_fold_training_datasets(phase, fold):
+def get_k_fold_training_datasets(phase, fold, use_memory=True):
+    print(
+        f"get_k_fold_training_datasets: phase={phase} fold={fold} use_memory={use_memory}"
+    )
     if len(kfoldSplits) == 0:
         kfold = KFold(n_splits=MEMORY_SIZE, shuffle=True)
 
@@ -363,19 +369,23 @@ def get_k_fold_training_datasets(phase, fold):
         (train_ids, val_ids) = kfoldSplits[i][fold]
         dataset = trainingImageDatasets[i]
 
-        temp_subset = get_memory_subset(dataset, train_ids, MEMORY_SIZE - 1)
-        train_subset = ConcatDataset([train_subset, temp_subset])
+        if use_memory:
+            temp_train_subset = get_memory_subset(dataset, train_ids, MEMORY_SIZE - 1)
+            temp_val_subset = get_memory_subset(dataset, val_ids, 1)
 
-        temp_subset = get_memory_subset(dataset, val_ids, 1)
-        val_subset = ConcatDataset([val_subset, temp_subset])
+        else:
+            temp_train_subset = Subset(dataset, train_ids)
+            temp_val_subset = Subset(dataset, val_ids)
+
+        train_subset = ConcatDataset([train_subset, temp_train_subset])
+        val_subset = ConcatDataset([val_subset, temp_val_subset])
 
     return train_subset, val_subset
 
 
-def get_final_validation_dataset():
+def get_final_validation_dataset(phase):
     datasets = [
-        TrainingImageDataset(phase + 1, transform=preprocess_val_image)
-        for phase in range(NUM_PHASES)
+        TrainingImageDataset(i, transform=preprocess_val_image) for i in range(phase)
     ]
 
     final_val_set = None

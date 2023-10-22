@@ -113,7 +113,8 @@ class CustomImageDataset(Dataset):
                     self.img_labels.append(image_filename)
                     self.image_paths.append(image_path)
                 else:
-                    print("not found: ", image_path)
+                    # print("not found: ", image_path)
+                    pass
         else:
             for i in range(phase):
                 for j in range(NUM_CLASSES_IN_PHASE):
@@ -385,7 +386,8 @@ def get_k_fold_training_datasets(phase, fold, use_memory=True):
 
 def get_final_validation_dataset(phase):
     datasets = [
-        TrainingImageDataset(i, transform=preprocess_val_image) for i in range(phase)
+        TrainingImageDataset(i + 1, transform=preprocess_val_image)
+        for i in range(phase)
     ]
 
     final_val_set = None

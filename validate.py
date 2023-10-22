@@ -80,8 +80,9 @@ df = pd.read_csv(f"logs/phase_{phase}.csv")
 if checkpoint == 0:
     checkpoint = df["accuracy"].idxmax() + 1
 
+val_acc = df["accuracy"][checkpoint - 1]
 checkpoint_load(model, SAVE_PATH, checkpoint)
-print("accuracy: ", df["accuracy"][checkpoint - 1])
+print("accuracy: ", val_acc)
 
 # transfer over to gpu
 model = model.to(device)
@@ -143,9 +144,9 @@ with torch.no_grad():
 
     file = open(filename, "a")
     if not file_exists:
-        file.write("phase,accuracy\n")
+        file.write("phase,val_acc,accuracy\n")
 
-    file.write(f"{phase},{accuracy:.3f}\n")
+    file.write(f"{phase},{val_acc:.3f},{accuracy:.3f}\n")
 
 # Calculate time elapsed
 end_time = time.time()

@@ -11,7 +11,7 @@ lscpu
 grep MemTotal /proc/meminfo
 
 EPOCHS=20
-BATCH=256
+BATCH=128
 MODEL=1
 
 echo Running python train-all-phases-k-fold.py --epochs=$EPOCHS --batch=$BATCH --model=$MODEL

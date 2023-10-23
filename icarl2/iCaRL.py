@@ -10,7 +10,7 @@ from torch.nn import BCEWithLogitsLoss
 from sklearn.metrics import accuracy_score
 from matplotlib import pyplot as plt
 
-from IncrementalLearning import utils
+from icarl2 import utils
 
 
 class iCaRL:

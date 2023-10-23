@@ -14,15 +14,7 @@ import plotly.graph_objects as go
 
 
 def updateNet(net, n_classes):
-    in_features = net.fc.in_features
-    out_features = net.fc.out_features
-    weight = net.fc.weight.data
-    bias = net.fc.bias.data
-
-    net.fc = torch.nn.Linear(in_features, n_classes)
-    net.fc.weight.data[:out_features] = weight
-    net.fc.bias.data[:out_features] = bias
-
+    net.update_num_classes(n_classes)
     return net
 
 
@@ -147,7 +139,7 @@ def NMEClassifier(data, batch, exemplars, net, n_classes, device):
         loader = DataLoader(
             items, batch_size=512, shuffle=False, num_workers=4, drop_last=False
         )
-        mean = torch.zeros((1, 64), device=device)
+        mean = torch.zeros((1, net.resnet_fc_in_features), device=device)
         for images, _ in loader:
             with torch.no_grad():
                 images = images.to(device)
@@ -182,6 +174,8 @@ def NMEClassifier(data, batch, exemplars, net, n_classes, device):
                         prediction = key
                 predictions.append(prediction)
 
+    # print("label_list:", label_list)
+    # print("predictions:", predictions)
     accuracy = accuracy_score(label_list, predictions)
     print(f"   # NME Accuracy: {accuracy}")
 
@@ -225,10 +219,7 @@ def FCClassifier(data, net, n_classes, device):
 
 def randomExemplarSet(memory, data, n_classes):
     print("\n ### Construct Random Exemplar Set ###")
-    if n_classes != 10:
-        m = int(memory / (n_classes - 10))
-    else:
-        m = int(memory / (n_classes))
+    m = 5
     print(f"   # Exemplars per class: {m}")
 
     # Initialize lists of images and exemplars for each class

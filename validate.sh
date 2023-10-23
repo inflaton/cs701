@@ -5,13 +5,16 @@ echo Current Directory:
 pwd
 
 nvidia-smi
-uname -a
-cat /etc/os-release
-lscpu
-grep MemTotal /proc/meminfo
+# uname -a
+# cat /etc/os-release
+# lscpu
+# grep MemTotal /proc/meminfo
 
-BATCH=128
-MODEL=1
+# BATCH=128
+# MODEL=1
+
+BATCH=32
+MODEL=2
 
 a=1
 until [ $a -gt 10 ]

@@ -160,29 +160,45 @@ class CustomImageDataset(Dataset):
         return image, label
 
 
-FC_LINEAR_ONE_OUT_FEATURES = 500
+class Identity(nn.Module):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x):
+        return x
 
 
 class NeuralNetwork(nn.Module):
-    def __init__(self, n_classes, model_ver=1):
+    def __init__(self, n_classes, model_ver=1, used_for_icarl=False):
         super().__init__()
         self.model_ver = model_ver
-        resnet = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
-        # resnet = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V2)
 
-        # for name, param in resnet.named_parameters():
-        #     if "bn" not in name:
-        #         param.requires_grad = False
+        if model_ver == 1:
+            resnet = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
+        else:
+            resnet = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
 
         self.resnet_fc_in_features = resnet.fc.in_features
-        resnet.fc = self.new_fc_layer(n_classes)
+        self.fc_for_classfication = self.new_fc_layer(n_classes)
+
+        identity = Identity()
+        resnet.fc = identity if used_for_icarl else self.fc_for_classfication
+
         self.n_classes = n_classes
         self.base_model = resnet
         self.sigm = nn.Sigmoid()
+        self.used_for_icarl = used_for_icarl
 
-    def forward(self, x):
+    def forward(self, x, features=False):
         output = self.base_model(x)
-        return self.sigm(output)
+
+        if not features:
+            if self.used_for_icarl:
+                output = self.fc_for_classfication(output)
+            else:
+                output = self.sigm(output)
+
+        return output
 
     def new_fc_layer(self, n_classes):
         if self.model_ver == 1:
@@ -192,32 +208,33 @@ class NeuralNetwork(nn.Module):
                     in_features=self.resnet_fc_in_features, out_features=n_classes
                 ),
             )
-        return nn.Sequential(
-            nn.Linear(
-                in_features=self.resnet_fc_in_features,
-                out_features=FC_LINEAR_ONE_OUT_FEATURES,
-            ),
-            nn.ReLU(),
-            nn.Dropout(0.2),
-            nn.Linear(in_features=FC_LINEAR_ONE_OUT_FEATURES, out_features=n_classes),
-        )
+        return nn.Linear(in_features=self.resnet_fc_in_features, out_features=n_classes)
 
     def update_num_classes(self, n_classes):
         self.n_classes = n_classes
-        self.base_model.fc[-1] = nn.Linear(
-            in_features=FC_LINEAR_ONE_OUT_FEATURES
-            if self.model_ver == 2
-            else self.resnet_fc_in_features,
-            out_features=n_classes,
-        )
+
+        fc = self.fc_for_classfication[-1]
+        in_features = fc.in_features
+        out_features = fc.out_features
+        weight = fc.weight.data
+        bias = fc.bias.data
+
+        fc = torch.nn.Linear(in_features, n_classes)
+        fc.weight.data[:out_features] = weight
+        fc.bias.data[:out_features] = bias
+
+        self.fc_for_classfication[-1] = fc
 
 
 # save checkpoint function
-def checkpoint_save(model, save_path, epoch):
+def checkpoint_save(model, save_path, epoch, model_ver=1):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
-    torch.save(model.state_dict(), f)
-    print("saved checkpoint:", f)
+    if model_ver == 1:
+        torch.save(model.state_dict(), f)
+    else:
+        torch.save(model.base_model.state_dict(), f)
+    print("saved checkpoint:", f, flush=True)
 
 
 def checkpoint_delete(save_path, epoch):
@@ -227,7 +244,7 @@ def checkpoint_delete(save_path, epoch):
 
 
 # save checkpoint function
-def checkpoint_load(model, save_path, epoch, n_classes=0):
+def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
 
@@ -236,12 +253,15 @@ def checkpoint_load(model, save_path, epoch, n_classes=0):
         backup = model.n_classes
         model.update_num_classes(n_classes)
 
-    model.load_state_dict(torch.load(f))
+    if model_ver == 1:
+        model.load_state_dict(torch.load(f))
+    else:
+        model.base_model.load_state_dict(torch.load(f))
 
     if backup is not None:
         model.update_num_classes(backup)
 
-    print("loaded checkpoint:", f)
+    print("loaded checkpoint:", f, flush=True)
 
 
 # calculate metrics function
@@ -285,7 +305,7 @@ class TrainingImageDataset(Dataset):
         image_path = self.image_paths[idx]
         # print("image_path: ", image_path)
 
-        image = Image.open(image_path)
+        image = Image.open(image_path).convert("RGB")
 
         if self.transform:
             image = self.transform(image)
@@ -402,3 +422,29 @@ def get_final_validation_dataset(phase):
             final_val_set = ConcatDataset([final_val_set, val_set])
 
     return final_val_set
+
+
+def get_icarl_batches(transform_train=None, transofrm_val=None):
+    datasets = [
+        TrainingImageDataset(i + 1, transform=transform_train)
+        for i in range(NUM_PHASES)
+    ]
+
+    val_datasets = [
+        TrainingImageDataset(i + 1, transform=transofrm_val) for i in range(NUM_PHASES)
+    ]
+
+    train_batches, test_batches = [], []
+
+    for dataset, val_dataset in zip(datasets, val_datasets):
+        train_ids, val_ids = torch.utils.data.random_split(
+            range(len(dataset)), [0.8, 0.2]
+        )
+
+        train_set = Subset(dataset, train_ids)
+        train_batches.append(train_set)
+
+        val_set = Subset(val_dataset, val_ids)
+        test_batches.append(val_set)
+
+    return train_batches, test_batches

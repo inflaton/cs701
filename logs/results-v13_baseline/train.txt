@@ -1,0 +1,3547 @@
+device:  cuda
+model:  1 
+epochs:  20 
+batch:  128
+phase:  1 
+classes:  10 
+fold:  1
+get_k_fold_training_datasets: phase=1 fold=0 use_memory=False
+Starting epoch 1
+phase: 1 fold: 1 epoch: 1 - loss:2.303
+phase: 1 fold: 1 epoch: 1 - accuracy:0.056
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+phase: 1 fold: 1 epoch: 2 - loss:2.310
+phase: 1 fold: 1 epoch: 2 - accuracy:0.083
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+phase: 1 fold: 1 epoch: 3 - loss:2.295
+phase: 1 fold: 1 epoch: 3 - accuracy:0.023
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+phase: 1 fold: 1 epoch: 4 - loss:2.291
+phase: 1 fold: 1 epoch: 4 - accuracy:0.085
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+phase: 1 fold: 1 epoch: 5 - loss:2.288
+phase: 1 fold: 1 epoch: 5 - accuracy:0.162
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+phase: 1 fold: 1 epoch: 6 - loss:2.274
+phase: 1 fold: 1 epoch: 6 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+phase: 1 fold: 1 epoch: 7 - loss:2.271
+phase: 1 fold: 1 epoch: 7 - accuracy:0.194
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+phase: 1 fold: 1 epoch: 8 - loss:2.259
+phase: 1 fold: 1 epoch: 8 - accuracy:0.300
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+phase: 1 fold: 1 epoch: 9 - loss:2.257
+phase: 1 fold: 1 epoch: 9 - accuracy:0.301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+phase: 1 fold: 1 epoch:10 - loss:2.260
+phase: 1 fold: 1 epoch:10 - accuracy:0.201
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+phase: 1 fold: 1 epoch:11 - loss:2.238
+phase: 1 fold: 1 epoch:11 - accuracy:0.290
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+phase: 1 fold: 1 epoch:12 - loss:2.221
+phase: 1 fold: 1 epoch:12 - accuracy:0.313
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+phase: 1 fold: 1 epoch:13 - loss:2.221
+phase: 1 fold: 1 epoch:13 - accuracy:0.260
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+phase: 1 fold: 1 epoch:14 - loss:2.175
+phase: 1 fold: 1 epoch:14 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+phase: 1 fold: 1 epoch:15 - loss:2.162
+phase: 1 fold: 1 epoch:15 - accuracy:0.303
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+phase: 1 fold: 1 epoch:16 - loss:2.149
+phase: 1 fold: 1 epoch:16 - accuracy:0.329
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+phase: 1 fold: 1 epoch:17 - loss:2.122
+phase: 1 fold: 1 epoch:17 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+phase: 1 fold: 1 epoch:18 - loss:2.073
+phase: 1 fold: 1 epoch:18 - accuracy:0.423
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+phase: 1 fold: 1 epoch:19 - loss:2.043
+phase: 1 fold: 1 epoch:19 - accuracy:0.424
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+phase: 1 fold: 1 epoch:20 - loss:2.070
+phase: 1 fold: 1 epoch:20 - accuracy:0.409
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+*** phase: 1 fold: 1 epoch:19 - top accuracy:0.424
+phase:  1 
+classes:  10 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+get_k_fold_training_datasets: phase=1 fold=1 use_memory=False
+Starting epoch 1
+phase: 1 fold: 2 epoch: 1 - loss:2.006
+phase: 1 fold: 2 epoch: 1 - accuracy:0.568
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+phase: 1 fold: 2 epoch: 2 - loss:1.987
+phase: 1 fold: 2 epoch: 2 - accuracy:0.576
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+phase: 1 fold: 2 epoch: 3 - loss:1.970
+phase: 1 fold: 2 epoch: 3 - accuracy:0.617
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+phase: 1 fold: 2 epoch: 4 - loss:1.961
+phase: 1 fold: 2 epoch: 4 - accuracy:0.682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+phase: 1 fold: 2 epoch: 5 - loss:1.934
+phase: 1 fold: 2 epoch: 5 - accuracy:0.542
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+phase: 1 fold: 2 epoch: 6 - loss:1.932
+phase: 1 fold: 2 epoch: 6 - accuracy:0.598
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+phase: 1 fold: 2 epoch: 7 - loss:1.901
+phase: 1 fold: 2 epoch: 7 - accuracy:0.595
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+phase: 1 fold: 2 epoch: 8 - loss:1.936
+phase: 1 fold: 2 epoch: 8 - accuracy:0.680
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+phase: 1 fold: 2 epoch: 9 - loss:1.886
+phase: 1 fold: 2 epoch: 9 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+phase: 1 fold: 2 epoch:10 - loss:1.923
+phase: 1 fold: 2 epoch:10 - accuracy:0.610
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+phase: 1 fold: 2 epoch:11 - loss:1.871
+phase: 1 fold: 2 epoch:11 - accuracy:0.734
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+phase: 1 fold: 2 epoch:12 - loss:1.906
+phase: 1 fold: 2 epoch:12 - accuracy:0.640
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+phase: 1 fold: 2 epoch:13 - loss:1.916
+phase: 1 fold: 2 epoch:13 - accuracy:0.525
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+phase: 1 fold: 2 epoch:14 - loss:1.850
+phase: 1 fold: 2 epoch:14 - accuracy:0.662
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+phase: 1 fold: 2 epoch:15 - loss:1.887
+phase: 1 fold: 2 epoch:15 - accuracy:0.638
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+phase: 1 fold: 2 epoch:16 - loss:1.835
+phase: 1 fold: 2 epoch:16 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+phase: 1 fold: 2 epoch:17 - loss:1.832
+phase: 1 fold: 2 epoch:17 - accuracy:0.694
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+phase: 1 fold: 2 epoch:18 - loss:1.865
+phase: 1 fold: 2 epoch:18 - accuracy:0.631
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+phase: 1 fold: 2 epoch:19 - loss:1.804
+phase: 1 fold: 2 epoch:19 - accuracy:0.667
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+phase: 1 fold: 2 epoch:20 - loss:1.823
+phase: 1 fold: 2 epoch:20 - accuracy:0.701
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+*** phase: 1 fold: 2 epoch:11 - top accuracy:0.734
+phase:  1 
+classes:  10 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+get_k_fold_training_datasets: phase=1 fold=2 use_memory=False
+Starting epoch 1
+phase: 1 fold: 3 epoch: 1 - loss:1.800
+phase: 1 fold: 3 epoch: 1 - accuracy:0.686
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+phase: 1 fold: 3 epoch: 2 - loss:1.801
+phase: 1 fold: 3 epoch: 2 - accuracy:0.746
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+phase: 1 fold: 3 epoch: 3 - loss:1.840
+phase: 1 fold: 3 epoch: 3 - accuracy:0.596
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+phase: 1 fold: 3 epoch: 4 - loss:1.818
+phase: 1 fold: 3 epoch: 4 - accuracy:0.650
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+phase: 1 fold: 3 epoch: 5 - loss:1.837
+phase: 1 fold: 3 epoch: 5 - accuracy:0.662
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+phase: 1 fold: 3 epoch: 6 - loss:1.803
+phase: 1 fold: 3 epoch: 6 - accuracy:0.731
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+phase: 1 fold: 3 epoch: 7 - loss:1.747
+phase: 1 fold: 3 epoch: 7 - accuracy:0.820
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+phase: 1 fold: 3 epoch: 8 - loss:1.813
+phase: 1 fold: 3 epoch: 8 - accuracy:0.663
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+phase: 1 fold: 3 epoch: 9 - loss:1.737
+phase: 1 fold: 3 epoch: 9 - accuracy:0.695
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+phase: 1 fold: 3 epoch:10 - loss:1.745
+phase: 1 fold: 3 epoch:10 - accuracy:0.774
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+phase: 1 fold: 3 epoch:11 - loss:1.739
+phase: 1 fold: 3 epoch:11 - accuracy:0.740
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+phase: 1 fold: 3 epoch:12 - loss:1.774
+phase: 1 fold: 3 epoch:12 - accuracy:0.752
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+phase: 1 fold: 3 epoch:13 - loss:1.793
+phase: 1 fold: 3 epoch:13 - accuracy:0.647
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+phase: 1 fold: 3 epoch:14 - loss:1.738
+phase: 1 fold: 3 epoch:14 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+phase: 1 fold: 3 epoch:15 - loss:1.803
+phase: 1 fold: 3 epoch:15 - accuracy:0.654
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+phase: 1 fold: 3 epoch:16 - loss:1.742
+phase: 1 fold: 3 epoch:16 - accuracy:0.747
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+phase: 1 fold: 3 epoch:17 - loss:1.721
+phase: 1 fold: 3 epoch:17 - accuracy:0.792
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+phase: 1 fold: 3 epoch:18 - loss:1.717
+phase: 1 fold: 3 epoch:18 - accuracy:0.718
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+phase: 1 fold: 3 epoch:19 - loss:1.735
+phase: 1 fold: 3 epoch:19 - accuracy:0.682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+phase: 1 fold: 3 epoch:20 - loss:1.735
+phase: 1 fold: 3 epoch:20 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+*** phase: 1 fold: 3 epoch: 7 - top accuracy:0.820
+phase:  1 
+classes:  10 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+get_k_fold_training_datasets: phase=1 fold=3 use_memory=False
+Starting epoch 1
+phase: 1 fold: 4 epoch: 1 - loss:1.765
+phase: 1 fold: 4 epoch: 1 - accuracy:0.830
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+phase: 1 fold: 4 epoch: 2 - loss:1.720
+phase: 1 fold: 4 epoch: 2 - accuracy:0.849
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+phase: 1 fold: 4 epoch: 3 - loss:1.758
+phase: 1 fold: 4 epoch: 3 - accuracy:0.847
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+phase: 1 fold: 4 epoch: 4 - loss:1.698
+phase: 1 fold: 4 epoch: 4 - accuracy:0.848
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+phase: 1 fold: 4 epoch: 5 - loss:1.728
+phase: 1 fold: 4 epoch: 5 - accuracy:0.850
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+phase: 1 fold: 4 epoch: 6 - loss:1.745
+phase: 1 fold: 4 epoch: 6 - accuracy:0.788
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+phase: 1 fold: 4 epoch: 7 - loss:1.772
+phase: 1 fold: 4 epoch: 7 - accuracy:0.806
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+phase: 1 fold: 4 epoch: 8 - loss:1.729
+phase: 1 fold: 4 epoch: 8 - accuracy:0.807
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+phase: 1 fold: 4 epoch: 9 - loss:1.672
+phase: 1 fold: 4 epoch: 9 - accuracy:0.816
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+phase: 1 fold: 4 epoch:10 - loss:1.746
+phase: 1 fold: 4 epoch:10 - accuracy:0.730
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+phase: 1 fold: 4 epoch:11 - loss:1.695
+phase: 1 fold: 4 epoch:11 - accuracy:0.878
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+phase: 1 fold: 4 epoch:12 - loss:1.683
+phase: 1 fold: 4 epoch:12 - accuracy:0.847
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+phase: 1 fold: 4 epoch:13 - loss:1.688
+phase: 1 fold: 4 epoch:13 - accuracy:0.814
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+phase: 1 fold: 4 epoch:14 - loss:1.686
+phase: 1 fold: 4 epoch:14 - accuracy:0.801
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+phase: 1 fold: 4 epoch:15 - loss:1.718
+phase: 1 fold: 4 epoch:15 - accuracy:0.786
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+phase: 1 fold: 4 epoch:16 - loss:1.746
+phase: 1 fold: 4 epoch:16 - accuracy:0.687
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+phase: 1 fold: 4 epoch:17 - loss:1.667
+phase: 1 fold: 4 epoch:17 - accuracy:0.844
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+phase: 1 fold: 4 epoch:18 - loss:1.715
+phase: 1 fold: 4 epoch:18 - accuracy:0.799
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+phase: 1 fold: 4 epoch:19 - loss:1.637
+phase: 1 fold: 4 epoch:19 - accuracy:0.898
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+phase: 1 fold: 4 epoch:20 - loss:1.731
+phase: 1 fold: 4 epoch:20 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+*** phase: 1 fold: 4 epoch:19 - top accuracy:0.898
+phase:  1 
+classes:  10 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+get_k_fold_training_datasets: phase=1 fold=4 use_memory=False
+Starting epoch 1
+phase: 1 fold: 5 epoch: 1 - loss:1.657
+phase: 1 fold: 5 epoch: 1 - accuracy:0.839
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 2
+phase: 1 fold: 5 epoch: 2 - loss:1.629
+phase: 1 fold: 5 epoch: 2 - accuracy:0.912
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Starting epoch 3
+phase: 1 fold: 5 epoch: 3 - loss:1.640
+phase: 1 fold: 5 epoch: 3 - accuracy:0.858
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Starting epoch 4
+phase: 1 fold: 5 epoch: 4 - loss:1.646
+phase: 1 fold: 5 epoch: 4 - accuracy:0.880
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Starting epoch 5
+phase: 1 fold: 5 epoch: 5 - loss:1.720
+phase: 1 fold: 5 epoch: 5 - accuracy:0.745
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Starting epoch 6
+phase: 1 fold: 5 epoch: 6 - loss:1.604
+phase: 1 fold: 5 epoch: 6 - accuracy:0.910
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Starting epoch 7
+phase: 1 fold: 5 epoch: 7 - loss:1.671
+phase: 1 fold: 5 epoch: 7 - accuracy:0.799
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Starting epoch 8
+phase: 1 fold: 5 epoch: 8 - loss:1.642
+phase: 1 fold: 5 epoch: 8 - accuracy:0.860
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Starting epoch 9
+phase: 1 fold: 5 epoch: 9 - loss:1.654
+phase: 1 fold: 5 epoch: 9 - accuracy:0.794
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Starting epoch 10
+phase: 1 fold: 5 epoch:10 - loss:1.627
+phase: 1 fold: 5 epoch:10 - accuracy:0.862
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Starting epoch 11
+phase: 1 fold: 5 epoch:11 - loss:1.619
+phase: 1 fold: 5 epoch:11 - accuracy:0.896
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Starting epoch 12
+phase: 1 fold: 5 epoch:12 - loss:1.650
+phase: 1 fold: 5 epoch:12 - accuracy:0.784
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Starting epoch 13
+phase: 1 fold: 5 epoch:13 - loss:1.621
+phase: 1 fold: 5 epoch:13 - accuracy:0.835
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Starting epoch 14
+phase: 1 fold: 5 epoch:14 - loss:1.644
+phase: 1 fold: 5 epoch:14 - accuracy:0.786
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Starting epoch 15
+phase: 1 fold: 5 epoch:15 - loss:1.602
+phase: 1 fold: 5 epoch:15 - accuracy:0.873
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Starting epoch 16
+phase: 1 fold: 5 epoch:16 - loss:1.660
+phase: 1 fold: 5 epoch:16 - accuracy:0.865
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Starting epoch 17
+phase: 1 fold: 5 epoch:17 - loss:1.588
+phase: 1 fold: 5 epoch:17 - accuracy:0.884
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Starting epoch 18
+phase: 1 fold: 5 epoch:18 - loss:1.660
+phase: 1 fold: 5 epoch:18 - accuracy:0.842
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Starting epoch 19
+phase: 1 fold: 5 epoch:19 - loss:1.678
+phase: 1 fold: 5 epoch:19 - accuracy:0.750
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Starting epoch 20
+phase: 1 fold: 5 epoch:20 - loss:1.559
+phase: 1 fold: 5 epoch:20 - accuracy:0.965
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+*** phase: 1 fold: 5 epoch:20 - top accuracy:0.965
+phase:  2 
+classes:  20 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+get_k_fold_training_datasets: phase=2 fold=0 use_memory=False
+Starting epoch 1
+phase: 2 fold: 1 epoch: 1 - loss:2.925
+phase: 2 fold: 1 epoch: 1 - accuracy:0.131
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+phase: 2 fold: 1 epoch: 2 - loss:2.848
+phase: 2 fold: 1 epoch: 2 - accuracy:0.251
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+phase: 2 fold: 1 epoch: 3 - loss:2.775
+phase: 2 fold: 1 epoch: 3 - accuracy:0.385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+phase: 2 fold: 1 epoch: 4 - loss:2.723
+phase: 2 fold: 1 epoch: 4 - accuracy:0.464
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+phase: 2 fold: 1 epoch: 5 - loss:2.631
+phase: 2 fold: 1 epoch: 5 - accuracy:0.506
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+phase: 2 fold: 1 epoch: 6 - loss:2.611
+phase: 2 fold: 1 epoch: 6 - accuracy:0.458
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+phase: 2 fold: 1 epoch: 7 - loss:2.560
+phase: 2 fold: 1 epoch: 7 - accuracy:0.399
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+phase: 2 fold: 1 epoch: 8 - loss:2.575
+phase: 2 fold: 1 epoch: 8 - accuracy:0.385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+phase: 2 fold: 1 epoch: 9 - loss:2.510
+phase: 2 fold: 1 epoch: 9 - accuracy:0.484
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+phase: 2 fold: 1 epoch:10 - loss:2.546
+phase: 2 fold: 1 epoch:10 - accuracy:0.374
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+phase: 2 fold: 1 epoch:11 - loss:2.512
+phase: 2 fold: 1 epoch:11 - accuracy:0.398
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+phase: 2 fold: 1 epoch:12 - loss:2.542
+phase: 2 fold: 1 epoch:12 - accuracy:0.423
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+phase: 2 fold: 1 epoch:13 - loss:2.516
+phase: 2 fold: 1 epoch:13 - accuracy:0.440
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+phase: 2 fold: 1 epoch:14 - loss:2.543
+phase: 2 fold: 1 epoch:14 - accuracy:0.461
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+phase: 2 fold: 1 epoch:15 - loss:2.470
+phase: 2 fold: 1 epoch:15 - accuracy:0.499
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+phase: 2 fold: 1 epoch:16 - loss:2.455
+phase: 2 fold: 1 epoch:16 - accuracy:0.474
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+phase: 2 fold: 1 epoch:17 - loss:2.455
+phase: 2 fold: 1 epoch:17 - accuracy:0.474
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+phase: 2 fold: 1 epoch:18 - loss:2.485
+phase: 2 fold: 1 epoch:18 - accuracy:0.482
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+phase: 2 fold: 1 epoch:19 - loss:2.512
+phase: 2 fold: 1 epoch:19 - accuracy:0.425
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+phase: 2 fold: 1 epoch:20 - loss:2.489
+phase: 2 fold: 1 epoch:20 - accuracy:0.438
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+*** phase: 2 fold: 1 epoch: 5 - top accuracy:0.506
+phase:  2 
+classes:  20 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+get_k_fold_training_datasets: phase=2 fold=1 use_memory=False
+Starting epoch 1
+phase: 2 fold: 2 epoch: 1 - loss:2.614
+phase: 2 fold: 2 epoch: 1 - accuracy:0.472
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+phase: 2 fold: 2 epoch: 2 - loss:2.564
+phase: 2 fold: 2 epoch: 2 - accuracy:0.462
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+phase: 2 fold: 2 epoch: 3 - loss:2.517
+phase: 2 fold: 2 epoch: 3 - accuracy:0.515
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+phase: 2 fold: 2 epoch: 4 - loss:2.498
+phase: 2 fold: 2 epoch: 4 - accuracy:0.566
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+phase: 2 fold: 2 epoch: 5 - loss:2.534
+phase: 2 fold: 2 epoch: 5 - accuracy:0.558
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+phase: 2 fold: 2 epoch: 6 - loss:2.530
+phase: 2 fold: 2 epoch: 6 - accuracy:0.506
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+phase: 2 fold: 2 epoch: 7 - loss:2.491
+phase: 2 fold: 2 epoch: 7 - accuracy:0.569
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+phase: 2 fold: 2 epoch: 8 - loss:2.503
+phase: 2 fold: 2 epoch: 8 - accuracy:0.549
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+phase: 2 fold: 2 epoch: 9 - loss:2.489
+phase: 2 fold: 2 epoch: 9 - accuracy:0.543
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+phase: 2 fold: 2 epoch:10 - loss:2.447
+phase: 2 fold: 2 epoch:10 - accuracy:0.627
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+phase: 2 fold: 2 epoch:11 - loss:2.420
+phase: 2 fold: 2 epoch:11 - accuracy:0.605
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+phase: 2 fold: 2 epoch:12 - loss:2.437
+phase: 2 fold: 2 epoch:12 - accuracy:0.587
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+phase: 2 fold: 2 epoch:13 - loss:2.425
+phase: 2 fold: 2 epoch:13 - accuracy:0.607
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+phase: 2 fold: 2 epoch:14 - loss:2.446
+phase: 2 fold: 2 epoch:14 - accuracy:0.576
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+phase: 2 fold: 2 epoch:15 - loss:2.413
+phase: 2 fold: 2 epoch:15 - accuracy:0.591
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+phase: 2 fold: 2 epoch:16 - loss:2.409
+phase: 2 fold: 2 epoch:16 - accuracy:0.618
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+phase: 2 fold: 2 epoch:17 - loss:2.425
+phase: 2 fold: 2 epoch:17 - accuracy:0.636
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+phase: 2 fold: 2 epoch:18 - loss:2.409
+phase: 2 fold: 2 epoch:18 - accuracy:0.609
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+phase: 2 fold: 2 epoch:19 - loss:2.413
+phase: 2 fold: 2 epoch:19 - accuracy:0.601
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+phase: 2 fold: 2 epoch:20 - loss:2.402
+phase: 2 fold: 2 epoch:20 - accuracy:0.589
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+*** phase: 2 fold: 2 epoch:17 - top accuracy:0.636
+phase:  2 
+classes:  20 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+get_k_fold_training_datasets: phase=2 fold=2 use_memory=False
+Starting epoch 1
+phase: 2 fold: 3 epoch: 1 - loss:2.316
+phase: 2 fold: 3 epoch: 1 - accuracy:0.741
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+phase: 2 fold: 3 epoch: 2 - loss:2.351
+phase: 2 fold: 3 epoch: 2 - accuracy:0.667
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+phase: 2 fold: 3 epoch: 3 - loss:2.361
+phase: 2 fold: 3 epoch: 3 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+phase: 2 fold: 3 epoch: 4 - loss:2.347
+phase: 2 fold: 3 epoch: 4 - accuracy:0.673
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+phase: 2 fold: 3 epoch: 5 - loss:2.364
+phase: 2 fold: 3 epoch: 5 - accuracy:0.635
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+phase: 2 fold: 3 epoch: 6 - loss:2.352
+phase: 2 fold: 3 epoch: 6 - accuracy:0.699
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+phase: 2 fold: 3 epoch: 7 - loss:2.361
+phase: 2 fold: 3 epoch: 7 - accuracy:0.666
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+phase: 2 fold: 3 epoch: 8 - loss:2.405
+phase: 2 fold: 3 epoch: 8 - accuracy:0.631
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+phase: 2 fold: 3 epoch: 9 - loss:2.344
+phase: 2 fold: 3 epoch: 9 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+phase: 2 fold: 3 epoch:10 - loss:2.332
+phase: 2 fold: 3 epoch:10 - accuracy:0.683
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+phase: 2 fold: 3 epoch:11 - loss:2.341
+phase: 2 fold: 3 epoch:11 - accuracy:0.711
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+phase: 2 fold: 3 epoch:12 - loss:2.322
+phase: 2 fold: 3 epoch:12 - accuracy:0.727
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+phase: 2 fold: 3 epoch:13 - loss:2.363
+phase: 2 fold: 3 epoch:13 - accuracy:0.652
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+phase: 2 fold: 3 epoch:14 - loss:2.332
+phase: 2 fold: 3 epoch:14 - accuracy:0.710
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+phase: 2 fold: 3 epoch:15 - loss:2.331
+phase: 2 fold: 3 epoch:15 - accuracy:0.682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+phase: 2 fold: 3 epoch:16 - loss:2.358
+phase: 2 fold: 3 epoch:16 - accuracy:0.664
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+phase: 2 fold: 3 epoch:17 - loss:2.355
+phase: 2 fold: 3 epoch:17 - accuracy:0.686
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+phase: 2 fold: 3 epoch:18 - loss:2.357
+phase: 2 fold: 3 epoch:18 - accuracy:0.731
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+phase: 2 fold: 3 epoch:19 - loss:2.344
+phase: 2 fold: 3 epoch:19 - accuracy:0.701
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+phase: 2 fold: 3 epoch:20 - loss:2.363
+phase: 2 fold: 3 epoch:20 - accuracy:0.682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+*** phase: 2 fold: 3 epoch: 1 - top accuracy:0.741
+phase:  2 
+classes:  20 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+get_k_fold_training_datasets: phase=2 fold=3 use_memory=False
+Starting epoch 1
+phase: 2 fold: 4 epoch: 1 - loss:2.371
+phase: 2 fold: 4 epoch: 1 - accuracy:0.644
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+phase: 2 fold: 4 epoch: 2 - loss:2.367
+phase: 2 fold: 4 epoch: 2 - accuracy:0.706
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+phase: 2 fold: 4 epoch: 3 - loss:2.336
+phase: 2 fold: 4 epoch: 3 - accuracy:0.715
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+phase: 2 fold: 4 epoch: 4 - loss:2.344
+phase: 2 fold: 4 epoch: 4 - accuracy:0.685
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+phase: 2 fold: 4 epoch: 5 - loss:2.334
+phase: 2 fold: 4 epoch: 5 - accuracy:0.753
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+phase: 2 fold: 4 epoch: 6 - loss:2.374
+phase: 2 fold: 4 epoch: 6 - accuracy:0.630
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+phase: 2 fold: 4 epoch: 7 - loss:2.350
+phase: 2 fold: 4 epoch: 7 - accuracy:0.643
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+phase: 2 fold: 4 epoch: 8 - loss:2.320
+phase: 2 fold: 4 epoch: 8 - accuracy:0.707
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+phase: 2 fold: 4 epoch: 9 - loss:2.346
+phase: 2 fold: 4 epoch: 9 - accuracy:0.698
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+phase: 2 fold: 4 epoch:10 - loss:2.324
+phase: 2 fold: 4 epoch:10 - accuracy:0.673
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+phase: 2 fold: 4 epoch:11 - loss:2.278
+phase: 2 fold: 4 epoch:11 - accuracy:0.746
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+phase: 2 fold: 4 epoch:12 - loss:2.335
+phase: 2 fold: 4 epoch:12 - accuracy:0.706
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+phase: 2 fold: 4 epoch:13 - loss:2.340
+phase: 2 fold: 4 epoch:13 - accuracy:0.635
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+phase: 2 fold: 4 epoch:14 - loss:2.323
+phase: 2 fold: 4 epoch:14 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+phase: 2 fold: 4 epoch:15 - loss:2.341
+phase: 2 fold: 4 epoch:15 - accuracy:0.683
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+phase: 2 fold: 4 epoch:16 - loss:2.313
+phase: 2 fold: 4 epoch:16 - accuracy:0.703
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+phase: 2 fold: 4 epoch:17 - loss:2.316
+phase: 2 fold: 4 epoch:17 - accuracy:0.732
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+phase: 2 fold: 4 epoch:18 - loss:2.293
+phase: 2 fold: 4 epoch:18 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+phase: 2 fold: 4 epoch:19 - loss:2.320
+phase: 2 fold: 4 epoch:19 - accuracy:0.695
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+phase: 2 fold: 4 epoch:20 - loss:2.314
+phase: 2 fold: 4 epoch:20 - accuracy:0.656
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+*** phase: 2 fold: 4 epoch: 5 - top accuracy:0.753
+phase:  2 
+classes:  20 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+get_k_fold_training_datasets: phase=2 fold=4 use_memory=False
+Starting epoch 1
+phase: 2 fold: 5 epoch: 1 - loss:2.376
+phase: 2 fold: 5 epoch: 1 - accuracy:0.596
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 2
+phase: 2 fold: 5 epoch: 2 - loss:2.366
+phase: 2 fold: 5 epoch: 2 - accuracy:0.621
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 3
+phase: 2 fold: 5 epoch: 3 - loss:2.364
+phase: 2 fold: 5 epoch: 3 - accuracy:0.656
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Starting epoch 4
+phase: 2 fold: 5 epoch: 4 - loss:2.366
+phase: 2 fold: 5 epoch: 4 - accuracy:0.650
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Starting epoch 5
+phase: 2 fold: 5 epoch: 5 - loss:2.301
+phase: 2 fold: 5 epoch: 5 - accuracy:0.709
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Starting epoch 6
+phase: 2 fold: 5 epoch: 6 - loss:2.307
+phase: 2 fold: 5 epoch: 6 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Starting epoch 7
+phase: 2 fold: 5 epoch: 7 - loss:2.327
+phase: 2 fold: 5 epoch: 7 - accuracy:0.665
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Starting epoch 8
+phase: 2 fold: 5 epoch: 8 - loss:2.309
+phase: 2 fold: 5 epoch: 8 - accuracy:0.728
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Starting epoch 9
+phase: 2 fold: 5 epoch: 9 - loss:2.305
+phase: 2 fold: 5 epoch: 9 - accuracy:0.733
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Starting epoch 10
+phase: 2 fold: 5 epoch:10 - loss:2.310
+phase: 2 fold: 5 epoch:10 - accuracy:0.718
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Starting epoch 11
+phase: 2 fold: 5 epoch:11 - loss:2.305
+phase: 2 fold: 5 epoch:11 - accuracy:0.695
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Starting epoch 12
+phase: 2 fold: 5 epoch:12 - loss:2.306
+phase: 2 fold: 5 epoch:12 - accuracy:0.749
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Starting epoch 13
+phase: 2 fold: 5 epoch:13 - loss:2.309
+phase: 2 fold: 5 epoch:13 - accuracy:0.728
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Starting epoch 14
+phase: 2 fold: 5 epoch:14 - loss:2.324
+phase: 2 fold: 5 epoch:14 - accuracy:0.705
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Starting epoch 15
+phase: 2 fold: 5 epoch:15 - loss:2.302
+phase: 2 fold: 5 epoch:15 - accuracy:0.689
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Starting epoch 16
+phase: 2 fold: 5 epoch:16 - loss:2.292
+phase: 2 fold: 5 epoch:16 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Starting epoch 17
+phase: 2 fold: 5 epoch:17 - loss:2.337
+phase: 2 fold: 5 epoch:17 - accuracy:0.737
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Starting epoch 18
+phase: 2 fold: 5 epoch:18 - loss:2.301
+phase: 2 fold: 5 epoch:18 - accuracy:0.756
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Starting epoch 19
+phase: 2 fold: 5 epoch:19 - loss:2.287
+phase: 2 fold: 5 epoch:19 - accuracy:0.732
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Starting epoch 20
+phase: 2 fold: 5 epoch:20 - loss:2.318
+phase: 2 fold: 5 epoch:20 - accuracy:0.661
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+*** phase: 2 fold: 5 epoch:18 - top accuracy:0.756
+phase:  3 
+classes:  30 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+get_k_fold_training_datasets: phase=3 fold=0 use_memory=False
+Starting epoch 1
+phase: 3 fold: 1 epoch: 1 - loss:3.351
+phase: 3 fold: 1 epoch: 1 - accuracy:0.053
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+phase: 3 fold: 1 epoch: 2 - loss:3.228
+phase: 3 fold: 1 epoch: 2 - accuracy:0.169
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+phase: 3 fold: 1 epoch: 3 - loss:3.134
+phase: 3 fold: 1 epoch: 3 - accuracy:0.349
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+phase: 3 fold: 1 epoch: 4 - loss:3.050
+phase: 3 fold: 1 epoch: 4 - accuracy:0.339
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+phase: 3 fold: 1 epoch: 5 - loss:2.994
+phase: 3 fold: 1 epoch: 5 - accuracy:0.382
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+phase: 3 fold: 1 epoch: 6 - loss:2.972
+phase: 3 fold: 1 epoch: 6 - accuracy:0.365
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+phase: 3 fold: 1 epoch: 7 - loss:2.963
+phase: 3 fold: 1 epoch: 7 - accuracy:0.393
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+phase: 3 fold: 1 epoch: 8 - loss:2.930
+phase: 3 fold: 1 epoch: 8 - accuracy:0.406
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+phase: 3 fold: 1 epoch: 9 - loss:2.958
+phase: 3 fold: 1 epoch: 9 - accuracy:0.432
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+phase: 3 fold: 1 epoch:10 - loss:2.917
+phase: 3 fold: 1 epoch:10 - accuracy:0.394
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+phase: 3 fold: 1 epoch:11 - loss:2.889
+phase: 3 fold: 1 epoch:11 - accuracy:0.459
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+phase: 3 fold: 1 epoch:12 - loss:2.879
+phase: 3 fold: 1 epoch:12 - accuracy:0.458
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+phase: 3 fold: 1 epoch:13 - loss:2.854
+phase: 3 fold: 1 epoch:13 - accuracy:0.453
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+phase: 3 fold: 1 epoch:14 - loss:2.867
+phase: 3 fold: 1 epoch:14 - accuracy:0.495
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+phase: 3 fold: 1 epoch:15 - loss:2.827
+phase: 3 fold: 1 epoch:15 - accuracy:0.529
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+phase: 3 fold: 1 epoch:16 - loss:2.866
+phase: 3 fold: 1 epoch:16 - accuracy:0.468
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+phase: 3 fold: 1 epoch:17 - loss:2.840
+phase: 3 fold: 1 epoch:17 - accuracy:0.534
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+phase: 3 fold: 1 epoch:18 - loss:2.845
+phase: 3 fold: 1 epoch:18 - accuracy:0.463
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+phase: 3 fold: 1 epoch:19 - loss:2.838
+phase: 3 fold: 1 epoch:19 - accuracy:0.526
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+phase: 3 fold: 1 epoch:20 - loss:2.817
+phase: 3 fold: 1 epoch:20 - accuracy:0.520
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+*** phase: 3 fold: 1 epoch:17 - top accuracy:0.534
+phase:  3 
+classes:  30 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+get_k_fold_training_datasets: phase=3 fold=1 use_memory=False
+Starting epoch 1
+phase: 3 fold: 2 epoch: 1 - loss:2.775
+phase: 3 fold: 2 epoch: 1 - accuracy:0.642
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+phase: 3 fold: 2 epoch: 2 - loss:2.746
+phase: 3 fold: 2 epoch: 2 - accuracy:0.621
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+phase: 3 fold: 2 epoch: 3 - loss:2.769
+phase: 3 fold: 2 epoch: 3 - accuracy:0.569
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+phase: 3 fold: 2 epoch: 4 - loss:2.760
+phase: 3 fold: 2 epoch: 4 - accuracy:0.587
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+phase: 3 fold: 2 epoch: 5 - loss:2.737
+phase: 3 fold: 2 epoch: 5 - accuracy:0.622
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+phase: 3 fold: 2 epoch: 6 - loss:2.741
+phase: 3 fold: 2 epoch: 6 - accuracy:0.630
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+phase: 3 fold: 2 epoch: 7 - loss:2.715
+phase: 3 fold: 2 epoch: 7 - accuracy:0.658
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+phase: 3 fold: 2 epoch: 8 - loss:2.771
+phase: 3 fold: 2 epoch: 8 - accuracy:0.571
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+phase: 3 fold: 2 epoch: 9 - loss:2.713
+phase: 3 fold: 2 epoch: 9 - accuracy:0.590
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+phase: 3 fold: 2 epoch:10 - loss:2.715
+phase: 3 fold: 2 epoch:10 - accuracy:0.616
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+phase: 3 fold: 2 epoch:11 - loss:2.725
+phase: 3 fold: 2 epoch:11 - accuracy:0.612
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+phase: 3 fold: 2 epoch:12 - loss:2.718
+phase: 3 fold: 2 epoch:12 - accuracy:0.657
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+phase: 3 fold: 2 epoch:13 - loss:2.709
+phase: 3 fold: 2 epoch:13 - accuracy:0.627
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+phase: 3 fold: 2 epoch:14 - loss:2.731
+phase: 3 fold: 2 epoch:14 - accuracy:0.635
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+phase: 3 fold: 2 epoch:15 - loss:2.736
+phase: 3 fold: 2 epoch:15 - accuracy:0.624
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+phase: 3 fold: 2 epoch:16 - loss:2.754
+phase: 3 fold: 2 epoch:16 - accuracy:0.596
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+phase: 3 fold: 2 epoch:17 - loss:2.736
+phase: 3 fold: 2 epoch:17 - accuracy:0.619
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+phase: 3 fold: 2 epoch:18 - loss:2.757
+phase: 3 fold: 2 epoch:18 - accuracy:0.597
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+phase: 3 fold: 2 epoch:19 - loss:2.732
+phase: 3 fold: 2 epoch:19 - accuracy:0.654
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+phase: 3 fold: 2 epoch:20 - loss:2.749
+phase: 3 fold: 2 epoch:20 - accuracy:0.616
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+*** phase: 3 fold: 2 epoch: 7 - top accuracy:0.658
+phase:  3 
+classes:  30 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+get_k_fold_training_datasets: phase=3 fold=2 use_memory=False
+Starting epoch 1
+phase: 3 fold: 3 epoch: 1 - loss:2.739
+phase: 3 fold: 3 epoch: 1 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+phase: 3 fold: 3 epoch: 2 - loss:2.720
+phase: 3 fold: 3 epoch: 2 - accuracy:0.644
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+phase: 3 fold: 3 epoch: 3 - loss:2.703
+phase: 3 fold: 3 epoch: 3 - accuracy:0.666
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+phase: 3 fold: 3 epoch: 4 - loss:2.708
+phase: 3 fold: 3 epoch: 4 - accuracy:0.674
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+phase: 3 fold: 3 epoch: 5 - loss:2.687
+phase: 3 fold: 3 epoch: 5 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+phase: 3 fold: 3 epoch: 6 - loss:2.750
+phase: 3 fold: 3 epoch: 6 - accuracy:0.585
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+phase: 3 fold: 3 epoch: 7 - loss:2.738
+phase: 3 fold: 3 epoch: 7 - accuracy:0.611
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+phase: 3 fold: 3 epoch: 8 - loss:2.702
+phase: 3 fold: 3 epoch: 8 - accuracy:0.718
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+phase: 3 fold: 3 epoch: 9 - loss:2.740
+phase: 3 fold: 3 epoch: 9 - accuracy:0.638
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+phase: 3 fold: 3 epoch:10 - loss:2.701
+phase: 3 fold: 3 epoch:10 - accuracy:0.706
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+phase: 3 fold: 3 epoch:11 - loss:2.678
+phase: 3 fold: 3 epoch:11 - accuracy:0.681
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+phase: 3 fold: 3 epoch:12 - loss:2.688
+phase: 3 fold: 3 epoch:12 - accuracy:0.697
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+phase: 3 fold: 3 epoch:13 - loss:2.737
+phase: 3 fold: 3 epoch:13 - accuracy:0.666
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+phase: 3 fold: 3 epoch:14 - loss:2.718
+phase: 3 fold: 3 epoch:14 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+phase: 3 fold: 3 epoch:15 - loss:2.680
+phase: 3 fold: 3 epoch:15 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+phase: 3 fold: 3 epoch:16 - loss:2.667
+phase: 3 fold: 3 epoch:16 - accuracy:0.711
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+phase: 3 fold: 3 epoch:17 - loss:2.683
+phase: 3 fold: 3 epoch:17 - accuracy:0.771
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+phase: 3 fold: 3 epoch:18 - loss:2.705
+phase: 3 fold: 3 epoch:18 - accuracy:0.688
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+phase: 3 fold: 3 epoch:19 - loss:2.712
+phase: 3 fold: 3 epoch:19 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+phase: 3 fold: 3 epoch:20 - loss:2.707
+phase: 3 fold: 3 epoch:20 - accuracy:0.688
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+*** phase: 3 fold: 3 epoch:17 - top accuracy:0.771
+phase:  3 
+classes:  30 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+get_k_fold_training_datasets: phase=3 fold=3 use_memory=False
+Starting epoch 1
+phase: 3 fold: 4 epoch: 1 - loss:2.725
+phase: 3 fold: 4 epoch: 1 - accuracy:0.657
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+phase: 3 fold: 4 epoch: 2 - loss:2.667
+phase: 3 fold: 4 epoch: 2 - accuracy:0.748
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+phase: 3 fold: 4 epoch: 3 - loss:2.697
+phase: 3 fold: 4 epoch: 3 - accuracy:0.701
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+phase: 3 fold: 4 epoch: 4 - loss:2.681
+phase: 3 fold: 4 epoch: 4 - accuracy:0.677
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+phase: 3 fold: 4 epoch: 5 - loss:2.710
+phase: 3 fold: 4 epoch: 5 - accuracy:0.663
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+phase: 3 fold: 4 epoch: 6 - loss:2.686
+phase: 3 fold: 4 epoch: 6 - accuracy:0.744
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+phase: 3 fold: 4 epoch: 7 - loss:2.686
+phase: 3 fold: 4 epoch: 7 - accuracy:0.731
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+phase: 3 fold: 4 epoch: 8 - loss:2.670
+phase: 3 fold: 4 epoch: 8 - accuracy:0.756
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+phase: 3 fold: 4 epoch: 9 - loss:2.668
+phase: 3 fold: 4 epoch: 9 - accuracy:0.762
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+phase: 3 fold: 4 epoch:10 - loss:2.695
+phase: 3 fold: 4 epoch:10 - accuracy:0.693
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+phase: 3 fold: 4 epoch:11 - loss:2.712
+phase: 3 fold: 4 epoch:11 - accuracy:0.667
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+phase: 3 fold: 4 epoch:12 - loss:2.690
+phase: 3 fold: 4 epoch:12 - accuracy:0.705
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+phase: 3 fold: 4 epoch:13 - loss:2.668
+phase: 3 fold: 4 epoch:13 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+phase: 3 fold: 4 epoch:14 - loss:2.681
+phase: 3 fold: 4 epoch:14 - accuracy:0.723
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+phase: 3 fold: 4 epoch:15 - loss:2.723
+phase: 3 fold: 4 epoch:15 - accuracy:0.678
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+phase: 3 fold: 4 epoch:16 - loss:2.676
+phase: 3 fold: 4 epoch:16 - accuracy:0.739
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+phase: 3 fold: 4 epoch:17 - loss:2.695
+phase: 3 fold: 4 epoch:17 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+phase: 3 fold: 4 epoch:18 - loss:2.671
+phase: 3 fold: 4 epoch:18 - accuracy:0.743
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+phase: 3 fold: 4 epoch:19 - loss:2.672
+phase: 3 fold: 4 epoch:19 - accuracy:0.743
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+phase: 3 fold: 4 epoch:20 - loss:2.676
+phase: 3 fold: 4 epoch:20 - accuracy:0.746
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+*** phase: 3 fold: 4 epoch: 9 - top accuracy:0.762
+phase:  3 
+classes:  30 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+get_k_fold_training_datasets: phase=3 fold=4 use_memory=False
+Starting epoch 1
+phase: 3 fold: 5 epoch: 1 - loss:2.698
+phase: 3 fold: 5 epoch: 1 - accuracy:0.734
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 2
+phase: 3 fold: 5 epoch: 2 - loss:2.723
+phase: 3 fold: 5 epoch: 2 - accuracy:0.675
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 3
+phase: 3 fold: 5 epoch: 3 - loss:2.691
+phase: 3 fold: 5 epoch: 3 - accuracy:0.699
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 4
+phase: 3 fold: 5 epoch: 4 - loss:2.671
+phase: 3 fold: 5 epoch: 4 - accuracy:0.717
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Starting epoch 5
+phase: 3 fold: 5 epoch: 5 - loss:2.679
+phase: 3 fold: 5 epoch: 5 - accuracy:0.703
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Starting epoch 6
+phase: 3 fold: 5 epoch: 6 - loss:2.675
+phase: 3 fold: 5 epoch: 6 - accuracy:0.751
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Starting epoch 7
+phase: 3 fold: 5 epoch: 7 - loss:2.667
+phase: 3 fold: 5 epoch: 7 - accuracy:0.753
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Starting epoch 8
+phase: 3 fold: 5 epoch: 8 - loss:2.684
+phase: 3 fold: 5 epoch: 8 - accuracy:0.711
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Starting epoch 9
+phase: 3 fold: 5 epoch: 9 - loss:2.679
+phase: 3 fold: 5 epoch: 9 - accuracy:0.728
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Starting epoch 10
+phase: 3 fold: 5 epoch:10 - loss:2.708
+phase: 3 fold: 5 epoch:10 - accuracy:0.710
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Starting epoch 11
+phase: 3 fold: 5 epoch:11 - loss:2.682
+phase: 3 fold: 5 epoch:11 - accuracy:0.702
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Starting epoch 12
+phase: 3 fold: 5 epoch:12 - loss:2.701
+phase: 3 fold: 5 epoch:12 - accuracy:0.715
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Starting epoch 13
+phase: 3 fold: 5 epoch:13 - loss:2.716
+phase: 3 fold: 5 epoch:13 - accuracy:0.688
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Starting epoch 14
+phase: 3 fold: 5 epoch:14 - loss:2.720
+phase: 3 fold: 5 epoch:14 - accuracy:0.698
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Starting epoch 15
+phase: 3 fold: 5 epoch:15 - loss:2.698
+phase: 3 fold: 5 epoch:15 - accuracy:0.625
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Starting epoch 16
+phase: 3 fold: 5 epoch:16 - loss:2.681
+phase: 3 fold: 5 epoch:16 - accuracy:0.659
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Starting epoch 17
+phase: 3 fold: 5 epoch:17 - loss:2.710
+phase: 3 fold: 5 epoch:17 - accuracy:0.726
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Starting epoch 18
+phase: 3 fold: 5 epoch:18 - loss:2.674
+phase: 3 fold: 5 epoch:18 - accuracy:0.713
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Starting epoch 19
+phase: 3 fold: 5 epoch:19 - loss:2.716
+phase: 3 fold: 5 epoch:19 - accuracy:0.625
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Starting epoch 20
+phase: 3 fold: 5 epoch:20 - loss:2.691
+phase: 3 fold: 5 epoch:20 - accuracy:0.734
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+*** phase: 3 fold: 5 epoch: 7 - top accuracy:0.753
+phase:  4 
+classes:  40 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+get_k_fold_training_datasets: phase=4 fold=0 use_memory=False
+Starting epoch 1
+phase: 4 fold: 1 epoch: 1 - loss:3.562
+phase: 4 fold: 1 epoch: 1 - accuracy:0.067
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+phase: 4 fold: 1 epoch: 2 - loss:3.420
+phase: 4 fold: 1 epoch: 2 - accuracy:0.190
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+phase: 4 fold: 1 epoch: 3 - loss:3.326
+phase: 4 fold: 1 epoch: 3 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+phase: 4 fold: 1 epoch: 4 - loss:3.261
+phase: 4 fold: 1 epoch: 4 - accuracy:0.299
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+phase: 4 fold: 1 epoch: 5 - loss:3.229
+phase: 4 fold: 1 epoch: 5 - accuracy:0.361
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+phase: 4 fold: 1 epoch: 6 - loss:3.219
+phase: 4 fold: 1 epoch: 6 - accuracy:0.404
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+phase: 4 fold: 1 epoch: 7 - loss:3.204
+phase: 4 fold: 1 epoch: 7 - accuracy:0.447
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+phase: 4 fold: 1 epoch: 8 - loss:3.207
+phase: 4 fold: 1 epoch: 8 - accuracy:0.422
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+phase: 4 fold: 1 epoch: 9 - loss:3.198
+phase: 4 fold: 1 epoch: 9 - accuracy:0.403
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+phase: 4 fold: 1 epoch:10 - loss:3.150
+phase: 4 fold: 1 epoch:10 - accuracy:0.397
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+phase: 4 fold: 1 epoch:11 - loss:3.155
+phase: 4 fold: 1 epoch:11 - accuracy:0.467
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+phase: 4 fold: 1 epoch:12 - loss:3.146
+phase: 4 fold: 1 epoch:12 - accuracy:0.427
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+phase: 4 fold: 1 epoch:13 - loss:3.152
+phase: 4 fold: 1 epoch:13 - accuracy:0.479
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+phase: 4 fold: 1 epoch:14 - loss:3.152
+phase: 4 fold: 1 epoch:14 - accuracy:0.408
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+phase: 4 fold: 1 epoch:15 - loss:3.145
+phase: 4 fold: 1 epoch:15 - accuracy:0.426
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+phase: 4 fold: 1 epoch:16 - loss:3.161
+phase: 4 fold: 1 epoch:16 - accuracy:0.382
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+phase: 4 fold: 1 epoch:17 - loss:3.147
+phase: 4 fold: 1 epoch:17 - accuracy:0.462
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+phase: 4 fold: 1 epoch:18 - loss:3.107
+phase: 4 fold: 1 epoch:18 - accuracy:0.492
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+phase: 4 fold: 1 epoch:19 - loss:3.126
+phase: 4 fold: 1 epoch:19 - accuracy:0.467
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+phase: 4 fold: 1 epoch:20 - loss:3.160
+phase: 4 fold: 1 epoch:20 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+*** phase: 4 fold: 1 epoch:18 - top accuracy:0.492
+phase:  4 
+classes:  40 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+get_k_fold_training_datasets: phase=4 fold=1 use_memory=False
+Starting epoch 1
+phase: 4 fold: 2 epoch: 1 - loss:3.034
+phase: 4 fold: 2 epoch: 1 - accuracy:0.515
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+phase: 4 fold: 2 epoch: 2 - loss:3.042
+phase: 4 fold: 2 epoch: 2 - accuracy:0.569
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+phase: 4 fold: 2 epoch: 3 - loss:3.029
+phase: 4 fold: 2 epoch: 3 - accuracy:0.568
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+phase: 4 fold: 2 epoch: 4 - loss:3.048
+phase: 4 fold: 2 epoch: 4 - accuracy:0.571
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+phase: 4 fold: 2 epoch: 5 - loss:3.072
+phase: 4 fold: 2 epoch: 5 - accuracy:0.531
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+phase: 4 fold: 2 epoch: 6 - loss:3.054
+phase: 4 fold: 2 epoch: 6 - accuracy:0.546
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+phase: 4 fold: 2 epoch: 7 - loss:3.015
+phase: 4 fold: 2 epoch: 7 - accuracy:0.593
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+phase: 4 fold: 2 epoch: 8 - loss:3.037
+phase: 4 fold: 2 epoch: 8 - accuracy:0.575
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+phase: 4 fold: 2 epoch: 9 - loss:3.056
+phase: 4 fold: 2 epoch: 9 - accuracy:0.552
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+phase: 4 fold: 2 epoch:10 - loss:3.030
+phase: 4 fold: 2 epoch:10 - accuracy:0.625
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+phase: 4 fold: 2 epoch:11 - loss:3.050
+phase: 4 fold: 2 epoch:11 - accuracy:0.582
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+phase: 4 fold: 2 epoch:12 - loss:3.055
+phase: 4 fold: 2 epoch:12 - accuracy:0.561
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+phase: 4 fold: 2 epoch:13 - loss:3.064
+phase: 4 fold: 2 epoch:13 - accuracy:0.545
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+phase: 4 fold: 2 epoch:14 - loss:3.038
+phase: 4 fold: 2 epoch:14 - accuracy:0.591
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+phase: 4 fold: 2 epoch:15 - loss:3.049
+phase: 4 fold: 2 epoch:15 - accuracy:0.610
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+phase: 4 fold: 2 epoch:16 - loss:3.027
+phase: 4 fold: 2 epoch:16 - accuracy:0.625
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+phase: 4 fold: 2 epoch:17 - loss:3.071
+phase: 4 fold: 2 epoch:17 - accuracy:0.565
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+phase: 4 fold: 2 epoch:18 - loss:3.019
+phase: 4 fold: 2 epoch:18 - accuracy:0.607
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+phase: 4 fold: 2 epoch:19 - loss:3.064
+phase: 4 fold: 2 epoch:19 - accuracy:0.608
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+phase: 4 fold: 2 epoch:20 - loss:3.022
+phase: 4 fold: 2 epoch:20 - accuracy:0.613
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+*** phase: 4 fold: 2 epoch:10 - top accuracy:0.625
+phase:  4 
+classes:  40 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+get_k_fold_training_datasets: phase=4 fold=2 use_memory=False
+Starting epoch 1
+phase: 4 fold: 3 epoch: 1 - loss:3.053
+phase: 4 fold: 3 epoch: 1 - accuracy:0.540
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+phase: 4 fold: 3 epoch: 2 - loss:3.027
+phase: 4 fold: 3 epoch: 2 - accuracy:0.595
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+phase: 4 fold: 3 epoch: 3 - loss:3.011
+phase: 4 fold: 3 epoch: 3 - accuracy:0.604
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+phase: 4 fold: 3 epoch: 4 - loss:3.033
+phase: 4 fold: 3 epoch: 4 - accuracy:0.566
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+phase: 4 fold: 3 epoch: 5 - loss:3.020
+phase: 4 fold: 3 epoch: 5 - accuracy:0.573
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+phase: 4 fold: 3 epoch: 6 - loss:3.034
+phase: 4 fold: 3 epoch: 6 - accuracy:0.581
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+phase: 4 fold: 3 epoch: 7 - loss:3.014
+phase: 4 fold: 3 epoch: 7 - accuracy:0.608
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+phase: 4 fold: 3 epoch: 8 - loss:3.032
+phase: 4 fold: 3 epoch: 8 - accuracy:0.622
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+phase: 4 fold: 3 epoch: 9 - loss:3.043
+phase: 4 fold: 3 epoch: 9 - accuracy:0.520
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+phase: 4 fold: 3 epoch:10 - loss:3.044
+phase: 4 fold: 3 epoch:10 - accuracy:0.568
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+phase: 4 fold: 3 epoch:11 - loss:3.051
+phase: 4 fold: 3 epoch:11 - accuracy:0.574
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+phase: 4 fold: 3 epoch:12 - loss:3.051
+phase: 4 fold: 3 epoch:12 - accuracy:0.594
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+phase: 4 fold: 3 epoch:13 - loss:3.069
+phase: 4 fold: 3 epoch:13 - accuracy:0.572
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+phase: 4 fold: 3 epoch:14 - loss:3.048
+phase: 4 fold: 3 epoch:14 - accuracy:0.623
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+phase: 4 fold: 3 epoch:15 - loss:3.049
+phase: 4 fold: 3 epoch:15 - accuracy:0.562
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+phase: 4 fold: 3 epoch:16 - loss:3.074
+phase: 4 fold: 3 epoch:16 - accuracy:0.618
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+phase: 4 fold: 3 epoch:17 - loss:3.058
+phase: 4 fold: 3 epoch:17 - accuracy:0.577
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+phase: 4 fold: 3 epoch:18 - loss:3.032
+phase: 4 fold: 3 epoch:18 - accuracy:0.608
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+phase: 4 fold: 3 epoch:19 - loss:3.085
+phase: 4 fold: 3 epoch:19 - accuracy:0.527
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+phase: 4 fold: 3 epoch:20 - loss:3.074
+phase: 4 fold: 3 epoch:20 - accuracy:0.555
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+*** phase: 4 fold: 3 epoch:14 - top accuracy:0.623
+phase:  4 
+classes:  40 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+get_k_fold_training_datasets: phase=4 fold=3 use_memory=False
+Starting epoch 1
+phase: 4 fold: 4 epoch: 1 - loss:3.036
+phase: 4 fold: 4 epoch: 1 - accuracy:0.624
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+phase: 4 fold: 4 epoch: 2 - loss:3.000
+phase: 4 fold: 4 epoch: 2 - accuracy:0.634
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+phase: 4 fold: 4 epoch: 3 - loss:3.031
+phase: 4 fold: 4 epoch: 3 - accuracy:0.634
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+phase: 4 fold: 4 epoch: 4 - loss:3.050
+phase: 4 fold: 4 epoch: 4 - accuracy:0.613
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+phase: 4 fold: 4 epoch: 5 - loss:3.012
+phase: 4 fold: 4 epoch: 5 - accuracy:0.669
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+phase: 4 fold: 4 epoch: 6 - loss:2.997
+phase: 4 fold: 4 epoch: 6 - accuracy:0.654
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+phase: 4 fold: 4 epoch: 7 - loss:3.054
+phase: 4 fold: 4 epoch: 7 - accuracy:0.644
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+phase: 4 fold: 4 epoch: 8 - loss:3.057
+phase: 4 fold: 4 epoch: 8 - accuracy:0.609
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+phase: 4 fold: 4 epoch: 9 - loss:3.076
+phase: 4 fold: 4 epoch: 9 - accuracy:0.596
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+phase: 4 fold: 4 epoch:10 - loss:3.057
+phase: 4 fold: 4 epoch:10 - accuracy:0.615
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+phase: 4 fold: 4 epoch:11 - loss:3.069
+phase: 4 fold: 4 epoch:11 - accuracy:0.590
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+phase: 4 fold: 4 epoch:12 - loss:3.071
+phase: 4 fold: 4 epoch:12 - accuracy:0.595
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+phase: 4 fold: 4 epoch:13 - loss:3.108
+phase: 4 fold: 4 epoch:13 - accuracy:0.578
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+phase: 4 fold: 4 epoch:14 - loss:3.108
+phase: 4 fold: 4 epoch:14 - accuracy:0.571
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+phase: 4 fold: 4 epoch:15 - loss:3.077
+phase: 4 fold: 4 epoch:15 - accuracy:0.613
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+phase: 4 fold: 4 epoch:16 - loss:3.099
+phase: 4 fold: 4 epoch:16 - accuracy:0.537
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+phase: 4 fold: 4 epoch:17 - loss:3.116
+phase: 4 fold: 4 epoch:17 - accuracy:0.585
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+phase: 4 fold: 4 epoch:18 - loss:3.092
+phase: 4 fold: 4 epoch:18 - accuracy:0.607
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+phase: 4 fold: 4 epoch:19 - loss:3.075
+phase: 4 fold: 4 epoch:19 - accuracy:0.626
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+phase: 4 fold: 4 epoch:20 - loss:3.145
+phase: 4 fold: 4 epoch:20 - accuracy:0.573
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+*** phase: 4 fold: 4 epoch: 5 - top accuracy:0.669
+phase:  4 
+classes:  40 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+get_k_fold_training_datasets: phase=4 fold=4 use_memory=False
+Starting epoch 1
+phase: 4 fold: 5 epoch: 1 - loss:2.988
+phase: 4 fold: 5 epoch: 1 - accuracy:0.691
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 2
+phase: 4 fold: 5 epoch: 2 - loss:2.991
+phase: 4 fold: 5 epoch: 2 - accuracy:0.704
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 3
+phase: 4 fold: 5 epoch: 3 - loss:3.015
+phase: 4 fold: 5 epoch: 3 - accuracy:0.650
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 4
+phase: 4 fold: 5 epoch: 4 - loss:3.055
+phase: 4 fold: 5 epoch: 4 - accuracy:0.656
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 5
+phase: 4 fold: 5 epoch: 5 - loss:3.006
+phase: 4 fold: 5 epoch: 5 - accuracy:0.697
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Starting epoch 6
+phase: 4 fold: 5 epoch: 6 - loss:3.022
+phase: 4 fold: 5 epoch: 6 - accuracy:0.671
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Starting epoch 7
+phase: 4 fold: 5 epoch: 7 - loss:3.002
+phase: 4 fold: 5 epoch: 7 - accuracy:0.719
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Starting epoch 8
+phase: 4 fold: 5 epoch: 8 - loss:3.018
+phase: 4 fold: 5 epoch: 8 - accuracy:0.676
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Starting epoch 9
+phase: 4 fold: 5 epoch: 9 - loss:3.025
+phase: 4 fold: 5 epoch: 9 - accuracy:0.681
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Starting epoch 10
+phase: 4 fold: 5 epoch:10 - loss:3.037
+phase: 4 fold: 5 epoch:10 - accuracy:0.656
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Starting epoch 11
+phase: 4 fold: 5 epoch:11 - loss:3.008
+phase: 4 fold: 5 epoch:11 - accuracy:0.692
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Starting epoch 12
+phase: 4 fold: 5 epoch:12 - loss:3.035
+phase: 4 fold: 5 epoch:12 - accuracy:0.654
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Starting epoch 13
+phase: 4 fold: 5 epoch:13 - loss:3.057
+phase: 4 fold: 5 epoch:13 - accuracy:0.658
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Starting epoch 14
+phase: 4 fold: 5 epoch:14 - loss:3.071
+phase: 4 fold: 5 epoch:14 - accuracy:0.648
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Starting epoch 15
+phase: 4 fold: 5 epoch:15 - loss:3.073
+phase: 4 fold: 5 epoch:15 - accuracy:0.642
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Starting epoch 16
+phase: 4 fold: 5 epoch:16 - loss:3.057
+phase: 4 fold: 5 epoch:16 - accuracy:0.681
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Starting epoch 17
+phase: 4 fold: 5 epoch:17 - loss:3.091
+phase: 4 fold: 5 epoch:17 - accuracy:0.600
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Starting epoch 18
+phase: 4 fold: 5 epoch:18 - loss:3.097
+phase: 4 fold: 5 epoch:18 - accuracy:0.624
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Starting epoch 19
+phase: 4 fold: 5 epoch:19 - loss:3.088
+phase: 4 fold: 5 epoch:19 - accuracy:0.627
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Starting epoch 20
+phase: 4 fold: 5 epoch:20 - loss:3.072
+phase: 4 fold: 5 epoch:20 - accuracy:0.652
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+*** phase: 4 fold: 5 epoch: 7 - top accuracy:0.719
+phase:  5 
+classes:  50 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+get_k_fold_training_datasets: phase=5 fold=0 use_memory=False
+Starting epoch 1
+phase: 5 fold: 1 epoch: 1 - loss:3.814
+phase: 5 fold: 1 epoch: 1 - accuracy:0.050
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+phase: 5 fold: 1 epoch: 2 - loss:3.639
+phase: 5 fold: 1 epoch: 2 - accuracy:0.117
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+phase: 5 fold: 1 epoch: 3 - loss:3.514
+phase: 5 fold: 1 epoch: 3 - accuracy:0.205
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+phase: 5 fold: 1 epoch: 4 - loss:3.457
+phase: 5 fold: 1 epoch: 4 - accuracy:0.294
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+phase: 5 fold: 1 epoch: 5 - loss:3.444
+phase: 5 fold: 1 epoch: 5 - accuracy:0.335
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+phase: 5 fold: 1 epoch: 6 - loss:3.408
+phase: 5 fold: 1 epoch: 6 - accuracy:0.331
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+phase: 5 fold: 1 epoch: 7 - loss:3.397
+phase: 5 fold: 1 epoch: 7 - accuracy:0.344
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+phase: 5 fold: 1 epoch: 8 - loss:3.391
+phase: 5 fold: 1 epoch: 8 - accuracy:0.356
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+phase: 5 fold: 1 epoch: 9 - loss:3.335
+phase: 5 fold: 1 epoch: 9 - accuracy:0.395
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+phase: 5 fold: 1 epoch:10 - loss:3.324
+phase: 5 fold: 1 epoch:10 - accuracy:0.400
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+phase: 5 fold: 1 epoch:11 - loss:3.352
+phase: 5 fold: 1 epoch:11 - accuracy:0.408
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+phase: 5 fold: 1 epoch:12 - loss:3.351
+phase: 5 fold: 1 epoch:12 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+phase: 5 fold: 1 epoch:13 - loss:3.362
+phase: 5 fold: 1 epoch:13 - accuracy:0.334
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+phase: 5 fold: 1 epoch:14 - loss:3.334
+phase: 5 fold: 1 epoch:14 - accuracy:0.343
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+phase: 5 fold: 1 epoch:15 - loss:3.331
+phase: 5 fold: 1 epoch:15 - accuracy:0.385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+phase: 5 fold: 1 epoch:16 - loss:3.372
+phase: 5 fold: 1 epoch:16 - accuracy:0.312
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+phase: 5 fold: 1 epoch:17 - loss:3.344
+phase: 5 fold: 1 epoch:17 - accuracy:0.306
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+phase: 5 fold: 1 epoch:18 - loss:3.350
+phase: 5 fold: 1 epoch:18 - accuracy:0.344
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+phase: 5 fold: 1 epoch:19 - loss:3.356
+phase: 5 fold: 1 epoch:19 - accuracy:0.345
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+phase: 5 fold: 1 epoch:20 - loss:3.363
+phase: 5 fold: 1 epoch:20 - accuracy:0.337
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+*** phase: 5 fold: 1 epoch:11 - top accuracy:0.408
+phase:  5 
+classes:  50 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+get_k_fold_training_datasets: phase=5 fold=1 use_memory=False
+Starting epoch 1
+phase: 5 fold: 2 epoch: 1 - loss:3.334
+phase: 5 fold: 2 epoch: 1 - accuracy:0.413
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+phase: 5 fold: 2 epoch: 2 - loss:3.330
+phase: 5 fold: 2 epoch: 2 - accuracy:0.437
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+phase: 5 fold: 2 epoch: 3 - loss:3.311
+phase: 5 fold: 2 epoch: 3 - accuracy:0.419
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+phase: 5 fold: 2 epoch: 4 - loss:3.311
+phase: 5 fold: 2 epoch: 4 - accuracy:0.412
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+phase: 5 fold: 2 epoch: 5 - loss:3.314
+phase: 5 fold: 2 epoch: 5 - accuracy:0.434
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+phase: 5 fold: 2 epoch: 6 - loss:3.322
+phase: 5 fold: 2 epoch: 6 - accuracy:0.447
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+phase: 5 fold: 2 epoch: 7 - loss:3.306
+phase: 5 fold: 2 epoch: 7 - accuracy:0.431
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+phase: 5 fold: 2 epoch: 8 - loss:3.307
+phase: 5 fold: 2 epoch: 8 - accuracy:0.388
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+phase: 5 fold: 2 epoch: 9 - loss:3.275
+phase: 5 fold: 2 epoch: 9 - accuracy:0.452
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+phase: 5 fold: 2 epoch:10 - loss:3.265
+phase: 5 fold: 2 epoch:10 - accuracy:0.426
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+phase: 5 fold: 2 epoch:11 - loss:3.304
+phase: 5 fold: 2 epoch:11 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+phase: 5 fold: 2 epoch:12 - loss:3.301
+phase: 5 fold: 2 epoch:12 - accuracy:0.380
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+phase: 5 fold: 2 epoch:13 - loss:3.313
+phase: 5 fold: 2 epoch:13 - accuracy:0.382
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+phase: 5 fold: 2 epoch:14 - loss:3.304
+phase: 5 fold: 2 epoch:14 - accuracy:0.414
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+phase: 5 fold: 2 epoch:15 - loss:3.312
+phase: 5 fold: 2 epoch:15 - accuracy:0.379
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+phase: 5 fold: 2 epoch:16 - loss:3.290
+phase: 5 fold: 2 epoch:16 - accuracy:0.458
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+phase: 5 fold: 2 epoch:17 - loss:3.306
+phase: 5 fold: 2 epoch:17 - accuracy:0.421
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+phase: 5 fold: 2 epoch:18 - loss:3.282
+phase: 5 fold: 2 epoch:18 - accuracy:0.408
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+phase: 5 fold: 2 epoch:19 - loss:3.309
+phase: 5 fold: 2 epoch:19 - accuracy:0.432
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+phase: 5 fold: 2 epoch:20 - loss:3.315
+phase: 5 fold: 2 epoch:20 - accuracy:0.386
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+*** phase: 5 fold: 2 epoch:16 - top accuracy:0.458
+phase:  5 
+classes:  50 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+get_k_fold_training_datasets: phase=5 fold=2 use_memory=False
+Starting epoch 1
+phase: 5 fold: 3 epoch: 1 - loss:3.262
+phase: 5 fold: 3 epoch: 1 - accuracy:0.455
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+phase: 5 fold: 3 epoch: 2 - loss:3.278
+phase: 5 fold: 3 epoch: 2 - accuracy:0.415
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+phase: 5 fold: 3 epoch: 3 - loss:3.291
+phase: 5 fold: 3 epoch: 3 - accuracy:0.487
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+phase: 5 fold: 3 epoch: 4 - loss:3.260
+phase: 5 fold: 3 epoch: 4 - accuracy:0.426
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+phase: 5 fold: 3 epoch: 5 - loss:3.299
+phase: 5 fold: 3 epoch: 5 - accuracy:0.417
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+phase: 5 fold: 3 epoch: 6 - loss:3.273
+phase: 5 fold: 3 epoch: 6 - accuracy:0.404
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+phase: 5 fold: 3 epoch: 7 - loss:3.297
+phase: 5 fold: 3 epoch: 7 - accuracy:0.440
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+phase: 5 fold: 3 epoch: 8 - loss:3.303
+phase: 5 fold: 3 epoch: 8 - accuracy:0.449
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+phase: 5 fold: 3 epoch: 9 - loss:3.289
+phase: 5 fold: 3 epoch: 9 - accuracy:0.483
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+phase: 5 fold: 3 epoch:10 - loss:3.318
+phase: 5 fold: 3 epoch:10 - accuracy:0.407
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+phase: 5 fold: 3 epoch:11 - loss:3.311
+phase: 5 fold: 3 epoch:11 - accuracy:0.373
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+phase: 5 fold: 3 epoch:12 - loss:3.331
+phase: 5 fold: 3 epoch:12 - accuracy:0.437
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+phase: 5 fold: 3 epoch:13 - loss:3.299
+phase: 5 fold: 3 epoch:13 - accuracy:0.429
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+phase: 5 fold: 3 epoch:14 - loss:3.339
+phase: 5 fold: 3 epoch:14 - accuracy:0.427
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+phase: 5 fold: 3 epoch:15 - loss:3.339
+phase: 5 fold: 3 epoch:15 - accuracy:0.484
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+phase: 5 fold: 3 epoch:16 - loss:3.350
+phase: 5 fold: 3 epoch:16 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+phase: 5 fold: 3 epoch:17 - loss:3.355
+phase: 5 fold: 3 epoch:17 - accuracy:0.410
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+phase: 5 fold: 3 epoch:18 - loss:3.334
+phase: 5 fold: 3 epoch:18 - accuracy:0.440
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+phase: 5 fold: 3 epoch:19 - loss:3.359
+phase: 5 fold: 3 epoch:19 - accuracy:0.460
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+phase: 5 fold: 3 epoch:20 - loss:3.338
+phase: 5 fold: 3 epoch:20 - accuracy:0.441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+*** phase: 5 fold: 3 epoch: 3 - top accuracy:0.487
+phase:  5 
+classes:  50 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+get_k_fold_training_datasets: phase=5 fold=3 use_memory=False
+Starting epoch 1
+phase: 5 fold: 4 epoch: 1 - loss:3.241
+phase: 5 fold: 4 epoch: 1 - accuracy:0.492
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+phase: 5 fold: 4 epoch: 2 - loss:3.290
+phase: 5 fold: 4 epoch: 2 - accuracy:0.433
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+phase: 5 fold: 4 epoch: 3 - loss:3.297
+phase: 5 fold: 4 epoch: 3 - accuracy:0.383
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+phase: 5 fold: 4 epoch: 4 - loss:3.268
+phase: 5 fold: 4 epoch: 4 - accuracy:0.443
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+phase: 5 fold: 4 epoch: 5 - loss:3.275
+phase: 5 fold: 4 epoch: 5 - accuracy:0.479
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+phase: 5 fold: 4 epoch: 6 - loss:3.288
+phase: 5 fold: 4 epoch: 6 - accuracy:0.486
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+phase: 5 fold: 4 epoch: 7 - loss:3.305
+phase: 5 fold: 4 epoch: 7 - accuracy:0.444
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+phase: 5 fold: 4 epoch: 8 - loss:3.291
+phase: 5 fold: 4 epoch: 8 - accuracy:0.459
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+phase: 5 fold: 4 epoch: 9 - loss:3.317
+phase: 5 fold: 4 epoch: 9 - accuracy:0.455
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+phase: 5 fold: 4 epoch:10 - loss:3.313
+phase: 5 fold: 4 epoch:10 - accuracy:0.463
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+phase: 5 fold: 4 epoch:11 - loss:3.314
+phase: 5 fold: 4 epoch:11 - accuracy:0.419
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+phase: 5 fold: 4 epoch:12 - loss:3.321
+phase: 5 fold: 4 epoch:12 - accuracy:0.445
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+phase: 5 fold: 4 epoch:13 - loss:3.307
+phase: 5 fold: 4 epoch:13 - accuracy:0.504
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+phase: 5 fold: 4 epoch:14 - loss:3.347
+phase: 5 fold: 4 epoch:14 - accuracy:0.479
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+phase: 5 fold: 4 epoch:15 - loss:3.309
+phase: 5 fold: 4 epoch:15 - accuracy:0.519
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+phase: 5 fold: 4 epoch:16 - loss:3.328
+phase: 5 fold: 4 epoch:16 - accuracy:0.488
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+phase: 5 fold: 4 epoch:17 - loss:3.323
+phase: 5 fold: 4 epoch:17 - accuracy:0.457
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+phase: 5 fold: 4 epoch:18 - loss:3.351
+phase: 5 fold: 4 epoch:18 - accuracy:0.449
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+phase: 5 fold: 4 epoch:19 - loss:3.348
+phase: 5 fold: 4 epoch:19 - accuracy:0.435
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+phase: 5 fold: 4 epoch:20 - loss:3.375
+phase: 5 fold: 4 epoch:20 - accuracy:0.445
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+*** phase: 5 fold: 4 epoch:15 - top accuracy:0.519
+phase:  5 
+classes:  50 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+get_k_fold_training_datasets: phase=5 fold=4 use_memory=False
+Starting epoch 1
+phase: 5 fold: 5 epoch: 1 - loss:3.300
+phase: 5 fold: 5 epoch: 1 - accuracy:0.492
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 2
+phase: 5 fold: 5 epoch: 2 - loss:3.312
+phase: 5 fold: 5 epoch: 2 - accuracy:0.602
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 3
+phase: 5 fold: 5 epoch: 3 - loss:3.276
+phase: 5 fold: 5 epoch: 3 - accuracy:0.566
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 4
+phase: 5 fold: 5 epoch: 4 - loss:3.278
+phase: 5 fold: 5 epoch: 4 - accuracy:0.550
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 5
+phase: 5 fold: 5 epoch: 5 - loss:3.315
+phase: 5 fold: 5 epoch: 5 - accuracy:0.494
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 6
+phase: 5 fold: 5 epoch: 6 - loss:3.287
+phase: 5 fold: 5 epoch: 6 - accuracy:0.560
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Starting epoch 7
+phase: 5 fold: 5 epoch: 7 - loss:3.314
+phase: 5 fold: 5 epoch: 7 - accuracy:0.571
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Starting epoch 8
+phase: 5 fold: 5 epoch: 8 - loss:3.299
+phase: 5 fold: 5 epoch: 8 - accuracy:0.566
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Starting epoch 9
+phase: 5 fold: 5 epoch: 9 - loss:3.363
+phase: 5 fold: 5 epoch: 9 - accuracy:0.441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Starting epoch 10
+phase: 5 fold: 5 epoch:10 - loss:3.299
+phase: 5 fold: 5 epoch:10 - accuracy:0.518
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Starting epoch 11
+phase: 5 fold: 5 epoch:11 - loss:3.353
+phase: 5 fold: 5 epoch:11 - accuracy:0.515
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Starting epoch 12
+phase: 5 fold: 5 epoch:12 - loss:3.337
+phase: 5 fold: 5 epoch:12 - accuracy:0.575
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Starting epoch 13
+phase: 5 fold: 5 epoch:13 - loss:3.336
+phase: 5 fold: 5 epoch:13 - accuracy:0.526
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Starting epoch 14
+phase: 5 fold: 5 epoch:14 - loss:3.361
+phase: 5 fold: 5 epoch:14 - accuracy:0.539
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Starting epoch 15
+phase: 5 fold: 5 epoch:15 - loss:3.315
+phase: 5 fold: 5 epoch:15 - accuracy:0.541
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Starting epoch 16
+phase: 5 fold: 5 epoch:16 - loss:3.369
+phase: 5 fold: 5 epoch:16 - accuracy:0.531
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Starting epoch 17
+phase: 5 fold: 5 epoch:17 - loss:3.360
+phase: 5 fold: 5 epoch:17 - accuracy:0.583
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Starting epoch 18
+phase: 5 fold: 5 epoch:18 - loss:3.332
+phase: 5 fold: 5 epoch:18 - accuracy:0.584
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Starting epoch 19
+phase: 5 fold: 5 epoch:19 - loss:3.364
+phase: 5 fold: 5 epoch:19 - accuracy:0.591
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Starting epoch 20
+phase: 5 fold: 5 epoch:20 - loss:3.393
+phase: 5 fold: 5 epoch:20 - accuracy:0.553
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+*** phase: 5 fold: 5 epoch: 2 - top accuracy:0.602
+phase:  6 
+classes:  60 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+get_k_fold_training_datasets: phase=6 fold=0 use_memory=False
+Starting epoch 1
+phase: 6 fold: 1 epoch: 1 - loss:4.014
+phase: 6 fold: 1 epoch: 1 - accuracy:0.080
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+phase: 6 fold: 1 epoch: 2 - loss:3.845
+phase: 6 fold: 1 epoch: 2 - accuracy:0.143
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+phase: 6 fold: 1 epoch: 3 - loss:3.724
+phase: 6 fold: 1 epoch: 3 - accuracy:0.218
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+phase: 6 fold: 1 epoch: 4 - loss:3.691
+phase: 6 fold: 1 epoch: 4 - accuracy:0.253
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+phase: 6 fold: 1 epoch: 5 - loss:3.659
+phase: 6 fold: 1 epoch: 5 - accuracy:0.272
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+phase: 6 fold: 1 epoch: 6 - loss:3.621
+phase: 6 fold: 1 epoch: 6 - accuracy:0.317
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+phase: 6 fold: 1 epoch: 7 - loss:3.594
+phase: 6 fold: 1 epoch: 7 - accuracy:0.301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+phase: 6 fold: 1 epoch: 8 - loss:3.595
+phase: 6 fold: 1 epoch: 8 - accuracy:0.282
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+phase: 6 fold: 1 epoch: 9 - loss:3.579
+phase: 6 fold: 1 epoch: 9 - accuracy:0.314
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+phase: 6 fold: 1 epoch:10 - loss:3.588
+phase: 6 fold: 1 epoch:10 - accuracy:0.269
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+phase: 6 fold: 1 epoch:11 - loss:3.571
+phase: 6 fold: 1 epoch:11 - accuracy:0.301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+phase: 6 fold: 1 epoch:12 - loss:3.557
+phase: 6 fold: 1 epoch:12 - accuracy:0.301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+phase: 6 fold: 1 epoch:13 - loss:3.572
+phase: 6 fold: 1 epoch:13 - accuracy:0.254
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+phase: 6 fold: 1 epoch:14 - loss:3.578
+phase: 6 fold: 1 epoch:14 - accuracy:0.259
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+phase: 6 fold: 1 epoch:15 - loss:3.572
+phase: 6 fold: 1 epoch:15 - accuracy:0.279
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+phase: 6 fold: 1 epoch:16 - loss:3.587
+phase: 6 fold: 1 epoch:16 - accuracy:0.249
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+phase: 6 fold: 1 epoch:17 - loss:3.572
+phase: 6 fold: 1 epoch:17 - accuracy:0.270
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+phase: 6 fold: 1 epoch:18 - loss:3.570
+phase: 6 fold: 1 epoch:18 - accuracy:0.285
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+phase: 6 fold: 1 epoch:19 - loss:3.560
+phase: 6 fold: 1 epoch:19 - accuracy:0.286
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+phase: 6 fold: 1 epoch:20 - loss:3.566
+phase: 6 fold: 1 epoch:20 - accuracy:0.258
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+*** phase: 6 fold: 1 epoch: 6 - top accuracy:0.317
+phase:  6 
+classes:  60 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+get_k_fold_training_datasets: phase=6 fold=1 use_memory=False
+Starting epoch 1
+phase: 6 fold: 2 epoch: 1 - loss:3.578
+phase: 6 fold: 2 epoch: 1 - accuracy:0.320
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+phase: 6 fold: 2 epoch: 2 - loss:3.563
+phase: 6 fold: 2 epoch: 2 - accuracy:0.358
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+phase: 6 fold: 2 epoch: 3 - loss:3.564
+phase: 6 fold: 2 epoch: 3 - accuracy:0.354
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+phase: 6 fold: 2 epoch: 4 - loss:3.550
+phase: 6 fold: 2 epoch: 4 - accuracy:0.362
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+phase: 6 fold: 2 epoch: 5 - loss:3.544
+phase: 6 fold: 2 epoch: 5 - accuracy:0.331
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+phase: 6 fold: 2 epoch: 6 - loss:3.527
+phase: 6 fold: 2 epoch: 6 - accuracy:0.338
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+phase: 6 fold: 2 epoch: 7 - loss:3.524
+phase: 6 fold: 2 epoch: 7 - accuracy:0.349
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+phase: 6 fold: 2 epoch: 8 - loss:3.522
+phase: 6 fold: 2 epoch: 8 - accuracy:0.373
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+phase: 6 fold: 2 epoch: 9 - loss:3.539
+phase: 6 fold: 2 epoch: 9 - accuracy:0.326
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+phase: 6 fold: 2 epoch:10 - loss:3.543
+phase: 6 fold: 2 epoch:10 - accuracy:0.369
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+phase: 6 fold: 2 epoch:11 - loss:3.540
+phase: 6 fold: 2 epoch:11 - accuracy:0.360
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+phase: 6 fold: 2 epoch:12 - loss:3.520
+phase: 6 fold: 2 epoch:12 - accuracy:0.362
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+phase: 6 fold: 2 epoch:13 - loss:3.514
+phase: 6 fold: 2 epoch:13 - accuracy:0.384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+phase: 6 fold: 2 epoch:14 - loss:3.544
+phase: 6 fold: 2 epoch:14 - accuracy:0.351
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+phase: 6 fold: 2 epoch:15 - loss:3.505
+phase: 6 fold: 2 epoch:15 - accuracy:0.405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+phase: 6 fold: 2 epoch:16 - loss:3.517
+phase: 6 fold: 2 epoch:16 - accuracy:0.385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+phase: 6 fold: 2 epoch:17 - loss:3.540
+phase: 6 fold: 2 epoch:17 - accuracy:0.317
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+phase: 6 fold: 2 epoch:18 - loss:3.537
+phase: 6 fold: 2 epoch:18 - accuracy:0.358
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+phase: 6 fold: 2 epoch:19 - loss:3.553
+phase: 6 fold: 2 epoch:19 - accuracy:0.342
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+phase: 6 fold: 2 epoch:20 - loss:3.555
+phase: 6 fold: 2 epoch:20 - accuracy:0.342
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+*** phase: 6 fold: 2 epoch:15 - top accuracy:0.405
+phase:  6 
+classes:  60 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+get_k_fold_training_datasets: phase=6 fold=2 use_memory=False
+Starting epoch 1
+phase: 6 fold: 3 epoch: 1 - loss:3.501
+phase: 6 fold: 3 epoch: 1 - accuracy:0.436
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+phase: 6 fold: 3 epoch: 2 - loss:3.517
+phase: 6 fold: 3 epoch: 2 - accuracy:0.422
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+phase: 6 fold: 3 epoch: 3 - loss:3.517
+phase: 6 fold: 3 epoch: 3 - accuracy:0.382
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+phase: 6 fold: 3 epoch: 4 - loss:3.508
+phase: 6 fold: 3 epoch: 4 - accuracy:0.429
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+phase: 6 fold: 3 epoch: 5 - loss:3.505
+phase: 6 fold: 3 epoch: 5 - accuracy:0.426
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+phase: 6 fold: 3 epoch: 6 - loss:3.511
+phase: 6 fold: 3 epoch: 6 - accuracy:0.419
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+phase: 6 fold: 3 epoch: 7 - loss:3.531
+phase: 6 fold: 3 epoch: 7 - accuracy:0.426
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+phase: 6 fold: 3 epoch: 8 - loss:3.564
+phase: 6 fold: 3 epoch: 8 - accuracy:0.393
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+phase: 6 fold: 3 epoch: 9 - loss:3.538
+phase: 6 fold: 3 epoch: 9 - accuracy:0.388
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+phase: 6 fold: 3 epoch:10 - loss:3.551
+phase: 6 fold: 3 epoch:10 - accuracy:0.433
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+phase: 6 fold: 3 epoch:11 - loss:3.551
+phase: 6 fold: 3 epoch:11 - accuracy:0.370
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+phase: 6 fold: 3 epoch:12 - loss:3.551
+phase: 6 fold: 3 epoch:12 - accuracy:0.399
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+phase: 6 fold: 3 epoch:13 - loss:3.539
+phase: 6 fold: 3 epoch:13 - accuracy:0.449
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+phase: 6 fold: 3 epoch:14 - loss:3.548
+phase: 6 fold: 3 epoch:14 - accuracy:0.417
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+phase: 6 fold: 3 epoch:15 - loss:3.561
+phase: 6 fold: 3 epoch:15 - accuracy:0.465
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+phase: 6 fold: 3 epoch:16 - loss:3.561
+phase: 6 fold: 3 epoch:16 - accuracy:0.450
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+phase: 6 fold: 3 epoch:17 - loss:3.555
+phase: 6 fold: 3 epoch:17 - accuracy:0.478
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+phase: 6 fold: 3 epoch:18 - loss:3.542
+phase: 6 fold: 3 epoch:18 - accuracy:0.411
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+phase: 6 fold: 3 epoch:19 - loss:3.572
+phase: 6 fold: 3 epoch:19 - accuracy:0.480
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+phase: 6 fold: 3 epoch:20 - loss:3.561
+phase: 6 fold: 3 epoch:20 - accuracy:0.480
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+*** phase: 6 fold: 3 epoch:20 - top accuracy:0.480
+phase:  6 
+classes:  60 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+get_k_fold_training_datasets: phase=6 fold=3 use_memory=False
+Starting epoch 1
+phase: 6 fold: 4 epoch: 1 - loss:3.559
+phase: 6 fold: 4 epoch: 1 - accuracy:0.455
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+phase: 6 fold: 4 epoch: 2 - loss:3.616
+phase: 6 fold: 4 epoch: 2 - accuracy:0.373
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+phase: 6 fold: 4 epoch: 3 - loss:3.591
+phase: 6 fold: 4 epoch: 3 - accuracy:0.417
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+phase: 6 fold: 4 epoch: 4 - loss:3.586
+phase: 6 fold: 4 epoch: 4 - accuracy:0.442
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+phase: 6 fold: 4 epoch: 5 - loss:3.569
+phase: 6 fold: 4 epoch: 5 - accuracy:0.484
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+phase: 6 fold: 4 epoch: 6 - loss:3.572
+phase: 6 fold: 4 epoch: 6 - accuracy:0.491
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+phase: 6 fold: 4 epoch: 7 - loss:3.618
+phase: 6 fold: 4 epoch: 7 - accuracy:0.420
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+phase: 6 fold: 4 epoch: 8 - loss:3.638
+phase: 6 fold: 4 epoch: 8 - accuracy:0.428
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+phase: 6 fold: 4 epoch: 9 - loss:3.648
+phase: 6 fold: 4 epoch: 9 - accuracy:0.411
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+phase: 6 fold: 4 epoch:10 - loss:3.616
+phase: 6 fold: 4 epoch:10 - accuracy:0.462
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+phase: 6 fold: 4 epoch:11 - loss:3.631
+phase: 6 fold: 4 epoch:11 - accuracy:0.444
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+phase: 6 fold: 4 epoch:12 - loss:3.621
+phase: 6 fold: 4 epoch:12 - accuracy:0.427
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+phase: 6 fold: 4 epoch:13 - loss:3.658
+phase: 6 fold: 4 epoch:13 - accuracy:0.366
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+phase: 6 fold: 4 epoch:14 - loss:3.640
+phase: 6 fold: 4 epoch:14 - accuracy:0.441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+phase: 6 fold: 4 epoch:15 - loss:3.658
+phase: 6 fold: 4 epoch:15 - accuracy:0.413
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+phase: 6 fold: 4 epoch:16 - loss:3.659
+phase: 6 fold: 4 epoch:16 - accuracy:0.441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+phase: 6 fold: 4 epoch:17 - loss:3.632
+phase: 6 fold: 4 epoch:17 - accuracy:0.435
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+phase: 6 fold: 4 epoch:18 - loss:3.647
+phase: 6 fold: 4 epoch:18 - accuracy:0.440
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+phase: 6 fold: 4 epoch:19 - loss:3.655
+phase: 6 fold: 4 epoch:19 - accuracy:0.471
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+phase: 6 fold: 4 epoch:20 - loss:3.662
+phase: 6 fold: 4 epoch:20 - accuracy:0.433
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+*** phase: 6 fold: 4 epoch: 6 - top accuracy:0.491
+phase:  6 
+classes:  60 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+get_k_fold_training_datasets: phase=6 fold=4 use_memory=False
+Starting epoch 1
+phase: 6 fold: 5 epoch: 1 - loss:3.570
+phase: 6 fold: 5 epoch: 1 - accuracy:0.451
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 2
+phase: 6 fold: 5 epoch: 2 - loss:3.599
+phase: 6 fold: 5 epoch: 2 - accuracy:0.439
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 3
+phase: 6 fold: 5 epoch: 3 - loss:3.610
+phase: 6 fold: 5 epoch: 3 - accuracy:0.431
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 4
+phase: 6 fold: 5 epoch: 4 - loss:3.587
+phase: 6 fold: 5 epoch: 4 - accuracy:0.431
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 5
+phase: 6 fold: 5 epoch: 5 - loss:3.582
+phase: 6 fold: 5 epoch: 5 - accuracy:0.487
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 6
+phase: 6 fold: 5 epoch: 6 - loss:3.575
+phase: 6 fold: 5 epoch: 6 - accuracy:0.507
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 7
+phase: 6 fold: 5 epoch: 7 - loss:3.615
+phase: 6 fold: 5 epoch: 7 - accuracy:0.401
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Starting epoch 8
+phase: 6 fold: 5 epoch: 8 - loss:3.601
+phase: 6 fold: 5 epoch: 8 - accuracy:0.464
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Starting epoch 9
+phase: 6 fold: 5 epoch: 9 - loss:3.581
+phase: 6 fold: 5 epoch: 9 - accuracy:0.488
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Starting epoch 10
+phase: 6 fold: 5 epoch:10 - loss:3.585
+phase: 6 fold: 5 epoch:10 - accuracy:0.486
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Starting epoch 11
+phase: 6 fold: 5 epoch:11 - loss:3.602
+phase: 6 fold: 5 epoch:11 - accuracy:0.441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Starting epoch 12
+phase: 6 fold: 5 epoch:12 - loss:3.586
+phase: 6 fold: 5 epoch:12 - accuracy:0.459
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Starting epoch 13
+phase: 6 fold: 5 epoch:13 - loss:3.616
+phase: 6 fold: 5 epoch:13 - accuracy:0.476
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Starting epoch 14
+phase: 6 fold: 5 epoch:14 - loss:3.600
+phase: 6 fold: 5 epoch:14 - accuracy:0.479
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Starting epoch 15
+phase: 6 fold: 5 epoch:15 - loss:3.603
+phase: 6 fold: 5 epoch:15 - accuracy:0.486
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Starting epoch 16
+phase: 6 fold: 5 epoch:16 - loss:3.629
+phase: 6 fold: 5 epoch:16 - accuracy:0.464
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Starting epoch 17
+phase: 6 fold: 5 epoch:17 - loss:3.639
+phase: 6 fold: 5 epoch:17 - accuracy:0.414
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Starting epoch 18
+phase: 6 fold: 5 epoch:18 - loss:3.617
+phase: 6 fold: 5 epoch:18 - accuracy:0.429
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Starting epoch 19
+phase: 6 fold: 5 epoch:19 - loss:3.622
+phase: 6 fold: 5 epoch:19 - accuracy:0.467
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Starting epoch 20
+phase: 6 fold: 5 epoch:20 - loss:3.649
+phase: 6 fold: 5 epoch:20 - accuracy:0.435
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+*** phase: 6 fold: 5 epoch: 6 - top accuracy:0.507
+phase:  7 
+classes:  70 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+get_k_fold_training_datasets: phase=7 fold=0 use_memory=False
+Starting epoch 1
+phase: 7 fold: 1 epoch: 1 - loss:4.158
+phase: 7 fold: 1 epoch: 1 - accuracy:0.020
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+phase: 7 fold: 1 epoch: 2 - loss:4.025
+phase: 7 fold: 1 epoch: 2 - accuracy:0.046
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+phase: 7 fold: 1 epoch: 3 - loss:3.935
+phase: 7 fold: 1 epoch: 3 - accuracy:0.193
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+phase: 7 fold: 1 epoch: 4 - loss:3.846
+phase: 7 fold: 1 epoch: 4 - accuracy:0.258
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+phase: 7 fold: 1 epoch: 5 - loss:3.801
+phase: 7 fold: 1 epoch: 5 - accuracy:0.346
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+phase: 7 fold: 1 epoch: 6 - loss:3.807
+phase: 7 fold: 1 epoch: 6 - accuracy:0.294
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+phase: 7 fold: 1 epoch: 7 - loss:3.771
+phase: 7 fold: 1 epoch: 7 - accuracy:0.312
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+phase: 7 fold: 1 epoch: 8 - loss:3.767
+phase: 7 fold: 1 epoch: 8 - accuracy:0.329
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+phase: 7 fold: 1 epoch: 9 - loss:3.711
+phase: 7 fold: 1 epoch: 9 - accuracy:0.340
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+phase: 7 fold: 1 epoch:10 - loss:3.771
+phase: 7 fold: 1 epoch:10 - accuracy:0.308
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+phase: 7 fold: 1 epoch:11 - loss:3.747
+phase: 7 fold: 1 epoch:11 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+phase: 7 fold: 1 epoch:12 - loss:3.725
+phase: 7 fold: 1 epoch:12 - accuracy:0.385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+phase: 7 fold: 1 epoch:13 - loss:3.725
+phase: 7 fold: 1 epoch:13 - accuracy:0.351
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+phase: 7 fold: 1 epoch:14 - loss:3.743
+phase: 7 fold: 1 epoch:14 - accuracy:0.339
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+phase: 7 fold: 1 epoch:15 - loss:3.737
+phase: 7 fold: 1 epoch:15 - accuracy:0.371
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+phase: 7 fold: 1 epoch:16 - loss:3.732
+phase: 7 fold: 1 epoch:16 - accuracy:0.377
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+phase: 7 fold: 1 epoch:17 - loss:3.727
+phase: 7 fold: 1 epoch:17 - accuracy:0.377
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+phase: 7 fold: 1 epoch:18 - loss:3.778
+phase: 7 fold: 1 epoch:18 - accuracy:0.345
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+phase: 7 fold: 1 epoch:19 - loss:3.751
+phase: 7 fold: 1 epoch:19 - accuracy:0.349
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+phase: 7 fold: 1 epoch:20 - loss:3.788
+phase: 7 fold: 1 epoch:20 - accuracy:0.360
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+*** phase: 7 fold: 1 epoch:12 - top accuracy:0.385
+phase:  7 
+classes:  70 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+get_k_fold_training_datasets: phase=7 fold=1 use_memory=False
+Starting epoch 1
+phase: 7 fold: 2 epoch: 1 - loss:3.726
+phase: 7 fold: 2 epoch: 1 - accuracy:0.302
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+phase: 7 fold: 2 epoch: 2 - loss:3.680
+phase: 7 fold: 2 epoch: 2 - accuracy:0.361
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+phase: 7 fold: 2 epoch: 3 - loss:3.711
+phase: 7 fold: 2 epoch: 3 - accuracy:0.336
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+phase: 7 fold: 2 epoch: 4 - loss:3.686
+phase: 7 fold: 2 epoch: 4 - accuracy:0.406
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+phase: 7 fold: 2 epoch: 5 - loss:3.718
+phase: 7 fold: 2 epoch: 5 - accuracy:0.375
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+phase: 7 fold: 2 epoch: 6 - loss:3.711
+phase: 7 fold: 2 epoch: 6 - accuracy:0.350
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+phase: 7 fold: 2 epoch: 7 - loss:3.718
+phase: 7 fold: 2 epoch: 7 - accuracy:0.392
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+phase: 7 fold: 2 epoch: 8 - loss:3.745
+phase: 7 fold: 2 epoch: 8 - accuracy:0.329
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+phase: 7 fold: 2 epoch: 9 - loss:3.740
+phase: 7 fold: 2 epoch: 9 - accuracy:0.364
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+phase: 7 fold: 2 epoch:10 - loss:3.752
+phase: 7 fold: 2 epoch:10 - accuracy:0.365
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+phase: 7 fold: 2 epoch:11 - loss:3.740
+phase: 7 fold: 2 epoch:11 - accuracy:0.366
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+phase: 7 fold: 2 epoch:12 - loss:3.736
+phase: 7 fold: 2 epoch:12 - accuracy:0.360
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+phase: 7 fold: 2 epoch:13 - loss:3.751
+phase: 7 fold: 2 epoch:13 - accuracy:0.340
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+phase: 7 fold: 2 epoch:14 - loss:3.777
+phase: 7 fold: 2 epoch:14 - accuracy:0.367
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+phase: 7 fold: 2 epoch:15 - loss:3.759
+phase: 7 fold: 2 epoch:15 - accuracy:0.342
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+phase: 7 fold: 2 epoch:16 - loss:3.742
+phase: 7 fold: 2 epoch:16 - accuracy:0.358
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+phase: 7 fold: 2 epoch:17 - loss:3.746
+phase: 7 fold: 2 epoch:17 - accuracy:0.400
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+phase: 7 fold: 2 epoch:18 - loss:3.799
+phase: 7 fold: 2 epoch:18 - accuracy:0.315
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+phase: 7 fold: 2 epoch:19 - loss:3.756
+phase: 7 fold: 2 epoch:19 - accuracy:0.308
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+phase: 7 fold: 2 epoch:20 - loss:3.779
+phase: 7 fold: 2 epoch:20 - accuracy:0.325
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+*** phase: 7 fold: 2 epoch: 4 - top accuracy:0.406
+phase:  7 
+classes:  70 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+get_k_fold_training_datasets: phase=7 fold=2 use_memory=False
+Starting epoch 1
+phase: 7 fold: 3 epoch: 1 - loss:3.753
+phase: 7 fold: 3 epoch: 1 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+phase: 7 fold: 3 epoch: 2 - loss:3.743
+phase: 7 fold: 3 epoch: 2 - accuracy:0.347
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+phase: 7 fold: 3 epoch: 3 - loss:3.720
+phase: 7 fold: 3 epoch: 3 - accuracy:0.390
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+phase: 7 fold: 3 epoch: 4 - loss:3.724
+phase: 7 fold: 3 epoch: 4 - accuracy:0.304
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+phase: 7 fold: 3 epoch: 5 - loss:3.744
+phase: 7 fold: 3 epoch: 5 - accuracy:0.331
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+phase: 7 fold: 3 epoch: 6 - loss:3.710
+phase: 7 fold: 3 epoch: 6 - accuracy:0.373
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+phase: 7 fold: 3 epoch: 7 - loss:3.711
+phase: 7 fold: 3 epoch: 7 - accuracy:0.392
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+phase: 7 fold: 3 epoch: 8 - loss:3.739
+phase: 7 fold: 3 epoch: 8 - accuracy:0.415
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+phase: 7 fold: 3 epoch: 9 - loss:3.732
+phase: 7 fold: 3 epoch: 9 - accuracy:0.383
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+phase: 7 fold: 3 epoch:10 - loss:3.739
+phase: 7 fold: 3 epoch:10 - accuracy:0.402
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+phase: 7 fold: 3 epoch:11 - loss:3.750
+phase: 7 fold: 3 epoch:11 - accuracy:0.370
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+phase: 7 fold: 3 epoch:12 - loss:3.778
+phase: 7 fold: 3 epoch:12 - accuracy:0.324
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+phase: 7 fold: 3 epoch:13 - loss:3.768
+phase: 7 fold: 3 epoch:13 - accuracy:0.358
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+phase: 7 fold: 3 epoch:14 - loss:3.791
+phase: 7 fold: 3 epoch:14 - accuracy:0.382
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+phase: 7 fold: 3 epoch:15 - loss:3.777
+phase: 7 fold: 3 epoch:15 - accuracy:0.324
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+phase: 7 fold: 3 epoch:16 - loss:3.772
+phase: 7 fold: 3 epoch:16 - accuracy:0.386
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+phase: 7 fold: 3 epoch:17 - loss:3.814
+phase: 7 fold: 3 epoch:17 - accuracy:0.356
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+phase: 7 fold: 3 epoch:18 - loss:3.797
+phase: 7 fold: 3 epoch:18 - accuracy:0.375
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+phase: 7 fold: 3 epoch:19 - loss:3.795
+phase: 7 fold: 3 epoch:19 - accuracy:0.343
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+phase: 7 fold: 3 epoch:20 - loss:3.806
+phase: 7 fold: 3 epoch:20 - accuracy:0.360
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+*** phase: 7 fold: 3 epoch: 8 - top accuracy:0.415
+phase:  7 
+classes:  70 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+get_k_fold_training_datasets: phase=7 fold=3 use_memory=False
+Starting epoch 1
+phase: 7 fold: 4 epoch: 1 - loss:3.762
+phase: 7 fold: 4 epoch: 1 - accuracy:0.274
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+phase: 7 fold: 4 epoch: 2 - loss:3.775
+phase: 7 fold: 4 epoch: 2 - accuracy:0.280
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+phase: 7 fold: 4 epoch: 3 - loss:3.764
+phase: 7 fold: 4 epoch: 3 - accuracy:0.309
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+phase: 7 fold: 4 epoch: 4 - loss:3.767
+phase: 7 fold: 4 epoch: 4 - accuracy:0.304
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+phase: 7 fold: 4 epoch: 5 - loss:3.775
+phase: 7 fold: 4 epoch: 5 - accuracy:0.362
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+phase: 7 fold: 4 epoch: 6 - loss:3.754
+phase: 7 fold: 4 epoch: 6 - accuracy:0.300
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+phase: 7 fold: 4 epoch: 7 - loss:3.772
+phase: 7 fold: 4 epoch: 7 - accuracy:0.328
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+phase: 7 fold: 4 epoch: 8 - loss:3.820
+phase: 7 fold: 4 epoch: 8 - accuracy:0.353
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+phase: 7 fold: 4 epoch: 9 - loss:3.774
+phase: 7 fold: 4 epoch: 9 - accuracy:0.328
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+phase: 7 fold: 4 epoch:10 - loss:3.776
+phase: 7 fold: 4 epoch:10 - accuracy:0.346
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+phase: 7 fold: 4 epoch:11 - loss:3.801
+phase: 7 fold: 4 epoch:11 - accuracy:0.346
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+phase: 7 fold: 4 epoch:12 - loss:3.818
+phase: 7 fold: 4 epoch:12 - accuracy:0.336
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+phase: 7 fold: 4 epoch:13 - loss:3.814
+phase: 7 fold: 4 epoch:13 - accuracy:0.354
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+phase: 7 fold: 4 epoch:14 - loss:3.808
+phase: 7 fold: 4 epoch:14 - accuracy:0.349
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+phase: 7 fold: 4 epoch:15 - loss:3.817
+phase: 7 fold: 4 epoch:15 - accuracy:0.324
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+phase: 7 fold: 4 epoch:16 - loss:3.849
+phase: 7 fold: 4 epoch:16 - accuracy:0.292
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+phase: 7 fold: 4 epoch:17 - loss:3.795
+phase: 7 fold: 4 epoch:17 - accuracy:0.254
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+phase: 7 fold: 4 epoch:18 - loss:3.792
+phase: 7 fold: 4 epoch:18 - accuracy:0.311
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+phase: 7 fold: 4 epoch:19 - loss:3.781
+phase: 7 fold: 4 epoch:19 - accuracy:0.315
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+phase: 7 fold: 4 epoch:20 - loss:3.819
+phase: 7 fold: 4 epoch:20 - accuracy:0.331
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+*** phase: 7 fold: 4 epoch: 5 - top accuracy:0.362
+phase:  7 
+classes:  70 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+get_k_fold_training_datasets: phase=7 fold=4 use_memory=False
+Starting epoch 1
+phase: 7 fold: 5 epoch: 1 - loss:3.774
+phase: 7 fold: 5 epoch: 1 - accuracy:0.277
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+phase: 7 fold: 5 epoch: 2 - loss:3.747
+phase: 7 fold: 5 epoch: 2 - accuracy:0.361
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+phase: 7 fold: 5 epoch: 3 - loss:3.747
+phase: 7 fold: 5 epoch: 3 - accuracy:0.357
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+phase: 7 fold: 5 epoch: 4 - loss:3.771
+phase: 7 fold: 5 epoch: 4 - accuracy:0.342
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+phase: 7 fold: 5 epoch: 5 - loss:3.745
+phase: 7 fold: 5 epoch: 5 - accuracy:0.390
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+phase: 7 fold: 5 epoch: 6 - loss:3.748
+phase: 7 fold: 5 epoch: 6 - accuracy:0.410
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+phase: 7 fold: 5 epoch: 7 - loss:3.788
+phase: 7 fold: 5 epoch: 7 - accuracy:0.349
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+phase: 7 fold: 5 epoch: 8 - loss:3.778
+phase: 7 fold: 5 epoch: 8 - accuracy:0.383
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+phase: 7 fold: 5 epoch: 9 - loss:3.800
+phase: 7 fold: 5 epoch: 9 - accuracy:0.359
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+phase: 7 fold: 5 epoch:10 - loss:3.786
+phase: 7 fold: 5 epoch:10 - accuracy:0.391
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+phase: 7 fold: 5 epoch:11 - loss:3.756
+phase: 7 fold: 5 epoch:11 - accuracy:0.387
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+phase: 7 fold: 5 epoch:12 - loss:3.786
+phase: 7 fold: 5 epoch:12 - accuracy:0.367
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+phase: 7 fold: 5 epoch:13 - loss:3.766
+phase: 7 fold: 5 epoch:13 - accuracy:0.418
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+phase: 7 fold: 5 epoch:14 - loss:3.770
+phase: 7 fold: 5 epoch:14 - accuracy:0.363
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+phase: 7 fold: 5 epoch:15 - loss:3.798
+phase: 7 fold: 5 epoch:15 - accuracy:0.386
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+phase: 7 fold: 5 epoch:16 - loss:3.771
+phase: 7 fold: 5 epoch:16 - accuracy:0.378
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+phase: 7 fold: 5 epoch:17 - loss:3.757
+phase: 7 fold: 5 epoch:17 - accuracy:0.381
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+phase: 7 fold: 5 epoch:18 - loss:3.788
+phase: 7 fold: 5 epoch:18 - accuracy:0.315
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+phase: 7 fold: 5 epoch:19 - loss:3.765
+phase: 7 fold: 5 epoch:19 - accuracy:0.320
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+phase: 7 fold: 5 epoch:20 - loss:3.694
+phase: 7 fold: 5 epoch:20 - accuracy:0.341
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+*** phase: 7 fold: 5 epoch:13 - top accuracy:0.418
+phase:  8 
+classes:  80 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+get_k_fold_training_datasets: phase=8 fold=0 use_memory=False
+Starting epoch 1
+phase: 8 fold: 1 epoch: 1 - loss:4.302
+phase: 8 fold: 1 epoch: 1 - accuracy:0.028
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+phase: 8 fold: 1 epoch: 2 - loss:4.149
+phase: 8 fold: 1 epoch: 2 - accuracy:0.132
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+phase: 8 fold: 1 epoch: 3 - loss:4.069
+phase: 8 fold: 1 epoch: 3 - accuracy:0.236
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+phase: 8 fold: 1 epoch: 4 - loss:4.019
+phase: 8 fold: 1 epoch: 4 - accuracy:0.224
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+phase: 8 fold: 1 epoch: 5 - loss:3.973
+phase: 8 fold: 1 epoch: 5 - accuracy:0.262
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+phase: 8 fold: 1 epoch: 6 - loss:3.950
+phase: 8 fold: 1 epoch: 6 - accuracy:0.269
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+phase: 8 fold: 1 epoch: 7 - loss:3.938
+phase: 8 fold: 1 epoch: 7 - accuracy:0.261
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+phase: 8 fold: 1 epoch: 8 - loss:3.939
+phase: 8 fold: 1 epoch: 8 - accuracy:0.279
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+phase: 8 fold: 1 epoch: 9 - loss:3.939
+phase: 8 fold: 1 epoch: 9 - accuracy:0.277
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+phase: 8 fold: 1 epoch:10 - loss:3.933
+phase: 8 fold: 1 epoch:10 - accuracy:0.293
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+phase: 8 fold: 1 epoch:11 - loss:3.933
+phase: 8 fold: 1 epoch:11 - accuracy:0.258
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+phase: 8 fold: 1 epoch:12 - loss:3.927
+phase: 8 fold: 1 epoch:12 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+phase: 8 fold: 1 epoch:13 - loss:3.941
+phase: 8 fold: 1 epoch:13 - accuracy:0.268
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+phase: 8 fold: 1 epoch:14 - loss:3.935
+phase: 8 fold: 1 epoch:14 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+phase: 8 fold: 1 epoch:15 - loss:3.939
+phase: 8 fold: 1 epoch:15 - accuracy:0.272
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+phase: 8 fold: 1 epoch:16 - loss:3.939
+phase: 8 fold: 1 epoch:16 - accuracy:0.266
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+phase: 8 fold: 1 epoch:17 - loss:3.962
+phase: 8 fold: 1 epoch:17 - accuracy:0.257
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+phase: 8 fold: 1 epoch:18 - loss:3.962
+phase: 8 fold: 1 epoch:18 - accuracy:0.251
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+phase: 8 fold: 1 epoch:19 - loss:3.967
+phase: 8 fold: 1 epoch:19 - accuracy:0.223
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+phase: 8 fold: 1 epoch:20 - loss:3.960
+phase: 8 fold: 1 epoch:20 - accuracy:0.235
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+*** phase: 8 fold: 1 epoch:10 - top accuracy:0.293
+phase:  8 
+classes:  80 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+get_k_fold_training_datasets: phase=8 fold=1 use_memory=False
+Starting epoch 1
+phase: 8 fold: 2 epoch: 1 - loss:3.885
+phase: 8 fold: 2 epoch: 1 - accuracy:0.379
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+phase: 8 fold: 2 epoch: 2 - loss:3.910
+phase: 8 fold: 2 epoch: 2 - accuracy:0.319
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+phase: 8 fold: 2 epoch: 3 - loss:3.924
+phase: 8 fold: 2 epoch: 3 - accuracy:0.329
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+phase: 8 fold: 2 epoch: 4 - loss:3.857
+phase: 8 fold: 2 epoch: 4 - accuracy:0.365
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+phase: 8 fold: 2 epoch: 5 - loss:3.900
+phase: 8 fold: 2 epoch: 5 - accuracy:0.318
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+phase: 8 fold: 2 epoch: 6 - loss:3.918
+phase: 8 fold: 2 epoch: 6 - accuracy:0.322
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+phase: 8 fold: 2 epoch: 7 - loss:3.916
+phase: 8 fold: 2 epoch: 7 - accuracy:0.299
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+phase: 8 fold: 2 epoch: 8 - loss:3.927
+phase: 8 fold: 2 epoch: 8 - accuracy:0.317
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+phase: 8 fold: 2 epoch: 9 - loss:3.944
+phase: 8 fold: 2 epoch: 9 - accuracy:0.302
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+phase: 8 fold: 2 epoch:10 - loss:3.955
+phase: 8 fold: 2 epoch:10 - accuracy:0.274
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+phase: 8 fold: 2 epoch:11 - loss:3.958
+phase: 8 fold: 2 epoch:11 - accuracy:0.295
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+phase: 8 fold: 2 epoch:12 - loss:3.965
+phase: 8 fold: 2 epoch:12 - accuracy:0.255
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+phase: 8 fold: 2 epoch:13 - loss:3.972
+phase: 8 fold: 2 epoch:13 - accuracy:0.264
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+phase: 8 fold: 2 epoch:14 - loss:3.953
+phase: 8 fold: 2 epoch:14 - accuracy:0.290
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+phase: 8 fold: 2 epoch:15 - loss:3.975
+phase: 8 fold: 2 epoch:15 - accuracy:0.296
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+phase: 8 fold: 2 epoch:16 - loss:3.959
+phase: 8 fold: 2 epoch:16 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+phase: 8 fold: 2 epoch:17 - loss:3.969
+phase: 8 fold: 2 epoch:17 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+phase: 8 fold: 2 epoch:18 - loss:3.984
+phase: 8 fold: 2 epoch:18 - accuracy:0.287
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+phase: 8 fold: 2 epoch:19 - loss:4.003
+phase: 8 fold: 2 epoch:19 - accuracy:0.262
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+phase: 8 fold: 2 epoch:20 - loss:3.989
+phase: 8 fold: 2 epoch:20 - accuracy:0.290
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+*** phase: 8 fold: 2 epoch: 1 - top accuracy:0.379
+phase:  8 
+classes:  80 
+fold:  3
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+get_k_fold_training_datasets: phase=8 fold=2 use_memory=False
+Starting epoch 1
+phase: 8 fold: 3 epoch: 1 - loss:3.963
+phase: 8 fold: 3 epoch: 1 - accuracy:0.282
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+phase: 8 fold: 3 epoch: 2 - loss:3.918
+phase: 8 fold: 3 epoch: 2 - accuracy:0.378
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+phase: 8 fold: 3 epoch: 3 - loss:3.943
+phase: 8 fold: 3 epoch: 3 - accuracy:0.335
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+phase: 8 fold: 3 epoch: 4 - loss:3.933
+phase: 8 fold: 3 epoch: 4 - accuracy:0.322
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+phase: 8 fold: 3 epoch: 5 - loss:3.944
+phase: 8 fold: 3 epoch: 5 - accuracy:0.305
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+phase: 8 fold: 3 epoch: 6 - loss:3.916
+phase: 8 fold: 3 epoch: 6 - accuracy:0.295
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+phase: 8 fold: 3 epoch: 7 - loss:3.936
+phase: 8 fold: 3 epoch: 7 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+phase: 8 fold: 3 epoch: 8 - loss:3.948
+phase: 8 fold: 3 epoch: 8 - accuracy:0.303
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+phase: 8 fold: 3 epoch: 9 - loss:3.924
+phase: 8 fold: 3 epoch: 9 - accuracy:0.300
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+phase: 8 fold: 3 epoch:10 - loss:3.930
+phase: 8 fold: 3 epoch:10 - accuracy:0.270
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+phase: 8 fold: 3 epoch:11 - loss:3.942
+phase: 8 fold: 3 epoch:11 - accuracy:0.261
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+phase: 8 fold: 3 epoch:12 - loss:3.941
+phase: 8 fold: 3 epoch:12 - accuracy:0.266
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+phase: 8 fold: 3 epoch:13 - loss:3.948
+phase: 8 fold: 3 epoch:13 - accuracy:0.273
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+phase: 8 fold: 3 epoch:14 - loss:3.952
+phase: 8 fold: 3 epoch:14 - accuracy:0.295
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+phase: 8 fold: 3 epoch:15 - loss:3.970
+phase: 8 fold: 3 epoch:15 - accuracy:0.259
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+phase: 8 fold: 3 epoch:16 - loss:3.977
+phase: 8 fold: 3 epoch:16 - accuracy:0.271
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+phase: 8 fold: 3 epoch:17 - loss:3.986
+phase: 8 fold: 3 epoch:17 - accuracy:0.292
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+phase: 8 fold: 3 epoch:18 - loss:3.961
+phase: 8 fold: 3 epoch:18 - accuracy:0.297
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+phase: 8 fold: 3 epoch:19 - loss:3.967
+phase: 8 fold: 3 epoch:19 - accuracy:0.241
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+phase: 8 fold: 3 epoch:20 - loss:3.976
+phase: 8 fold: 3 epoch:20 - accuracy:0.281
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+*** phase: 8 fold: 3 epoch: 2 - top accuracy:0.378
+phase:  8 
+classes:  80 
+fold:  4
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+get_k_fold_training_datasets: phase=8 fold=3 use_memory=False
+Starting epoch 1
+phase: 8 fold: 4 epoch: 1 - loss:3.965
+phase: 8 fold: 4 epoch: 1 - accuracy:0.351
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+phase: 8 fold: 4 epoch: 2 - loss:3.944
+phase: 8 fold: 4 epoch: 2 - accuracy:0.338
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+phase: 8 fold: 4 epoch: 3 - loss:3.907
+phase: 8 fold: 4 epoch: 3 - accuracy:0.393
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+phase: 8 fold: 4 epoch: 4 - loss:3.944
+phase: 8 fold: 4 epoch: 4 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+phase: 8 fold: 4 epoch: 5 - loss:3.919
+phase: 8 fold: 4 epoch: 5 - accuracy:0.334
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+phase: 8 fold: 4 epoch: 6 - loss:3.907
+phase: 8 fold: 4 epoch: 6 - accuracy:0.340
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+phase: 8 fold: 4 epoch: 7 - loss:3.936
+phase: 8 fold: 4 epoch: 7 - accuracy:0.318
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+phase: 8 fold: 4 epoch: 8 - loss:3.920
+phase: 8 fold: 4 epoch: 8 - accuracy:0.326
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+phase: 8 fold: 4 epoch: 9 - loss:3.942
+phase: 8 fold: 4 epoch: 9 - accuracy:0.319
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+phase: 8 fold: 4 epoch:10 - loss:3.960
+phase: 8 fold: 4 epoch:10 - accuracy:0.301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+phase: 8 fold: 4 epoch:11 - loss:3.951
+phase: 8 fold: 4 epoch:11 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+phase: 8 fold: 4 epoch:12 - loss:3.954
+phase: 8 fold: 4 epoch:12 - accuracy:0.297
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+phase: 8 fold: 4 epoch:13 - loss:3.962
+phase: 8 fold: 4 epoch:13 - accuracy:0.309
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+phase: 8 fold: 4 epoch:14 - loss:3.938
+phase: 8 fold: 4 epoch:14 - accuracy:0.291
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+phase: 8 fold: 4 epoch:15 - loss:3.981
+phase: 8 fold: 4 epoch:15 - accuracy:0.256
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+phase: 8 fold: 4 epoch:16 - loss:3.970
+phase: 8 fold: 4 epoch:16 - accuracy:0.274
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+phase: 8 fold: 4 epoch:17 - loss:3.969
+phase: 8 fold: 4 epoch:17 - accuracy:0.308
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+phase: 8 fold: 4 epoch:18 - loss:3.972
+phase: 8 fold: 4 epoch:18 - accuracy:0.277
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+phase: 8 fold: 4 epoch:19 - loss:3.998
+phase: 8 fold: 4 epoch:19 - accuracy:0.273
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+phase: 8 fold: 4 epoch:20 - loss:4.004
+phase: 8 fold: 4 epoch:20 - accuracy:0.227
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+*** phase: 8 fold: 4 epoch: 3 - top accuracy:0.393
+phase:  8 
+classes:  80 
+fold:  5
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+get_k_fold_training_datasets: phase=8 fold=4 use_memory=False
+Starting epoch 1
+phase: 8 fold: 5 epoch: 1 - loss:3.949
+phase: 8 fold: 5 epoch: 1 - accuracy:0.365
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 2
+phase: 8 fold: 5 epoch: 2 - loss:3.932
+phase: 8 fold: 5 epoch: 2 - accuracy:0.397
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 3
+phase: 8 fold: 5 epoch: 3 - loss:3.947
+phase: 8 fold: 5 epoch: 3 - accuracy:0.368
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 4
+phase: 8 fold: 5 epoch: 4 - loss:3.897
+phase: 8 fold: 5 epoch: 4 - accuracy:0.414
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 5
+phase: 8 fold: 5 epoch: 5 - loss:3.958
+phase: 8 fold: 5 epoch: 5 - accuracy:0.306
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 6
+phase: 8 fold: 5 epoch: 6 - loss:3.888
+phase: 8 fold: 5 epoch: 6 - accuracy:0.384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 7
+phase: 8 fold: 5 epoch: 7 - loss:3.932
+phase: 8 fold: 5 epoch: 7 - accuracy:0.330
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 8
+phase: 8 fold: 5 epoch: 8 - loss:3.949
+phase: 8 fold: 5 epoch: 8 - accuracy:0.330
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 9
+phase: 8 fold: 5 epoch: 9 - loss:3.921
+phase: 8 fold: 5 epoch: 9 - accuracy:0.332
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Starting epoch 10
+phase: 8 fold: 5 epoch:10 - loss:3.932
+phase: 8 fold: 5 epoch:10 - accuracy:0.347
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Starting epoch 11
+phase: 8 fold: 5 epoch:11 - loss:3.951
+phase: 8 fold: 5 epoch:11 - accuracy:0.337
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Starting epoch 12
+phase: 8 fold: 5 epoch:12 - loss:3.948
+phase: 8 fold: 5 epoch:12 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Starting epoch 13
+phase: 8 fold: 5 epoch:13 - loss:3.960
+phase: 8 fold: 5 epoch:13 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Starting epoch 14
+phase: 8 fold: 5 epoch:14 - loss:3.938
+phase: 8 fold: 5 epoch:14 - accuracy:0.327
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Starting epoch 15
+phase: 8 fold: 5 epoch:15 - loss:3.956
+phase: 8 fold: 5 epoch:15 - accuracy:0.377
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Starting epoch 16
+phase: 8 fold: 5 epoch:16 - loss:3.964
+phase: 8 fold: 5 epoch:16 - accuracy:0.332
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Starting epoch 17
+phase: 8 fold: 5 epoch:17 - loss:3.968
+phase: 8 fold: 5 epoch:17 - accuracy:0.271
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Starting epoch 18
+phase: 8 fold: 5 epoch:18 - loss:3.994
+phase: 8 fold: 5 epoch:18 - accuracy:0.303
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Starting epoch 19
+phase: 8 fold: 5 epoch:19 - loss:3.976
+phase: 8 fold: 5 epoch:19 - accuracy:0.307
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Starting epoch 20
+phase: 8 fold: 5 epoch:20 - loss:3.991
+phase: 8 fold: 5 epoch:20 - accuracy:0.305
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+*** phase: 8 fold: 5 epoch: 4 - top accuracy:0.414
+phase:  9 
+classes:  90 
+fold:  1
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+get_k_fold_training_datasets: phase=9 fold=0 use_memory=False
+Starting epoch 1
+phase: 9 fold: 1 epoch: 1 - loss:4.430
+phase: 9 fold: 1 epoch: 1 - accuracy:0.030
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 2
+phase: 9 fold: 1 epoch: 2 - loss:4.304
+phase: 9 fold: 1 epoch: 2 - accuracy:0.074
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 3
+phase: 9 fold: 1 epoch: 3 - loss:4.196
+phase: 9 fold: 1 epoch: 3 - accuracy:0.164
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 4
+phase: 9 fold: 1 epoch: 4 - loss:4.128
+phase: 9 fold: 1 epoch: 4 - accuracy:0.227
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 5
+phase: 9 fold: 1 epoch: 5 - loss:4.082
+phase: 9 fold: 1 epoch: 5 - accuracy:0.195
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 6
+phase: 9 fold: 1 epoch: 6 - loss:4.064
+phase: 9 fold: 1 epoch: 6 - accuracy:0.199
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 7
+phase: 9 fold: 1 epoch: 7 - loss:4.051
+phase: 9 fold: 1 epoch: 7 - accuracy:0.225
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 8
+phase: 9 fold: 1 epoch: 8 - loss:4.075
+phase: 9 fold: 1 epoch: 8 - accuracy:0.217
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 9
+phase: 9 fold: 1 epoch: 9 - loss:4.053
+phase: 9 fold: 1 epoch: 9 - accuracy:0.219
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+Starting epoch 10
+phase: 9 fold: 1 epoch:10 - loss:4.058
+phase: 9 fold: 1 epoch:10 - accuracy:0.220
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+Starting epoch 11
+phase: 9 fold: 1 epoch:11 - loss:4.090
+phase: 9 fold: 1 epoch:11 - accuracy:0.206
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+Starting epoch 12
+phase: 9 fold: 1 epoch:12 - loss:4.076
+phase: 9 fold: 1 epoch:12 - accuracy:0.210
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Starting epoch 13
+phase: 9 fold: 1 epoch:13 - loss:4.070
+phase: 9 fold: 1 epoch:13 - accuracy:0.225
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+Starting epoch 14
+phase: 9 fold: 1 epoch:14 - loss:4.084
+phase: 9 fold: 1 epoch:14 - accuracy:0.207
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+Starting epoch 15
+phase: 9 fold: 1 epoch:15 - loss:4.089
+phase: 9 fold: 1 epoch:15 - accuracy:0.202
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+Starting epoch 16
+phase: 9 fold: 1 epoch:16 - loss:4.071
+phase: 9 fold: 1 epoch:16 - accuracy:0.194
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+Starting epoch 17
+phase: 9 fold: 1 epoch:17 - loss:4.088
+phase: 9 fold: 1 epoch:17 - accuracy:0.220
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+Starting epoch 18
+phase: 9 fold: 1 epoch:18 - loss:4.117
+phase: 9 fold: 1 epoch:18 - accuracy:0.182
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+Starting epoch 19
+phase: 9 fold: 1 epoch:19 - loss:4.086
+phase: 9 fold: 1 epoch:19 - accuracy:0.165
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+Starting epoch 20
+phase: 9 fold: 1 epoch:20 - loss:4.141
+phase: 9 fold: 1 epoch:20 - accuracy:0.182
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+*** phase: 9 fold: 1 epoch: 4 - top accuracy:0.227
+phase:  9 
+classes:  90 
+fold:  2
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+get_k_fold_training_datasets: phase=9 fold=1 use_memory=False
+Starting epoch 1
+phase: 9 fold: 2 epoch: 1 - loss:4.148
+phase: 9 fold: 2 epoch: 1 - accuracy:0.200
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 2
+phase: 9 fold: 2 epoch: 2 - loss:4.110
+phase: 9 fold: 2 epoch: 2 - accuracy:0.244
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 3
+phase: 9 fold: 2 epoch: 3 - loss:4.075
+phase: 9 fold: 2 epoch: 3 - accuracy:0.267
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 4

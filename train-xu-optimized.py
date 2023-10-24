@@ -1,5 +1,7 @@
 import argparse
 import re
+import cv2
+from pathlib import Path
 import torch
 from torch import nn, optim
 from torch.optim import lr_scheduler
@@ -31,6 +33,7 @@ class CustomDataset(Dataset):
         self.imgs = []
         self.labels = []
         self.img_names = []
+        self.is_val = is_val
 
         if is_val:
             self.img_names = sorted(
@@ -70,9 +73,17 @@ class CustomDataset(Dataset):
 
     def __getitem__(self, idx):
         img_path = self.imgs[idx]
-        img = Image.open(img_path).convert("RGB")
-        if self.transform:
-            img = self.transform(img)
+        if self.is_val:
+            img = Image.open(img_path).convert("RGB")
+            if self.transform:
+                img = self.transform(img)
+        else:
+            # use cv2 for albumentation
+            image = cv2.imread(img_path)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            if self.transform:
+                # img = self.transform(img)
+                img = self.transform(image=image)["image"]
         if self.labels:
             label = self.labels[idx]
             return img, label
@@ -139,14 +150,26 @@ def get_best_model(num_epochs, batch_size, phase, model):
             accuracies.append(accuracy)
 
     top_checkpoint = np.argmax(accuracies)
+    accuracy = accuracies[top_checkpoint]
     print(
         "*** phase:{:2d} epoch:{:2d} - top accuracy:{:.3f}".format(
             phase,
             top_checkpoint,
-            accuracies[top_checkpoint],
+            accuracy,
         ),
         flush=True,
     )
+
+    filename = f"logs/validation.csv"
+
+    path = Path(filename)
+    file_exists = path.is_file()
+
+    file = open(filename, "a")
+    if not file_exists:
+        file.write(f"phase,accuracy\n")
+
+    file.write(f"{phase},{accuracy:.3f}\n")
 
     checkpoint_load(model, SAVE_PATH, top_checkpoint)
 
@@ -235,8 +258,8 @@ transform = transforms.Compose(
 )
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
-parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
+parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=50)
+parser.add_argument("-b", "--batch", type=int, help="Batch size", default=16)
 
 # Parse the arguments
 args = parser.parse_args()
@@ -300,7 +323,7 @@ for phase in range(1, 11):
     teacher_model = model
 
 # compress the results folder
-with zipfile.ZipFile("result.zip", "w") as zipf:
+with zipfile.ZipFile("results.zip", "w") as zipf:
     for dirname, subdirs, files in os.walk("results"):
         zipf.write(dirname)
         for filename in files:

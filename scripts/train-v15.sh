@@ -10,7 +10,7 @@ nvidia-smi
 # lscpu
 # grep MemTotal /proc/meminfo
 
-EPOCHS=20
+EPOCHS=10
 BATCH=128
 MODEL=1
 

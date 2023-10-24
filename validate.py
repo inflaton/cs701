@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import re
 import time
+import zipfile
 import numpy as np
 import pandas as pd
 import torch
@@ -145,6 +146,18 @@ with torch.no_grad():
         file.write(f"phase,accuracy\n")
 
     file.write(f"{phase},{accuracy:.3f}\n")
+
+# compress the results folder
+filename = "result.zip"
+path = Path(filename)
+if path.is_file():
+    os.remove(filename)
+with zipfile.ZipFile(filename, "w") as zipf:
+    for dirname, subdirs, files in os.walk("results"):
+        zipf.write(dirname)
+        for filename in files:
+            zipf.write(os.path.join(dirname, filename))
+
 
 # Calculate time elapsed
 end_time = time.time()

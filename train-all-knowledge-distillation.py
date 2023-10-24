@@ -1,7 +1,6 @@
 import gc
 import os
 import re
-import zipfile
 import time
 import numpy as np
 import pandas as pd
@@ -297,13 +296,6 @@ for i in range(NUM_PHASES):
     teacher_model, all_phases = train_and_evaluate(
         model, teacher_model, phase, device, all_phases
     )
-
-# compress the results folder
-with zipfile.ZipFile("result.zip", "w") as zipf:
-    for dirname, subdirs, files in os.walk("results"):
-        zipf.write(dirname)
-        for filename in files:
-            zipf.write(os.path.join(dirname, filename))
 
 all_phases.to_csv("logs/all_phases.csv", index=False)
 

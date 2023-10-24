@@ -178,7 +178,6 @@ class CustomImageDataset(Dataset):
             image = cv2.imread(image_path)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             if self.transform:
-                # img = self.transform(img)
                 img = self.transform(image=image)["image"]
 
         return img, label
@@ -329,12 +328,18 @@ class TrainingImageDataset(Dataset):
         image_path = self.image_paths[idx]
         # print("image_path: ", image_path)
 
-        image = Image.open(image_path).convert("RGB")
+        if self.transform is None or self.transform == preprocess_val_image:
+            img = Image.open(image_path).convert("RGB")
+            if self.transform:
+                img = self.transform(img)
+        else:
+            # use cv2 for albumentation
+            image = cv2.imread(image_path)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            if self.transform:
+                img = self.transform(image=image)["image"]
 
-        if self.transform:
-            image = self.transform(image)
-
-        return image, label
+        return img, label
 
 
 trainingImageDatasets = [

@@ -11,7 +11,7 @@ nvidia-smi
 # grep MemTotal /proc/meminfo
 
 EPOCHS=50
-BATCH=32
+BATCH=16
 
 echo Running python train-xu-optimized.py --epochs=$EPOCHS --batch=$BATCH
 python train-xu-optimized.py --epochs=$EPOCHS --batch=$BATCH

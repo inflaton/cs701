@@ -153,7 +153,8 @@ def get_best_model(num_epochs, batch_size, phase, model):
     for dirname, subdirs, files in os.walk(SAVE_PATH):
         for filename in files:
             checkpoint = int(re.split("[-.]", filename)[-2])
-            checkpoint_delete(SAVE_PATH, checkpoint)
+            if checkpoint != top_checkpoint:
+                checkpoint_delete(SAVE_PATH, checkpoint)
 
     return model
 
@@ -215,9 +216,12 @@ def train_and_evaluate(
             predictions.extend(preds.cpu().numpy())
             img_names.extend(names)
 
-    with open(f"results/result_{phase}.txt", "w", encoding="utf-8") as file:
+    filename = f"results/result_{phase}.txt"
+    with open(filename, "w", encoding="utf-8") as file:
         for name, pred in zip(img_names, predictions):
             file.write(f"{name} {pred}\n")
+
+    print(f"saved results to file: {filename}", flush=True)
 
     return model
 
@@ -247,6 +251,15 @@ print(
     batch_size,
 )
 
+RANDOM_SEED = 193
+
+# initialising seed for reproducibility
+torch.manual_seed(RANDOM_SEED)
+torch.cuda.manual_seed(RANDOM_SEED)
+seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+random.seed(RANDOM_SEED)
+torch.backends.cudnn.deterministic = True
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 teacher_model = None

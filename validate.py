@@ -77,19 +77,10 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 # Initialize the model for this run
 model = NeuralNetwork(num_classes, model_ver=model_ver)
 
-if model_ver == 1:
-    df = pd.read_csv(f"logs/phase_{phase}.csv")
-    if checkpoint == 0:
-        checkpoint = df["accuracy"].idxmax() + 1
-
-    val_acc = df["accuracy"][checkpoint - 1]
-    checkpoint_load(model, SAVE_PATH, checkpoint)
-    print("accuracy: ", val_acc)
-else:
-    for dirname, subdirs, files in os.walk(SAVE_PATH):
-        filename = files[0]
-        checkpoint = int(re.split("[-.]", filename)[-2])
-        checkpoint_load(model, SAVE_PATH, checkpoint, model_ver=model_ver)
+for dirname, subdirs, files in os.walk(SAVE_PATH):
+    filename = files[0]
+    checkpoint = int(re.split("[-.]", filename)[-2])
+    checkpoint_load(model, SAVE_PATH, checkpoint, model_ver=model_ver)
 
 # transfer over to gpu
 model = model.to(device)
@@ -151,12 +142,9 @@ with torch.no_grad():
 
     file = open(filename, "a")
     if not file_exists:
-        file.write(f"phase,{'val_acc,' if model_ver == 1 else ''}accuracy\n")
+        file.write(f"phase,accuracy\n")
 
-    if model_ver == 1:
-        file.write(f"{phase},{val_acc:.3f},{accuracy:.3f}\n")
-    else:
-        file.write(f"{phase},{accuracy:.3f}\n")
+    file.write(f"{phase},{accuracy:.3f}\n")
 
 # Calculate time elapsed
 end_time = time.time()

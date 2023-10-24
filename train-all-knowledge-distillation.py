@@ -258,10 +258,11 @@ def train_and_evaluate(model, teacher_model, phase, device, all_phases):
 
         checkpoint_load(model, SAVE_PATH, top_checkpoint)
 
-        for dirname, subdirs, files in os.walk(SAVE_PATH):
+        for _, _, files in os.walk(SAVE_PATH):
             for filename in files:
                 checkpoint = int(re.split("[-.]", filename)[-2])
-                checkpoint_delete(SAVE_PATH, checkpoint)
+                if top_checkpoint != checkpoint:
+                    checkpoint_delete(SAVE_PATH, checkpoint)
 
     return model, all_phases
 

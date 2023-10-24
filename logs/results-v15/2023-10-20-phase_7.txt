@@ -1,0 +1,246 @@
+Submitting job: /common/home/users/d/dh.huang.2023/code/cs701/train.sh
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Fri Oct 20 08:25:00 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   35C    P8              34W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Linux lagoon 4.18.0-477.21.1.el8_8.x86_64 #1 SMP Tue Aug 8 21:30:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="8.8 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.8 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.8"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.8"
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  2
+Core(s) per socket:  64
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          25
+Model:               1
+Model name:          AMD EPYC 7763 64-Core Processor
+Stepping:            1
+CPU MHz:             2450.000
+CPU max MHz:         3529.0520
+CPU min MHz:         1500.0000
+BogoMIPS:            4890.71
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            32768K
+NUMA node0 CPU(s):   0-127
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+MemTotal:       527671624 kB
+device:  cuda
+classes:  70 
+epochs:  40 
+batch:  32 
+phase:  7 
+checkpoint:  22
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+Starting epoch 1
+epoch: 1 train: loss:3.708
+epoch: 1 test: weighted f1 0.705
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 2
+epoch: 2 train: loss:3.588
+epoch: 2 test: weighted f1 0.754
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 3
+epoch: 3 train: loss:3.522
+epoch: 3 test: weighted f1 0.679
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 4
+epoch: 4 train: loss:3.478
+epoch: 4 test: weighted f1 0.664
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 5
+epoch: 5 train: loss:3.448
+epoch: 5 test: weighted f1 0.676
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 6
+epoch: 6 train: loss:3.427
+epoch: 6 test: weighted f1 0.689
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 7
+epoch: 7 train: loss:3.410
+epoch: 7 test: weighted f1 0.707
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 8
+epoch: 8 train: loss:3.396
+epoch: 8 test: weighted f1 0.708
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 9
+epoch: 9 train: loss:3.385
+epoch: 9 test: weighted f1 0.727
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Starting epoch 10
+epoch:10 train: loss:3.376
+epoch:10 test: weighted f1 0.726
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Starting epoch 11
+epoch:11 train: loss:3.369
+epoch:11 test: weighted f1 0.717
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Starting epoch 12
+epoch:12 train: loss:3.362
+epoch:12 test: weighted f1 0.744
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Starting epoch 13
+epoch:13 train: loss:3.356
+epoch:13 test: weighted f1 0.733
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Starting epoch 14
+epoch:14 train: loss:3.352
+epoch:14 test: weighted f1 0.745
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Starting epoch 15
+epoch:15 train: loss:3.347
+epoch:15 test: weighted f1 0.731
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Starting epoch 16
+epoch:16 train: loss:3.343
+epoch:16 test: weighted f1 0.730
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Starting epoch 17
+epoch:17 train: loss:3.340
+epoch:17 test: weighted f1 0.740
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Starting epoch 18
+epoch:18 train: loss:3.337
+epoch:18 test: weighted f1 0.663
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Starting epoch 19
+epoch:19 train: loss:3.335
+epoch:19 test: weighted f1 0.609
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Starting epoch 20
+epoch:20 train: loss:3.334
+epoch:20 test: weighted f1 0.498
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+Starting epoch 21
+epoch:21 train: loss:3.334
+epoch:21 test: weighted f1 0.528
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+Starting epoch 22
+epoch:22 train: loss:3.334
+epoch:22 test: weighted f1 0.447
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+Starting epoch 23
+epoch:23 train: loss:3.333
+epoch:23 test: weighted f1 0.559
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+Starting epoch 24
+epoch:24 train: loss:3.332
+epoch:24 test: weighted f1 0.591
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+Starting epoch 25
+epoch:25 train: loss:3.330
+epoch:25 test: weighted f1 0.665
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+Starting epoch 26
+epoch:26 train: loss:3.329
+epoch:26 test: weighted f1 0.689
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+Starting epoch 27
+epoch:27 train: loss:3.327
+epoch:27 test: weighted f1 0.673
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+Starting epoch 28
+epoch:28 train: loss:3.326
+epoch:28 test: weighted f1 0.694
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+Starting epoch 29
+epoch:29 train: loss:3.324
+epoch:29 test: weighted f1 0.684
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+Starting epoch 30
+epoch:30 train: loss:3.323
+epoch:30 test: weighted f1 0.689
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+Starting epoch 31
+epoch:31 train: loss:3.321
+epoch:31 test: weighted f1 0.672
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+Starting epoch 32
+epoch:32 train: loss:3.320
+epoch:32 test: weighted f1 0.684
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+Starting epoch 33
+epoch:33 train: loss:3.319
+epoch:33 test: weighted f1 0.669
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+Starting epoch 34
+epoch:34 train: loss:3.318
+epoch:34 test: weighted f1 0.684
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+Starting epoch 35
+epoch:35 train: loss:3.317
+epoch:35 test: weighted f1 0.701
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+Starting epoch 36
+epoch:36 train: loss:3.316
+epoch:36 test: weighted f1 0.678
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+Starting epoch 37
+epoch:37 train: loss:3.315
+epoch:37 test: weighted f1 0.682
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+Starting epoch 38
+epoch:38 train: loss:3.314
+epoch:38 test: weighted f1 0.703
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+Starting epoch 39
+epoch:39 train: loss:3.313
+epoch:39 test: weighted f1 0.694
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+Starting epoch 40
+epoch:40 train: loss:3.312
+epoch:40 test: weighted f1 0.703
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-040.pth
+Training is completed in 0.0 hours, 4.0 minutes, 35.268 seconds
+Job ID: 30191
+Cluster: crimson
+User/Group: dh.huang.2023/dh.huang.2023
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:41:45
+CPU Efficiency: 89.46% of 00:46:40 core-walltime
+Job Wall-clock time: 00:04:40
+Memory Utilized: 1.14 GB
+Memory Efficiency: 1.79% of 64.00 GB

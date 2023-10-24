@@ -1,4 +1,5 @@
 import os
+import cv2
 from PIL import Image
 import numpy as np
 import torch
@@ -8,6 +9,8 @@ from torchvision import models
 from torch.utils.data import Dataset, Subset, ConcatDataset
 from sklearn.metrics import f1_score
 from sklearn.model_selection import KFold
+import albumentations as A
+from albumentations.pytorch import ToTensorV2
 
 # Check if GPU is available
 if torch.cuda.is_available():
@@ -47,19 +50,33 @@ IMAGENET_STD = [0.229, 0.224, 0.225]
 #         ]
 #     )
 #     return preprocess(image)
+input_size = 224
 
 # Initialize transformations for data augmentation
 # https://moiseevigor.github.io/software/2022/12/18/one-pager-training-resnet-on-imagenet/
-preprocess_image = transforms.Compose(
+# preprocess_image = transforms.Compose(
+#     [
+#         transforms.RandomResizedCrop((256, 256)),
+#         transforms.RandomHorizontalFlip(),
+#         transforms.RandomVerticalFlip(),
+#         transforms.RandomRotation(degrees=45),
+#         transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
+#         transforms.CenterCrop(224),
+#         transforms.ToTensor(),
+#         transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+#     ]
+# )
+
+# copied from Jialong's code
+preprocess_image = A.Compose(
     [
-        transforms.RandomResizedCrop((256, 256)),
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomVerticalFlip(),
-        transforms.RandomRotation(degrees=45),
-        transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
-        transforms.CenterCrop(224),
-        transforms.ToTensor(),
-        transforms.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+        A.SmallestMaxSize(max_size=input_size + 48),
+        A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=15, p=0.5),
+        A.RandomCrop(height=input_size, width=input_size),
+        A.RGBShift(r_shift_limit=15, g_shift_limit=15, b_shift_limit=15, p=0.5),
+        A.RandomBrightnessContrast(p=0.5),
+        A.Normalize(IMAGENET_MEAN, IMAGENET_STD),
+        ToTensorV2(),
     ]
 )
 
@@ -152,12 +169,19 @@ class CustomImageDataset(Dataset):
         image_path = self.image_paths[idx]
         # print("image_path: ", image_path)
 
-        image = Image.open(image_path)
+        if self.transform is None or self.transform == preprocess_val_image:
+            img = Image.open(image_path).convert("RGB")
+            if self.transform:
+                img = self.transform(img)
+        else:
+            # use cv2 for albumentation
+            image = cv2.imread(image_path)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            if self.transform:
+                # img = self.transform(img)
+                img = self.transform(image=image)["image"]
 
-        if self.transform:
-            image = self.transform(image)
-
-        return image, label
+        return img, label
 
 
 class Identity(nn.Module):

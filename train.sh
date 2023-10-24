@@ -1,1 +1,1 @@
-scripts/train-v13b.sh
+scripts/train-v15.sh

@@ -1,11 +1,12 @@
 num_epoch:
   phase_1: 5
-  phase_2: 40
-  phase_3: 15
-  phase_4: 40
-  phase_5: 15
-  phase_6: 20
-  phase_7: 10
-  phase_8: 30
-  phase_9: 30
-  phase_10: 25
+  phase_2: 7
+  phase_3: 9
+  phase_4: 11
+  phase_5: 13
+  phase_6: 15
+  phase_7: 15
+  phase_8: 15
+  phase_9: 15
+  phase_10: 15
+

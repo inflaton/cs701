@@ -2,6 +2,8 @@ import gc
 import os
 import re
 import time
+
+import yaml
 import numpy as np
 import pandas as pd
 import torch
@@ -27,6 +29,10 @@ import random
 import warnings
 
 warnings.filterwarnings("ignore")
+
+# Load the YAML file
+with open("configs.yaml", "r") as file:
+    config = yaml.safe_load(file)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", type=int, help="Model impl version", default=1)
@@ -102,6 +108,8 @@ def train_and_evaluate(model, teacher_model, phase, device, all_phases):
     if teacher_model:
         teacher_model.to(device)
 
+    num_epochs = config["num_epoch"][f"phase_{phase}"]
+
     for fold in range(MEMORY_SIZE):
         print(
             "phase: ",
@@ -110,6 +118,8 @@ def train_and_evaluate(model, teacher_model, phase, device, all_phases):
             num_classes,
             "\nfold: ",
             fold + 1,
+            "\nnum_epochs: ",
+            num_epochs,
         )
 
         # set data path

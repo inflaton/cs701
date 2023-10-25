@@ -1,5 +1,7 @@
 import argparse
 import re
+
+import yaml
 import cv2
 from pathlib import Path
 import torch
@@ -287,6 +289,14 @@ torch.backends.cudnn.deterministic = True
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 teacher_model = None
 
+config = None
+filename = "configs-xu.yaml"
+path = Path(filename)
+if path.is_file():
+    # Load the YAML file
+    with open(filename, "r") as file:
+        config = yaml.safe_load(file)
+
 for phase in range(1, 11):
     train_dataset = CustomDataset(
         root="data/Train", phase=phase, transform=preprocess_image, is_val=False
@@ -312,7 +322,7 @@ for phase in range(1, 11):
         model.load_state_dict(new_state_dict, strict=False)
 
     model = train_and_evaluate(
-        num_epochs,
+        num_epochs if config is None else config["num_epoch"][f"phase_{phase}"],
         train_loader,
         val_loader,
         model,

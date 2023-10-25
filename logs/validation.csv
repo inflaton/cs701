@@ -2,7 +2,6 @@ phase,accuracy
 # v14 - submission 59
 # vlast_accuracy: 0.7165606374
 # vaverage_accuracy:0.7894369388521849
-10,0.401
 1,1.000
 2,0.978
 3,0.966
@@ -13,6 +12,34 @@ phase,accuracy
 8,0.974
 9,0.976
 10,0.969
+
+# v14 (final yaml) - submission 69
+1,0.989
+2,0.972
+3,0.970
+4,0.967
+5,0.973
+6,0.979
+7,0.970
+8,0.965
+9,0.971
+10,0.967
+
+# v14 (final yaml) - submission 70
+# last_accuracy:0.7143775805321717
+# average_accuracy:0.7828785656459119
+1,1.000
+2,0.978
+3,0.985
+4,0.980
+5,0.968
+6,0.979
+7,0.968
+8,0.971
+9,0.970
+10,0.966
+
+
 
 # v15 (20 epochs) - submission 61 
 # vlast_accuracy:0.3734948575

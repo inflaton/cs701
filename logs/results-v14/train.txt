@@ -1,0 +1,2056 @@
+Current Directory:
+/home/inflaton/code/courses/cs701
+Tue Oct 24 11:57:45 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.103                Driver Version: 537.13       CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  | 00000000:01:00.0 Off |                  N/A |
+| N/A   58C    P8               3W / 150W |     71MiB / 12282MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     27050      C   /python3.11                               N/A      |
++---------------------------------------------------------------------------------------+
+Running python train-xu-optimized.py --epochs=50 --batch=16
+device:  cuda
+epochs:  50 
+batch:  16
+Phase 1, Epoch 0, Loss: 2.1162330993386202
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Phase 1, Epoch 1, Loss: 1.1578822482463926
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Phase 1, Epoch 2, Loss: 0.6509710467138956
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Phase 1, Epoch 3, Loss: 0.4101551209771356
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Phase 1, Epoch 4, Loss: 0.3011883899222973
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+Phase 1, Epoch 5, Loss: 0.2598345293555149
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+Phase 1, Epoch 6, Loss: 0.1915249803731608
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+Phase 1, Epoch 7, Loss: 0.17422789491193238
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Phase 1, Epoch 8, Loss: 0.17302213176045306
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Phase 1, Epoch 9, Loss: 0.16950189478175584
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+Phase 1, Epoch 10, Loss: 0.16060583882553633
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+Phase 1, Epoch 11, Loss: 0.1874379162178483
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+Phase 1, Epoch 12, Loss: 0.15736109156941258
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+Phase 1, Epoch 13, Loss: 0.14739709884621377
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+Phase 1, Epoch 14, Loss: 0.1664982722249142
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+Phase 1, Epoch 15, Loss: 0.13683793139319086
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+Phase 1, Epoch 16, Loss: 0.14311291485331779
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+Phase 1, Epoch 17, Loss: 0.15654881523792133
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Phase 1, Epoch 18, Loss: 0.1460014318310937
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Phase 1, Epoch 19, Loss: 0.1391671199438184
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Phase 1, Epoch 20, Loss: 0.16720003790633622
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+Phase 1, Epoch 21, Loss: 0.16558830145486567
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-021.pth
+Phase 1, Epoch 22, Loss: 0.1480860058651414
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+Phase 1, Epoch 23, Loss: 0.1474943500618602
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-023.pth
+Phase 1, Epoch 24, Loss: 0.13862366090680278
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-024.pth
+Phase 1, Epoch 25, Loss: 0.13934047138968178
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-025.pth
+Phase 1, Epoch 26, Loss: 0.16268162637255912
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-026.pth
+Phase 1, Epoch 27, Loss: 0.14287204278069873
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-027.pth
+Phase 1, Epoch 28, Loss: 0.17285182205743568
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-028.pth
+Phase 1, Epoch 29, Loss: 0.15658037225867427
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-029.pth
+Phase 1, Epoch 30, Loss: 0.1824055804416191
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+Phase 1, Epoch 31, Loss: 0.18366311178650968
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-031.pth
+Phase 1, Epoch 32, Loss: 0.14747291352859762
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-032.pth
+Phase 1, Epoch 33, Loss: 0.1406472663200179
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-033.pth
+Phase 1, Epoch 34, Loss: 0.14479727020790412
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-034.pth
+Phase 1, Epoch 35, Loss: 0.15830203370992527
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-035.pth
+Phase 1, Epoch 36, Loss: 0.13817061830398647
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-036.pth
+Phase 1, Epoch 37, Loss: 0.138250669074613
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-037.pth
+Phase 1, Epoch 38, Loss: 0.14075248653805533
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-038.pth
+Phase 1, Epoch 39, Loss: 0.13058618750683096
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-039.pth
+Phase 1, Epoch 40, Loss: 0.14393866997818613
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-040.pth
+Phase 1, Epoch 41, Loss: 0.14152361106040867
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-041.pth
+Phase 1, Epoch 42, Loss: 0.1866675875214643
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-042.pth
+Phase 1, Epoch 43, Loss: 0.16312585944353147
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-043.pth
+Phase 1, Epoch 44, Loss: 0.15536330605662146
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-044.pth
+Phase 1, Epoch 45, Loss: 0.14125477037457532
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-045.pth
+Phase 1, Epoch 46, Loss: 0.14991785308649375
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-046.pth
+Phase 1, Epoch 47, Loss: 0.16901938669210256
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-047.pth
+Phase 1, Epoch 48, Loss: 0.16886944029220316
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-048.pth
+Phase 1, Epoch 49, Loss: 0.16047925519388775
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.754
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.989
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.989
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+checkpoint: 4 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-005.pth
+checkpoint: 5 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+checkpoint: 6 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+checkpoint: 7 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+checkpoint: 8 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+checkpoint: 9 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+checkpoint:10 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+checkpoint:11 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+checkpoint:12 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+checkpoint:13 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+checkpoint:14 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-015.pth
+checkpoint:15 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-016.pth
+checkpoint:16 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+checkpoint:17 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+checkpoint:18 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+checkpoint:19 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-020.pth
+checkpoint:20 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-021.pth
+checkpoint:21 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+checkpoint:22 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-023.pth
+checkpoint:23 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-024.pth
+checkpoint:24 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-025.pth
+checkpoint:25 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-026.pth
+checkpoint:26 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-027.pth
+checkpoint:27 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-028.pth
+checkpoint:28 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-029.pth
+checkpoint:29 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+checkpoint:30 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-031.pth
+checkpoint:31 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-032.pth
+checkpoint:32 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-033.pth
+checkpoint:33 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-034.pth
+checkpoint:34 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-035.pth
+checkpoint:35 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-036.pth
+checkpoint:36 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-037.pth
+checkpoint:37 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-038.pth
+checkpoint:38 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-039.pth
+checkpoint:39 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-040.pth
+checkpoint:40 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-041.pth
+checkpoint:41 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-042.pth
+checkpoint:42 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-043.pth
+checkpoint:43 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-044.pth
+checkpoint:44 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-045.pth
+checkpoint:45 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-046.pth
+checkpoint:46 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-047.pth
+checkpoint:47 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-048.pth
+checkpoint:48 - final accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-049.pth
+checkpoint:49 - final accuracy:1.000
+*** phase: 1 epoch: 4 - top accuracy:1.000
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+saved results to file: results/result_1.txt
+Phase 2, Epoch 0, Loss: 2.3128716930166466
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Phase 2, Epoch 1, Loss: 1.135378986210018
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Phase 2, Epoch 2, Loss: 0.7955785781618149
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Phase 2, Epoch 3, Loss: 0.6021860691720101
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Phase 2, Epoch 4, Loss: 0.5324328914177194
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Phase 2, Epoch 5, Loss: 0.465361211809073
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Phase 2, Epoch 6, Loss: 0.4249734835535245
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Phase 2, Epoch 7, Loss: 0.3879472355305891
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+Phase 2, Epoch 8, Loss: 0.38781919180916846
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Phase 2, Epoch 9, Loss: 0.3694754880228084
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+Phase 2, Epoch 10, Loss: 0.376083845571006
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Phase 2, Epoch 11, Loss: 0.3750148671013968
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+Phase 2, Epoch 12, Loss: 0.3643418118723199
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+Phase 2, Epoch 13, Loss: 0.36516400281485023
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+Phase 2, Epoch 14, Loss: 0.3729794411604195
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+Phase 2, Epoch 15, Loss: 0.3644486136766739
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+Phase 2, Epoch 16, Loss: 0.362742941530924
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+Phase 2, Epoch 17, Loss: 0.39114241699807745
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+Phase 2, Epoch 18, Loss: 0.366868156375307
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Phase 2, Epoch 19, Loss: 0.37057680626968287
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Phase 2, Epoch 20, Loss: 0.35550903998756134
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+Phase 2, Epoch 21, Loss: 0.34464987789913687
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-021.pth
+Phase 2, Epoch 22, Loss: 0.3556491956222281
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-022.pth
+Phase 2, Epoch 23, Loss: 0.36841292969592204
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-023.pth
+Phase 2, Epoch 24, Loss: 0.35843321659520244
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-024.pth
+Phase 2, Epoch 25, Loss: 0.36475903019416556
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-025.pth
+Phase 2, Epoch 26, Loss: 0.36778517701753116
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-026.pth
+Phase 2, Epoch 27, Loss: 0.3693290035876017
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-027.pth
+Phase 2, Epoch 28, Loss: 0.35294717963123734
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-028.pth
+Phase 2, Epoch 29, Loss: 0.36643301528941674
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-029.pth
+Phase 2, Epoch 30, Loss: 0.35565279925196375
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+Phase 2, Epoch 31, Loss: 0.37879602312181593
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-031.pth
+Phase 2, Epoch 32, Loss: 0.37240213990039467
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+Phase 2, Epoch 33, Loss: 0.3725769529266963
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-033.pth
+Phase 2, Epoch 34, Loss: 0.3645737658417414
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-034.pth
+Phase 2, Epoch 35, Loss: 0.37090847468135335
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-035.pth
+Phase 2, Epoch 36, Loss: 0.3539907903038234
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-036.pth
+Phase 2, Epoch 37, Loss: 0.35888009067909715
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-037.pth
+Phase 2, Epoch 38, Loss: 0.3549563582841452
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-038.pth
+Phase 2, Epoch 39, Loss: 0.36011980003092714
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-039.pth
+Phase 2, Epoch 40, Loss: 0.37924449655400727
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-040.pth
+Phase 2, Epoch 41, Loss: 0.37783978141919533
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-041.pth
+Phase 2, Epoch 42, Loss: 0.37152516205417474
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-042.pth
+Phase 2, Epoch 43, Loss: 0.3802589268395395
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-043.pth
+Phase 2, Epoch 44, Loss: 0.36438019132889365
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-044.pth
+Phase 2, Epoch 45, Loss: 0.354688674856574
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-045.pth
+Phase 2, Epoch 46, Loss: 0.3537798187605402
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-046.pth
+Phase 2, Epoch 47, Loss: 0.3614215146411549
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-047.pth
+Phase 2, Epoch 48, Loss: 0.3611615454135691
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-048.pth
+Phase 2, Epoch 49, Loss: 0.3695823484426969
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.682
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.840
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.900
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.937
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.930
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.942
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.966
+*** phase: 2 epoch:35 - top accuracy:0.978
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_2/checkpoint-035.pth
+saved results to file: results/result_2.txt
+Phase 3, Epoch 0, Loss: 2.517318125397082
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Phase 3, Epoch 1, Loss: 1.1773026590181594
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Phase 3, Epoch 2, Loss: 0.7820391743569761
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Phase 3, Epoch 3, Loss: 0.6035449127432923
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Phase 3, Epoch 4, Loss: 0.4990028528403131
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Phase 3, Epoch 5, Loss: 0.4210052345250104
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Phase 3, Epoch 6, Loss: 0.37307465697807696
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Phase 3, Epoch 7, Loss: 0.3507531131096328
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Phase 3, Epoch 8, Loss: 0.3461120647583229
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+Phase 3, Epoch 9, Loss: 0.3256391678077374
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+Phase 3, Epoch 10, Loss: 0.3290038670352067
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+Phase 3, Epoch 11, Loss: 0.31940944745964067
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Phase 3, Epoch 12, Loss: 0.32816875038459953
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Phase 3, Epoch 13, Loss: 0.3051677464748441
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+Phase 3, Epoch 14, Loss: 0.3090452183627714
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+Phase 3, Epoch 15, Loss: 0.3262996573475797
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+Phase 3, Epoch 16, Loss: 0.31858927609837656
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+Phase 3, Epoch 17, Loss: 0.33112218964514123
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+Phase 3, Epoch 18, Loss: 0.31146544977504775
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+Phase 3, Epoch 19, Loss: 0.3178172226578112
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+Phase 3, Epoch 20, Loss: 0.32689719448678745
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+Phase 3, Epoch 21, Loss: 0.31009578244566455
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-021.pth
+Phase 3, Epoch 22, Loss: 0.3210420348469355
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-022.pth
+Phase 3, Epoch 23, Loss: 0.3193552945111249
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-023.pth
+Phase 3, Epoch 24, Loss: 0.292605045909587
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-024.pth
+Phase 3, Epoch 25, Loss: 0.31075405326589195
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-025.pth
+Phase 3, Epoch 26, Loss: 0.32594306220419156
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-026.pth
+Phase 3, Epoch 27, Loss: 0.31854747920422943
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-027.pth
+Phase 3, Epoch 28, Loss: 0.3105013346349871
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-028.pth
+Phase 3, Epoch 29, Loss: 0.3170367700252754
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-029.pth
+Phase 3, Epoch 30, Loss: 0.3089734913069309
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-030.pth
+Phase 3, Epoch 31, Loss: 0.31063684740582026
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-031.pth
+Phase 3, Epoch 32, Loss: 0.31605651502903825
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-032.pth
+Phase 3, Epoch 33, Loss: 0.3171433099908718
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-033.pth
+Phase 3, Epoch 34, Loss: 0.2899196103042617
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-034.pth
+Phase 3, Epoch 35, Loss: 0.3099381967400952
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+Phase 3, Epoch 36, Loss: 0.30568555239084605
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-036.pth
+Phase 3, Epoch 37, Loss: 0.31118464147722397
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-037.pth
+Phase 3, Epoch 38, Loss: 0.31016763860654645
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-038.pth
+Phase 3, Epoch 39, Loss: 0.3181871646389538
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-039.pth
+Phase 3, Epoch 40, Loss: 0.32113512545018585
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-040.pth
+Phase 3, Epoch 41, Loss: 0.30094552937621777
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-041.pth
+Phase 3, Epoch 42, Loss: 0.3152838182495368
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-042.pth
+Phase 3, Epoch 43, Loss: 0.3211193135346225
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-043.pth
+Phase 3, Epoch 44, Loss: 0.31350406797235997
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-044.pth
+Phase 3, Epoch 45, Loss: 0.31493191668425746
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-045.pth
+Phase 3, Epoch 46, Loss: 0.32412282691038713
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-046.pth
+Phase 3, Epoch 47, Loss: 0.3141090821575474
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-047.pth
+Phase 3, Epoch 48, Loss: 0.3071827584712202
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+Phase 3, Epoch 49, Loss: 0.31143151448039935
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.651
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.843
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.893
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.919
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.930
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.949
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.940
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.945
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.946
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.957
+*** phase: 3 epoch:11 - top accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+saved results to file: results/result_3.txt
+Phase 4, Epoch 0, Loss: 2.5385697763440227
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Phase 4, Epoch 1, Loss: 1.103179081430975
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Phase 4, Epoch 2, Loss: 0.6997625713597534
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Phase 4, Epoch 3, Loss: 0.5326289210160343
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Phase 4, Epoch 4, Loss: 0.43826724898140385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Phase 4, Epoch 5, Loss: 0.36964193622328895
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Phase 4, Epoch 6, Loss: 0.32569078990786793
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Phase 4, Epoch 7, Loss: 0.2936320341204351
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Phase 4, Epoch 8, Loss: 0.2807269990876728
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Phase 4, Epoch 9, Loss: 0.2857150176786027
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Phase 4, Epoch 10, Loss: 0.28741353343636966
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Phase 4, Epoch 11, Loss: 0.2613804913916678
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Phase 4, Epoch 12, Loss: 0.2740493413325837
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Phase 4, Epoch 13, Loss: 0.2712729709933908
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Phase 4, Epoch 14, Loss: 0.26985099440216154
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Phase 4, Epoch 15, Loss: 0.2666622698739582
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Phase 4, Epoch 16, Loss: 0.25051386115858965
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Phase 4, Epoch 17, Loss: 0.27377710563870056
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Phase 4, Epoch 18, Loss: 0.2565511662312966
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Phase 4, Epoch 19, Loss: 0.272609610429523
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Phase 4, Epoch 20, Loss: 0.25220521276678853
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+Phase 4, Epoch 21, Loss: 0.2703319091582333
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+Phase 4, Epoch 22, Loss: 0.2542463365417779
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-022.pth
+Phase 4, Epoch 23, Loss: 0.2516059673057412
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-023.pth
+Phase 4, Epoch 24, Loss: 0.26795126184150686
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+Phase 4, Epoch 25, Loss: 0.2671371106658515
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-025.pth
+Phase 4, Epoch 26, Loss: 0.2729879791573966
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-026.pth
+Phase 4, Epoch 27, Loss: 0.2696096718916872
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+Phase 4, Epoch 28, Loss: 0.251957942162612
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-028.pth
+Phase 4, Epoch 29, Loss: 0.25466629720045625
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-029.pth
+Phase 4, Epoch 30, Loss: 0.2815095597150883
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-030.pth
+Phase 4, Epoch 31, Loss: 0.26879297622921505
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-031.pth
+Phase 4, Epoch 32, Loss: 0.26466119142333033
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-032.pth
+Phase 4, Epoch 33, Loss: 0.2584466699764933
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-033.pth
+Phase 4, Epoch 34, Loss: 0.25802085474025355
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-034.pth
+Phase 4, Epoch 35, Loss: 0.28545109800053614
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-035.pth
+Phase 4, Epoch 36, Loss: 0.2625051524884815
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-036.pth
+Phase 4, Epoch 37, Loss: 0.2707049018758821
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-037.pth
+Phase 4, Epoch 38, Loss: 0.2620236154737597
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-038.pth
+Phase 4, Epoch 39, Loss: 0.2681194403694053
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-039.pth
+Phase 4, Epoch 40, Loss: 0.270797828631408
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+Phase 4, Epoch 41, Loss: 0.2575685230498736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-041.pth
+Phase 4, Epoch 42, Loss: 0.2613922438877587
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-042.pth
+Phase 4, Epoch 43, Loss: 0.26235571300343263
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-043.pth
+Phase 4, Epoch 44, Loss: 0.2617685116600402
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-044.pth
+Phase 4, Epoch 45, Loss: 0.26510833067541023
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-045.pth
+Phase 4, Epoch 46, Loss: 0.2813052418270028
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-046.pth
+Phase 4, Epoch 47, Loss: 0.26806274986405504
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-047.pth
+Phase 4, Epoch 48, Loss: 0.2669845360975999
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-048.pth
+Phase 4, Epoch 49, Loss: 0.273671190001622
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.731
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.867
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.909
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.941
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.983
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.982
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.968
+*** phase: 4 epoch:36 - top accuracy:0.983
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_4/checkpoint-036.pth
+saved results to file: results/result_4.txt
+Phase 5, Epoch 0, Loss: 2.547675716980644
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Phase 5, Epoch 1, Loss: 1.0639251245277515
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Phase 5, Epoch 2, Loss: 0.6718468067611473
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Phase 5, Epoch 3, Loss: 0.5180708561254584
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Phase 5, Epoch 4, Loss: 0.4327941787761191
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Phase 5, Epoch 5, Loss: 0.36017743984858197
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Phase 5, Epoch 6, Loss: 0.3407648692269256
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Phase 5, Epoch 7, Loss: 0.2817106545835302
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Phase 5, Epoch 8, Loss: 0.2824403751414755
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Phase 5, Epoch 9, Loss: 0.2671404589863791
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Phase 5, Epoch 10, Loss: 0.2568156381275343
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Phase 5, Epoch 11, Loss: 0.25362237335979076
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Phase 5, Epoch 12, Loss: 0.2647244546378868
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Phase 5, Epoch 13, Loss: 0.26106763825900314
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Phase 5, Epoch 14, Loss: 0.2603857157023057
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Phase 5, Epoch 15, Loss: 0.2528521400258161
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Phase 5, Epoch 16, Loss: 0.26267227475193966
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Phase 5, Epoch 17, Loss: 0.2658222567862359
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Phase 5, Epoch 18, Loss: 0.2349417042905006
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Phase 5, Epoch 19, Loss: 0.25936780635861384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Phase 5, Epoch 20, Loss: 0.24990415485008904
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+Phase 5, Epoch 21, Loss: 0.24055781450824462
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-021.pth
+Phase 5, Epoch 22, Loss: 0.24231663427491118
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+Phase 5, Epoch 23, Loss: 0.26082661566526993
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-023.pth
+Phase 5, Epoch 24, Loss: 0.24842941369699395
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+Phase 5, Epoch 25, Loss: 0.26194731510203817
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-025.pth
+Phase 5, Epoch 26, Loss: 0.25402385758317036
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-026.pth
+Phase 5, Epoch 27, Loss: 0.2590270300792611
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-027.pth
+Phase 5, Epoch 28, Loss: 0.24710775616376296
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+Phase 5, Epoch 29, Loss: 0.24637790914894878
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-029.pth
+Phase 5, Epoch 30, Loss: 0.24027402715406557
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-030.pth
+Phase 5, Epoch 31, Loss: 0.239472526156384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-031.pth
+Phase 5, Epoch 32, Loss: 0.2653878546970478
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-032.pth
+Phase 5, Epoch 33, Loss: 0.2535121326170106
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-033.pth
+Phase 5, Epoch 34, Loss: 0.2461490796096083
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-034.pth
+Phase 5, Epoch 35, Loss: 0.2497447867324387
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-035.pth
+Phase 5, Epoch 36, Loss: 0.2573350682725077
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-036.pth
+Phase 5, Epoch 37, Loss: 0.2525267132123311
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-037.pth
+Phase 5, Epoch 38, Loss: 0.24983189916265183
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-038.pth
+Phase 5, Epoch 39, Loss: 0.23925976858622786
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-039.pth
+Phase 5, Epoch 40, Loss: 0.24681007690187814
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-040.pth
+Phase 5, Epoch 41, Loss: 0.2592960763150367
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-041.pth
+Phase 5, Epoch 42, Loss: 0.240720165570577
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-042.pth
+Phase 5, Epoch 43, Loss: 0.26007065460301826
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-043.pth
+Phase 5, Epoch 44, Loss: 0.24343188223631484
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+Phase 5, Epoch 45, Loss: 0.25319457214811575
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-045.pth
+Phase 5, Epoch 46, Loss: 0.26436171688031457
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-046.pth
+Phase 5, Epoch 47, Loss: 0.25108837922414146
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-047.pth
+Phase 5, Epoch 48, Loss: 0.26001054839811466
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-048.pth
+Phase 5, Epoch 49, Loss: 0.2560908045976058
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.806
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.883
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.911
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.928
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.945
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.944
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.946
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.950
+*** phase: 5 epoch:14 - top accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+saved results to file: results/result_5.txt
+Phase 6, Epoch 0, Loss: 2.549870342274871
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Phase 6, Epoch 1, Loss: 0.9806077929793812
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Phase 6, Epoch 2, Loss: 0.6305936353358377
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Phase 6, Epoch 3, Loss: 0.480792753664254
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Phase 6, Epoch 4, Loss: 0.38042573017232556
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Phase 6, Epoch 5, Loss: 0.3406419015723921
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Phase 6, Epoch 6, Loss: 0.30987049827465324
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Phase 6, Epoch 7, Loss: 0.2556183839947876
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Phase 6, Epoch 8, Loss: 0.2498930489344445
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Phase 6, Epoch 9, Loss: 0.25649384756212407
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Phase 6, Epoch 10, Loss: 0.2397753631367403
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Phase 6, Epoch 11, Loss: 0.23419749001067997
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Phase 6, Epoch 12, Loss: 0.23003317158500391
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Phase 6, Epoch 13, Loss: 0.22023924910746293
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Phase 6, Epoch 14, Loss: 0.2171253611979397
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Phase 6, Epoch 15, Loss: 0.22772662184967254
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Phase 6, Epoch 16, Loss: 0.23084333419742326
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Phase 6, Epoch 17, Loss: 0.2236307840021965
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Phase 6, Epoch 18, Loss: 0.21121843022688605
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Phase 6, Epoch 19, Loss: 0.23317749204837943
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Phase 6, Epoch 20, Loss: 0.21556449860420612
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+Phase 6, Epoch 21, Loss: 0.23686488508718337
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-021.pth
+Phase 6, Epoch 22, Loss: 0.22681341105452385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+Phase 6, Epoch 23, Loss: 0.22182929475604052
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+Phase 6, Epoch 24, Loss: 0.22611842108324615
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+Phase 6, Epoch 25, Loss: 0.21545883616578038
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-025.pth
+Phase 6, Epoch 26, Loss: 0.2199979769344385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-026.pth
+Phase 6, Epoch 27, Loss: 0.2268530570380138
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-027.pth
+Phase 6, Epoch 28, Loss: 0.22457792580472583
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-028.pth
+Phase 6, Epoch 29, Loss: 0.22470495928161516
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-029.pth
+Phase 6, Epoch 30, Loss: 0.22937792186107103
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-030.pth
+Phase 6, Epoch 31, Loss: 0.2323068276177032
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+Phase 6, Epoch 32, Loss: 0.2328973788132203
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-032.pth
+Phase 6, Epoch 33, Loss: 0.22877777775205319
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-033.pth
+Phase 6, Epoch 34, Loss: 0.21898637520887582
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+Phase 6, Epoch 35, Loss: 0.21919573819051025
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-035.pth
+Phase 6, Epoch 36, Loss: 0.22302191246843384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-036.pth
+Phase 6, Epoch 37, Loss: 0.22076312529431474
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-037.pth
+Phase 6, Epoch 38, Loss: 0.22975714991844493
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-038.pth
+Phase 6, Epoch 39, Loss: 0.2220543660618645
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-039.pth
+Phase 6, Epoch 40, Loss: 0.21768395831177986
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-040.pth
+Phase 6, Epoch 41, Loss: 0.23625182168578
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-041.pth
+Phase 6, Epoch 42, Loss: 0.22482207164585072
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-042.pth
+Phase 6, Epoch 43, Loss: 0.22750281344959108
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-043.pth
+Phase 6, Epoch 44, Loss: 0.23546978362845822
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+Phase 6, Epoch 45, Loss: 0.22375599676410857
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-045.pth
+Phase 6, Epoch 46, Loss: 0.22538649771459537
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-046.pth
+Phase 6, Epoch 47, Loss: 0.22666515756251152
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-047.pth
+Phase 6, Epoch 48, Loss: 0.2322240108866586
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+Phase 6, Epoch 49, Loss: 0.22520573187903245
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.766
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.887
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.910
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.918
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.979
+*** phase: 6 epoch:16 - top accuracy:0.981
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+saved results to file: results/result_6.txt
+Phase 7, Epoch 0, Loss: 2.5391466344796347
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Phase 7, Epoch 1, Loss: 0.9288706504230113
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Phase 7, Epoch 2, Loss: 0.5860272690512237
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Phase 7, Epoch 3, Loss: 0.44602549152401844
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Phase 7, Epoch 4, Loss: 0.3648362488403935
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Phase 7, Epoch 5, Loss: 0.32675541216605264
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Phase 7, Epoch 6, Loss: 0.27987507519915006
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Phase 7, Epoch 7, Loss: 0.2473991044244211
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Phase 7, Epoch 8, Loss: 0.23920085152187212
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Phase 7, Epoch 9, Loss: 0.24501179105139428
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Phase 7, Epoch 10, Loss: 0.2294279679637564
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Phase 7, Epoch 11, Loss: 0.23324514738984564
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Phase 7, Epoch 12, Loss: 0.22721932304639159
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Phase 7, Epoch 13, Loss: 0.21395640181687586
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Phase 7, Epoch 14, Loss: 0.2070385620693489
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Phase 7, Epoch 15, Loss: 0.21421426128425267
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Phase 7, Epoch 16, Loss: 0.21928337596753864
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Phase 7, Epoch 17, Loss: 0.21929239012987245
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Phase 7, Epoch 18, Loss: 0.2239749608011297
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Phase 7, Epoch 19, Loss: 0.21934399401437443
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Phase 7, Epoch 20, Loss: 0.21103670406518815
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+Phase 7, Epoch 21, Loss: 0.22474434702222085
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+Phase 7, Epoch 22, Loss: 0.21344809608979443
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+Phase 7, Epoch 23, Loss: 0.21855583441055593
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+Phase 7, Epoch 24, Loss: 0.21942910230735863
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+Phase 7, Epoch 25, Loss: 0.208405280780418
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+Phase 7, Epoch 26, Loss: 0.22050233881417408
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+Phase 7, Epoch 27, Loss: 0.21864264205141237
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+Phase 7, Epoch 28, Loss: 0.22056911598301682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+Phase 7, Epoch 29, Loss: 0.2093344765697221
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+Phase 7, Epoch 30, Loss: 0.21107507165627556
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+Phase 7, Epoch 31, Loss: 0.2113619974357734
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+Phase 7, Epoch 32, Loss: 0.21764924157163124
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+Phase 7, Epoch 33, Loss: 0.21345172948652139
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+Phase 7, Epoch 34, Loss: 0.21874765164223844
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+Phase 7, Epoch 35, Loss: 0.21022935408001742
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+Phase 7, Epoch 36, Loss: 0.20967278639081588
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+Phase 7, Epoch 37, Loss: 0.2212609728103529
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+Phase 7, Epoch 38, Loss: 0.2137564907926806
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+Phase 7, Epoch 39, Loss: 0.21655257360741206
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+Phase 7, Epoch 40, Loss: 0.21361519378455696
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-040.pth
+Phase 7, Epoch 41, Loss: 0.2146804730405201
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-041.pth
+Phase 7, Epoch 42, Loss: 0.2191918254489497
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-042.pth
+Phase 7, Epoch 43, Loss: 0.21046110574049873
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-043.pth
+Phase 7, Epoch 44, Loss: 0.21930224520763253
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-044.pth
+Phase 7, Epoch 45, Loss: 0.2140238355477454
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+Phase 7, Epoch 46, Loss: 0.22124809671758078
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-046.pth
+Phase 7, Epoch 47, Loss: 0.21695519697562765
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-047.pth
+Phase 7, Epoch 48, Loss: 0.21734667735275084
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-048.pth
+Phase 7, Epoch 49, Loss: 0.21374480034240462
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.809
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.878
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.898
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.925
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.927
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.935
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.947
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.949
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.951
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.949
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.952
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.946
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.949
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.958
+*** phase: 7 epoch: 9 - top accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+saved results to file: results/result_7.txt
+Phase 8, Epoch 0, Loss: 2.546126613982019
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Phase 8, Epoch 1, Loss: 0.8783332654912362
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Phase 8, Epoch 2, Loss: 0.570923748064575
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Phase 8, Epoch 3, Loss: 0.4384723941786447
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Phase 8, Epoch 4, Loss: 0.36034452153182106
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Phase 8, Epoch 5, Loss: 0.3095704390280253
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Phase 8, Epoch 6, Loss: 0.26695662317141683
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Phase 8, Epoch 7, Loss: 0.2306947421838162
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Phase 8, Epoch 8, Loss: 0.22290303794086605
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Phase 8, Epoch 9, Loss: 0.21669720481904933
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Phase 8, Epoch 10, Loss: 0.22175856185932372
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Phase 8, Epoch 11, Loss: 0.2071705579370228
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Phase 8, Epoch 12, Loss: 0.2099266910044972
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Phase 8, Epoch 13, Loss: 0.20686542247339637
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Phase 8, Epoch 14, Loss: 0.20410633636063383
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Phase 8, Epoch 15, Loss: 0.1977212377384967
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Phase 8, Epoch 16, Loss: 0.2112522887253684
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Phase 8, Epoch 17, Loss: 0.19477265029230803
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Phase 8, Epoch 18, Loss: 0.2063323518738242
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Phase 8, Epoch 19, Loss: 0.20931356648065932
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Phase 8, Epoch 20, Loss: 0.2015483906528243
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+Phase 8, Epoch 21, Loss: 0.197511739638705
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+Phase 8, Epoch 22, Loss: 0.2005291174533523
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-022.pth
+Phase 8, Epoch 23, Loss: 0.19945456459445615
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-023.pth
+Phase 8, Epoch 24, Loss: 0.20618257820929117
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+Phase 8, Epoch 25, Loss: 0.2082966670270171
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-025.pth
+Phase 8, Epoch 26, Loss: 0.20699773001817212
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+Phase 8, Epoch 27, Loss: 0.19910909174667363
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-027.pth
+Phase 8, Epoch 28, Loss: 0.20588836425820514
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-028.pth
+Phase 8, Epoch 29, Loss: 0.20028017093748682
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-029.pth
+Phase 8, Epoch 30, Loss: 0.188240072063351
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+Phase 8, Epoch 31, Loss: 0.2060497603549041
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-031.pth
+Phase 8, Epoch 32, Loss: 0.18536281398419827
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-032.pth
+Phase 8, Epoch 33, Loss: 0.19467571025809124
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-033.pth
+Phase 8, Epoch 34, Loss: 0.20180256898844876
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-034.pth
+Phase 8, Epoch 35, Loss: 0.2048833908351073
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-035.pth
+Phase 8, Epoch 36, Loss: 0.19605003478682914
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-036.pth
+Phase 8, Epoch 37, Loss: 0.20100943477802133
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-037.pth
+Phase 8, Epoch 38, Loss: 0.19943136665613567
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-038.pth
+Phase 8, Epoch 39, Loss: 0.2045905924997161
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+Phase 8, Epoch 40, Loss: 0.2009222168662394
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+Phase 8, Epoch 41, Loss: 0.2117498786538118
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-041.pth
+Phase 8, Epoch 42, Loss: 0.20658870258241752
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-042.pth
+Phase 8, Epoch 43, Loss: 0.2144843992794322
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+Phase 8, Epoch 44, Loss: 0.19826450204539273
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-044.pth
+Phase 8, Epoch 45, Loss: 0.20662944908390066
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-045.pth
+Phase 8, Epoch 46, Loss: 0.20002370760646612
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-046.pth
+Phase 8, Epoch 47, Loss: 0.20806955111590736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-047.pth
+Phase 8, Epoch 48, Loss: 0.1954557388299809
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-048.pth
+Phase 8, Epoch 49, Loss: 0.20468451932433196
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.807
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.883
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.906
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.933
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.927
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.970
+*** phase: 8 epoch:26 - top accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+saved results to file: results/result_8.txt
+Phase 9, Epoch 0, Loss: 2.5023531579726153
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Phase 9, Epoch 1, Loss: 0.8343330206478776
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Phase 9, Epoch 2, Loss: 0.5367538764268389
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Phase 9, Epoch 3, Loss: 0.39264042234972385
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Phase 9, Epoch 4, Loss: 0.3266619348127615
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Phase 9, Epoch 5, Loss: 0.27546729917391405
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Phase 9, Epoch 6, Loss: 0.23367879602933606
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Phase 9, Epoch 7, Loss: 0.20617793787720884
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Phase 9, Epoch 8, Loss: 0.19099022511268338
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Phase 9, Epoch 9, Loss: 0.1988827310368457
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+Phase 9, Epoch 10, Loss: 0.1971957018182333
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+Phase 9, Epoch 11, Loss: 0.2040821245289707
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+Phase 9, Epoch 12, Loss: 0.18338163354096498
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Phase 9, Epoch 13, Loss: 0.1817763191109145
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+Phase 9, Epoch 14, Loss: 0.18273368920259428
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+Phase 9, Epoch 15, Loss: 0.16498669413107525
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+Phase 9, Epoch 16, Loss: 0.18368692249825805
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+Phase 9, Epoch 17, Loss: 0.17250919342041016
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+Phase 9, Epoch 18, Loss: 0.18030270468683046
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+Phase 9, Epoch 19, Loss: 0.17341477607776695
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+Phase 9, Epoch 20, Loss: 0.18643258862523002
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+Phase 9, Epoch 21, Loss: 0.1824771572660971
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-021.pth
+Phase 9, Epoch 22, Loss: 0.18367548629756453
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-022.pth
+Phase 9, Epoch 23, Loss: 0.18050873116769645
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+Phase 9, Epoch 24, Loss: 0.18599557813381473
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-024.pth
+Phase 9, Epoch 25, Loss: 0.18574323242764854
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+Phase 9, Epoch 26, Loss: 0.1746397988540348
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-026.pth
+Phase 9, Epoch 27, Loss: 0.18095974470931644
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-027.pth
+Phase 9, Epoch 28, Loss: 0.18091753692124374
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+Phase 9, Epoch 29, Loss: 0.1720214962078244
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-029.pth
+Phase 9, Epoch 30, Loss: 0.18112810576636257
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-030.pth
+Phase 9, Epoch 31, Loss: 0.17733653788011913
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-031.pth
+Phase 9, Epoch 32, Loss: 0.1788757941984885
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-032.pth
+Phase 9, Epoch 33, Loss: 0.17244653394182421
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-033.pth
+Phase 9, Epoch 34, Loss: 0.18520368250675864
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-034.pth
+Phase 9, Epoch 35, Loss: 0.18060291642778023
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-035.pth
+Phase 9, Epoch 36, Loss: 0.16729822287522736
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-036.pth
+Phase 9, Epoch 37, Loss: 0.1824126986159457
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-037.pth
+Phase 9, Epoch 38, Loss: 0.16724459225536925
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-038.pth
+Phase 9, Epoch 39, Loss: 0.17608967149548788
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-039.pth
+Phase 9, Epoch 40, Loss: 0.18609645640942002
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-040.pth
+Phase 9, Epoch 41, Loss: 0.18351291169850562
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-041.pth
+Phase 9, Epoch 42, Loss: 0.17083431064009974
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-042.pth
+Phase 9, Epoch 43, Loss: 0.17345957486749003
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+Phase 9, Epoch 44, Loss: 0.167394913905384
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-044.pth
+Phase 9, Epoch 45, Loss: 0.18148898739358146
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-045.pth
+Phase 9, Epoch 46, Loss: 0.17226743115863946
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-046.pth
+Phase 9, Epoch 47, Loss: 0.17595830825959502
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-047.pth
+Phase 9, Epoch 48, Loss: 0.17912381368385183
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-048.pth
+Phase 9, Epoch 49, Loss: 0.18445356810767116
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.836
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.894
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.912
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.939
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.974
+*** phase: 9 epoch:28 - top accuracy:0.976
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+saved results to file: results/result_9.txt
+Phase 10, Epoch 0, Loss: 2.497942316738856
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Phase 10, Epoch 1, Loss: 0.8099123819025955
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Phase 10, Epoch 2, Loss: 0.5056684292809812
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Phase 10, Epoch 3, Loss: 0.3866676255802199
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Phase 10, Epoch 4, Loss: 0.32543947758702185
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Phase 10, Epoch 5, Loss: 0.2675403916077807
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Phase 10, Epoch 6, Loss: 0.23462164050581827
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Phase 10, Epoch 7, Loss: 0.20555064050276156
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Phase 10, Epoch 8, Loss: 0.19539080646341248
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Phase 10, Epoch 9, Loss: 0.19449531339496545
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+Phase 10, Epoch 10, Loss: 0.18398914087369952
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+Phase 10, Epoch 11, Loss: 0.18324351730201974
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+Phase 10, Epoch 12, Loss: 0.18330006189429002
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+Phase 10, Epoch 13, Loss: 0.17711070174771237
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+Phase 10, Epoch 14, Loss: 0.17692899939986323
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+Phase 10, Epoch 15, Loss: 0.17641627614553265
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-015.pth
+Phase 10, Epoch 16, Loss: 0.16640684094732208
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-016.pth
+Phase 10, Epoch 17, Loss: 0.17242313166918782
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-017.pth
+Phase 10, Epoch 18, Loss: 0.17618810861785977
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-018.pth
+Phase 10, Epoch 19, Loss: 0.17846935829847535
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-019.pth
+Phase 10, Epoch 20, Loss: 0.1638262285145721
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-020.pth
+Phase 10, Epoch 21, Loss: 0.16912263733458657
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+Phase 10, Epoch 22, Loss: 0.1805218759816506
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+Phase 10, Epoch 23, Loss: 0.17416138788523702
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+Phase 10, Epoch 24, Loss: 0.17325673294549732
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-024.pth
+Phase 10, Epoch 25, Loss: 0.17364614151116742
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-025.pth
+Phase 10, Epoch 26, Loss: 0.17713874556081144
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-026.pth
+Phase 10, Epoch 27, Loss: 0.17571543859953137
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-027.pth
+Phase 10, Epoch 28, Loss: 0.1773131824297712
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-028.pth
+Phase 10, Epoch 29, Loss: 0.17341967623013294
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+Phase 10, Epoch 30, Loss: 0.1712948055625651
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-030.pth
+Phase 10, Epoch 31, Loss: 0.17315882485725975
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+Phase 10, Epoch 32, Loss: 0.17957919190040214
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-032.pth
+Phase 10, Epoch 33, Loss: 0.18089242672300063
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-033.pth
+Phase 10, Epoch 34, Loss: 0.16848066905674908
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-034.pth
+Phase 10, Epoch 35, Loss: 0.17424853731786585
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-035.pth
+Phase 10, Epoch 36, Loss: 0.16472356580413147
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-036.pth
+Phase 10, Epoch 37, Loss: 0.18990073309123862
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-037.pth
+Phase 10, Epoch 38, Loss: 0.17106613532311654
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-038.pth
+Phase 10, Epoch 39, Loss: 0.17292656173251267
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+Phase 10, Epoch 40, Loss: 0.1651866850997671
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-040.pth
+Phase 10, Epoch 41, Loss: 0.1746297170833356
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-041.pth
+Phase 10, Epoch 42, Loss: 0.17351012328112056
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-042.pth
+Phase 10, Epoch 43, Loss: 0.18056376660834847
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-043.pth
+Phase 10, Epoch 44, Loss: 0.16666044635924301
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-044.pth
+Phase 10, Epoch 45, Loss: 0.17754178973119383
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-045.pth
+Phase 10, Epoch 46, Loss: 0.17938334869511555
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-046.pth
+Phase 10, Epoch 47, Loss: 0.16529336473500797
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+Phase 10, Epoch 48, Loss: 0.1764617253762449
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-048.pth
+Phase 10, Epoch 49, Loss: 0.18509247828425698
+saved checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.826
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.887
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.916
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.919
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.946
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.963
+*** phase:10 epoch:22 - top accuracy:0.969
+loaded checkpoint: /home/inflaton/code/courses/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+saved results to file: results/result_10.txt

@@ -1,0 +1,2678 @@
+Current Directory:
+/home/inflaton/code/projects/cs701
+Wed Oct 25 13:16:03 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.103                Driver Version: 537.13       CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  | 00000000:01:00.0 Off |                  N/A |
+| N/A   54C    P4              25W / 150W |      0MiB / 12282MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Running python train-all-knowledge-distillation.py --epochs=3 --batch=128 --model=1
+device:  cuda
+model:  1 
+epochs:  3 
+batch:  128
+phase:  1 
+classes:  10 
+fold:  1 
+num_epochs:  3
+get_k_fold_training_datasets: phase=1 fold=0 use_memory=True
+Starting epoch 1
+phase: 1 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 1 fold: 1 epoch: 1 - train loss:2.301
+phase: 1 fold: 1 epoch: 1 - val loss:2.292
+phase: 1 fold: 1 epoch: 1 - accuracy:0.132
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Starting epoch 2
+phase: 1 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 1 fold: 1 epoch: 2 - train loss:4.577
+phase: 1 fold: 1 epoch: 2 - val loss:2.281
+phase: 1 fold: 1 epoch: 2 - accuracy:0.176
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 3
+phase: 1 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 1 fold: 1 epoch: 3 - train loss:6.830
+phase: 1 fold: 1 epoch: 3 - val loss:2.267
+phase: 1 fold: 1 epoch: 3 - accuracy:0.208
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+*** phase: 1 fold: 1 epoch: 3 - top accuracy:0.208
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+phase:  1 
+classes:  10 
+fold:  2 
+num_epochs:  3
+get_k_fold_training_datasets: phase=1 fold=1 use_memory=True
+Starting epoch 1
+phase: 1 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 1 fold: 2 epoch: 1 - train loss:2.238
+phase: 1 fold: 2 epoch: 1 - val loss:2.230
+phase: 1 fold: 2 epoch: 1 - accuracy:0.483
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Starting epoch 2
+phase: 1 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 1 fold: 2 epoch: 2 - train loss:4.440
+phase: 1 fold: 2 epoch: 2 - val loss:2.201
+phase: 1 fold: 2 epoch: 2 - accuracy:0.602
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 3
+phase: 1 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 1 fold: 2 epoch: 3 - train loss:6.598
+phase: 1 fold: 2 epoch: 3 - val loss:2.160
+phase: 1 fold: 2 epoch: 3 - accuracy:0.695
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+*** phase: 1 fold: 2 epoch: 3 - top accuracy:0.695
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+phase:  1 
+classes:  10 
+fold:  3 
+num_epochs:  3
+get_k_fold_training_datasets: phase=1 fold=2 use_memory=True
+Starting epoch 1
+phase: 1 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 1 fold: 3 epoch: 1 - train loss:2.141
+phase: 1 fold: 3 epoch: 1 - val loss:2.064
+phase: 1 fold: 3 epoch: 1 - accuracy:0.648
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Starting epoch 2
+phase: 1 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 1 fold: 3 epoch: 2 - train loss:4.232
+phase: 1 fold: 3 epoch: 2 - val loss:2.026
+phase: 1 fold: 3 epoch: 2 - accuracy:0.659
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 3
+phase: 1 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 1 fold: 3 epoch: 3 - train loss:6.277
+phase: 1 fold: 3 epoch: 3 - val loss:1.974
+phase: 1 fold: 3 epoch: 3 - accuracy:0.778
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+*** phase: 1 fold: 3 epoch: 3 - top accuracy:0.778
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+phase:  1 
+classes:  10 
+fold:  4 
+num_epochs:  3
+get_k_fold_training_datasets: phase=1 fold=3 use_memory=True
+Starting epoch 1
+phase: 1 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 1 fold: 4 epoch: 1 - train loss:2.018
+phase: 1 fold: 4 epoch: 1 - val loss:1.917
+phase: 1 fold: 4 epoch: 1 - accuracy:0.861
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Starting epoch 2
+phase: 1 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 1 fold: 4 epoch: 2 - train loss:3.982
+phase: 1 fold: 4 epoch: 2 - val loss:1.865
+phase: 1 fold: 4 epoch: 2 - accuracy:0.878
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 3
+phase: 1 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 1 fold: 4 epoch: 3 - train loss:5.895
+phase: 1 fold: 4 epoch: 3 - val loss:1.818
+phase: 1 fold: 4 epoch: 3 - accuracy:0.908
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+*** phase: 1 fold: 4 epoch: 3 - top accuracy:0.908
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+phase:  1 
+classes:  10 
+fold:  5 
+num_epochs:  3
+get_k_fold_training_datasets: phase=1 fold=4 use_memory=True
+Starting epoch 1
+phase: 1 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 1 fold: 5 epoch: 1 - train loss:1.901
+phase: 1 fold: 5 epoch: 1 - val loss:1.804
+phase: 1 fold: 5 epoch: 1 - accuracy:0.874
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Starting epoch 2
+phase: 1 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 1 fold: 5 epoch: 2 - train loss:3.747
+phase: 1 fold: 5 epoch: 2 - val loss:1.757
+phase: 1 fold: 5 epoch: 2 - accuracy:0.925
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Starting epoch 3
+phase: 1 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 1 fold: 5 epoch: 3 - train loss:5.553
+phase: 1 fold: 5 epoch: 3 - val loss:1.734
+phase: 1 fold: 5 epoch: 3 - accuracy:0.947
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+*** phase: 1 fold: 5 epoch: 3 - top accuracy:0.947
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+phase:  2 
+classes:  20 
+fold:  1 
+num_epochs:  4
+get_k_fold_training_datasets: phase=2 fold=0 use_memory=True
+Starting epoch 1
+phase: 2 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 2 fold: 1 epoch: 1 - train loss:2.710
+phase: 2 fold: 1 epoch: 1 - val loss:2.908
+phase: 2 fold: 1 epoch: 1 - accuracy:0.276
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Starting epoch 2
+phase: 2 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 2 fold: 1 epoch: 2 - train loss:5.322
+phase: 2 fold: 1 epoch: 2 - val loss:2.836
+phase: 2 fold: 1 epoch: 2 - accuracy:0.421
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 3
+phase: 2 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 2 fold: 1 epoch: 3 - train loss:7.865
+phase: 2 fold: 1 epoch: 3 - val loss:2.786
+phase: 2 fold: 1 epoch: 3 - accuracy:0.432
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 4
+phase: 2 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 2 fold: 1 epoch: 4 - train loss:10.358
+phase: 2 fold: 1 epoch: 4 - val loss:2.734
+phase: 2 fold: 1 epoch: 4 - accuracy:0.488
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+*** phase: 2 fold: 1 epoch: 4 - top accuracy:0.488
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+phase:  2 
+classes:  20 
+fold:  2 
+num_epochs:  4
+get_k_fold_training_datasets: phase=2 fold=1 use_memory=True
+Starting epoch 1
+phase: 2 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 2 fold: 2 epoch: 1 - train loss:2.462
+phase: 2 fold: 2 epoch: 1 - val loss:2.612
+phase: 2 fold: 2 epoch: 1 - accuracy:0.716
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Starting epoch 2
+phase: 2 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 2 fold: 2 epoch: 2 - train loss:4.852
+phase: 2 fold: 2 epoch: 2 - val loss:2.581
+phase: 2 fold: 2 epoch: 2 - accuracy:0.683
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 3
+phase: 2 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 2 fold: 2 epoch: 3 - train loss:7.188
+phase: 2 fold: 2 epoch: 3 - val loss:2.538
+phase: 2 fold: 2 epoch: 3 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 4
+phase: 2 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 2 fold: 2 epoch: 4 - train loss:9.488
+phase: 2 fold: 2 epoch: 4 - val loss:2.494
+phase: 2 fold: 2 epoch: 4 - accuracy:0.798
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+*** phase: 2 fold: 2 epoch: 4 - top accuracy:0.798
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+phase:  2 
+classes:  20 
+fold:  3 
+num_epochs:  4
+get_k_fold_training_datasets: phase=2 fold=2 use_memory=True
+Starting epoch 1
+phase: 2 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 2 fold: 3 epoch: 1 - train loss:2.282
+phase: 2 fold: 3 epoch: 1 - val loss:2.430
+phase: 2 fold: 3 epoch: 1 - accuracy:0.803
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Starting epoch 2
+phase: 2 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 2 fold: 3 epoch: 2 - train loss:4.508
+phase: 2 fold: 3 epoch: 2 - val loss:2.384
+phase: 2 fold: 3 epoch: 2 - accuracy:0.834
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 3
+phase: 2 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 2 fold: 3 epoch: 3 - train loss:6.698
+phase: 2 fold: 3 epoch: 3 - val loss:2.379
+phase: 2 fold: 3 epoch: 3 - accuracy:0.845
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 4
+phase: 2 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 2 fold: 3 epoch: 4 - train loss:8.854
+phase: 2 fold: 3 epoch: 4 - val loss:2.343
+phase: 2 fold: 3 epoch: 4 - accuracy:0.884
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+*** phase: 2 fold: 3 epoch: 4 - top accuracy:0.884
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+phase:  2 
+classes:  20 
+fold:  4 
+num_epochs:  4
+get_k_fold_training_datasets: phase=2 fold=3 use_memory=True
+Starting epoch 1
+phase: 2 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 2 fold: 4 epoch: 1 - train loss:2.154
+phase: 2 fold: 4 epoch: 1 - val loss:2.319
+phase: 2 fold: 4 epoch: 1 - accuracy:0.875
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Starting epoch 2
+phase: 2 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 2 fold: 4 epoch: 2 - train loss:4.262
+phase: 2 fold: 4 epoch: 2 - val loss:2.319
+phase: 2 fold: 4 epoch: 2 - accuracy:0.875
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 3
+phase: 2 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 2 fold: 4 epoch: 3 - train loss:6.354
+phase: 2 fold: 4 epoch: 3 - val loss:2.291
+phase: 2 fold: 4 epoch: 3 - accuracy:0.896
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 4
+phase: 2 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 2 fold: 4 epoch: 4 - train loss:8.420
+phase: 2 fold: 4 epoch: 4 - val loss:2.284
+phase: 2 fold: 4 epoch: 4 - accuracy:0.883
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+*** phase: 2 fold: 4 epoch: 3 - top accuracy:0.896
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+phase:  2 
+classes:  20 
+fold:  5 
+num_epochs:  4
+get_k_fold_training_datasets: phase=2 fold=4 use_memory=True
+Starting epoch 1
+phase: 2 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 2 fold: 5 epoch: 1 - train loss:2.076
+phase: 2 fold: 5 epoch: 1 - val loss:2.269
+phase: 2 fold: 5 epoch: 1 - accuracy:0.814
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Starting epoch 2
+phase: 2 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 2 fold: 5 epoch: 2 - train loss:4.122
+phase: 2 fold: 5 epoch: 2 - val loss:2.269
+phase: 2 fold: 5 epoch: 2 - accuracy:0.826
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Starting epoch 3
+phase: 2 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 2 fold: 5 epoch: 3 - train loss:6.149
+phase: 2 fold: 5 epoch: 3 - val loss:2.252
+phase: 2 fold: 5 epoch: 3 - accuracy:0.890
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Starting epoch 4
+phase: 2 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 2 fold: 5 epoch: 4 - train loss:8.158
+phase: 2 fold: 5 epoch: 4 - val loss:2.256
+phase: 2 fold: 5 epoch: 4 - accuracy:0.867
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+*** phase: 2 fold: 5 epoch: 3 - top accuracy:0.890
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+phase:  3 
+classes:  30 
+fold:  1 
+num_epochs:  5
+get_k_fold_training_datasets: phase=3 fold=0 use_memory=True
+Starting epoch 1
+phase: 3 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 3 fold: 1 epoch: 1 - train loss:3.081
+phase: 3 fold: 1 epoch: 1 - val loss:3.290
+phase: 3 fold: 1 epoch: 1 - accuracy:0.206
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Starting epoch 2
+phase: 3 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 3 fold: 1 epoch: 2 - train loss:6.016
+phase: 3 fold: 1 epoch: 2 - val loss:3.204
+phase: 3 fold: 1 epoch: 2 - accuracy:0.277
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 3
+phase: 3 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 3 fold: 1 epoch: 3 - train loss:8.857
+phase: 3 fold: 1 epoch: 3 - val loss:3.149
+phase: 3 fold: 1 epoch: 3 - accuracy:0.378
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 4
+phase: 3 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 3 fold: 1 epoch: 4 - train loss:11.620
+phase: 3 fold: 1 epoch: 4 - val loss:3.071
+phase: 3 fold: 1 epoch: 4 - accuracy:0.437
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 5
+phase: 3 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 3 fold: 1 epoch: 5 - train loss:14.322
+phase: 3 fold: 1 epoch: 5 - val loss:3.005
+phase: 3 fold: 1 epoch: 5 - accuracy:0.504
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+*** phase: 3 fold: 1 epoch: 5 - top accuracy:0.504
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase:  3 
+classes:  30 
+fold:  2 
+num_epochs:  5
+get_k_fold_training_datasets: phase=3 fold=1 use_memory=True
+Starting epoch 1
+phase: 3 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 3 fold: 2 epoch: 1 - train loss:2.688
+phase: 3 fold: 2 epoch: 1 - val loss:2.888
+phase: 3 fold: 2 epoch: 1 - accuracy:0.538
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Starting epoch 2
+phase: 3 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 3 fold: 2 epoch: 2 - train loss:5.302
+phase: 3 fold: 2 epoch: 2 - val loss:2.862
+phase: 3 fold: 2 epoch: 2 - accuracy:0.567
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 3
+phase: 3 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 3 fold: 2 epoch: 3 - train loss:7.874
+phase: 3 fold: 2 epoch: 3 - val loss:2.816
+phase: 3 fold: 2 epoch: 3 - accuracy:0.614
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 4
+phase: 3 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 3 fold: 2 epoch: 4 - train loss:10.401
+phase: 3 fold: 2 epoch: 4 - val loss:2.778
+phase: 3 fold: 2 epoch: 4 - accuracy:0.643
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 5
+phase: 3 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 3 fold: 2 epoch: 5 - train loss:12.901
+phase: 3 fold: 2 epoch: 5 - val loss:2.744
+phase: 3 fold: 2 epoch: 5 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+*** phase: 3 fold: 2 epoch: 5 - top accuracy:0.653
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase:  3 
+classes:  30 
+fold:  3 
+num_epochs:  5
+get_k_fold_training_datasets: phase=3 fold=2 use_memory=True
+Starting epoch 1
+phase: 3 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 3 fold: 3 epoch: 1 - train loss:2.493
+phase: 3 fold: 3 epoch: 1 - val loss:2.710
+phase: 3 fold: 3 epoch: 1 - accuracy:0.675
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Starting epoch 2
+phase: 3 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 3 fold: 3 epoch: 2 - train loss:4.935
+phase: 3 fold: 3 epoch: 2 - val loss:2.702
+phase: 3 fold: 3 epoch: 2 - accuracy:0.699
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 3
+phase: 3 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 3 fold: 3 epoch: 3 - train loss:7.354
+phase: 3 fold: 3 epoch: 3 - val loss:2.682
+phase: 3 fold: 3 epoch: 3 - accuracy:0.741
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 4
+phase: 3 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 3 fold: 3 epoch: 4 - train loss:9.751
+phase: 3 fold: 3 epoch: 4 - val loss:2.692
+phase: 3 fold: 3 epoch: 4 - accuracy:0.793
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 5
+phase: 3 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 3 fold: 3 epoch: 5 - train loss:12.125
+phase: 3 fold: 3 epoch: 5 - val loss:2.669
+phase: 3 fold: 3 epoch: 5 - accuracy:0.787
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+*** phase: 3 fold: 3 epoch: 4 - top accuracy:0.793
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+phase:  3 
+classes:  30 
+fold:  4 
+num_epochs:  5
+get_k_fold_training_datasets: phase=3 fold=3 use_memory=True
+Starting epoch 1
+phase: 3 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 3 fold: 4 epoch: 1 - train loss:2.395
+phase: 3 fold: 4 epoch: 1 - val loss:2.663
+phase: 3 fold: 4 epoch: 1 - accuracy:0.747
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Starting epoch 2
+phase: 3 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 3 fold: 4 epoch: 2 - train loss:4.759
+phase: 3 fold: 4 epoch: 2 - val loss:2.648
+phase: 3 fold: 4 epoch: 2 - accuracy:0.702
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 3
+phase: 3 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 3 fold: 4 epoch: 3 - train loss:7.101
+phase: 3 fold: 4 epoch: 3 - val loss:2.636
+phase: 3 fold: 4 epoch: 3 - accuracy:0.796
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 4
+phase: 3 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 3 fold: 4 epoch: 4 - train loss:9.427
+phase: 3 fold: 4 epoch: 4 - val loss:2.632
+phase: 3 fold: 4 epoch: 4 - accuracy:0.797
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 5
+phase: 3 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 3 fold: 4 epoch: 5 - train loss:11.740
+phase: 3 fold: 4 epoch: 5 - val loss:2.605
+phase: 3 fold: 4 epoch: 5 - accuracy:0.804
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+*** phase: 3 fold: 4 epoch: 5 - top accuracy:0.804
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase:  3 
+classes:  30 
+fold:  5 
+num_epochs:  5
+get_k_fold_training_datasets: phase=3 fold=4 use_memory=True
+Starting epoch 1
+phase: 3 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 3 fold: 5 epoch: 1 - train loss:2.331
+phase: 3 fold: 5 epoch: 1 - val loss:2.566
+phase: 3 fold: 5 epoch: 1 - accuracy:0.898
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Starting epoch 2
+phase: 3 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 3 fold: 5 epoch: 2 - train loss:4.639
+phase: 3 fold: 5 epoch: 2 - val loss:2.560
+phase: 3 fold: 5 epoch: 2 - accuracy:0.891
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Starting epoch 3
+phase: 3 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 3 fold: 5 epoch: 3 - train loss:6.936
+phase: 3 fold: 5 epoch: 3 - val loss:2.556
+phase: 3 fold: 5 epoch: 3 - accuracy:0.890
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Starting epoch 4
+phase: 3 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 3 fold: 5 epoch: 4 - train loss:9.218
+phase: 3 fold: 5 epoch: 4 - val loss:2.558
+phase: 3 fold: 5 epoch: 4 - accuracy:0.889
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Starting epoch 5
+phase: 3 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 3 fold: 5 epoch: 5 - train loss:11.496
+phase: 3 fold: 5 epoch: 5 - val loss:2.552
+phase: 3 fold: 5 epoch: 5 - accuracy:0.927
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+*** phase: 3 fold: 5 epoch: 5 - top accuracy:0.927
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase:  4 
+classes:  40 
+fold:  1 
+num_epochs:  6
+get_k_fold_training_datasets: phase=4 fold=0 use_memory=True
+Starting epoch 1
+phase: 4 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 1 - train loss:3.346
+phase: 4 fold: 1 epoch: 1 - val loss:3.544
+phase: 4 fold: 1 epoch: 1 - accuracy:0.247
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Starting epoch 2
+phase: 4 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 2 - train loss:6.512
+phase: 4 fold: 1 epoch: 2 - val loss:3.418
+phase: 4 fold: 1 epoch: 2 - accuracy:0.315
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 3
+phase: 4 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 3 - train loss:9.555
+phase: 4 fold: 1 epoch: 3 - val loss:3.301
+phase: 4 fold: 1 epoch: 3 - accuracy:0.391
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 4
+phase: 4 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 4 - train loss:12.509
+phase: 4 fold: 1 epoch: 4 - val loss:3.246
+phase: 4 fold: 1 epoch: 4 - accuracy:0.402
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 5
+phase: 4 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 5 - train loss:15.399
+phase: 4 fold: 1 epoch: 5 - val loss:3.184
+phase: 4 fold: 1 epoch: 5 - accuracy:0.474
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 6
+phase: 4 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 4 fold: 1 epoch: 6 - train loss:18.234
+phase: 4 fold: 1 epoch: 6 - val loss:3.138
+phase: 4 fold: 1 epoch: 6 - accuracy:0.505
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+*** phase: 4 fold: 1 epoch: 6 - top accuracy:0.505
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+phase:  4 
+classes:  40 
+fold:  2 
+num_epochs:  6
+get_k_fold_training_datasets: phase=4 fold=1 use_memory=True
+Starting epoch 1
+phase: 4 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 1 - train loss:2.834
+phase: 4 fold: 2 epoch: 1 - val loss:3.103
+phase: 4 fold: 2 epoch: 1 - accuracy:0.559
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Starting epoch 2
+phase: 4 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 2 - train loss:5.598
+phase: 4 fold: 2 epoch: 2 - val loss:3.073
+phase: 4 fold: 2 epoch: 2 - accuracy:0.594
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 3
+phase: 4 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 3 - train loss:8.321
+phase: 4 fold: 2 epoch: 3 - val loss:3.039
+phase: 4 fold: 2 epoch: 3 - accuracy:0.686
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 4
+phase: 4 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 4 - train loss:11.005
+phase: 4 fold: 2 epoch: 4 - val loss:3.022
+phase: 4 fold: 2 epoch: 4 - accuracy:0.643
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 5
+phase: 4 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 5 - train loss:13.659
+phase: 4 fold: 2 epoch: 5 - val loss:2.994
+phase: 4 fold: 2 epoch: 5 - accuracy:0.686
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 6
+phase: 4 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 4 fold: 2 epoch: 6 - train loss:16.290
+phase: 4 fold: 2 epoch: 6 - val loss:2.981
+phase: 4 fold: 2 epoch: 6 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+*** phase: 4 fold: 2 epoch: 5 - top accuracy:0.686
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+phase:  4 
+classes:  40 
+fold:  3 
+num_epochs:  6
+get_k_fold_training_datasets: phase=4 fold=2 use_memory=True
+Starting epoch 1
+phase: 4 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 1 - train loss:2.651
+phase: 4 fold: 3 epoch: 1 - val loss:2.926
+phase: 4 fold: 3 epoch: 1 - accuracy:0.706
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Starting epoch 2
+phase: 4 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 2 - train loss:5.268
+phase: 4 fold: 3 epoch: 2 - val loss:2.923
+phase: 4 fold: 3 epoch: 2 - accuracy:0.797
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 3
+phase: 4 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 3 - train loss:7.858
+phase: 4 fold: 3 epoch: 3 - val loss:2.920
+phase: 4 fold: 3 epoch: 3 - accuracy:0.779
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 4
+phase: 4 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 4 - train loss:10.433
+phase: 4 fold: 3 epoch: 4 - val loss:2.903
+phase: 4 fold: 3 epoch: 4 - accuracy:0.791
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 5
+phase: 4 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 5 - train loss:12.993
+phase: 4 fold: 3 epoch: 5 - val loss:2.920
+phase: 4 fold: 3 epoch: 5 - accuracy:0.767
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 6
+phase: 4 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 4 fold: 3 epoch: 6 - train loss:15.542
+phase: 4 fold: 3 epoch: 6 - val loss:2.895
+phase: 4 fold: 3 epoch: 6 - accuracy:0.772
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+*** phase: 4 fold: 3 epoch: 2 - top accuracy:0.797
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+phase:  4 
+classes:  40 
+fold:  4 
+num_epochs:  6
+get_k_fold_training_datasets: phase=4 fold=3 use_memory=True
+Starting epoch 1
+phase: 4 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 1 - train loss:2.629
+phase: 4 fold: 4 epoch: 1 - val loss:2.909
+phase: 4 fold: 4 epoch: 1 - accuracy:0.745
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Starting epoch 2
+phase: 4 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 2 - train loss:5.218
+phase: 4 fold: 4 epoch: 2 - val loss:2.895
+phase: 4 fold: 4 epoch: 2 - accuracy:0.769
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 3
+phase: 4 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 3 - train loss:7.788
+phase: 4 fold: 4 epoch: 3 - val loss:2.883
+phase: 4 fold: 4 epoch: 3 - accuracy:0.770
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 4
+phase: 4 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 4 - train loss:10.345
+phase: 4 fold: 4 epoch: 4 - val loss:2.866
+phase: 4 fold: 4 epoch: 4 - accuracy:0.767
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 5
+phase: 4 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 5 - train loss:12.892
+phase: 4 fold: 4 epoch: 5 - val loss:2.875
+phase: 4 fold: 4 epoch: 5 - accuracy:0.762
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 6
+phase: 4 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 4 fold: 4 epoch: 6 - train loss:15.432
+phase: 4 fold: 4 epoch: 6 - val loss:2.862
+phase: 4 fold: 4 epoch: 6 - accuracy:0.799
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+*** phase: 4 fold: 4 epoch: 6 - top accuracy:0.799
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+phase:  4 
+classes:  40 
+fold:  5 
+num_epochs:  6
+get_k_fold_training_datasets: phase=4 fold=4 use_memory=True
+Starting epoch 1
+phase: 4 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 1 - train loss:2.550
+phase: 4 fold: 5 epoch: 1 - val loss:2.842
+phase: 4 fold: 5 epoch: 1 - accuracy:0.823
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Starting epoch 2
+phase: 4 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 2 - train loss:5.082
+phase: 4 fold: 5 epoch: 2 - val loss:2.846
+phase: 4 fold: 5 epoch: 2 - accuracy:0.828
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Starting epoch 3
+phase: 4 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 3 - train loss:7.604
+phase: 4 fold: 5 epoch: 3 - val loss:2.843
+phase: 4 fold: 5 epoch: 3 - accuracy:0.840
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Starting epoch 4
+phase: 4 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 4 - train loss:10.117
+phase: 4 fold: 5 epoch: 4 - val loss:2.835
+phase: 4 fold: 5 epoch: 4 - accuracy:0.824
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Starting epoch 5
+phase: 4 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 5 - train loss:12.623
+phase: 4 fold: 5 epoch: 5 - val loss:2.836
+phase: 4 fold: 5 epoch: 5 - accuracy:0.827
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Starting epoch 6
+phase: 4 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 4 fold: 5 epoch: 6 - train loss:15.126
+phase: 4 fold: 5 epoch: 6 - val loss:2.827
+phase: 4 fold: 5 epoch: 6 - accuracy:0.825
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+*** phase: 4 fold: 5 epoch: 3 - top accuracy:0.840
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+phase:  5 
+classes:  50 
+fold:  1 
+num_epochs:  7
+get_k_fold_training_datasets: phase=5 fold=0 use_memory=True
+Starting epoch 1
+phase: 5 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 1 - train loss:3.543
+phase: 5 fold: 1 epoch: 1 - val loss:3.734
+phase: 5 fold: 1 epoch: 1 - accuracy:0.247
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Starting epoch 2
+phase: 5 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 2 - train loss:6.860
+phase: 5 fold: 1 epoch: 2 - val loss:3.613
+phase: 5 fold: 1 epoch: 2 - accuracy:0.317
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 3
+phase: 5 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 3 - train loss:10.057
+phase: 5 fold: 1 epoch: 3 - val loss:3.528
+phase: 5 fold: 1 epoch: 3 - accuracy:0.372
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 4
+phase: 5 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 4 - train loss:13.168
+phase: 5 fold: 1 epoch: 4 - val loss:3.434
+phase: 5 fold: 1 epoch: 4 - accuracy:0.386
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 5
+phase: 5 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 5 - train loss:16.212
+phase: 5 fold: 1 epoch: 5 - val loss:3.379
+phase: 5 fold: 1 epoch: 5 - accuracy:0.423
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 6
+phase: 5 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 6 - train loss:19.208
+phase: 5 fold: 1 epoch: 6 - val loss:3.335
+phase: 5 fold: 1 epoch: 6 - accuracy:0.454
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 7
+phase: 5 fold: 1 epoch: 7 - learning rate:0.0001000
+phase: 5 fold: 1 epoch: 7 - train loss:22.154
+phase: 5 fold: 1 epoch: 7 - val loss:3.324
+phase: 5 fold: 1 epoch: 7 - accuracy:0.406
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+*** phase: 5 fold: 1 epoch: 6 - top accuracy:0.454
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+phase:  5 
+classes:  50 
+fold:  2 
+num_epochs:  7
+get_k_fold_training_datasets: phase=5 fold=1 use_memory=True
+Starting epoch 1
+phase: 5 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 1 - train loss:2.998
+phase: 5 fold: 2 epoch: 1 - val loss:3.248
+phase: 5 fold: 2 epoch: 1 - accuracy:0.476
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Starting epoch 2
+phase: 5 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 2 - train loss:5.911
+phase: 5 fold: 2 epoch: 2 - val loss:3.238
+phase: 5 fold: 2 epoch: 2 - accuracy:0.523
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 3
+phase: 5 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 3 - train loss:8.782
+phase: 5 fold: 2 epoch: 3 - val loss:3.221
+phase: 5 fold: 2 epoch: 3 - accuracy:0.519
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 4
+phase: 5 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 4 - train loss:11.628
+phase: 5 fold: 2 epoch: 4 - val loss:3.170
+phase: 5 fold: 2 epoch: 4 - accuracy:0.624
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 5
+phase: 5 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 5 - train loss:14.446
+phase: 5 fold: 2 epoch: 5 - val loss:3.182
+phase: 5 fold: 2 epoch: 5 - accuracy:0.643
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 6
+phase: 5 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 6 - train loss:17.243
+phase: 5 fold: 2 epoch: 6 - val loss:3.148
+phase: 5 fold: 2 epoch: 6 - accuracy:0.678
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 7
+phase: 5 fold: 2 epoch: 7 - learning rate:0.0001000
+phase: 5 fold: 2 epoch: 7 - train loss:20.019
+phase: 5 fold: 2 epoch: 7 - val loss:3.154
+phase: 5 fold: 2 epoch: 7 - accuracy:0.656
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+*** phase: 5 fold: 2 epoch: 6 - top accuracy:0.678
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+phase:  5 
+classes:  50 
+fold:  3 
+num_epochs:  7
+get_k_fold_training_datasets: phase=5 fold=2 use_memory=True
+Starting epoch 1
+phase: 5 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 1 - train loss:2.809
+phase: 5 fold: 3 epoch: 1 - val loss:3.130
+phase: 5 fold: 3 epoch: 1 - accuracy:0.627
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Starting epoch 2
+phase: 5 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 2 - train loss:5.586
+phase: 5 fold: 3 epoch: 2 - val loss:3.103
+phase: 5 fold: 3 epoch: 2 - accuracy:0.674
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 3
+phase: 5 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 3 - train loss:8.342
+phase: 5 fold: 3 epoch: 3 - val loss:3.084
+phase: 5 fold: 3 epoch: 3 - accuracy:0.781
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 4
+phase: 5 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 4 - train loss:11.084
+phase: 5 fold: 3 epoch: 4 - val loss:3.109
+phase: 5 fold: 3 epoch: 4 - accuracy:0.702
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 5
+phase: 5 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 5 - train loss:13.822
+phase: 5 fold: 3 epoch: 5 - val loss:3.086
+phase: 5 fold: 3 epoch: 5 - accuracy:0.741
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 6
+phase: 5 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 6 - train loss:16.555
+phase: 5 fold: 3 epoch: 6 - val loss:3.079
+phase: 5 fold: 3 epoch: 6 - accuracy:0.756
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 7
+phase: 5 fold: 3 epoch: 7 - learning rate:0.0001000
+phase: 5 fold: 3 epoch: 7 - train loss:19.278
+phase: 5 fold: 3 epoch: 7 - val loss:3.097
+phase: 5 fold: 3 epoch: 7 - accuracy:0.726
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+*** phase: 5 fold: 3 epoch: 3 - top accuracy:0.781
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+phase:  5 
+classes:  50 
+fold:  4 
+num_epochs:  7
+get_k_fold_training_datasets: phase=5 fold=3 use_memory=True
+Starting epoch 1
+phase: 5 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 1 - train loss:2.764
+phase: 5 fold: 4 epoch: 1 - val loss:3.072
+phase: 5 fold: 4 epoch: 1 - accuracy:0.662
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Starting epoch 2
+phase: 5 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 2 - train loss:5.511
+phase: 5 fold: 4 epoch: 2 - val loss:3.092
+phase: 5 fold: 4 epoch: 2 - accuracy:0.678
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 3
+phase: 5 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 3 - train loss:8.248
+phase: 5 fold: 4 epoch: 3 - val loss:3.080
+phase: 5 fold: 4 epoch: 3 - accuracy:0.719
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 4
+phase: 5 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 4 - train loss:10.978
+phase: 5 fold: 4 epoch: 4 - val loss:3.097
+phase: 5 fold: 4 epoch: 4 - accuracy:0.699
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 5
+phase: 5 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 5 - train loss:13.703
+phase: 5 fold: 4 epoch: 5 - val loss:3.089
+phase: 5 fold: 4 epoch: 5 - accuracy:0.752
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 6
+phase: 5 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 6 - train loss:16.421
+phase: 5 fold: 4 epoch: 6 - val loss:3.089
+phase: 5 fold: 4 epoch: 6 - accuracy:0.729
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 7
+phase: 5 fold: 4 epoch: 7 - learning rate:0.0001000
+phase: 5 fold: 4 epoch: 7 - train loss:19.140
+phase: 5 fold: 4 epoch: 7 - val loss:3.076
+phase: 5 fold: 4 epoch: 7 - accuracy:0.717
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+*** phase: 5 fold: 4 epoch: 5 - top accuracy:0.752
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+phase:  5 
+classes:  50 
+fold:  5 
+num_epochs:  7
+get_k_fold_training_datasets: phase=5 fold=4 use_memory=True
+Starting epoch 1
+phase: 5 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 1 - train loss:2.737
+phase: 5 fold: 5 epoch: 1 - val loss:3.044
+phase: 5 fold: 5 epoch: 1 - accuracy:0.729
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Starting epoch 2
+phase: 5 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 2 - train loss:5.454
+phase: 5 fold: 5 epoch: 2 - val loss:3.040
+phase: 5 fold: 5 epoch: 2 - accuracy:0.750
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Starting epoch 3
+phase: 5 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 3 - train loss:8.171
+phase: 5 fold: 5 epoch: 3 - val loss:3.059
+phase: 5 fold: 5 epoch: 3 - accuracy:0.714
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Starting epoch 4
+phase: 5 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 4 - train loss:10.873
+phase: 5 fold: 5 epoch: 4 - val loss:3.055
+phase: 5 fold: 5 epoch: 4 - accuracy:0.769
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Starting epoch 5
+phase: 5 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 5 - train loss:13.577
+phase: 5 fold: 5 epoch: 5 - val loss:3.048
+phase: 5 fold: 5 epoch: 5 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Starting epoch 6
+phase: 5 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 6 - train loss:16.269
+phase: 5 fold: 5 epoch: 6 - val loss:3.034
+phase: 5 fold: 5 epoch: 6 - accuracy:0.735
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Starting epoch 7
+phase: 5 fold: 5 epoch: 7 - learning rate:0.0001000
+phase: 5 fold: 5 epoch: 7 - train loss:18.962
+phase: 5 fold: 5 epoch: 7 - val loss:3.042
+phase: 5 fold: 5 epoch: 7 - accuracy:0.745
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+*** phase: 5 fold: 5 epoch: 4 - top accuracy:0.769
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+phase:  6 
+classes:  60 
+fold:  1 
+num_epochs:  8
+get_k_fold_training_datasets: phase=6 fold=0 use_memory=True
+Starting epoch 1
+phase: 6 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 1 - train loss:3.727
+phase: 6 fold: 1 epoch: 1 - val loss:3.893
+phase: 6 fold: 1 epoch: 1 - accuracy:0.152
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Starting epoch 2
+phase: 6 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 2 - train loss:7.211
+phase: 6 fold: 1 epoch: 2 - val loss:3.769
+phase: 6 fold: 1 epoch: 2 - accuracy:0.183
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 3
+phase: 6 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 3 - train loss:10.555
+phase: 6 fold: 1 epoch: 3 - val loss:3.641
+phase: 6 fold: 1 epoch: 3 - accuracy:0.308
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 4
+phase: 6 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 4 - train loss:13.795
+phase: 6 fold: 1 epoch: 4 - val loss:3.562
+phase: 6 fold: 1 epoch: 4 - accuracy:0.336
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 5
+phase: 6 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 5 - train loss:16.968
+phase: 6 fold: 1 epoch: 5 - val loss:3.506
+phase: 6 fold: 1 epoch: 5 - accuracy:0.383
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 6
+phase: 6 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 6 - train loss:20.079
+phase: 6 fold: 1 epoch: 6 - val loss:3.486
+phase: 6 fold: 1 epoch: 6 - accuracy:0.364
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 7
+phase: 6 fold: 1 epoch: 7 - learning rate:0.0001000
+phase: 6 fold: 1 epoch: 7 - train loss:23.147
+phase: 6 fold: 1 epoch: 7 - val loss:3.464
+phase: 6 fold: 1 epoch: 7 - accuracy:0.333
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 8
+phase: 6 fold: 1 epoch: 8 - learning rate:0.0000100
+phase: 6 fold: 1 epoch: 8 - train loss:26.193
+phase: 6 fold: 1 epoch: 8 - val loss:3.462
+phase: 6 fold: 1 epoch: 8 - accuracy:0.394
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+*** phase: 6 fold: 1 epoch: 8 - top accuracy:0.394
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+phase:  6 
+classes:  60 
+fold:  2 
+num_epochs:  8
+get_k_fold_training_datasets: phase=6 fold=1 use_memory=True
+Starting epoch 1
+phase: 6 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 1 - train loss:3.079
+phase: 6 fold: 2 epoch: 1 - val loss:3.376
+phase: 6 fold: 2 epoch: 1 - accuracy:0.566
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Starting epoch 2
+phase: 6 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 2 - train loss:6.089
+phase: 6 fold: 2 epoch: 2 - val loss:3.345
+phase: 6 fold: 2 epoch: 2 - accuracy:0.524
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 3
+phase: 6 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 3 - train loss:9.069
+phase: 6 fold: 2 epoch: 3 - val loss:3.326
+phase: 6 fold: 2 epoch: 3 - accuracy:0.542
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 4
+phase: 6 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 4 - train loss:12.021
+phase: 6 fold: 2 epoch: 4 - val loss:3.325
+phase: 6 fold: 2 epoch: 4 - accuracy:0.602
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 5
+phase: 6 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 5 - train loss:14.955
+phase: 6 fold: 2 epoch: 5 - val loss:3.324
+phase: 6 fold: 2 epoch: 5 - accuracy:0.641
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 6
+phase: 6 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 6 - train loss:17.875
+phase: 6 fold: 2 epoch: 6 - val loss:3.311
+phase: 6 fold: 2 epoch: 6 - accuracy:0.633
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 7
+phase: 6 fold: 2 epoch: 7 - learning rate:0.0001000
+phase: 6 fold: 2 epoch: 7 - train loss:20.779
+phase: 6 fold: 2 epoch: 7 - val loss:3.308
+phase: 6 fold: 2 epoch: 7 - accuracy:0.641
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 8
+phase: 6 fold: 2 epoch: 8 - learning rate:0.0000100
+phase: 6 fold: 2 epoch: 8 - train loss:23.684
+phase: 6 fold: 2 epoch: 8 - val loss:3.300
+phase: 6 fold: 2 epoch: 8 - accuracy:0.643
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+*** phase: 6 fold: 2 epoch: 8 - top accuracy:0.643
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+phase:  6 
+classes:  60 
+fold:  3 
+num_epochs:  8
+get_k_fold_training_datasets: phase=6 fold=2 use_memory=True
+Starting epoch 1
+phase: 6 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 1 - train loss:2.920
+phase: 6 fold: 3 epoch: 1 - val loss:3.244
+phase: 6 fold: 3 epoch: 1 - accuracy:0.625
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Starting epoch 2
+phase: 6 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 2 - train loss:5.820
+phase: 6 fold: 3 epoch: 2 - val loss:3.243
+phase: 6 fold: 3 epoch: 2 - accuracy:0.659
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 3
+phase: 6 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 3 - train loss:8.707
+phase: 6 fold: 3 epoch: 3 - val loss:3.253
+phase: 6 fold: 3 epoch: 3 - accuracy:0.704
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 4
+phase: 6 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 4 - train loss:11.580
+phase: 6 fold: 3 epoch: 4 - val loss:3.275
+phase: 6 fold: 3 epoch: 4 - accuracy:0.647
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 5
+phase: 6 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 5 - train loss:14.451
+phase: 6 fold: 3 epoch: 5 - val loss:3.256
+phase: 6 fold: 3 epoch: 5 - accuracy:0.718
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 6
+phase: 6 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 6 - train loss:17.315
+phase: 6 fold: 3 epoch: 6 - val loss:3.267
+phase: 6 fold: 3 epoch: 6 - accuracy:0.677
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 7
+phase: 6 fold: 3 epoch: 7 - learning rate:0.0001000
+phase: 6 fold: 3 epoch: 7 - train loss:20.172
+phase: 6 fold: 3 epoch: 7 - val loss:3.255
+phase: 6 fold: 3 epoch: 7 - accuracy:0.685
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 8
+phase: 6 fold: 3 epoch: 8 - learning rate:0.0000100
+phase: 6 fold: 3 epoch: 8 - train loss:23.025
+phase: 6 fold: 3 epoch: 8 - val loss:3.250
+phase: 6 fold: 3 epoch: 8 - accuracy:0.697
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+*** phase: 6 fold: 3 epoch: 5 - top accuracy:0.718
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+phase:  6 
+classes:  60 
+fold:  4 
+num_epochs:  8
+get_k_fold_training_datasets: phase=6 fold=3 use_memory=True
+Starting epoch 1
+phase: 6 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 1 - train loss:2.889
+phase: 6 fold: 4 epoch: 1 - val loss:3.224
+phase: 6 fold: 4 epoch: 1 - accuracy:0.721
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Starting epoch 2
+phase: 6 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 2 - train loss:5.760
+phase: 6 fold: 4 epoch: 2 - val loss:3.259
+phase: 6 fold: 4 epoch: 2 - accuracy:0.723
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 3
+phase: 6 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 3 - train loss:8.621
+phase: 6 fold: 4 epoch: 3 - val loss:3.245
+phase: 6 fold: 4 epoch: 3 - accuracy:0.782
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 4
+phase: 6 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 4 - train loss:11.479
+phase: 6 fold: 4 epoch: 4 - val loss:3.232
+phase: 6 fold: 4 epoch: 4 - accuracy:0.698
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 5
+phase: 6 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 5 - train loss:14.331
+phase: 6 fold: 4 epoch: 5 - val loss:3.232
+phase: 6 fold: 4 epoch: 5 - accuracy:0.714
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 6
+phase: 6 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 6 - train loss:17.184
+phase: 6 fold: 4 epoch: 6 - val loss:3.228
+phase: 6 fold: 4 epoch: 6 - accuracy:0.734
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 7
+phase: 6 fold: 4 epoch: 7 - learning rate:0.0001000
+phase: 6 fold: 4 epoch: 7 - train loss:20.028
+phase: 6 fold: 4 epoch: 7 - val loss:3.222
+phase: 6 fold: 4 epoch: 7 - accuracy:0.779
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 8
+phase: 6 fold: 4 epoch: 8 - learning rate:0.0000100
+phase: 6 fold: 4 epoch: 8 - train loss:22.871
+phase: 6 fold: 4 epoch: 8 - val loss:3.227
+phase: 6 fold: 4 epoch: 8 - accuracy:0.755
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+*** phase: 6 fold: 4 epoch: 3 - top accuracy:0.782
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+phase:  6 
+classes:  60 
+fold:  5 
+num_epochs:  8
+get_k_fold_training_datasets: phase=6 fold=4 use_memory=True
+Starting epoch 1
+phase: 6 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 1 - train loss:2.872
+phase: 6 fold: 5 epoch: 1 - val loss:3.232
+phase: 6 fold: 5 epoch: 1 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Starting epoch 2
+phase: 6 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 2 - train loss:5.731
+phase: 6 fold: 5 epoch: 2 - val loss:3.242
+phase: 6 fold: 5 epoch: 2 - accuracy:0.762
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Starting epoch 3
+phase: 6 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 3 - train loss:8.581
+phase: 6 fold: 5 epoch: 3 - val loss:3.226
+phase: 6 fold: 5 epoch: 3 - accuracy:0.754
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Starting epoch 4
+phase: 6 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 4 - train loss:11.432
+phase: 6 fold: 5 epoch: 4 - val loss:3.217
+phase: 6 fold: 5 epoch: 4 - accuracy:0.787
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Starting epoch 5
+phase: 6 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 5 - train loss:14.281
+phase: 6 fold: 5 epoch: 5 - val loss:3.216
+phase: 6 fold: 5 epoch: 5 - accuracy:0.811
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Starting epoch 6
+phase: 6 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 6 - train loss:17.128
+phase: 6 fold: 5 epoch: 6 - val loss:3.210
+phase: 6 fold: 5 epoch: 6 - accuracy:0.831
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Starting epoch 7
+phase: 6 fold: 5 epoch: 7 - learning rate:0.0001000
+phase: 6 fold: 5 epoch: 7 - train loss:19.976
+phase: 6 fold: 5 epoch: 7 - val loss:3.219
+phase: 6 fold: 5 epoch: 7 - accuracy:0.811
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Starting epoch 8
+phase: 6 fold: 5 epoch: 8 - learning rate:0.0000100
+phase: 6 fold: 5 epoch: 8 - train loss:22.815
+phase: 6 fold: 5 epoch: 8 - val loss:3.218
+phase: 6 fold: 5 epoch: 8 - accuracy:0.815
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+*** phase: 6 fold: 5 epoch: 6 - top accuracy:0.831
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+phase:  7 
+classes:  70 
+fold:  1 
+num_epochs:  10
+get_k_fold_training_datasets: phase=7 fold=0 use_memory=True
+Starting epoch 1
+phase: 7 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 1 - train loss:3.837
+phase: 7 fold: 1 epoch: 1 - val loss:4.044
+phase: 7 fold: 1 epoch: 1 - accuracy:0.126
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Starting epoch 2
+phase: 7 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 2 - train loss:7.424
+phase: 7 fold: 1 epoch: 2 - val loss:3.902
+phase: 7 fold: 1 epoch: 2 - accuracy:0.178
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 3
+phase: 7 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 3 - train loss:10.871
+phase: 7 fold: 1 epoch: 3 - val loss:3.795
+phase: 7 fold: 1 epoch: 3 - accuracy:0.234
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 4
+phase: 7 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 4 - train loss:14.220
+phase: 7 fold: 1 epoch: 4 - val loss:3.708
+phase: 7 fold: 1 epoch: 4 - accuracy:0.270
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 5
+phase: 7 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 5 - train loss:17.494
+phase: 7 fold: 1 epoch: 5 - val loss:3.648
+phase: 7 fold: 1 epoch: 5 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 6
+phase: 7 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 6 - train loss:20.713
+phase: 7 fold: 1 epoch: 6 - val loss:3.586
+phase: 7 fold: 1 epoch: 6 - accuracy:0.335
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 7
+phase: 7 fold: 1 epoch: 7 - learning rate:0.0001000
+phase: 7 fold: 1 epoch: 7 - train loss:23.888
+phase: 7 fold: 1 epoch: 7 - val loss:3.550
+phase: 7 fold: 1 epoch: 7 - accuracy:0.366
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 8
+phase: 7 fold: 1 epoch: 8 - learning rate:0.0000100
+phase: 7 fold: 1 epoch: 8 - train loss:27.039
+phase: 7 fold: 1 epoch: 8 - val loss:3.566
+phase: 7 fold: 1 epoch: 8 - accuracy:0.396
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 9
+phase: 7 fold: 1 epoch: 9 - learning rate:0.0000100
+phase: 7 fold: 1 epoch: 9 - train loss:30.184
+phase: 7 fold: 1 epoch: 9 - val loss:3.571
+phase: 7 fold: 1 epoch: 9 - accuracy:0.374
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 10
+phase: 7 fold: 1 epoch:10 - learning rate:0.0000100
+phase: 7 fold: 1 epoch:10 - train loss:33.328
+phase: 7 fold: 1 epoch:10 - val loss:3.570
+phase: 7 fold: 1 epoch:10 - accuracy:0.446
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+*** phase: 7 fold: 1 epoch:10 - top accuracy:0.446
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+phase:  7 
+classes:  70 
+fold:  2 
+num_epochs:  10
+get_k_fold_training_datasets: phase=7 fold=1 use_memory=True
+Starting epoch 1
+phase: 7 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 1 - train loss:3.172
+phase: 7 fold: 2 epoch: 1 - val loss:3.498
+phase: 7 fold: 2 epoch: 1 - accuracy:0.447
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Starting epoch 2
+phase: 7 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 2 - train loss:6.286
+phase: 7 fold: 2 epoch: 2 - val loss:3.470
+phase: 7 fold: 2 epoch: 2 - accuracy:0.555
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 3
+phase: 7 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 3 - train loss:9.376
+phase: 7 fold: 2 epoch: 3 - val loss:3.441
+phase: 7 fold: 2 epoch: 3 - accuracy:0.565
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 4
+phase: 7 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 4 - train loss:12.443
+phase: 7 fold: 2 epoch: 4 - val loss:3.460
+phase: 7 fold: 2 epoch: 4 - accuracy:0.529
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 5
+phase: 7 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 5 - train loss:15.493
+phase: 7 fold: 2 epoch: 5 - val loss:3.465
+phase: 7 fold: 2 epoch: 5 - accuracy:0.539
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 6
+phase: 7 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 6 - train loss:18.529
+phase: 7 fold: 2 epoch: 6 - val loss:3.451
+phase: 7 fold: 2 epoch: 6 - accuracy:0.569
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 7
+phase: 7 fold: 2 epoch: 7 - learning rate:0.0001000
+phase: 7 fold: 2 epoch: 7 - train loss:21.554
+phase: 7 fold: 2 epoch: 7 - val loss:3.459
+phase: 7 fold: 2 epoch: 7 - accuracy:0.535
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 8
+phase: 7 fold: 2 epoch: 8 - learning rate:0.0000100
+phase: 7 fold: 2 epoch: 8 - train loss:24.578
+phase: 7 fold: 2 epoch: 8 - val loss:3.447
+phase: 7 fold: 2 epoch: 8 - accuracy:0.533
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 9
+phase: 7 fold: 2 epoch: 9 - learning rate:0.0000100
+phase: 7 fold: 2 epoch: 9 - train loss:27.601
+phase: 7 fold: 2 epoch: 9 - val loss:3.435
+phase: 7 fold: 2 epoch: 9 - accuracy:0.601
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 10
+phase: 7 fold: 2 epoch:10 - learning rate:0.0000100
+phase: 7 fold: 2 epoch:10 - train loss:30.617
+phase: 7 fold: 2 epoch:10 - val loss:3.439
+phase: 7 fold: 2 epoch:10 - accuracy:0.580
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+*** phase: 7 fold: 2 epoch: 9 - top accuracy:0.601
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+phase:  7 
+classes:  70 
+fold:  3 
+num_epochs:  10
+get_k_fold_training_datasets: phase=7 fold=2 use_memory=True
+Starting epoch 1
+phase: 7 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 1 - train loss:3.039
+phase: 7 fold: 3 epoch: 1 - val loss:3.418
+phase: 7 fold: 3 epoch: 1 - accuracy:0.620
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Starting epoch 2
+phase: 7 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 2 - train loss:6.056
+phase: 7 fold: 3 epoch: 2 - val loss:3.388
+phase: 7 fold: 3 epoch: 2 - accuracy:0.702
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 3
+phase: 7 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 3 - train loss:9.070
+phase: 7 fold: 3 epoch: 3 - val loss:3.395
+phase: 7 fold: 3 epoch: 3 - accuracy:0.697
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 4
+phase: 7 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 4 - train loss:12.073
+phase: 7 fold: 3 epoch: 4 - val loss:3.395
+phase: 7 fold: 3 epoch: 4 - accuracy:0.693
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 5
+phase: 7 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 5 - train loss:15.070
+phase: 7 fold: 3 epoch: 5 - val loss:3.398
+phase: 7 fold: 3 epoch: 5 - accuracy:0.739
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 6
+phase: 7 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 6 - train loss:18.063
+phase: 7 fold: 3 epoch: 6 - val loss:3.404
+phase: 7 fold: 3 epoch: 6 - accuracy:0.713
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 7
+phase: 7 fold: 3 epoch: 7 - learning rate:0.0001000
+phase: 7 fold: 3 epoch: 7 - train loss:21.058
+phase: 7 fold: 3 epoch: 7 - val loss:3.408
+phase: 7 fold: 3 epoch: 7 - accuracy:0.720
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 8
+phase: 7 fold: 3 epoch: 8 - learning rate:0.0000100
+phase: 7 fold: 3 epoch: 8 - train loss:24.043
+phase: 7 fold: 3 epoch: 8 - val loss:3.394
+phase: 7 fold: 3 epoch: 8 - accuracy:0.704
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 9
+phase: 7 fold: 3 epoch: 9 - learning rate:0.0000100
+phase: 7 fold: 3 epoch: 9 - train loss:27.025
+phase: 7 fold: 3 epoch: 9 - val loss:3.402
+phase: 7 fold: 3 epoch: 9 - accuracy:0.730
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 10
+phase: 7 fold: 3 epoch:10 - learning rate:0.0000100
+phase: 7 fold: 3 epoch:10 - train loss:30.012
+phase: 7 fold: 3 epoch:10 - val loss:3.396
+phase: 7 fold: 3 epoch:10 - accuracy:0.713
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+*** phase: 7 fold: 3 epoch: 5 - top accuracy:0.739
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+phase:  7 
+classes:  70 
+fold:  4 
+num_epochs:  10
+get_k_fold_training_datasets: phase=7 fold=3 use_memory=True
+Starting epoch 1
+phase: 7 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 1 - train loss:3.015
+phase: 7 fold: 4 epoch: 1 - val loss:3.377
+phase: 7 fold: 4 epoch: 1 - accuracy:0.730
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Starting epoch 2
+phase: 7 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 2 - train loss:6.013
+phase: 7 fold: 4 epoch: 2 - val loss:3.375
+phase: 7 fold: 4 epoch: 2 - accuracy:0.720
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 3
+phase: 7 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 3 - train loss:9.003
+phase: 7 fold: 4 epoch: 3 - val loss:3.380
+phase: 7 fold: 4 epoch: 3 - accuracy:0.753
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 4
+phase: 7 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 4 - train loss:11.992
+phase: 7 fold: 4 epoch: 4 - val loss:3.375
+phase: 7 fold: 4 epoch: 4 - accuracy:0.769
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 5
+phase: 7 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 5 - train loss:14.975
+phase: 7 fold: 4 epoch: 5 - val loss:3.381
+phase: 7 fold: 4 epoch: 5 - accuracy:0.761
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 6
+phase: 7 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 6 - train loss:17.957
+phase: 7 fold: 4 epoch: 6 - val loss:3.386
+phase: 7 fold: 4 epoch: 6 - accuracy:0.757
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 7
+phase: 7 fold: 4 epoch: 7 - learning rate:0.0001000
+phase: 7 fold: 4 epoch: 7 - train loss:20.937
+phase: 7 fold: 4 epoch: 7 - val loss:3.384
+phase: 7 fold: 4 epoch: 7 - accuracy:0.741
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 8
+phase: 7 fold: 4 epoch: 8 - learning rate:0.0000100
+phase: 7 fold: 4 epoch: 8 - train loss:23.910
+phase: 7 fold: 4 epoch: 8 - val loss:3.371
+phase: 7 fold: 4 epoch: 8 - accuracy:0.762
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 9
+phase: 7 fold: 4 epoch: 9 - learning rate:0.0000100
+phase: 7 fold: 4 epoch: 9 - train loss:26.887
+phase: 7 fold: 4 epoch: 9 - val loss:3.372
+phase: 7 fold: 4 epoch: 9 - accuracy:0.758
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 10
+phase: 7 fold: 4 epoch:10 - learning rate:0.0000100
+phase: 7 fold: 4 epoch:10 - train loss:29.858
+phase: 7 fold: 4 epoch:10 - val loss:3.367
+phase: 7 fold: 4 epoch:10 - accuracy:0.766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+*** phase: 7 fold: 4 epoch: 4 - top accuracy:0.769
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+phase:  7 
+classes:  70 
+fold:  5 
+num_epochs:  10
+get_k_fold_training_datasets: phase=7 fold=4 use_memory=True
+Starting epoch 1
+phase: 7 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 1 - train loss:2.996
+phase: 7 fold: 5 epoch: 1 - val loss:3.387
+phase: 7 fold: 5 epoch: 1 - accuracy:0.663
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Starting epoch 2
+phase: 7 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 2 - train loss:5.977
+phase: 7 fold: 5 epoch: 2 - val loss:3.387
+phase: 7 fold: 5 epoch: 2 - accuracy:0.679
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Starting epoch 3
+phase: 7 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 3 - train loss:8.963
+phase: 7 fold: 5 epoch: 3 - val loss:3.383
+phase: 7 fold: 5 epoch: 3 - accuracy:0.740
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Starting epoch 4
+phase: 7 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 4 - train loss:11.940
+phase: 7 fold: 5 epoch: 4 - val loss:3.384
+phase: 7 fold: 5 epoch: 4 - accuracy:0.738
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Starting epoch 5
+phase: 7 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 5 - train loss:14.916
+phase: 7 fold: 5 epoch: 5 - val loss:3.393
+phase: 7 fold: 5 epoch: 5 - accuracy:0.769
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Starting epoch 6
+phase: 7 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 6 - train loss:17.887
+phase: 7 fold: 5 epoch: 6 - val loss:3.394
+phase: 7 fold: 5 epoch: 6 - accuracy:0.769
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Starting epoch 7
+phase: 7 fold: 5 epoch: 7 - learning rate:0.0001000
+phase: 7 fold: 5 epoch: 7 - train loss:20.859
+phase: 7 fold: 5 epoch: 7 - val loss:3.383
+phase: 7 fold: 5 epoch: 7 - accuracy:0.761
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Starting epoch 8
+phase: 7 fold: 5 epoch: 8 - learning rate:0.0000100
+phase: 7 fold: 5 epoch: 8 - train loss:23.830
+phase: 7 fold: 5 epoch: 8 - val loss:3.379
+phase: 7 fold: 5 epoch: 8 - accuracy:0.766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Starting epoch 9
+phase: 7 fold: 5 epoch: 9 - learning rate:0.0000100
+phase: 7 fold: 5 epoch: 9 - train loss:26.799
+phase: 7 fold: 5 epoch: 9 - val loss:3.395
+phase: 7 fold: 5 epoch: 9 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Starting epoch 10
+phase: 7 fold: 5 epoch:10 - learning rate:0.0000100
+phase: 7 fold: 5 epoch:10 - train loss:29.766
+phase: 7 fold: 5 epoch:10 - val loss:3.379
+phase: 7 fold: 5 epoch:10 - accuracy:0.749
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+*** phase: 7 fold: 5 epoch: 5 - top accuracy:0.769
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+phase:  8 
+classes:  80 
+fold:  1 
+num_epochs:  10
+get_k_fold_training_datasets: phase=8 fold=0 use_memory=True
+Starting epoch 1
+phase: 8 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 1 - train loss:3.953
+phase: 8 fold: 1 epoch: 1 - val loss:4.261
+phase: 8 fold: 1 epoch: 1 - accuracy:0.147
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Starting epoch 2
+phase: 8 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 2 - train loss:7.632
+phase: 8 fold: 1 epoch: 2 - val loss:3.977
+phase: 8 fold: 1 epoch: 2 - accuracy:0.214
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 3
+phase: 8 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 3 - train loss:11.185
+phase: 8 fold: 1 epoch: 3 - val loss:3.811
+phase: 8 fold: 1 epoch: 3 - accuracy:0.228
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 4
+phase: 8 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 4 - train loss:14.636
+phase: 8 fold: 1 epoch: 4 - val loss:3.728
+phase: 8 fold: 1 epoch: 4 - accuracy:0.243
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 5
+phase: 8 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 5 - train loss:18.019
+phase: 8 fold: 1 epoch: 5 - val loss:3.679
+phase: 8 fold: 1 epoch: 5 - accuracy:0.303
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 6
+phase: 8 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 6 - train loss:21.350
+phase: 8 fold: 1 epoch: 6 - val loss:3.650
+phase: 8 fold: 1 epoch: 6 - accuracy:0.330
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 7
+phase: 8 fold: 1 epoch: 7 - learning rate:0.0001000
+phase: 8 fold: 1 epoch: 7 - train loss:24.633
+phase: 8 fold: 1 epoch: 7 - val loss:3.641
+phase: 8 fold: 1 epoch: 7 - accuracy:0.312
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 8
+phase: 8 fold: 1 epoch: 8 - learning rate:0.0000100
+phase: 8 fold: 1 epoch: 8 - train loss:27.893
+phase: 8 fold: 1 epoch: 8 - val loss:3.628
+phase: 8 fold: 1 epoch: 8 - accuracy:0.329
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 9
+phase: 8 fold: 1 epoch: 9 - learning rate:0.0000100
+phase: 8 fold: 1 epoch: 9 - train loss:31.145
+phase: 8 fold: 1 epoch: 9 - val loss:3.638
+phase: 8 fold: 1 epoch: 9 - accuracy:0.342
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 10
+phase: 8 fold: 1 epoch:10 - learning rate:0.0000100
+phase: 8 fold: 1 epoch:10 - train loss:34.401
+phase: 8 fold: 1 epoch:10 - val loss:3.644
+phase: 8 fold: 1 epoch:10 - accuracy:0.356
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+*** phase: 8 fold: 1 epoch:10 - top accuracy:0.356
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+phase:  8 
+classes:  80 
+fold:  2 
+num_epochs:  10
+get_k_fold_training_datasets: phase=8 fold=1 use_memory=True
+Starting epoch 1
+phase: 8 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 1 - train loss:3.287
+phase: 8 fold: 2 epoch: 1 - val loss:3.602
+phase: 8 fold: 2 epoch: 1 - accuracy:0.407
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Starting epoch 2
+phase: 8 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 2 - train loss:6.515
+phase: 8 fold: 2 epoch: 2 - val loss:3.598
+phase: 8 fold: 2 epoch: 2 - accuracy:0.435
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 3
+phase: 8 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 3 - train loss:9.710
+phase: 8 fold: 2 epoch: 3 - val loss:3.552
+phase: 8 fold: 2 epoch: 3 - accuracy:0.440
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 4
+phase: 8 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 4 - train loss:12.885
+phase: 8 fold: 2 epoch: 4 - val loss:3.528
+phase: 8 fold: 2 epoch: 4 - accuracy:0.459
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 5
+phase: 8 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 5 - train loss:16.042
+phase: 8 fold: 2 epoch: 5 - val loss:3.542
+phase: 8 fold: 2 epoch: 5 - accuracy:0.461
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 6
+phase: 8 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 6 - train loss:19.193
+phase: 8 fold: 2 epoch: 6 - val loss:3.527
+phase: 8 fold: 2 epoch: 6 - accuracy:0.523
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 7
+phase: 8 fold: 2 epoch: 7 - learning rate:0.0001000
+phase: 8 fold: 2 epoch: 7 - train loss:22.333
+phase: 8 fold: 2 epoch: 7 - val loss:3.527
+phase: 8 fold: 2 epoch: 7 - accuracy:0.506
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 8
+phase: 8 fold: 2 epoch: 8 - learning rate:0.0000100
+phase: 8 fold: 2 epoch: 8 - train loss:25.466
+phase: 8 fold: 2 epoch: 8 - val loss:3.531
+phase: 8 fold: 2 epoch: 8 - accuracy:0.505
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 9
+phase: 8 fold: 2 epoch: 9 - learning rate:0.0000100
+phase: 8 fold: 2 epoch: 9 - train loss:28.599
+phase: 8 fold: 2 epoch: 9 - val loss:3.536
+phase: 8 fold: 2 epoch: 9 - accuracy:0.509
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 10
+phase: 8 fold: 2 epoch:10 - learning rate:0.0000100
+phase: 8 fold: 2 epoch:10 - train loss:31.736
+phase: 8 fold: 2 epoch:10 - val loss:3.530
+phase: 8 fold: 2 epoch:10 - accuracy:0.508
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+*** phase: 8 fold: 2 epoch: 6 - top accuracy:0.523
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+phase:  8 
+classes:  80 
+fold:  3 
+num_epochs:  10
+get_k_fold_training_datasets: phase=8 fold=2 use_memory=True
+Starting epoch 1
+phase: 8 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 1 - train loss:3.162
+phase: 8 fold: 3 epoch: 1 - val loss:3.517
+phase: 8 fold: 3 epoch: 1 - accuracy:0.558
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Starting epoch 2
+phase: 8 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 2 - train loss:6.303
+phase: 8 fold: 3 epoch: 2 - val loss:3.526
+phase: 8 fold: 3 epoch: 2 - accuracy:0.619
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 3
+phase: 8 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 3 - train loss:9.436
+phase: 8 fold: 3 epoch: 3 - val loss:3.511
+phase: 8 fold: 3 epoch: 3 - accuracy:0.647
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 4
+phase: 8 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 4 - train loss:12.559
+phase: 8 fold: 3 epoch: 4 - val loss:3.520
+phase: 8 fold: 3 epoch: 4 - accuracy:0.606
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 5
+phase: 8 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 5 - train loss:15.677
+phase: 8 fold: 3 epoch: 5 - val loss:3.514
+phase: 8 fold: 3 epoch: 5 - accuracy:0.678
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 6
+phase: 8 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 6 - train loss:18.790
+phase: 8 fold: 3 epoch: 6 - val loss:3.489
+phase: 8 fold: 3 epoch: 6 - accuracy:0.700
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 7
+phase: 8 fold: 3 epoch: 7 - learning rate:0.0001000
+phase: 8 fold: 3 epoch: 7 - train loss:21.905
+phase: 8 fold: 3 epoch: 7 - val loss:3.492
+phase: 8 fold: 3 epoch: 7 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 8
+phase: 8 fold: 3 epoch: 8 - learning rate:0.0000100
+phase: 8 fold: 3 epoch: 8 - train loss:25.011
+phase: 8 fold: 3 epoch: 8 - val loss:3.497
+phase: 8 fold: 3 epoch: 8 - accuracy:0.657
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 9
+phase: 8 fold: 3 epoch: 9 - learning rate:0.0000100
+phase: 8 fold: 3 epoch: 9 - train loss:28.122
+phase: 8 fold: 3 epoch: 9 - val loss:3.496
+phase: 8 fold: 3 epoch: 9 - accuracy:0.673
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 10
+phase: 8 fold: 3 epoch:10 - learning rate:0.0000100
+phase: 8 fold: 3 epoch:10 - train loss:31.229
+phase: 8 fold: 3 epoch:10 - val loss:3.484
+phase: 8 fold: 3 epoch:10 - accuracy:0.690
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+*** phase: 8 fold: 3 epoch: 7 - top accuracy:0.724
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+phase:  8 
+classes:  80 
+fold:  4 
+num_epochs:  10
+get_k_fold_training_datasets: phase=8 fold=3 use_memory=True
+Starting epoch 1
+phase: 8 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 1 - train loss:3.127
+phase: 8 fold: 4 epoch: 1 - val loss:3.494
+phase: 8 fold: 4 epoch: 1 - accuracy:0.615
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Starting epoch 2
+phase: 8 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 2 - train loss:6.240
+phase: 8 fold: 4 epoch: 2 - val loss:3.478
+phase: 8 fold: 4 epoch: 2 - accuracy:0.644
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 3
+phase: 8 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 3 - train loss:9.353
+phase: 8 fold: 4 epoch: 3 - val loss:3.486
+phase: 8 fold: 4 epoch: 3 - accuracy:0.674
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 4
+phase: 8 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 4 - train loss:12.459
+phase: 8 fold: 4 epoch: 4 - val loss:3.479
+phase: 8 fold: 4 epoch: 4 - accuracy:0.658
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 5
+phase: 8 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 5 - train loss:15.567
+phase: 8 fold: 4 epoch: 5 - val loss:3.487
+phase: 8 fold: 4 epoch: 5 - accuracy:0.653
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 6
+phase: 8 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 6 - train loss:18.665
+phase: 8 fold: 4 epoch: 6 - val loss:3.472
+phase: 8 fold: 4 epoch: 6 - accuracy:0.733
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 7
+phase: 8 fold: 4 epoch: 7 - learning rate:0.0001000
+phase: 8 fold: 4 epoch: 7 - train loss:21.766
+phase: 8 fold: 4 epoch: 7 - val loss:3.487
+phase: 8 fold: 4 epoch: 7 - accuracy:0.716
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 8
+phase: 8 fold: 4 epoch: 8 - learning rate:0.0000100
+phase: 8 fold: 4 epoch: 8 - train loss:24.865
+phase: 8 fold: 4 epoch: 8 - val loss:3.474
+phase: 8 fold: 4 epoch: 8 - accuracy:0.701
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 9
+phase: 8 fold: 4 epoch: 9 - learning rate:0.0000100
+phase: 8 fold: 4 epoch: 9 - train loss:27.964
+phase: 8 fold: 4 epoch: 9 - val loss:3.482
+phase: 8 fold: 4 epoch: 9 - accuracy:0.704
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 10
+phase: 8 fold: 4 epoch:10 - learning rate:0.0000100
+phase: 8 fold: 4 epoch:10 - train loss:31.058
+phase: 8 fold: 4 epoch:10 - val loss:3.488
+phase: 8 fold: 4 epoch:10 - accuracy:0.719
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+*** phase: 8 fold: 4 epoch: 6 - top accuracy:0.733
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+phase:  8 
+classes:  80 
+fold:  5 
+num_epochs:  10
+get_k_fold_training_datasets: phase=8 fold=4 use_memory=True
+Starting epoch 1
+phase: 8 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 1 - train loss:3.104
+phase: 8 fold: 5 epoch: 1 - val loss:3.484
+phase: 8 fold: 5 epoch: 1 - accuracy:0.748
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Starting epoch 2
+phase: 8 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 2 - train loss:6.201
+phase: 8 fold: 5 epoch: 2 - val loss:3.494
+phase: 8 fold: 5 epoch: 2 - accuracy:0.738
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Starting epoch 3
+phase: 8 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 3 - train loss:9.297
+phase: 8 fold: 5 epoch: 3 - val loss:3.486
+phase: 8 fold: 5 epoch: 3 - accuracy:0.726
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Starting epoch 4
+phase: 8 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 4 - train loss:12.390
+phase: 8 fold: 5 epoch: 4 - val loss:3.502
+phase: 8 fold: 5 epoch: 4 - accuracy:0.680
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Starting epoch 5
+phase: 8 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 5 - train loss:15.483
+phase: 8 fold: 5 epoch: 5 - val loss:3.480
+phase: 8 fold: 5 epoch: 5 - accuracy:0.741
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Starting epoch 6
+phase: 8 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 6 - train loss:18.569
+phase: 8 fold: 5 epoch: 6 - val loss:3.476
+phase: 8 fold: 5 epoch: 6 - accuracy:0.751
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Starting epoch 7
+phase: 8 fold: 5 epoch: 7 - learning rate:0.0001000
+phase: 8 fold: 5 epoch: 7 - train loss:21.657
+phase: 8 fold: 5 epoch: 7 - val loss:3.490
+phase: 8 fold: 5 epoch: 7 - accuracy:0.724
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Starting epoch 8
+phase: 8 fold: 5 epoch: 8 - learning rate:0.0000100
+phase: 8 fold: 5 epoch: 8 - train loss:24.742
+phase: 8 fold: 5 epoch: 8 - val loss:3.488
+phase: 8 fold: 5 epoch: 8 - accuracy:0.732
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Starting epoch 9
+phase: 8 fold: 5 epoch: 9 - learning rate:0.0000100
+phase: 8 fold: 5 epoch: 9 - train loss:27.826
+phase: 8 fold: 5 epoch: 9 - val loss:3.485
+phase: 8 fold: 5 epoch: 9 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Starting epoch 10
+phase: 8 fold: 5 epoch:10 - learning rate:0.0000100
+phase: 8 fold: 5 epoch:10 - train loss:30.908
+phase: 8 fold: 5 epoch:10 - val loss:3.488
+phase: 8 fold: 5 epoch:10 - accuracy:0.739
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+*** phase: 8 fold: 5 epoch: 6 - top accuracy:0.751
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+phase:  9 
+classes:  90 
+fold:  1 
+num_epochs:  10
+get_k_fold_training_datasets: phase=9 fold=0 use_memory=True
+Starting epoch 1
+phase: 9 fold: 1 epoch: 1 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 1 - train loss:4.088
+phase: 9 fold: 1 epoch: 1 - val loss:4.374
+phase: 9 fold: 1 epoch: 1 - accuracy:0.116
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Starting epoch 2
+phase: 9 fold: 1 epoch: 2 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 2 - train loss:7.883
+phase: 9 fold: 1 epoch: 2 - val loss:4.174
+phase: 9 fold: 1 epoch: 2 - accuracy:0.150
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 3
+phase: 9 fold: 1 epoch: 3 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 3 - train loss:11.524
+phase: 9 fold: 1 epoch: 3 - val loss:3.982
+phase: 9 fold: 1 epoch: 3 - accuracy:0.237
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 4
+phase: 9 fold: 1 epoch: 4 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 4 - train loss:15.060
+phase: 9 fold: 1 epoch: 4 - val loss:3.877
+phase: 9 fold: 1 epoch: 4 - accuracy:0.310
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 5
+phase: 9 fold: 1 epoch: 5 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 5 - train loss:18.523
+phase: 9 fold: 1 epoch: 5 - val loss:3.808
+phase: 9 fold: 1 epoch: 5 - accuracy:0.322
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 6
+phase: 9 fold: 1 epoch: 6 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 6 - train loss:21.929
+phase: 9 fold: 1 epoch: 6 - val loss:3.772
+phase: 9 fold: 1 epoch: 6 - accuracy:0.380
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 7
+phase: 9 fold: 1 epoch: 7 - learning rate:0.0001000
+phase: 9 fold: 1 epoch: 7 - train loss:25.291
+phase: 9 fold: 1 epoch: 7 - val loss:3.746
+phase: 9 fold: 1 epoch: 7 - accuracy:0.394
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 8
+phase: 9 fold: 1 epoch: 8 - learning rate:0.0000100
+phase: 9 fold: 1 epoch: 8 - train loss:28.630
+phase: 9 fold: 1 epoch: 8 - val loss:3.749
+phase: 9 fold: 1 epoch: 8 - accuracy:0.427
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 9
+phase: 9 fold: 1 epoch: 9 - learning rate:0.0000100
+phase: 9 fold: 1 epoch: 9 - train loss:31.965
+phase: 9 fold: 1 epoch: 9 - val loss:3.744
+phase: 9 fold: 1 epoch: 9 - accuracy:0.448
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 10
+phase: 9 fold: 1 epoch:10 - learning rate:0.0000100
+phase: 9 fold: 1 epoch:10 - train loss:35.297
+phase: 9 fold: 1 epoch:10 - val loss:3.748
+phase: 9 fold: 1 epoch:10 - accuracy:0.438
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+*** phase: 9 fold: 1 epoch: 9 - top accuracy:0.448
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+phase:  9 
+classes:  90 
+fold:  2 
+num_epochs:  10
+get_k_fold_training_datasets: phase=9 fold=1 use_memory=True
+Starting epoch 1
+phase: 9 fold: 2 epoch: 1 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 1 - train loss:3.369
+phase: 9 fold: 2 epoch: 1 - val loss:3.741
+phase: 9 fold: 2 epoch: 1 - accuracy:0.507
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Starting epoch 2
+phase: 9 fold: 2 epoch: 2 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 2 - train loss:6.672
+phase: 9 fold: 2 epoch: 2 - val loss:3.700
+phase: 9 fold: 2 epoch: 2 - accuracy:0.630
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 3
+phase: 9 fold: 2 epoch: 3 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 3 - train loss:9.954
+phase: 9 fold: 2 epoch: 3 - val loss:3.671
+phase: 9 fold: 2 epoch: 3 - accuracy:0.716
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 4
+phase: 9 fold: 2 epoch: 4 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 4 - train loss:13.215
+phase: 9 fold: 2 epoch: 4 - val loss:3.668
+phase: 9 fold: 2 epoch: 4 - accuracy:0.663
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 5
+phase: 9 fold: 2 epoch: 5 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 5 - train loss:16.466
+phase: 9 fold: 2 epoch: 5 - val loss:3.657
+phase: 9 fold: 2 epoch: 5 - accuracy:0.701
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 6
+phase: 9 fold: 2 epoch: 6 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 6 - train loss:19.703
+phase: 9 fold: 2 epoch: 6 - val loss:3.677
+phase: 9 fold: 2 epoch: 6 - accuracy:0.675
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 7
+phase: 9 fold: 2 epoch: 7 - learning rate:0.0001000
+phase: 9 fold: 2 epoch: 7 - train loss:22.929
+phase: 9 fold: 2 epoch: 7 - val loss:3.646
+phase: 9 fold: 2 epoch: 7 - accuracy:0.698
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 8
+phase: 9 fold: 2 epoch: 8 - learning rate:0.0000100
+phase: 9 fold: 2 epoch: 8 - train loss:26.152
+phase: 9 fold: 2 epoch: 8 - val loss:3.652
+phase: 9 fold: 2 epoch: 8 - accuracy:0.677
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 9
+phase: 9 fold: 2 epoch: 9 - learning rate:0.0000100
+phase: 9 fold: 2 epoch: 9 - train loss:29.373
+phase: 9 fold: 2 epoch: 9 - val loss:3.650
+phase: 9 fold: 2 epoch: 9 - accuracy:0.719
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 10
+phase: 9 fold: 2 epoch:10 - learning rate:0.0000100
+phase: 9 fold: 2 epoch:10 - train loss:32.594
+phase: 9 fold: 2 epoch:10 - val loss:3.678
+phase: 9 fold: 2 epoch:10 - accuracy:0.667
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+*** phase: 9 fold: 2 epoch: 9 - top accuracy:0.719
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+phase:  9 
+classes:  90 
+fold:  3 
+num_epochs:  10
+get_k_fold_training_datasets: phase=9 fold=2 use_memory=True
+Starting epoch 1
+phase: 9 fold: 3 epoch: 1 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 1 - train loss:3.244
+phase: 9 fold: 3 epoch: 1 - val loss:3.640
+phase: 9 fold: 3 epoch: 1 - accuracy:0.667
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Starting epoch 2
+phase: 9 fold: 3 epoch: 2 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 2 - train loss:6.465
+phase: 9 fold: 3 epoch: 2 - val loss:3.661
+phase: 9 fold: 3 epoch: 2 - accuracy:0.720
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 3
+phase: 9 fold: 3 epoch: 3 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 3 - train loss:9.684
+phase: 9 fold: 3 epoch: 3 - val loss:3.638
+phase: 9 fold: 3 epoch: 3 - accuracy:0.716
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 4
+phase: 9 fold: 3 epoch: 4 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 4 - train loss:12.899
+phase: 9 fold: 3 epoch: 4 - val loss:3.622
+phase: 9 fold: 3 epoch: 4 - accuracy:0.721
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 5
+phase: 9 fold: 3 epoch: 5 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 5 - train loss:16.103
+phase: 9 fold: 3 epoch: 5 - val loss:3.631
+phase: 9 fold: 3 epoch: 5 - accuracy:0.737
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 6
+phase: 9 fold: 3 epoch: 6 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 6 - train loss:19.304
+phase: 9 fold: 3 epoch: 6 - val loss:3.694
+phase: 9 fold: 3 epoch: 6 - accuracy:0.786
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 7
+phase: 9 fold: 3 epoch: 7 - learning rate:0.0001000
+phase: 9 fold: 3 epoch: 7 - train loss:22.503
+phase: 9 fold: 3 epoch: 7 - val loss:3.696
+phase: 9 fold: 3 epoch: 7 - accuracy:0.766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 8
+phase: 9 fold: 3 epoch: 8 - learning rate:0.0000100
+phase: 9 fold: 3 epoch: 8 - train loss:25.702
+phase: 9 fold: 3 epoch: 8 - val loss:3.651
+phase: 9 fold: 3 epoch: 8 - accuracy:0.757
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 9
+phase: 9 fold: 3 epoch: 9 - learning rate:0.0000100
+phase: 9 fold: 3 epoch: 9 - train loss:28.898
+phase: 9 fold: 3 epoch: 9 - val loss:3.674
+phase: 9 fold: 3 epoch: 9 - accuracy:0.764
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 10
+phase: 9 fold: 3 epoch:10 - learning rate:0.0000100
+phase: 9 fold: 3 epoch:10 - train loss:32.097
+phase: 9 fold: 3 epoch:10 - val loss:3.645
+phase: 9 fold: 3 epoch:10 - accuracy:0.772
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+*** phase: 9 fold: 3 epoch: 6 - top accuracy:0.786
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+phase:  9 
+classes:  90 
+fold:  4 
+num_epochs:  10
+get_k_fold_training_datasets: phase=9 fold=3 use_memory=True
+Starting epoch 1
+phase: 9 fold: 4 epoch: 1 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 1 - train loss:3.219
+phase: 9 fold: 4 epoch: 1 - val loss:3.626
+phase: 9 fold: 4 epoch: 1 - accuracy:0.700
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Starting epoch 2
+phase: 9 fold: 4 epoch: 2 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 2 - train loss:6.430
+phase: 9 fold: 4 epoch: 2 - val loss:3.677
+phase: 9 fold: 4 epoch: 2 - accuracy:0.702
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 3
+phase: 9 fold: 4 epoch: 3 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 3 - train loss:9.628
+phase: 9 fold: 4 epoch: 3 - val loss:3.663
+phase: 9 fold: 4 epoch: 3 - accuracy:0.749
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 4
+phase: 9 fold: 4 epoch: 4 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 4 - train loss:12.824
+phase: 9 fold: 4 epoch: 4 - val loss:3.614
+phase: 9 fold: 4 epoch: 4 - accuracy:0.778
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 5
+phase: 9 fold: 4 epoch: 5 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 5 - train loss:16.019
+phase: 9 fold: 4 epoch: 5 - val loss:3.612
+phase: 9 fold: 4 epoch: 5 - accuracy:0.832
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 6
+phase: 9 fold: 4 epoch: 6 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 6 - train loss:19.208
+phase: 9 fold: 4 epoch: 6 - val loss:3.617
+phase: 9 fold: 4 epoch: 6 - accuracy:0.830
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 7
+phase: 9 fold: 4 epoch: 7 - learning rate:0.0001000
+phase: 9 fold: 4 epoch: 7 - train loss:22.395
+phase: 9 fold: 4 epoch: 7 - val loss:3.601
+phase: 9 fold: 4 epoch: 7 - accuracy:0.798
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 8
+phase: 9 fold: 4 epoch: 8 - learning rate:0.0000100
+phase: 9 fold: 4 epoch: 8 - train loss:25.581
+phase: 9 fold: 4 epoch: 8 - val loss:3.599
+phase: 9 fold: 4 epoch: 8 - accuracy:0.839
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 9
+phase: 9 fold: 4 epoch: 9 - learning rate:0.0000100
+phase: 9 fold: 4 epoch: 9 - train loss:28.767
+phase: 9 fold: 4 epoch: 9 - val loss:3.609
+phase: 9 fold: 4 epoch: 9 - accuracy:0.830
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 10
+phase: 9 fold: 4 epoch:10 - learning rate:0.0000100
+phase: 9 fold: 4 epoch:10 - train loss:31.956
+phase: 9 fold: 4 epoch:10 - val loss:3.603
+phase: 9 fold: 4 epoch:10 - accuracy:0.833
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+*** phase: 9 fold: 4 epoch: 8 - top accuracy:0.839
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+phase:  9 
+classes:  90 
+fold:  5 
+num_epochs:  10
+get_k_fold_training_datasets: phase=9 fold=4 use_memory=True
+Starting epoch 1
+phase: 9 fold: 5 epoch: 1 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 1 - train loss:3.197
+phase: 9 fold: 5 epoch: 1 - val loss:3.652
+phase: 9 fold: 5 epoch: 1 - accuracy:0.763
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Starting epoch 2
+phase: 9 fold: 5 epoch: 2 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 2 - train loss:6.384
+phase: 9 fold: 5 epoch: 2 - val loss:3.642
+phase: 9 fold: 5 epoch: 2 - accuracy:0.746
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Starting epoch 3
+phase: 9 fold: 5 epoch: 3 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 3 - train loss:9.576
+phase: 9 fold: 5 epoch: 3 - val loss:3.634
+phase: 9 fold: 5 epoch: 3 - accuracy:0.795
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Starting epoch 4
+phase: 9 fold: 5 epoch: 4 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 4 - train loss:12.762
+phase: 9 fold: 5 epoch: 4 - val loss:3.644
+phase: 9 fold: 5 epoch: 4 - accuracy:0.778
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Starting epoch 5
+phase: 9 fold: 5 epoch: 5 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 5 - train loss:15.948
+phase: 9 fold: 5 epoch: 5 - val loss:3.655
+phase: 9 fold: 5 epoch: 5 - accuracy:0.803
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Starting epoch 6
+phase: 9 fold: 5 epoch: 6 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 6 - train loss:19.131
+phase: 9 fold: 5 epoch: 6 - val loss:3.674
+phase: 9 fold: 5 epoch: 6 - accuracy:0.789
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Starting epoch 7
+phase: 9 fold: 5 epoch: 7 - learning rate:0.0001000
+phase: 9 fold: 5 epoch: 7 - train loss:22.310
+phase: 9 fold: 5 epoch: 7 - val loss:3.650
+phase: 9 fold: 5 epoch: 7 - accuracy:0.800
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Starting epoch 8
+phase: 9 fold: 5 epoch: 8 - learning rate:0.0000100
+phase: 9 fold: 5 epoch: 8 - train loss:25.492
+phase: 9 fold: 5 epoch: 8 - val loss:3.656
+phase: 9 fold: 5 epoch: 8 - accuracy:0.782
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Starting epoch 9
+phase: 9 fold: 5 epoch: 9 - learning rate:0.0000100
+phase: 9 fold: 5 epoch: 9 - train loss:28.672
+phase: 9 fold: 5 epoch: 9 - val loss:3.637
+phase: 9 fold: 5 epoch: 9 - accuracy:0.789
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Starting epoch 10
+phase: 9 fold: 5 epoch:10 - learning rate:0.0000100
+phase: 9 fold: 5 epoch:10 - train loss:31.852
+phase: 9 fold: 5 epoch:10 - val loss:3.689
+phase: 9 fold: 5 epoch:10 - accuracy:0.803
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+*** phase: 9 fold: 5 epoch:10 - top accuracy:0.803
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+phase:  10 
+classes:  100 
+fold:  1 
+num_epochs:  10
+get_k_fold_training_datasets: phase=10 fold=0 use_memory=True
+Starting epoch 1
+phase:10 fold: 1 epoch: 1 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 1 - train loss:4.186
+phase:10 fold: 1 epoch: 1 - val loss:4.495
+phase:10 fold: 1 epoch: 1 - accuracy:0.074
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Starting epoch 2
+phase:10 fold: 1 epoch: 2 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 2 - train loss:8.071
+phase:10 fold: 1 epoch: 2 - val loss:4.305
+phase:10 fold: 1 epoch: 2 - accuracy:0.113
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 3
+phase:10 fold: 1 epoch: 3 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 3 - train loss:11.792
+phase:10 fold: 1 epoch: 3 - val loss:4.139
+phase:10 fold: 1 epoch: 3 - accuracy:0.165
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 4
+phase:10 fold: 1 epoch: 4 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 4 - train loss:15.406
+phase:10 fold: 1 epoch: 4 - val loss:4.028
+phase:10 fold: 1 epoch: 4 - accuracy:0.184
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 5
+phase:10 fold: 1 epoch: 5 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 5 - train loss:18.944
+phase:10 fold: 1 epoch: 5 - val loss:3.967
+phase:10 fold: 1 epoch: 5 - accuracy:0.254
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 6
+phase:10 fold: 1 epoch: 6 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 6 - train loss:22.426
+phase:10 fold: 1 epoch: 6 - val loss:3.926
+phase:10 fold: 1 epoch: 6 - accuracy:0.331
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 7
+phase:10 fold: 1 epoch: 7 - learning rate:0.0001000
+phase:10 fold: 1 epoch: 7 - train loss:25.868
+phase:10 fold: 1 epoch: 7 - val loss:3.896
+phase:10 fold: 1 epoch: 7 - accuracy:0.383
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 8
+phase:10 fold: 1 epoch: 8 - learning rate:0.0000100
+phase:10 fold: 1 epoch: 8 - train loss:29.291
+phase:10 fold: 1 epoch: 8 - val loss:3.895
+phase:10 fold: 1 epoch: 8 - accuracy:0.408
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 9
+phase:10 fold: 1 epoch: 9 - learning rate:0.0000100
+phase:10 fold: 1 epoch: 9 - train loss:32.708
+phase:10 fold: 1 epoch: 9 - val loss:3.905
+phase:10 fold: 1 epoch: 9 - accuracy:0.419
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 10
+phase:10 fold: 1 epoch:10 - learning rate:0.0000100
+phase:10 fold: 1 epoch:10 - train loss:36.125
+phase:10 fold: 1 epoch:10 - val loss:3.902
+phase:10 fold: 1 epoch:10 - accuracy:0.415
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+*** phase:10 fold: 1 epoch: 9 - top accuracy:0.419
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+phase:  10 
+classes:  100 
+fold:  2 
+num_epochs:  10
+get_k_fold_training_datasets: phase=10 fold=1 use_memory=True
+Starting epoch 1
+phase:10 fold: 2 epoch: 1 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 1 - train loss:3.455
+phase:10 fold: 2 epoch: 1 - val loss:3.902
+phase:10 fold: 2 epoch: 1 - accuracy:0.456
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Starting epoch 2
+phase:10 fold: 2 epoch: 2 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 2 - train loss:6.847
+phase:10 fold: 2 epoch: 2 - val loss:3.855
+phase:10 fold: 2 epoch: 2 - accuracy:0.607
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 3
+phase:10 fold: 2 epoch: 3 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 3 - train loss:10.213
+phase:10 fold: 2 epoch: 3 - val loss:3.820
+phase:10 fold: 2 epoch: 3 - accuracy:0.648
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 4
+phase:10 fold: 2 epoch: 4 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 4 - train loss:13.562
+phase:10 fold: 2 epoch: 4 - val loss:3.795
+phase:10 fold: 2 epoch: 4 - accuracy:0.698
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 5
+phase:10 fold: 2 epoch: 5 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 5 - train loss:16.895
+phase:10 fold: 2 epoch: 5 - val loss:3.773
+phase:10 fold: 2 epoch: 5 - accuracy:0.700
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 6
+phase:10 fold: 2 epoch: 6 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 6 - train loss:20.221
+phase:10 fold: 2 epoch: 6 - val loss:3.811
+phase:10 fold: 2 epoch: 6 - accuracy:0.688
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 7
+phase:10 fold: 2 epoch: 7 - learning rate:0.0001000
+phase:10 fold: 2 epoch: 7 - train loss:23.541
+phase:10 fold: 2 epoch: 7 - val loss:3.800
+phase:10 fold: 2 epoch: 7 - accuracy:0.696
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 8
+phase:10 fold: 2 epoch: 8 - learning rate:0.0000100
+phase:10 fold: 2 epoch: 8 - train loss:26.857
+phase:10 fold: 2 epoch: 8 - val loss:3.768
+phase:10 fold: 2 epoch: 8 - accuracy:0.735
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 9
+phase:10 fold: 2 epoch: 9 - learning rate:0.0000100
+phase:10 fold: 2 epoch: 9 - train loss:30.167
+phase:10 fold: 2 epoch: 9 - val loss:3.771
+phase:10 fold: 2 epoch: 9 - accuracy:0.730
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 10
+phase:10 fold: 2 epoch:10 - learning rate:0.0000100
+phase:10 fold: 2 epoch:10 - train loss:33.475
+phase:10 fold: 2 epoch:10 - val loss:3.776
+phase:10 fold: 2 epoch:10 - accuracy:0.723
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+*** phase:10 fold: 2 epoch: 8 - top accuracy:0.735
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+phase:  10 
+classes:  100 
+fold:  3 
+num_epochs:  10
+get_k_fold_training_datasets: phase=10 fold=2 use_memory=True
+Starting epoch 1
+phase:10 fold: 3 epoch: 1 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 1 - train loss:3.334
+phase:10 fold: 3 epoch: 1 - val loss:3.774
+phase:10 fold: 3 epoch: 1 - accuracy:0.585
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Starting epoch 2
+phase:10 fold: 3 epoch: 2 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 2 - train loss:6.644
+phase:10 fold: 3 epoch: 2 - val loss:3.768
+phase:10 fold: 3 epoch: 2 - accuracy:0.687
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 3
+phase:10 fold: 3 epoch: 3 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 3 - train loss:9.950
+phase:10 fold: 3 epoch: 3 - val loss:3.768
+phase:10 fold: 3 epoch: 3 - accuracy:0.708
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 4
+phase:10 fold: 3 epoch: 4 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 4 - train loss:13.251
+phase:10 fold: 3 epoch: 4 - val loss:3.767
+phase:10 fold: 3 epoch: 4 - accuracy:0.789
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 5
+phase:10 fold: 3 epoch: 5 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 5 - train loss:16.545
+phase:10 fold: 3 epoch: 5 - val loss:3.759
+phase:10 fold: 3 epoch: 5 - accuracy:0.760
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 6
+phase:10 fold: 3 epoch: 6 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 6 - train loss:19.837
+phase:10 fold: 3 epoch: 6 - val loss:3.751
+phase:10 fold: 3 epoch: 6 - accuracy:0.804
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 7
+phase:10 fold: 3 epoch: 7 - learning rate:0.0001000
+phase:10 fold: 3 epoch: 7 - train loss:23.123
+phase:10 fold: 3 epoch: 7 - val loss:3.766
+phase:10 fold: 3 epoch: 7 - accuracy:0.801
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 8
+phase:10 fold: 3 epoch: 8 - learning rate:0.0000100
+phase:10 fold: 3 epoch: 8 - train loss:26.408
+phase:10 fold: 3 epoch: 8 - val loss:3.770
+phase:10 fold: 3 epoch: 8 - accuracy:0.774
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 9
+phase:10 fold: 3 epoch: 9 - learning rate:0.0000100
+phase:10 fold: 3 epoch: 9 - train loss:29.694
+phase:10 fold: 3 epoch: 9 - val loss:3.752
+phase:10 fold: 3 epoch: 9 - accuracy:0.787
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 10
+phase:10 fold: 3 epoch:10 - learning rate:0.0000100
+phase:10 fold: 3 epoch:10 - train loss:32.979
+phase:10 fold: 3 epoch:10 - val loss:3.775
+phase:10 fold: 3 epoch:10 - accuracy:0.771
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+*** phase:10 fold: 3 epoch: 6 - top accuracy:0.804
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+phase:  10 
+classes:  100 
+fold:  4 
+num_epochs:  10
+get_k_fold_training_datasets: phase=10 fold=3 use_memory=True
+Starting epoch 1
+phase:10 fold: 4 epoch: 1 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 1 - train loss:3.300
+phase:10 fold: 4 epoch: 1 - val loss:3.780
+phase:10 fold: 4 epoch: 1 - accuracy:0.686
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Starting epoch 2
+phase:10 fold: 4 epoch: 2 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 2 - train loss:6.590
+phase:10 fold: 4 epoch: 2 - val loss:3.783
+phase:10 fold: 4 epoch: 2 - accuracy:0.742
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 3
+phase:10 fold: 4 epoch: 3 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 3 - train loss:9.880
+phase:10 fold: 4 epoch: 3 - val loss:3.754
+phase:10 fold: 4 epoch: 3 - accuracy:0.745
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 4
+phase:10 fold: 4 epoch: 4 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 4 - train loss:13.169
+phase:10 fold: 4 epoch: 4 - val loss:3.748
+phase:10 fold: 4 epoch: 4 - accuracy:0.772
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 5
+phase:10 fold: 4 epoch: 5 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 5 - train loss:16.453
+phase:10 fold: 4 epoch: 5 - val loss:3.723
+phase:10 fold: 4 epoch: 5 - accuracy:0.787
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 6
+phase:10 fold: 4 epoch: 6 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 6 - train loss:19.737
+phase:10 fold: 4 epoch: 6 - val loss:3.742
+phase:10 fold: 4 epoch: 6 - accuracy:0.778
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 7
+phase:10 fold: 4 epoch: 7 - learning rate:0.0001000
+phase:10 fold: 4 epoch: 7 - train loss:23.021
+phase:10 fold: 4 epoch: 7 - val loss:3.754
+phase:10 fold: 4 epoch: 7 - accuracy:0.750
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 8
+phase:10 fold: 4 epoch: 8 - learning rate:0.0000100
+phase:10 fold: 4 epoch: 8 - train loss:26.302
+phase:10 fold: 4 epoch: 8 - val loss:3.746
+phase:10 fold: 4 epoch: 8 - accuracy:0.768
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 9
+phase:10 fold: 4 epoch: 9 - learning rate:0.0000100
+phase:10 fold: 4 epoch: 9 - train loss:29.581
+phase:10 fold: 4 epoch: 9 - val loss:3.766
+phase:10 fold: 4 epoch: 9 - accuracy:0.757
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 10
+phase:10 fold: 4 epoch:10 - learning rate:0.0000100
+phase:10 fold: 4 epoch:10 - train loss:32.860
+phase:10 fold: 4 epoch:10 - val loss:3.749
+phase:10 fold: 4 epoch:10 - accuracy:0.738
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+*** phase:10 fold: 4 epoch: 5 - top accuracy:0.787
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+phase:  10 
+classes:  100 
+fold:  5 
+num_epochs:  10
+get_k_fold_training_datasets: phase=10 fold=4 use_memory=True
+Starting epoch 1
+phase:10 fold: 5 epoch: 1 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 1 - train loss:3.290
+phase:10 fold: 5 epoch: 1 - val loss:3.845
+phase:10 fold: 5 epoch: 1 - accuracy:0.685
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Starting epoch 2
+phase:10 fold: 5 epoch: 2 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 2 - train loss:6.575
+phase:10 fold: 5 epoch: 2 - val loss:3.858
+phase:10 fold: 5 epoch: 2 - accuracy:0.711
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Starting epoch 3
+phase:10 fold: 5 epoch: 3 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 3 - train loss:9.862
+phase:10 fold: 5 epoch: 3 - val loss:3.806
+phase:10 fold: 5 epoch: 3 - accuracy:0.738
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Starting epoch 4
+phase:10 fold: 5 epoch: 4 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 4 - train loss:13.142
+phase:10 fold: 5 epoch: 4 - val loss:3.831
+phase:10 fold: 5 epoch: 4 - accuracy:0.734
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Starting epoch 5
+phase:10 fold: 5 epoch: 5 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 5 - train loss:16.419
+phase:10 fold: 5 epoch: 5 - val loss:3.836
+phase:10 fold: 5 epoch: 5 - accuracy:0.733
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Starting epoch 6
+phase:10 fold: 5 epoch: 6 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 6 - train loss:19.695
+phase:10 fold: 5 epoch: 6 - val loss:3.834
+phase:10 fold: 5 epoch: 6 - accuracy:0.725
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Starting epoch 7
+phase:10 fold: 5 epoch: 7 - learning rate:0.0001000
+phase:10 fold: 5 epoch: 7 - train loss:22.971
+phase:10 fold: 5 epoch: 7 - val loss:3.817
+phase:10 fold: 5 epoch: 7 - accuracy:0.746
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Starting epoch 8
+phase:10 fold: 5 epoch: 8 - learning rate:0.0000100
+phase:10 fold: 5 epoch: 8 - train loss:26.245
+phase:10 fold: 5 epoch: 8 - val loss:3.812
+phase:10 fold: 5 epoch: 8 - accuracy:0.729
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Starting epoch 9
+phase:10 fold: 5 epoch: 9 - learning rate:0.0000100
+phase:10 fold: 5 epoch: 9 - train loss:29.520
+phase:10 fold: 5 epoch: 9 - val loss:3.813
+phase:10 fold: 5 epoch: 9 - accuracy:0.736
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Starting epoch 10
+phase:10 fold: 5 epoch:10 - learning rate:0.0000100
+phase:10 fold: 5 epoch:10 - train loss:32.794
+phase:10 fold: 5 epoch:10 - val loss:3.820
+phase:10 fold: 5 epoch:10 - accuracy:0.735
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+*** phase:10 fold: 5 epoch: 7 - top accuracy:0.746
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Training is completed in 5.0 hours, 0.0 minutes, 6.478 seconds
+Running python validate.py --batch=128 --phase=1 --model=1
+device:  cuda
+model:  1 
+classes:  10 
+checkpoint:  0 
+batch:  128 
+phase:  1
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_1.txt
+phase: 1 - final accuracy:0.871
+Validation is completed in 0.0 hours, 0.0 minutes, 10.036 seconds
+Running python validate.py --batch=128 --phase=2 --model=1
+device:  cuda
+model:  1 
+classes:  20 
+checkpoint:  0 
+batch:  128 
+phase:  2
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_2.txt
+phase: 2 - final accuracy:0.532
+Validation is completed in 0.0 hours, 0.0 minutes, 9.265 seconds
+Running python validate.py --batch=128 --phase=3 --model=1
+device:  cuda
+model:  1 
+classes:  30 
+checkpoint:  0 
+batch:  128 
+phase:  3
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_3.txt
+phase: 3 - final accuracy:0.627
+Validation is completed in 0.0 hours, 0.0 minutes, 10.154 seconds
+Running python validate.py --batch=128 --phase=4 --model=1
+device:  cuda
+model:  1 
+classes:  40 
+checkpoint:  0 
+batch:  128 
+phase:  4
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_4.txt
+phase: 4 - final accuracy:0.553
+Validation is completed in 0.0 hours, 0.0 minutes, 10.713 seconds
+Running python validate.py --batch=128 --phase=5 --model=1
+device:  cuda
+model:  1 
+classes:  50 
+checkpoint:  0 
+batch:  128 
+phase:  5
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_5.txt
+phase: 5 - final accuracy:0.487
+Validation is completed in 0.0 hours, 0.0 minutes, 11.127 seconds
+Running python validate.py --batch=128 --phase=6 --model=1
+device:  cuda
+model:  1 
+classes:  60 
+checkpoint:  0 
+batch:  128 
+phase:  6
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_6.txt
+phase: 6 - final accuracy:0.547
+Validation is completed in 0.0 hours, 0.0 minutes, 11.702 seconds
+Running python validate.py --batch=128 --phase=7 --model=1
+device:  cuda
+model:  1 
+classes:  70 
+checkpoint:  0 
+batch:  128 
+phase:  7
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_7.txt
+phase: 7 - final accuracy:0.532
+Validation is completed in 0.0 hours, 0.0 minutes, 12.351 seconds
+Running python validate.py --batch=128 --phase=8 --model=1
+device:  cuda
+model:  1 
+classes:  80 
+checkpoint:  0 
+batch:  128 
+phase:  8
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_8.txt
+phase: 8 - final accuracy:0.491
+Validation is completed in 0.0 hours, 0.0 minutes, 12.860 seconds
+Running python validate.py --batch=128 --phase=9 --model=1
+device:  cuda
+model:  1 
+classes:  90 
+checkpoint:  0 
+batch:  128 
+phase:  9
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_9.txt
+phase: 9 - final accuracy:0.556
+Validation is completed in 0.0 hours, 0.0 minutes, 13.070 seconds
+Running python validate.py --batch=128 --phase=10 --model=1
+device:  cuda
+model:  1 
+classes:  100 
+checkpoint:  0 
+batch:  128 
+phase:  10
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_10.txt
+phase:10 - final accuracy:0.556
+Validation is completed in 0.0 hours, 0.0 minutes, 13.987 seconds

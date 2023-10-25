@@ -13,7 +13,7 @@ phase,accuracy
 9,0.976
 10,0.969
 
-# v14 (final yaml) - submission 69
+# v14 (final yaml - L40) - submission 69
 1,0.989
 2,0.972
 3,0.970
@@ -25,7 +25,7 @@ phase,accuracy
 9,0.971
 10,0.967
 
-# v14 (final yaml) - submission 70
+# v14 (final yaml - 4080) - submission 70
 # last_accuracy:0.7143775805321717
 # average_accuracy:0.7828785656459119
 1,1.000
@@ -39,7 +39,17 @@ phase,accuracy
 9,0.970
 10,0.966
 
-
+# v15 (20 epochs / 128 batches) - baseline: non-forgetting
+1,0.956
+2,0.910
+3,0.952
+4,0.948
+5,0.905
+6,0.873
+7,0.801
+8,0.715
+9,0.654
+10,0.581
 
 # v15 (20 epochs) - submission 61 
 # vlast_accuracy:0.3734948575

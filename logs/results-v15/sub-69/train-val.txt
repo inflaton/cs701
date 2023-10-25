@@ -1,0 +1,548 @@
+Submitting job: /common/home/users/d/dh.huang.2023/code/cs701/train.sh
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Wed Oct 25 18:12:02 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   30C    P8              33W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Running python train-xu-optimized.py --epochs=50 --batch=16
+device:  cuda
+epochs:  50 
+batch:  16
+Phase 1, Epoch 0, Loss: 2.137601752613866
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Phase 1, Epoch 1, Loss: 1.1401139761126318
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Phase 1, Epoch 2, Loss: 0.6245226499646209
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Phase 1, Epoch 3, Loss: 0.39469232531481013
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Phase 1, Epoch 4, Loss: 0.3054323730080627
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.623
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.989
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.978
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.978
+*** phase: 1 epoch: 2 - top accuracy:0.989
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+saved results to file: results/result_1.txt
+Phase 2, Epoch 0, Loss: 2.4118229045840396
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Phase 2, Epoch 1, Loss: 1.2749845493063439
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Phase 2, Epoch 2, Loss: 0.8264784986666615
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Phase 2, Epoch 3, Loss: 0.6309534462671431
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Phase 2, Epoch 4, Loss: 0.556077834331628
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Phase 2, Epoch 5, Loss: 0.4747309951383142
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Phase 2, Epoch 6, Loss: 0.4364141674784871
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.634
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.878
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.948
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.949
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.960
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.972
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.966
+*** phase: 2 epoch: 5 - top accuracy:0.972
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+saved results to file: results/result_2.txt
+Phase 3, Epoch 0, Loss: 2.52739785720943
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Phase 3, Epoch 1, Loss: 1.2436210133394219
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Phase 3, Epoch 2, Loss: 0.8063351887073296
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Phase 3, Epoch 3, Loss: 0.6414352080076358
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Phase 3, Epoch 4, Loss: 0.5073280116996249
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Phase 3, Epoch 5, Loss: 0.44337398274064527
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Phase 3, Epoch 6, Loss: 0.37607840957788885
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Phase 3, Epoch 7, Loss: 0.35154752473573425
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Phase 3, Epoch 8, Loss: 0.3350200798060443
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.674
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.845
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.872
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.904
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.937
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.959
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.952
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.970
+*** phase: 3 epoch: 8 - top accuracy:0.970
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+saved results to file: results/result_3.txt
+Phase 4, Epoch 0, Loss: 2.529729794694654
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Phase 4, Epoch 1, Loss: 1.1061222892368134
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Phase 4, Epoch 2, Loss: 0.7350469988558566
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Phase 4, Epoch 3, Loss: 0.5542278621989168
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Phase 4, Epoch 4, Loss: 0.4431534066082604
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Phase 4, Epoch 5, Loss: 0.3798471993735636
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Phase 4, Epoch 6, Loss: 0.33709122826641286
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Phase 4, Epoch 7, Loss: 0.303529014089111
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Phase 4, Epoch 8, Loss: 0.2935158055821766
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Phase 4, Epoch 9, Loss: 0.2981588499639481
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Phase 4, Epoch 10, Loss: 0.2872451744508674
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.789
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.880
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.898
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.920
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.926
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.944
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.958
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.961
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.967
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.958
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.964
+*** phase: 4 epoch: 8 - top accuracy:0.967
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+saved results to file: results/result_4.txt
+Phase 5, Epoch 0, Loss: 2.600340859786324
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Phase 5, Epoch 1, Loss: 1.0563534365875134
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Phase 5, Epoch 2, Loss: 0.7271965164723604
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Phase 5, Epoch 3, Loss: 0.533420145701671
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Phase 5, Epoch 4, Loss: 0.44258464177449547
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Phase 5, Epoch 5, Loss: 0.38594674946605295
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Phase 5, Epoch 6, Loss: 0.3608275154708088
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Phase 5, Epoch 7, Loss: 0.3099812488193097
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Phase 5, Epoch 8, Loss: 0.28718834337980853
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Phase 5, Epoch 9, Loss: 0.27732477782429127
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Phase 5, Epoch 10, Loss: 0.2842568193311277
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Phase 5, Epoch 11, Loss: 0.26278678864672567
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Phase 5, Epoch 12, Loss: 0.2597411515574524
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.813
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.843
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.882
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.929
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.928
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.951
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.961
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.973
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.968
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.960
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.957
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.960
+*** phase: 5 epoch: 8 - top accuracy:0.973
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+saved results to file: results/result_5.txt
+Phase 6, Epoch 0, Loss: 2.590668170293479
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Phase 6, Epoch 1, Loss: 1.0053785208795891
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Phase 6, Epoch 2, Loss: 0.6482937771650956
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Phase 6, Epoch 3, Loss: 0.5106820449189947
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Phase 6, Epoch 4, Loss: 0.39274742495243437
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Phase 6, Epoch 5, Loss: 0.33936019343833224
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Phase 6, Epoch 6, Loss: 0.2964547073024908
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Phase 6, Epoch 7, Loss: 0.2685798863838126
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Phase 6, Epoch 8, Loss: 0.23976358788567545
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Phase 6, Epoch 9, Loss: 0.25041588117784336
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Phase 6, Epoch 10, Loss: 0.2397889341717171
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Phase 6, Epoch 11, Loss: 0.2667027300469786
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Phase 6, Epoch 12, Loss: 0.24271098243408515
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Phase 6, Epoch 13, Loss: 0.23396444182731607
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Phase 6, Epoch 14, Loss: 0.2375925516668373
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.801
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.896
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.945
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.951
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.954
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.962
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.976
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.966
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.976
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.979
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.972
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.968
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.974
+*** phase: 6 epoch:11 - top accuracy:0.979
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+saved results to file: results/result_6.txt
+Phase 7, Epoch 0, Loss: 2.5992971965469933
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Phase 7, Epoch 1, Loss: 0.9479642739624881
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Phase 7, Epoch 2, Loss: 0.5918986476782382
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Phase 7, Epoch 3, Loss: 0.44386646147849684
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Phase 7, Epoch 4, Loss: 0.3639700057116583
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Phase 7, Epoch 5, Loss: 0.3303821410880705
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Phase 7, Epoch 6, Loss: 0.27834206266818784
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Phase 7, Epoch 7, Loss: 0.26608788489507573
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Phase 7, Epoch 8, Loss: 0.23970896308454587
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Phase 7, Epoch 9, Loss: 0.23358848554346492
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Phase 7, Epoch 10, Loss: 0.22333638474055925
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Phase 7, Epoch 11, Loss: 0.2312762097896795
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Phase 7, Epoch 12, Loss: 0.22588195372642145
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Phase 7, Epoch 13, Loss: 0.21295558693536004
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Phase 7, Epoch 14, Loss: 0.22286309256921963
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.799
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.886
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.929
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.934
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.946
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.934
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.956
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.959
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.968
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.967
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.964
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.970
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.970
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.967
+*** phase: 7 epoch:13 - top accuracy:0.970
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+saved results to file: results/result_7.txt
+Phase 8, Epoch 0, Loss: 2.6038316025463586
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Phase 8, Epoch 1, Loss: 0.9029474439238675
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Phase 8, Epoch 2, Loss: 0.5904170158926267
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Phase 8, Epoch 3, Loss: 0.44071189794957144
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Phase 8, Epoch 4, Loss: 0.3556659790788501
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Phase 8, Epoch 5, Loss: 0.29190336284589236
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Phase 8, Epoch 6, Loss: 0.27379337791588904
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Phase 8, Epoch 7, Loss: 0.23241843310621682
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Phase 8, Epoch 8, Loss: 0.21630794238252044
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Phase 8, Epoch 9, Loss: 0.2256822587781626
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Phase 8, Epoch 10, Loss: 0.21289411980393735
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Phase 8, Epoch 11, Loss: 0.20905322204560914
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Phase 8, Epoch 12, Loss: 0.19882052002421524
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Phase 8, Epoch 13, Loss: 0.20047212286346783
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Phase 8, Epoch 14, Loss: 0.2026545323805501
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.822
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.873
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.897
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.938
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.938
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.942
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.949
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.952
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.956
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.948
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.962
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.958
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.965
+*** phase: 8 epoch:13 - top accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+saved results to file: results/result_8.txt
+Phase 9, Epoch 0, Loss: 2.5341308273202654
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Phase 9, Epoch 1, Loss: 0.8437341902127302
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Phase 9, Epoch 2, Loss: 0.5155925645773086
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Phase 9, Epoch 3, Loss: 0.40742395653516283
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Phase 9, Epoch 4, Loss: 0.3257368756290573
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Phase 9, Epoch 5, Loss: 0.2759171142446351
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Phase 9, Epoch 6, Loss: 0.2362046657766965
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Phase 9, Epoch 7, Loss: 0.21958399292052866
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Phase 9, Epoch 8, Loss: 0.20246917587779176
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Phase 9, Epoch 9, Loss: 0.19055478263330336
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+Phase 9, Epoch 10, Loss: 0.19319060793419424
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+Phase 9, Epoch 11, Loss: 0.19093703365571088
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+Phase 9, Epoch 12, Loss: 0.1908749517024636
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Phase 9, Epoch 13, Loss: 0.175057371048817
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+Phase 9, Epoch 14, Loss: 0.17376735015439496
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.816
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.894
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.909
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.937
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.938
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.956
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.956
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.954
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.959
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.961
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.961
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.964
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.969
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.971
+*** phase: 9 epoch:14 - top accuracy:0.971
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+saved results to file: results/result_9.txt
+Phase 10, Epoch 0, Loss: 2.5174622177388626
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Phase 10, Epoch 1, Loss: 0.7981300921798441
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Phase 10, Epoch 2, Loss: 0.5116298470883011
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Phase 10, Epoch 3, Loss: 0.3787187607991213
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Phase 10, Epoch 4, Loss: 0.3011526056452294
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Phase 10, Epoch 5, Loss: 0.26531356318148575
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Phase 10, Epoch 6, Loss: 0.25692588773076935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Phase 10, Epoch 7, Loss: 0.20310611259730565
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Phase 10, Epoch 8, Loss: 0.20129049018972872
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Phase 10, Epoch 9, Loss: 0.18742475330485084
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+Phase 10, Epoch 10, Loss: 0.18230330590912372
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+Phase 10, Epoch 11, Loss: 0.18635902826841166
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+Phase 10, Epoch 12, Loss: 0.17950065103224935
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+Phase 10, Epoch 13, Loss: 0.16953813607637594
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+Phase 10, Epoch 14, Loss: 0.17399851905472705
+saved checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.831
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.898
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.921
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.926
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.929
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.930
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.953
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.964
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.956
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.964
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.962
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.965
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.960
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.959
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.967
+*** phase:10 epoch:14 - top accuracy:0.967
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+saved results to file: results/result_10.txt
+Job ID: 31088
+Cluster: crimson
+User/Group: dh.huang.2023/dh.huang.2023
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 06:36:51
+CPU Efficiency: 98.97% of 06:41:00 core-walltime
+Job Wall-clock time: 00:40:06
+Memory Utilized: 1023.54 MB
+Memory Efficiency: 1.56% of 64.00 GB

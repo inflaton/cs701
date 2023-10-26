@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 4. to reproduce results sumbitted to the private leaderboard,
 * run the following command which will load the checkpoints from step 3) and generate results
-* all test results are stored in `results` folder which isompressed into `test.zip`. 
+* all test results are stored in `results` folder which is compressed into `test.zip`. 
 ```
 ./test.sh
 ```

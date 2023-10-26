@@ -152,7 +152,7 @@ with torch.no_grad():
     file.write(f"{phase},{accuracy:.3f}\n")
 
 # compress the results folder
-filename = "result.zip"
+filename = "test.zip" if val_or_test < 0 else "validation.zip"
 path = Path(filename)
 if path.is_file():
     os.remove(filename)

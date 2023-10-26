@@ -333,7 +333,11 @@ for phase in range(1, 11):
     teacher_model = model
 
 # compress the results folder
-with zipfile.ZipFile("results.zip", "w") as zipf:
+filename = "validation.zip"
+path = Path(filename)
+if path.is_file():
+    os.remove(filename)
+with zipfile.ZipFile("validation.zip", "w") as zipf:
     for dirname, subdirs, files in os.walk("results"):
         zipf.write(dirname)
         for filename in files:

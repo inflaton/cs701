@@ -7,15 +7,16 @@ This project contains all source files, as well as results/logs, for our submiss
 1. create a subfolder `data` and put train/val/test image folders under `data` folder.
 
 ```
-ls data | grep "Train\|Val\|Test"
-Test
-Train
-Val
+$ tree -L 1 data
+data
+├── Test
+├── Train
+└── Val
 ```
 
 2. install all depedencies:
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 3. to reproduce results sumbitted to the public leaderboard,
@@ -23,12 +24,12 @@ pip install -r requirements.txt
 * model checkpoints for all phases are stored under subfolders `data/checkpoints_phase_{phase}`.
 * all validation results are stored in `results` folder which is compressed into `validation.zip`.
 ```
-./train.sh
+$ ./train.sh
 ```
 
 4. to reproduce results sumbitted to the private leaderboard,
 * run the following command which will load the checkpoints from step 3) and generate results
 * all test results are stored in `results` folder which is compressed into `test.zip`. 
 ```
-./test.sh
+$ ./test.sh
 ```

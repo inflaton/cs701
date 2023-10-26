@@ -4,15 +4,6 @@ cd $BASEDIR
 echo Current Directory:
 pwd
 
-nvidia-smi
-# uname -a
-# cat /etc/os-release
-# lscpu
-# grep MemTotal /proc/meminfo
-
-# BATCH=128
-# MODEL=1
-
 BATCH=16
 MODEL=2
 

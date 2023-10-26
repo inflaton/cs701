@@ -32,6 +32,9 @@ parser.add_argument(
     "-c", "--checkpoint", type=int, help="Checkpoint to load", default=0
 )
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
+parser.add_argument(
+    "-v", "--val_or_test", type=int, help="val_or_test: 0=validation 1=test", default=0
+)
 
 # Parse the arguments
 args = parser.parse_args()
@@ -40,6 +43,7 @@ model_ver = args.model
 batch_size = args.batch
 checkpoint = args.checkpoint
 phase = args.phase
+val_or_test = args.val_or_test
 num_classes = NUM_CLASSES_IN_PHASE * phase
 
 print(
@@ -94,7 +98,7 @@ model.eval()
 with torch.no_grad():
     model_result = []
     image_filenames = []
-    val_set = CustomImageDataset(0, transform=preprocess_val_image)
+    val_set = CustomImageDataset(val_or_test, transform=preprocess_val_image)
     testloader = torch.utils.data.DataLoader(val_set, batch_size=batch_size)
 
     for inputs, labels in testloader:

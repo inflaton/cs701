@@ -100,11 +100,11 @@ num_images_in_phase = [
     298,
     293,
     298,
-    # 887,
+    887,
     2087,
 ]
 
-NUM_PHASES = len(num_images_in_phase) - 1
+NUM_PHASES = len(num_images_in_phase) - 2
 MEMORY_SIZE = 5
 NUM_CLASSES_IN_PHASE = 10
 
@@ -118,49 +118,43 @@ class CustomImageDataset(Dataset):
         self.image_paths = []
 
         if phase <= 0:
-            data_dir = "data/Test"  # "data/Val"
-            print("data_dir: ", data_dir)
-            for k in range(num_images_in_phase[-1]):
-                image_filename = f"{k:04d}.jpg"
-                image_path = os.path.join(data_dir, image_filename)
-
-                # print("image_path: ", image_path)
-
-                # Check if the image file exists
-                if os.path.exists(image_path):
-                    self.img_labels.append(image_filename)
-                    self.image_paths.append(image_path)
-                else:
-                    print("not found: ", image_path)
-                    pass
+            self.load_val_test_images(phase < 0)
         else:
-            for i in range(phase):
-                for j in range(NUM_CLASSES_IN_PHASE):
-                    label = i * NUM_CLASSES_IN_PHASE + j
-                    if i < phase - 1:
-                        data_dir = f"data/Train/phase_{i + 1}/{label:03d}"
-                        # print("data_dir: ", data_dir)
-                        for k in range(MEMORY_SIZE):
-                            self.img_labels.append(label)
+            self.load_training_images(phase)
 
-                            image_filename = f"{k:03d}.jpg"
-                            image_path = os.path.join(data_dir, image_filename)
-                            self.image_paths.append(image_path)
-                    else:
-                        data_dir = f"data/Train/phase_{i + 1}/{label:03d}"
-                        # print("data_dir: ", data_dir)
-                        for k in range(num_images_in_phase[i - 1]):
-                            image_filename = f"{k:03d}.jpg"
-                            image_path = os.path.join(data_dir, image_filename)
+    def load_training_images(self, phase):
+        for i in range(phase):
+            for j in range(NUM_CLASSES_IN_PHASE):
+                label = i * NUM_CLASSES_IN_PHASE + j
+                if i < phase - 1:
+                    data_dir = f"data/Train/phase_{i + 1}/{label:03d}"
+                    num_images = MEMORY_SIZE
+                else:
+                    data_dir = f"data/Train/phase_{i + 1}/{label:03d}"
+                    num_images = num_images_in_phase[i - 1]
 
-                            # print("image_path: ", image_path)
+                for k in range(num_images):
+                    image_filename = f"{k:03d}.jpg"
+                    image_path = os.path.join(data_dir, image_filename)
 
-                            # Check if the image file exists
-                            if os.path.exists(image_path):
-                                self.img_labels.append(label)
-                                self.image_paths.append(image_path)
-                            else:
-                                break
+                    # Check if the image file exists
+                    if os.path.exists(image_path):
+                        self.img_labels.append(label)
+                        self.image_paths.append(image_path)
+
+    def load_val_test_images(self, is_testing):
+        data_dir = "data/Test" if is_testing else "data/Val"
+        print("data_dir: ", data_dir)
+        for k in range(num_images_in_phase[-1 if is_testing else -2]):
+            image_filename = f"{k:04d}.jpg" if is_testing else f"{k:03d}.jpg"
+            image_path = os.path.join(data_dir, image_filename)
+
+            # Check if the image file exists
+            if os.path.exists(image_path):
+                self.img_labels.append(image_filename)
+                self.image_paths.append(image_path)
+            else:
+                print("not found: ", image_path)
 
     def __len__(self):
         return len(self.img_labels)

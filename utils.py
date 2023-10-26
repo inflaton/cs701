@@ -117,8 +117,8 @@ class CustomImageDataset(Dataset):
         self.image_paths = []
 
         if phase <= 0:
-            data_dir = f"data/Val"
-            # print("data_dir: ", data_dir)
+            data_dir = "data/Test"  # "data/Val"
+            print("data_dir: ", data_dir)
             for k in range(num_images_in_phase[-1]):
                 image_filename = f"{k:03d}.jpg"
                 image_path = os.path.join(data_dir, image_filename)

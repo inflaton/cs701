@@ -100,7 +100,8 @@ num_images_in_phase = [
     298,
     293,
     298,
-    887,
+    # 887,
+    2087,
 ]
 
 NUM_PHASES = len(num_images_in_phase) - 1

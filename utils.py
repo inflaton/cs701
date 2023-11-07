@@ -441,7 +441,9 @@ def get_k_fold_training_datasets(phase, fold, use_memory=True):
     return train_subset, val_subset
 
 
-def get_final_validation_dataset(phase, transform=preprocess_val_image):
+def get_final_validation_dataset(
+    phase, transform=preprocess_val_image, use_full_data=False
+):
     datasets = [
         TrainingImageDataset(
             i + 1, transform=transform, load_training_images_for_val=True
@@ -451,9 +453,10 @@ def get_final_validation_dataset(phase, transform=preprocess_val_image):
 
     final_val_set = None
     for dataset in datasets:
-        train_len = int(len(dataset) * 7 / 10)
+        dataset_len = len(dataset)
+        train_len = 0 if use_full_data else int(dataset_len * 7 / 10)
         _, val_set = torch.utils.data.random_split(
-            dataset, [train_len, len(dataset) - train_len]
+            dataset, [train_len, dataset_len - train_len]
         )
         if final_val_set is None:
             final_val_set = val_set

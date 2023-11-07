@@ -104,7 +104,9 @@ for _, _, files in os.walk(SAVE_PATH):
             model_result = []
             total_targets = []
             test_loader = torch.utils.data.DataLoader(
-                get_final_validation_dataset(phase, transform=transform_for_validation),
+                get_final_validation_dataset(
+                    phase, transform=transform_for_validation, use_full_data=True
+                ),
                 batch_size=batch_size,
             )
             for inputs, targets in test_loader:

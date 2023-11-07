@@ -1,0 +1,340 @@
+Current Directory:
+/home/inflaton/code/projects/cs701
+Tue Nov  7 10:59:03 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.29.01              Driver Version: 546.01       CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  | 00000000:01:00.0 Off |                  N/A |
+| N/A   49C    P0              29W / 150W |      0MiB / 12282MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Running python validate-timm.py --batch=64 --phase=1 --model=1
+device:  cuda
+model:  1 
+classes:  10 
+checkpoint:  0 
+batch:  64 
+phase:  1
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+phase: 1 - final accuracy:71.429
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+phase: 1 - final accuracy:97.279
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+phase: 1 - final accuracy:86.054
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+phase: 1 - final accuracy:75.850
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+phase: 1 - final accuracy:80.952
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-024.pth
+phase: 1 - final accuracy:94.218
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-014.pth
+phase: 1 - final accuracy:87.755
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+phase: 1 - final accuracy:92.177
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-013.pth
+phase: 1 - final accuracy:85.714
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-006.pth
+phase: 1 - final accuracy:65.986
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+phase: 1 - final accuracy:90.136
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_1.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 25.909 seconds
+Running python validate-timm.py --batch=64 --phase=2 --model=1
+device:  cuda
+model:  1 
+classes:  20 
+checkpoint:  0 
+batch:  64 
+phase:  2
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+phase: 2 - final accuracy:94.604
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+phase: 2 - final accuracy:67.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+phase: 2 - final accuracy:77.403
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+phase: 2 - final accuracy:81.788
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-022.pth
+phase: 2 - final accuracy:93.592
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+phase: 2 - final accuracy:83.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+phase: 2 - final accuracy:91.906
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+phase: 2 - final accuracy:78.415
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+phase: 2 - final accuracy:89.713
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_2.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 37.964 seconds
+Running python validate-timm.py --batch=64 --phase=3 --model=1
+device:  cuda
+model:  1 
+classes:  30 
+checkpoint:  0 
+batch:  64 
+phase:  3
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-040.pth
+phase: 3 - final accuracy:97.291
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+phase: 3 - final accuracy:85.666
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+phase: 3 - final accuracy:63.431
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+phase: 3 - final accuracy:81.038
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+phase: 3 - final accuracy:97.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+phase: 3 - final accuracy:69.752
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+phase: 3 - final accuracy:89.729
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-028.pth
+phase: 3 - final accuracy:96.275
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+phase: 3 - final accuracy:90.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+phase: 3 - final accuracy:83.183
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_3.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 59.100 seconds
+Running python validate-timm.py --batch=64 --phase=4 --model=1
+device:  cuda
+model:  1 
+classes:  40 
+checkpoint:  0 
+batch:  64 
+phase:  4
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+phase: 4 - final accuracy:96.604
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+phase: 4 - final accuracy:98.048
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-030.pth
+phase: 4 - final accuracy:97.793
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+phase: 4 - final accuracy:80.051
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+phase: 4 - final accuracy:89.134
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+phase: 4 - final accuracy:90.662
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+phase: 4 - final accuracy:95.671
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+phase: 4 - final accuracy:85.823
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+phase: 4 - final accuracy:71.817
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-033.pth
+phase: 4 - final accuracy:98.048
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+phase: 4 - final accuracy:94.312
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+phase: 4 - final accuracy:96.859
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_4.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 34.855 seconds
+Running python validate-timm.py --batch=64 --phase=5 --model=1
+device:  cuda
+model:  1 
+classes:  50 
+checkpoint:  0 
+batch:  64 
+phase:  5
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+phase: 5 - final accuracy:85.627
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+phase: 5 - final accuracy:90.508
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+phase: 5 - final accuracy:94.441
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+phase: 5 - final accuracy:88.610
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+phase: 5 - final accuracy:60.271
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+phase: 5 - final accuracy:77.898
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+phase: 5 - final accuracy:97.424
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+phase: 5 - final accuracy:95.729
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_5.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 20.723 seconds
+Running python validate-timm.py --batch=64 --phase=6 --model=1
+device:  cuda
+model:  1 
+classes:  60 
+checkpoint:  0 
+batch:  64 
+phase:  6
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+phase: 6 - final accuracy:88.782
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+phase: 6 - final accuracy:92.503
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+phase: 6 - final accuracy:98.816
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+phase: 6 - final accuracy:97.407
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+phase: 6 - final accuracy:97.294
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+phase: 6 - final accuracy:98.760
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+phase: 6 - final accuracy:91.375
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+phase: 6 - final accuracy:64.769
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+phase: 6 - final accuracy:80.383
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+phase: 6 - final accuracy:98.140
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+phase: 6 - final accuracy:96.505
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+phase: 6 - final accuracy:96.956
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-047.pth
+phase: 6 - final accuracy:98.703
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+phase: 6 - final accuracy:93.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_6.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 44.573 seconds
+Running python validate-timm.py --batch=64 --phase=7 --model=1
+device:  cuda
+model:  1 
+classes:  70 
+checkpoint:  0 
+batch:  64 
+phase:  7
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+phase: 7 - final accuracy:95.992
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+phase: 7 - final accuracy:91.164
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+phase: 7 - final accuracy:92.564
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+phase: 7 - final accuracy:94.157
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+phase: 7 - final accuracy:96.330
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+phase: 7 - final accuracy:96.765
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+phase: 7 - final accuracy:96.910
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+phase: 7 - final accuracy:70.449
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+phase: 7 - final accuracy:84.355
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+phase: 7 - final accuracy:98.069
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+phase: 7 - final accuracy:98.696
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+phase: 7 - final accuracy:94.737
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_7.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 48.428 seconds
+Running python validate-timm.py --batch=64 --phase=8 --model=1
+device:  cuda
+model:  1 
+classes:  80 
+checkpoint:  0 
+batch:  64 
+phase:  8
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+phase: 8 - final accuracy:97.721
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+phase: 8 - final accuracy:98.523
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+phase: 8 - final accuracy:93.457
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+phase: 8 - final accuracy:96.496
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+phase: 8 - final accuracy:96.117
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+phase: 8 - final accuracy:96.750
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+phase: 8 - final accuracy:94.386
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+phase: 8 - final accuracy:76.868
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+phase: 8 - final accuracy:90.080
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+phase: 8 - final accuracy:97.298
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_8.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 42.323 seconds
+Running python validate-timm.py --batch=64 --phase=9 --model=1
+device:  cuda
+model:  1 
+classes:  90 
+checkpoint:  0 
+batch:  64 
+phase:  9
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+phase: 9 - final accuracy:93.839
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+phase: 9 - final accuracy:98.234
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+phase: 9 - final accuracy:94.741
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+phase: 9 - final accuracy:76.597
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+phase: 9 - final accuracy:92.074
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+phase: 9 - final accuracy:98.009
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+phase: 9 - final accuracy:97.784
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+phase: 9 - final accuracy:96.131
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_9.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 26.668 seconds
+Running python validate-timm.py --batch=64 --phase=10 --model=1
+device:  cuda
+model:  1 
+classes:  100 
+checkpoint:  0 
+batch:  64 
+phase:  10
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+phase:10 - final accuracy:98.547
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+phase:10 - final accuracy:98.378
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+phase:10 - final accuracy:93.041
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+phase:10 - final accuracy:96.486
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+phase:10 - final accuracy:95.811
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+phase:10 - final accuracy:96.419
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+phase:10 - final accuracy:79.392
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+phase:10 - final accuracy:91.318
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+phase:10 - final accuracy:98.142
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+phase:10 - final accuracy:98.851
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+data_dir:  data/Val
+886 results saved to: /home/inflaton/code/projects/cs701/results/result_10.txt
+Validation is completed in 0.0 hours, 3.0 minutes, 20.445 seconds

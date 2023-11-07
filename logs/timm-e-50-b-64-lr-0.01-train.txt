@@ -1,0 +1,1655 @@
+device:  cuda
+epochs:  50 
+batch:  128
+training phase: 1
+train_set len: 310
+val_set len: 34
+Phase 1, Epoch 0, Learning rate: 0.0100000000
+	Loss: 2.3057380845469813
+	Accuracy: 17.647%
+Phase 1, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.2669879251910796
+	Accuracy: 26.471%
+Phase 1, Epoch 2, Learning rate: 0.0100000000
+	Loss: 2.2141197327644595
+	Accuracy: 44.118%
+Phase 1, Epoch 3, Learning rate: 0.0100000000
+	Loss: 2.149714368389499
+	Accuracy: 44.118%
+Phase 1, Epoch 4, Learning rate: 0.0100000000
+	Loss: 2.0687437426659367
+	Accuracy: 44.118%
+Phase 1, Epoch 5, Learning rate: 0.0100000000
+	Loss: 1.9895430495662074
+	Accuracy: 47.059%
+Phase 1, Epoch 6, Learning rate: 0.0100000000
+	Loss: 1.8991409640158377
+	Accuracy: 50.000%
+Phase 1, Epoch 7, Learning rate: 0.0100000000
+	Loss: 1.8115542757895684
+	Accuracy: 52.941%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+Phase 1, Epoch 8, Learning rate: 0.0100000000
+	Loss: 1.7174401460155364
+	Accuracy: 64.706%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-008.pth
+Phase 1, Epoch 9, Learning rate: 0.0100000000
+	Loss: 1.6313040418009603
+	Accuracy: 64.706%
+Phase 1, Epoch 10, Learning rate: 0.0100000000
+	Loss: 1.5314040468585106
+	Accuracy: 64.706%
+Phase 1, Epoch 11, Learning rate: 0.0100000000
+	Loss: 1.448491184942184
+	Accuracy: 61.765%
+Phase 1, Epoch 12, Learning rate: 0.0100000000
+	Loss: 1.3403056429278466
+	Accuracy: 64.706%
+Phase 1, Epoch 13, Learning rate: 0.0100000000
+	Loss: 1.2515180503168413
+	Accuracy: 58.824%
+Phase 1, Epoch 14, Learning rate: 0.0100000000
+	Loss: 1.2230364822572277
+	Accuracy: 47.059%
+Phase 1, Epoch 15, Learning rate: 0.0100000000
+	Loss: 1.1758115829959992
+	Accuracy: 58.824%
+Phase 1, Epoch 16, Learning rate: 0.0100000000
+	Loss: 1.0942115295317865
+	Accuracy: 64.706%
+Phase 1, Epoch 17, Learning rate: 0.0100000000
+	Loss: 1.0148806752697115
+	Accuracy: 70.588%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-017.pth
+Phase 1, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.9556938163695797
+	Accuracy: 73.529%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-018.pth
+Phase 1, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.8725583699441726
+	Accuracy: 85.294%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-019.pth
+Phase 1, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.7890586753045359
+	Accuracy: 67.647%
+Phase 1, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.7454337616120615
+	Accuracy: 79.412%
+Phase 1, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.6942256639080663
+	Accuracy: 79.412%
+Phase 1, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.6287831173789117
+	Accuracy: 79.412%
+Phase 1, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.5912774780104237
+	Accuracy: 85.294%
+Phase 1, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.5451208889484406
+	Accuracy: 79.412%
+Phase 1, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.5279518173586938
+	Accuracy: 82.353%
+Phase 1, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.4684347658388076
+	Accuracy: 79.412%
+Phase 1, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.44448911124660123
+	Accuracy: 82.353%
+Phase 1, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.3983693993860675
+	Accuracy: 73.529%
+Phase 1, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.3839136654330838
+	Accuracy: 91.176%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+Phase 1, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.36679236398589227
+	Accuracy: 79.412%
+Phase 1, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.3255009807886616
+	Accuracy: 82.353%
+Phase 1, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.3434767598106015
+	Accuracy: 85.294%
+Phase 1, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.30649966703307246
+	Accuracy: 88.235%
+Phase 1, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.2885374447030406
+	Accuracy: 82.353%
+Phase 1, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.2840328347298407
+	Accuracy: 85.294%
+Phase 1, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.2494470392504046
+	Accuracy: 85.294%
+Phase 1, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.23921517354826774
+	Accuracy: 88.235%
+Phase 1, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.22920669317245485
+	Accuracy: 88.235%
+Phase 1, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.22798314459862248
+	Accuracy: 76.471%
+Phase 1, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.20896202763242105
+	Accuracy: 85.294%
+Phase 1, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.2121895290190174
+	Accuracy: 85.294%
+Phase 1, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.20106338820149822
+	Accuracy: 82.353%
+Phase 1, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.18575761077865477
+	Accuracy: 82.353%
+Phase 1, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.18850271773915137
+	Accuracy: 88.235%
+Phase 1, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.15334874156021303
+	Accuracy: 88.235%
+Phase 1, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.17611843881107145
+	Accuracy: 85.294%
+Phase 1, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.15476225124251458
+	Accuracy: 88.235%
+Phase 1, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.14932754155128233
+	Accuracy: 85.294%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-030.pth
+saved results to file: results/result_1.txt
+training phase: 2
+train_set len: 624
+val_set len: 69
+Phase 2, Epoch 0, Learning rate: 0.0100000000
+	Loss: 2.782585235742422
+	Accuracy: 8.696%
+Phase 2, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.67225631689414
+	Accuracy: 21.739%
+Phase 2, Epoch 2, Learning rate: 0.0100000000
+	Loss: 2.521112118011866
+	Accuracy: 26.087%
+Phase 2, Epoch 3, Learning rate: 0.0100000000
+	Loss: 2.3436878461104174
+	Accuracy: 43.478%
+Phase 2, Epoch 4, Learning rate: 0.0100000000
+	Loss: 2.167697992080297
+	Accuracy: 60.870%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Phase 2, Epoch 5, Learning rate: 0.0100000000
+	Loss: 1.9931945158885076
+	Accuracy: 72.464%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Phase 2, Epoch 6, Learning rate: 0.0100000000
+	Loss: 1.8344855033434355
+	Accuracy: 73.913%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+Phase 2, Epoch 7, Learning rate: 0.0100000000
+	Loss: 1.6599512161352696
+	Accuracy: 72.464%
+Phase 2, Epoch 8, Learning rate: 0.0100000000
+	Loss: 1.5268649321336012
+	Accuracy: 79.710%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+Phase 2, Epoch 9, Learning rate: 0.0100000000
+	Loss: 1.4131589822280102
+	Accuracy: 76.812%
+Phase 2, Epoch 10, Learning rate: 0.0100000000
+	Loss: 1.2685805803690202
+	Accuracy: 84.058%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-010.pth
+Phase 2, Epoch 11, Learning rate: 0.0100000000
+	Loss: 1.1630747318267822
+	Accuracy: 82.609%
+Phase 2, Epoch 12, Learning rate: 0.0100000000
+	Loss: 1.0887523736709204
+	Accuracy: 82.609%
+Phase 2, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.9968087046574323
+	Accuracy: 82.609%
+Phase 2, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.9305841097464929
+	Accuracy: 82.609%
+Phase 2, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.8488610921761929
+	Accuracy: 84.058%
+Phase 2, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.822076508632073
+	Accuracy: 82.609%
+Phase 2, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.7680730651586484
+	Accuracy: 82.609%
+Phase 2, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.7114886198288355
+	Accuracy: 86.957%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-018.pth
+Phase 2, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.6767666034209423
+	Accuracy: 88.406%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-019.pth
+Phase 2, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.645874445254986
+	Accuracy: 86.957%
+Phase 2, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.6323705269740179
+	Accuracy: 85.507%
+Phase 2, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.6020732888808618
+	Accuracy: 91.304%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-022.pth
+Phase 2, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.5685392373647445
+	Accuracy: 82.609%
+Phase 2, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.5654982511813824
+	Accuracy: 86.957%
+Phase 2, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.5391059372669611
+	Accuracy: 89.855%
+Phase 2, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.5121782849996518
+	Accuracy: 88.406%
+Phase 2, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.5064277939307384
+	Accuracy: 86.957%
+Phase 2, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.4926392145645924
+	Accuracy: 91.304%
+Phase 2, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.4813791788541354
+	Accuracy: 86.957%
+Phase 2, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.4909728742562808
+	Accuracy: 95.652%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+Phase 2, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.44971254773629016
+	Accuracy: 91.304%
+Phase 2, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.4568213109786694
+	Accuracy: 89.855%
+Phase 2, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.438352216512729
+	Accuracy: 92.754%
+Phase 2, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.4162390293219151
+	Accuracy: 92.754%
+Phase 2, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.4365973472595215
+	Accuracy: 85.507%
+Phase 2, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.4174806169974498
+	Accuracy: 92.754%
+Phase 2, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.42521994083355635
+	Accuracy: 91.304%
+Phase 2, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.42447755428460926
+	Accuracy: 92.754%
+Phase 2, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.4046124418576558
+	Accuracy: 91.304%
+Phase 2, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.3947820143821912
+	Accuracy: 86.957%
+Phase 2, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.39654785241836155
+	Accuracy: 86.957%
+Phase 2, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.38153284788131714
+	Accuracy: 88.406%
+Phase 2, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.38649357817111873
+	Accuracy: 91.304%
+Phase 2, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.38605719804763794
+	Accuracy: 95.652%
+Phase 2, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.3706578337229215
+	Accuracy: 91.304%
+Phase 2, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.38771382967631024
+	Accuracy: 91.304%
+Phase 2, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.36063978458062196
+	Accuracy: 92.754%
+Phase 2, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.3603290823789743
+	Accuracy: 89.855%
+Phase 2, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.3635471509053157
+	Accuracy: 91.304%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-030.pth
+saved results to file: results/result_2.txt
+training phase: 3
+train_set len: 933
+val_set len: 103
+Phase 3, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.203758220069534
+	Accuracy: 14.563%
+Phase 3, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.867798480956884
+	Accuracy: 30.097%
+Phase 3, Epoch 2, Learning rate: 0.0100000000
+	Loss: 2.443197559058219
+	Accuracy: 54.369%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Phase 3, Epoch 3, Learning rate: 0.0100000000
+	Loss: 2.0351741253882487
+	Accuracy: 66.990%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Phase 3, Epoch 4, Learning rate: 0.0100000000
+	Loss: 1.6979598802257836
+	Accuracy: 63.107%
+Phase 3, Epoch 5, Learning rate: 0.0100000000
+	Loss: 1.4329205981404836
+	Accuracy: 73.786%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Phase 3, Epoch 6, Learning rate: 0.0100000000
+	Loss: 1.235053757123753
+	Accuracy: 79.612%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Phase 3, Epoch 7, Learning rate: 0.0100000000
+	Loss: 1.0829323741017431
+	Accuracy: 82.524%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Phase 3, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.9659716983316795
+	Accuracy: 79.612%
+Phase 3, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.8390944994914187
+	Accuracy: 79.612%
+Phase 3, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.763641221794157
+	Accuracy: 82.524%
+Phase 3, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.7285331533652794
+	Accuracy: 83.495%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+Phase 3, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.6715234602379262
+	Accuracy: 88.350%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+Phase 3, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.6234362386047265
+	Accuracy: 81.553%
+Phase 3, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.5794962831121038
+	Accuracy: 82.524%
+Phase 3, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.5520541215952314
+	Accuracy: 87.379%
+Phase 3, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.5142190151659238
+	Accuracy: 83.495%
+Phase 3, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.509629669584262
+	Accuracy: 86.408%
+Phase 3, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.5005104841398912
+	Accuracy: 87.379%
+Phase 3, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.4670549875159228
+	Accuracy: 85.437%
+Phase 3, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.4511403524479554
+	Accuracy: 85.437%
+Phase 3, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.44935041285915517
+	Accuracy: 85.437%
+Phase 3, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.4211119388141305
+	Accuracy: 87.379%
+Phase 3, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.4070168263723101
+	Accuracy: 84.466%
+Phase 3, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.40854485411224895
+	Accuracy: 87.379%
+Phase 3, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.3974551473527604
+	Accuracy: 88.350%
+Phase 3, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.3692550550894722
+	Accuracy: 86.408%
+Phase 3, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.35455774724291833
+	Accuracy: 82.524%
+Phase 3, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.34448432066305146
+	Accuracy: 90.291%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-028.pth
+Phase 3, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.3476609756325602
+	Accuracy: 87.379%
+Phase 3, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.3473759648756454
+	Accuracy: 87.379%
+Phase 3, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.3343631414994038
+	Accuracy: 84.466%
+Phase 3, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.33975220448462273
+	Accuracy: 88.350%
+Phase 3, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.3339221771698673
+	Accuracy: 88.350%
+Phase 3, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.3266957018919696
+	Accuracy: 87.379%
+Phase 3, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.3201965102237137
+	Accuracy: 86.408%
+Phase 3, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.32659072313150284
+	Accuracy: 88.350%
+Phase 3, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.31743537919697656
+	Accuracy: 86.408%
+Phase 3, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.30002436639156116
+	Accuracy: 86.408%
+Phase 3, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.29371213299668486
+	Accuracy: 88.350%
+Phase 3, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.2993753824267229
+	Accuracy: 92.233%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-040.pth
+Phase 3, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.29974365183267054
+	Accuracy: 88.350%
+Phase 3, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.2872619336952095
+	Accuracy: 88.350%
+Phase 3, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.27927332538372707
+	Accuracy: 90.291%
+Phase 3, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.2781201889468926
+	Accuracy: 90.291%
+Phase 3, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.2877789062127423
+	Accuracy: 89.320%
+Phase 3, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.2714156000241078
+	Accuracy: 88.350%
+Phase 3, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.2760066254441761
+	Accuracy: 90.291%
+Phase 3, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.27558176540485146
+	Accuracy: 93.204%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+Phase 3, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.2646886448895944
+	Accuracy: 91.262%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-048.pth
+saved results to file: results/result_3.txt
+training phase: 4
+train_set len: 1241
+val_set len: 137
+Phase 4, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.464093828086023
+	Accuracy: 46.715%
+Phase 4, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.7525948129480255
+	Accuracy: 68.613%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Phase 4, Epoch 2, Learning rate: 0.0100000000
+	Loss: 1.9897437302169063
+	Accuracy: 74.453%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Phase 4, Epoch 3, Learning rate: 0.0100000000
+	Loss: 1.4465599150354107
+	Accuracy: 81.752%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Phase 4, Epoch 4, Learning rate: 0.0100000000
+	Loss: 1.0885322007510472
+	Accuracy: 83.942%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Phase 4, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.8836318599322839
+	Accuracy: 86.861%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Phase 4, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.7403717919955995
+	Accuracy: 86.861%
+Phase 4, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.644120977685684
+	Accuracy: 84.672%
+Phase 4, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.5722926704754856
+	Accuracy: 85.401%
+Phase 4, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.5237607535674244
+	Accuracy: 83.942%
+Phase 4, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.48703391651872857
+	Accuracy: 85.401%
+Phase 4, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.4372139048614779
+	Accuracy: 88.321%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Phase 4, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.4228759395989749
+	Accuracy: 87.591%
+Phase 4, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.3879633518979013
+	Accuracy: 87.591%
+Phase 4, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.3725604974243739
+	Accuracy: 88.321%
+Phase 4, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.3606865603437739
+	Accuracy: 89.051%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Phase 4, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.33955606324695753
+	Accuracy: 88.321%
+Phase 4, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.3248964830644663
+	Accuracy: 86.131%
+Phase 4, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.3000368549999549
+	Accuracy: 89.781%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Phase 4, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.28862174346406644
+	Accuracy: 86.861%
+Phase 4, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.28031941160475604
+	Accuracy: 88.321%
+Phase 4, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.28639655013318793
+	Accuracy: 90.511%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+Phase 4, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.2814774342739803
+	Accuracy: 89.781%
+Phase 4, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.2661070032863248
+	Accuracy: 88.321%
+Phase 4, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.2640337428914069
+	Accuracy: 88.321%
+Phase 4, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.25962452685323867
+	Accuracy: 89.051%
+Phase 4, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.2500661295882931
+	Accuracy: 86.861%
+Phase 4, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.2539758950615967
+	Accuracy: 89.051%
+Phase 4, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.2408744184409871
+	Accuracy: 90.511%
+Phase 4, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.2300617101209765
+	Accuracy: 89.781%
+Phase 4, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.22241891477494158
+	Accuracy: 91.241%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-030.pth
+Phase 4, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.23256246626713312
+	Accuracy: 91.241%
+Phase 4, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.23011872667059793
+	Accuracy: 90.511%
+Phase 4, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.21347149274793006
+	Accuracy: 91.971%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-033.pth
+Phase 4, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.21267422818782156
+	Accuracy: 91.241%
+Phase 4, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.20870318499714208
+	Accuracy: 91.971%
+Phase 4, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.2005361997725789
+	Accuracy: 91.241%
+Phase 4, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.20849087325245214
+	Accuracy: 89.051%
+Phase 4, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.20191741849413616
+	Accuracy: 90.511%
+Phase 4, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.2052734238331977
+	Accuracy: 89.781%
+Phase 4, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.19254332669169358
+	Accuracy: 92.701%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+Phase 4, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.2021864966626709
+	Accuracy: 88.321%
+Phase 4, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.1813446016296276
+	Accuracy: 91.241%
+Phase 4, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.18594821077215393
+	Accuracy: 89.781%
+Phase 4, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.18557037880207433
+	Accuracy: 89.781%
+Phase 4, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.1846654758901965
+	Accuracy: 88.321%
+Phase 4, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.18850687602467348
+	Accuracy: 92.701%
+Phase 4, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.18806968486472353
+	Accuracy: 88.321%
+Phase 4, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.18231153308048448
+	Accuracy: 91.971%
+Phase 4, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.1819918387112456
+	Accuracy: 89.051%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-040.pth
+saved results to file: results/result_4.txt
+training phase: 5
+train_set len: 1553
+val_set len: 172
+Phase 5, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.5656827431068985
+	Accuracy: 55.233%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Phase 5, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.4356475166559064
+	Accuracy: 71.512%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Phase 5, Epoch 2, Learning rate: 0.0100000000
+	Loss: 1.5084288299889697
+	Accuracy: 77.907%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Phase 5, Epoch 3, Learning rate: 0.0100000000
+	Loss: 1.0381453284815059
+	Accuracy: 83.721%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Phase 5, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.805734067598774
+	Accuracy: 86.047%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Phase 5, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.6819361004611406
+	Accuracy: 84.302%
+Phase 5, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.5870761383907763
+	Accuracy: 83.140%
+Phase 5, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.5155561885293345
+	Accuracy: 85.465%
+Phase 5, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.45914438990570233
+	Accuracy: 85.465%
+Phase 5, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.44173554933155573
+	Accuracy: 86.628%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Phase 5, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.3980187773128824
+	Accuracy: 83.140%
+Phase 5, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.3643602010172103
+	Accuracy: 85.465%
+Phase 5, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.3348778417742951
+	Accuracy: 86.628%
+Phase 5, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.3494004178396441
+	Accuracy: 91.279%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Phase 5, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.3051808395273672
+	Accuracy: 85.465%
+Phase 5, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.30754554279374063
+	Accuracy: 89.535%
+Phase 5, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.29509965304935354
+	Accuracy: 84.302%
+Phase 5, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.2758505668608665
+	Accuracy: 90.116%
+Phase 5, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.26862116157049065
+	Accuracy: 89.535%
+Phase 5, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.2596867286191782
+	Accuracy: 87.209%
+Phase 5, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.25898424167058887
+	Accuracy: 83.721%
+Phase 5, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.25019202847213645
+	Accuracy: 86.047%
+Phase 5, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.23192427590901976
+	Accuracy: 87.209%
+Phase 5, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.22996701205152892
+	Accuracy: 88.372%
+Phase 5, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.22962107551592975
+	Accuracy: 86.628%
+Phase 5, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.2082938485312907
+	Accuracy: 86.047%
+Phase 5, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.21151652330075704
+	Accuracy: 89.535%
+Phase 5, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.2131731013329046
+	Accuracy: 86.628%
+Phase 5, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.2093319683902431
+	Accuracy: 91.860%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+Phase 5, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.1984889665132788
+	Accuracy: 86.628%
+Phase 5, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.20139392910085027
+	Accuracy: 84.884%
+Phase 5, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.20570674098198136
+	Accuracy: 87.791%
+Phase 5, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.19974848526336267
+	Accuracy: 89.535%
+Phase 5, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.19557548043271916
+	Accuracy: 87.209%
+Phase 5, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.19146790783864331
+	Accuracy: 88.953%
+Phase 5, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.17816824494295555
+	Accuracy: 87.791%
+Phase 5, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.17883203208388931
+	Accuracy: 90.698%
+Phase 5, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.17851145192261136
+	Accuracy: 84.884%
+Phase 5, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.17249387354906037
+	Accuracy: 86.047%
+Phase 5, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.17935024935893681
+	Accuracy: 88.372%
+Phase 5, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.165811196487716
+	Accuracy: 88.953%
+Phase 5, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.16814715724680704
+	Accuracy: 90.698%
+Phase 5, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.1736196414384624
+	Accuracy: 88.372%
+Phase 5, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.15132610823213094
+	Accuracy: 87.209%
+Phase 5, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.16934929248869074
+	Accuracy: 87.791%
+Phase 5, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.17157528348415801
+	Accuracy: 89.535%
+Phase 5, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.1640534620763253
+	Accuracy: 88.372%
+Phase 5, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.16332218034645088
+	Accuracy: 86.628%
+Phase 5, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.1676982093820707
+	Accuracy: 88.372%
+Phase 5, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.16547558493120626
+	Accuracy: 85.465%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+saved results to file: results/result_5.txt
+training phase: 6
+train_set len: 1867
+val_set len: 207
+Phase 6, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.6466466721584276
+	Accuracy: 56.522%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Phase 6, Epoch 1, Learning rate: 0.0100000000
+	Loss: 2.204891975192891
+	Accuracy: 74.879%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Phase 6, Epoch 2, Learning rate: 0.0100000000
+	Loss: 1.2740277682770749
+	Accuracy: 82.609%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Phase 6, Epoch 3, Learning rate: 0.0100000000
+	Loss: 0.876509747150178
+	Accuracy: 84.058%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Phase 6, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.6729820599578955
+	Accuracy: 85.024%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Phase 6, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.5713615507190727
+	Accuracy: 83.092%
+Phase 6, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.5107735460878504
+	Accuracy: 87.923%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Phase 6, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.4621715919500248
+	Accuracy: 83.575%
+Phase 6, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.4085992975035771
+	Accuracy: 86.473%
+Phase 6, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.3904282500319897
+	Accuracy: 83.092%
+Phase 6, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.3476689644337467
+	Accuracy: 85.990%
+Phase 6, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.33217376685263833
+	Accuracy: 86.473%
+Phase 6, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.3174069494280384
+	Accuracy: 88.406%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Phase 6, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.29244695762676165
+	Accuracy: 86.957%
+Phase 6, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.2788258734781217
+	Accuracy: 89.372%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Phase 6, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.25821830268428486
+	Accuracy: 85.990%
+Phase 6, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.25918664908945466
+	Accuracy: 89.855%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Phase 6, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.25335402663020956
+	Accuracy: 90.821%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Phase 6, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.2364278016527132
+	Accuracy: 88.406%
+Phase 6, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.23210051338112028
+	Accuracy: 88.406%
+Phase 6, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.22835943324717853
+	Accuracy: 90.338%
+Phase 6, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.21734005472975487
+	Accuracy: 90.338%
+Phase 6, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.21701164356865343
+	Accuracy: 89.372%
+Phase 6, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.21339402213317543
+	Accuracy: 91.304%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+Phase 6, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.20346601020063892
+	Accuracy: 89.855%
+Phase 6, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.2042582449695294
+	Accuracy: 88.889%
+Phase 6, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.19175943355542424
+	Accuracy: 90.821%
+Phase 6, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.19082996521362597
+	Accuracy: 86.957%
+Phase 6, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.1891621002856588
+	Accuracy: 87.440%
+Phase 6, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.18030021483718103
+	Accuracy: 89.372%
+Phase 6, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.18329097858136775
+	Accuracy: 91.304%
+Phase 6, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.18645892725248803
+	Accuracy: 91.304%
+Phase 6, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.18098809632727597
+	Accuracy: 87.440%
+Phase 6, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.17148707028085303
+	Accuracy: 90.338%
+Phase 6, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.16937501608814604
+	Accuracy: 91.304%
+Phase 6, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.1684890629201888
+	Accuracy: 90.821%
+Phase 6, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.15491961945999608
+	Accuracy: 88.889%
+Phase 6, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.1711660274606244
+	Accuracy: 90.821%
+Phase 6, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.1568729017562386
+	Accuracy: 87.923%
+Phase 6, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.16125268826333994
+	Accuracy: 89.855%
+Phase 6, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.1607604825886163
+	Accuracy: 91.304%
+Phase 6, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.149065477960111
+	Accuracy: 89.855%
+Phase 6, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.1639813479329407
+	Accuracy: 88.406%
+Phase 6, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.14213800223980222
+	Accuracy: 91.304%
+Phase 6, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.1519503247693189
+	Accuracy: 91.787%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+Phase 6, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.16698147615903702
+	Accuracy: 88.406%
+Phase 6, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.15493440992399915
+	Accuracy: 90.338%
+Phase 6, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.14659103176526098
+	Accuracy: 92.754%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-047.pth
+Phase 6, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.1502755211040689
+	Accuracy: 93.720%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+Phase 6, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.1469402200855159
+	Accuracy: 90.338%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-048.pth
+saved results to file: results/result_6.txt
+training phase: 7
+train_set len: 2179
+val_set len: 242
+Phase 7, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.651366068387918
+	Accuracy: 62.810%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Phase 7, Epoch 1, Learning rate: 0.0100000000
+	Loss: 1.9177865866074162
+	Accuracy: 77.686%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Phase 7, Epoch 2, Learning rate: 0.0100000000
+	Loss: 1.0028514953149792
+	Accuracy: 86.777%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Phase 7, Epoch 3, Learning rate: 0.0100000000
+	Loss: 0.7086436950651644
+	Accuracy: 83.884%
+Phase 7, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.5795132311461934
+	Accuracy: 87.190%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Phase 7, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.48421274068816206
+	Accuracy: 87.603%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Phase 7, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.4149778812145793
+	Accuracy: 88.843%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Phase 7, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.37702893001079124
+	Accuracy: 90.496%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Phase 7, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.3379228876312975
+	Accuracy: 90.083%
+Phase 7, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.31692714995681937
+	Accuracy: 90.909%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Phase 7, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.30361623256653203
+	Accuracy: 91.736%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Phase 7, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.29004829264442106
+	Accuracy: 89.669%
+Phase 7, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.2687230616698521
+	Accuracy: 90.909%
+Phase 7, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.2615514954346044
+	Accuracy: 90.083%
+Phase 7, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.2423032478982016
+	Accuracy: 91.322%
+Phase 7, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.24540386724056262
+	Accuracy: 92.975%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Phase 7, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.24268888304640032
+	Accuracy: 91.322%
+Phase 7, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.21885668289065088
+	Accuracy: 92.975%
+Phase 7, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.20082150155207387
+	Accuracy: 91.322%
+Phase 7, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.20964246526695599
+	Accuracy: 91.736%
+Phase 7, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.1880401498875305
+	Accuracy: 91.736%
+Phase 7, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.1869290622396582
+	Accuracy: 92.975%
+Phase 7, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.18641882061534323
+	Accuracy: 91.736%
+Phase 7, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.18959091195837519
+	Accuracy: 94.628%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+Phase 7, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.17358609819600976
+	Accuracy: 93.802%
+Phase 7, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.19098621055641105
+	Accuracy: 91.322%
+Phase 7, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.1666647406750559
+	Accuracy: 92.149%
+Phase 7, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.1808984647750745
+	Accuracy: 90.496%
+Phase 7, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.17843139496088684
+	Accuracy: 91.736%
+Phase 7, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.15863747039605522
+	Accuracy: 92.562%
+Phase 7, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.1547346431608113
+	Accuracy: 93.802%
+Phase 7, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.1613793179680033
+	Accuracy: 92.149%
+Phase 7, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.15204046951105094
+	Accuracy: 93.388%
+Phase 7, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.14757711665654413
+	Accuracy: 90.496%
+Phase 7, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.14767066405563795
+	Accuracy: 92.562%
+Phase 7, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.14947028520861969
+	Accuracy: 92.149%
+Phase 7, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.1438572330724323
+	Accuracy: 93.388%
+Phase 7, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.14086155899077613
+	Accuracy: 93.802%
+Phase 7, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.1461351821117852
+	Accuracy: 95.455%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+Phase 7, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.14455216020318334
+	Accuracy: 90.909%
+Phase 7, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.1387425407822004
+	Accuracy: 95.041%
+Phase 7, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.1279309572187817
+	Accuracy: 94.628%
+Phase 7, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.12988525347467025
+	Accuracy: 92.562%
+Phase 7, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.13757478717600002
+	Accuracy: 92.149%
+Phase 7, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.1366619759261909
+	Accuracy: 92.149%
+Phase 7, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.12571364739664437
+	Accuracy: 94.215%
+Phase 7, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.1301797626898233
+	Accuracy: 93.802%
+Phase 7, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.1384094175756552
+	Accuracy: 90.496%
+Phase 7, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.1197321549358856
+	Accuracy: 93.802%
+Phase 7, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.12038502527273484
+	Accuracy: 94.215%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+saved results to file: results/result_7.txt
+training phase: 8
+train_set len: 2493
+val_set len: 276
+Phase 8, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.6031693111592586
+	Accuracy: 67.391%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Phase 8, Epoch 1, Learning rate: 0.0100000000
+	Loss: 1.575242626298827
+	Accuracy: 84.420%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Phase 8, Epoch 2, Learning rate: 0.0100000000
+	Loss: 0.7918490729703035
+	Accuracy: 86.232%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Phase 8, Epoch 3, Learning rate: 0.0100000000
+	Loss: 0.5521045270403179
+	Accuracy: 89.130%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Phase 8, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.46740152966866183
+	Accuracy: 87.319%
+Phase 8, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.3854008744722191
+	Accuracy: 87.319%
+Phase 8, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.35936293491291993
+	Accuracy: 89.130%
+Phase 8, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.30485894778168826
+	Accuracy: 88.406%
+Phase 8, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.2936403544263289
+	Accuracy: 89.855%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Phase 8, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.27378724718065184
+	Accuracy: 90.217%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Phase 8, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.2538070468253703
+	Accuracy: 90.942%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Phase 8, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.24136456090477257
+	Accuracy: 88.043%
+Phase 8, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.2359671973938259
+	Accuracy: 89.855%
+Phase 8, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.22565998135801782
+	Accuracy: 89.855%
+Phase 8, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.21295360819168757
+	Accuracy: 89.855%
+Phase 8, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.19397674000650536
+	Accuracy: 87.681%
+Phase 8, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.18816127430541515
+	Accuracy: 90.580%
+Phase 8, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.18756764039331492
+	Accuracy: 89.130%
+Phase 8, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.19009642434787233
+	Accuracy: 91.304%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Phase 8, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.17681482076238447
+	Accuracy: 90.942%
+Phase 8, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.1742441484452824
+	Accuracy: 89.493%
+Phase 8, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.17531270454602216
+	Accuracy: 93.116%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+Phase 8, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.1688883853542054
+	Accuracy: 90.942%
+Phase 8, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.15607521309402636
+	Accuracy: 90.217%
+Phase 8, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.16176495655946735
+	Accuracy: 90.580%
+Phase 8, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.15263040933415825
+	Accuracy: 90.942%
+Phase 8, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.15834520380036973
+	Accuracy: 89.493%
+Phase 8, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.1450395441430666
+	Accuracy: 86.957%
+Phase 8, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.1496838860772625
+	Accuracy: 92.754%
+Phase 8, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.14490155432174542
+	Accuracy: 92.754%
+Phase 8, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.13295027479152818
+	Accuracy: 92.391%
+Phase 8, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.13801742380061305
+	Accuracy: 90.942%
+Phase 8, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.1320144702668081
+	Accuracy: 90.217%
+Phase 8, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.1335789994917574
+	Accuracy: 93.116%
+Phase 8, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.13013033891627934
+	Accuracy: 91.667%
+Phase 8, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.13437152242103448
+	Accuracy: 93.116%
+Phase 8, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.1305994585909568
+	Accuracy: 90.580%
+Phase 8, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.13491435032195945
+	Accuracy: 90.942%
+Phase 8, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.12607788994185093
+	Accuracy: 90.580%
+Phase 8, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.13511489295261336
+	Accuracy: 91.667%
+Phase 8, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.1244222976168714
+	Accuracy: 93.478%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+Phase 8, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.11165807394978038
+	Accuracy: 93.478%
+Phase 8, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.12897435721268483
+	Accuracy: 90.217%
+Phase 8, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.11941395393048622
+	Accuracy: 90.217%
+Phase 8, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.1146463511987618
+	Accuracy: 90.217%
+Phase 8, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.12311461403804566
+	Accuracy: 93.116%
+Phase 8, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.11485261861287203
+	Accuracy: 91.667%
+Phase 8, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.1163426636693184
+	Accuracy: 92.029%
+Phase 8, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.11879323594454441
+	Accuracy: 93.478%
+Phase 8, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.10643000011039076
+	Accuracy: 91.667%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+saved results to file: results/result_8.txt
+training phase: 9
+train_set len: 2801
+val_set len: 311
+Phase 9, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.5900424819722936
+	Accuracy: 70.418%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Phase 9, Epoch 1, Learning rate: 0.0100000000
+	Loss: 1.4057123198844585
+	Accuracy: 87.138%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Phase 9, Epoch 2, Learning rate: 0.0100000000
+	Loss: 0.689273874447287
+	Accuracy: 87.460%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Phase 9, Epoch 3, Learning rate: 0.0100000000
+	Loss: 0.49916065305269264
+	Accuracy: 90.997%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Phase 9, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.4086724455464699
+	Accuracy: 90.675%
+Phase 9, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.3427431383161875
+	Accuracy: 89.389%
+Phase 9, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.31243501105124677
+	Accuracy: 92.604%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Phase 9, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.27942591284224494
+	Accuracy: 90.675%
+Phase 9, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.25565134027692854
+	Accuracy: 90.354%
+Phase 9, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.24701514416658552
+	Accuracy: 92.283%
+Phase 9, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.22483181595929985
+	Accuracy: 89.711%
+Phase 9, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.20798039286317932
+	Accuracy: 90.997%
+Phase 9, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.19290373543252778
+	Accuracy: 92.926%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Phase 9, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.19567155187915625
+	Accuracy: 90.675%
+Phase 9, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.1825628270638155
+	Accuracy: 94.212%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+Phase 9, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.16763303882945482
+	Accuracy: 93.891%
+Phase 9, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.18524931174374104
+	Accuracy: 90.997%
+Phase 9, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.1604773598998753
+	Accuracy: 93.248%
+Phase 9, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.1591770188408807
+	Accuracy: 93.569%
+Phase 9, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.15307212531864536
+	Accuracy: 93.248%
+Phase 9, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.15049923999485737
+	Accuracy: 94.855%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+Phase 9, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.15530032167388727
+	Accuracy: 93.891%
+Phase 9, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.15190433603084671
+	Accuracy: 91.961%
+Phase 9, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.13978742015698006
+	Accuracy: 91.961%
+Phase 9, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.13894935464569605
+	Accuracy: 92.283%
+Phase 9, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.1347846756584514
+	Accuracy: 92.604%
+Phase 9, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.13518870355124477
+	Accuracy: 94.534%
+Phase 9, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.13408061743357147
+	Accuracy: 92.604%
+Phase 9, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.13252522514169449
+	Accuracy: 93.248%
+Phase 9, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.13071403558000588
+	Accuracy: 90.997%
+Phase 9, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.12381718281931811
+	Accuracy: 94.534%
+Phase 9, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.12219652584602644
+	Accuracy: 93.248%
+Phase 9, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.11777011884169594
+	Accuracy: 93.248%
+Phase 9, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.12355495090784238
+	Accuracy: 92.926%
+Phase 9, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.10846914418017767
+	Accuracy: 91.318%
+Phase 9, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.1148792222190099
+	Accuracy: 94.212%
+Phase 9, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.12078756472758845
+	Accuracy: 92.283%
+Phase 9, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.11298304439250677
+	Accuracy: 94.855%
+Phase 9, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.10868825423785594
+	Accuracy: 93.891%
+Phase 9, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.11761414787676538
+	Accuracy: 93.248%
+Phase 9, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.11434289573378241
+	Accuracy: 92.926%
+Phase 9, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.10554071014127915
+	Accuracy: 93.248%
+Phase 9, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.10558866850183249
+	Accuracy: 93.891%
+Phase 9, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.09671857481192624
+	Accuracy: 94.855%
+Phase 9, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.101204437936195
+	Accuracy: 93.248%
+Phase 9, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.10281160771208378
+	Accuracy: 93.248%
+Phase 9, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.11522090893607188
+	Accuracy: 93.569%
+Phase 9, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.09526747003894583
+	Accuracy: 91.640%
+Phase 9, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.10876643743601411
+	Accuracy: 93.891%
+Phase 9, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.0958445635290071
+	Accuracy: 92.283%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+saved results to file: results/result_9.txt
+training phase: 10
+train_set len: 3114
+val_set len: 346
+Phase 10, Epoch 0, Learning rate: 0.0100000000
+	Loss: 3.5162543909015302
+	Accuracy: 71.676%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Phase 10, Epoch 1, Learning rate: 0.0100000000
+	Loss: 1.2240170984598941
+	Accuracy: 87.283%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Phase 10, Epoch 2, Learning rate: 0.0100000000
+	Loss: 0.6382488554383059
+	Accuracy: 91.040%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Phase 10, Epoch 3, Learning rate: 0.0100000000
+	Loss: 0.47762536275210715
+	Accuracy: 89.884%
+Phase 10, Epoch 4, Learning rate: 0.0100000000
+	Loss: 0.38741318292930177
+	Accuracy: 89.017%
+Phase 10, Epoch 5, Learning rate: 0.0100000000
+	Loss: 0.33877927777892747
+	Accuracy: 90.173%
+Phase 10, Epoch 6, Learning rate: 0.0100000000
+	Loss: 0.29482086817270375
+	Accuracy: 90.462%
+Phase 10, Epoch 7, Learning rate: 0.0100000000
+	Loss: 0.2772185458307015
+	Accuracy: 90.751%
+Phase 10, Epoch 8, Learning rate: 0.0100000000
+	Loss: 0.25361443795718364
+	Accuracy: 91.329%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Phase 10, Epoch 9, Learning rate: 0.0100000000
+	Loss: 0.24341209936233843
+	Accuracy: 92.197%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+Phase 10, Epoch 10, Learning rate: 0.0100000000
+	Loss: 0.22732796705182576
+	Accuracy: 92.775%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+Phase 10, Epoch 11, Learning rate: 0.0100000000
+	Loss: 0.20990754270599526
+	Accuracy: 92.486%
+Phase 10, Epoch 12, Learning rate: 0.0100000000
+	Loss: 0.20970455571942093
+	Accuracy: 92.486%
+Phase 10, Epoch 13, Learning rate: 0.0100000000
+	Loss: 0.20135975152962315
+	Accuracy: 91.908%
+Phase 10, Epoch 14, Learning rate: 0.0100000000
+	Loss: 0.18301888448099488
+	Accuracy: 91.618%
+Phase 10, Epoch 15, Learning rate: 0.0100000000
+	Loss: 0.17462850830056534
+	Accuracy: 90.751%
+Phase 10, Epoch 16, Learning rate: 0.0100000000
+	Loss: 0.1753794559221966
+	Accuracy: 92.486%
+Phase 10, Epoch 17, Learning rate: 0.0100000000
+	Loss: 0.16810666486936726
+	Accuracy: 92.197%
+Phase 10, Epoch 18, Learning rate: 0.0100000000
+	Loss: 0.1723713659769308
+	Accuracy: 90.751%
+Phase 10, Epoch 19, Learning rate: 0.0100000000
+	Loss: 0.16662579232213126
+	Accuracy: 92.197%
+Phase 10, Epoch 20, Learning rate: 0.0100000000
+	Loss: 0.15738650717142688
+	Accuracy: 92.775%
+Phase 10, Epoch 21, Learning rate: 0.0100000000
+	Loss: 0.1530813901286211
+	Accuracy: 92.197%
+Phase 10, Epoch 22, Learning rate: 0.0100000000
+	Loss: 0.15330633843603544
+	Accuracy: 89.595%
+Phase 10, Epoch 23, Learning rate: 0.0100000000
+	Loss: 0.14741623547112398
+	Accuracy: 93.064%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+Phase 10, Epoch 24, Learning rate: 0.0100000000
+	Loss: 0.14140864210436568
+	Accuracy: 91.040%
+Phase 10, Epoch 25, Learning rate: 0.0100000000
+	Loss: 0.1416913358615466
+	Accuracy: 92.775%
+Phase 10, Epoch 26, Learning rate: 0.0100000000
+	Loss: 0.14212417922669981
+	Accuracy: 93.064%
+Phase 10, Epoch 27, Learning rate: 0.0100000000
+	Loss: 0.13316338222686802
+	Accuracy: 92.197%
+Phase 10, Epoch 28, Learning rate: 0.0100000000
+	Loss: 0.129252306710242
+	Accuracy: 92.775%
+Phase 10, Epoch 29, Learning rate: 0.0100000000
+	Loss: 0.12539137084474913
+	Accuracy: 93.931%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+Phase 10, Epoch 30, Learning rate: 0.0100000000
+	Loss: 0.12883157580229587
+	Accuracy: 91.908%
+Phase 10, Epoch 31, Learning rate: 0.0100000000
+	Loss: 0.12444397011818455
+	Accuracy: 92.197%
+Phase 10, Epoch 32, Learning rate: 0.0100000000
+	Loss: 0.12037254642161636
+	Accuracy: 92.775%
+Phase 10, Epoch 33, Learning rate: 0.0100000000
+	Loss: 0.11835741967096801
+	Accuracy: 93.642%
+Phase 10, Epoch 34, Learning rate: 0.0100000000
+	Loss: 0.1307673389014328
+	Accuracy: 90.173%
+Phase 10, Epoch 35, Learning rate: 0.0100000000
+	Loss: 0.11838723465982123
+	Accuracy: 93.642%
+Phase 10, Epoch 36, Learning rate: 0.0100000000
+	Loss: 0.12197582979729027
+	Accuracy: 93.642%
+Phase 10, Epoch 37, Learning rate: 0.0100000000
+	Loss: 0.11255173032951417
+	Accuracy: 92.775%
+Phase 10, Epoch 38, Learning rate: 0.0100000000
+	Loss: 0.11106967777205187
+	Accuracy: 92.197%
+Phase 10, Epoch 39, Learning rate: 0.0100000000
+	Loss: 0.10858723018784973
+	Accuracy: 94.509%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+Phase 10, Epoch 40, Learning rate: 0.0100000000
+	Loss: 0.11134455425278376
+	Accuracy: 92.486%
+Phase 10, Epoch 41, Learning rate: 0.0100000000
+	Loss: 0.1107695148438311
+	Accuracy: 92.486%
+Phase 10, Epoch 42, Learning rate: 0.0100000000
+	Loss: 0.10714436300917168
+	Accuracy: 93.064%
+Phase 10, Epoch 43, Learning rate: 0.0100000000
+	Loss: 0.10777193711748778
+	Accuracy: 90.751%
+Phase 10, Epoch 44, Learning rate: 0.0100000000
+	Loss: 0.10202385686151325
+	Accuracy: 92.486%
+Phase 10, Epoch 45, Learning rate: 0.0100000000
+	Loss: 0.10521604329366752
+	Accuracy: 94.220%
+Phase 10, Epoch 46, Learning rate: 0.0100000000
+	Loss: 0.10618349028345707
+	Accuracy: 94.220%
+Phase 10, Epoch 47, Learning rate: 0.0100000000
+	Loss: 0.10227127210042686
+	Accuracy: 95.376%
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+Phase 10, Epoch 48, Learning rate: 0.0100000000
+	Loss: 0.10840491913187252
+	Accuracy: 91.908%
+Phase 10, Epoch 49, Learning rate: 0.0100000000
+	Loss: 0.10642575593180739
+	Accuracy: 91.618%
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+saved results to file: results/result_10.txt
+phase_accuracy:  [tensor(91.1765), tensor(95.6522), tensor(93.2039), tensor(92.7007), tensor(91.8605), tensor(93.7198), tensor(95.4545), tensor(93.4783), tensor(94.8553), tensor(95.3757)]
+final accuracy:  tensor(95.3757)
+avarage accuracy:  93.747734

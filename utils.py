@@ -111,11 +111,12 @@ NUM_CLASSES_IN_PHASE = 10
 
 # Create Custom PyTorch Dataset
 class CustomImageDataset(Dataset):
-    def __init__(self, phase, transform=None):
+    def __init__(self, phase, transform=None, load_training_images_for_val=False):
         self.phase = phase
         self.transform = transform
         self.img_labels = []
         self.image_paths = []
+        self.load_training_images_for_val = load_training_images_for_val
 
         if phase <= 0:
             self.load_val_test_images(phase < 0)
@@ -154,7 +155,8 @@ class CustomImageDataset(Dataset):
                 self.img_labels.append(image_filename)
                 self.image_paths.append(image_path)
             else:
-                print("not found: ", image_path)
+                # print("not found: ", image_path)
+                pass
 
     def __len__(self):
         return len(self.img_labels)
@@ -164,7 +166,11 @@ class CustomImageDataset(Dataset):
         image_path = self.image_paths[idx]
         # print("image_path: ", image_path)
 
-        if self.transform is None or self.transform == preprocess_val_image:
+        if (
+            self.transform is None
+            or self.transform == preprocess_val_image
+            or self.phase <= 0
+        ):
             img = Image.open(image_path).convert("RGB")
             if self.transform:
                 img = self.transform(img)
@@ -291,11 +297,12 @@ def calculate_metrics(pred, target):
 
 
 class TrainingImageDataset(Dataset):
-    def __init__(self, phase, transform=None):
+    def __init__(self, phase, transform=None, load_training_images_for_val=False):
         self.phase = phase
         self.transform = transform
         self.img_labels = []
         self.image_paths = []
+        self.load_training_images_for_val = load_training_images_for_val
 
         for i in range(NUM_CLASSES_IN_PHASE):
             label = (phase - 1) * NUM_CLASSES_IN_PHASE + i
@@ -323,7 +330,11 @@ class TrainingImageDataset(Dataset):
         image_path = self.image_paths[idx]
         # print("image_path: ", image_path)
 
-        if self.transform is None or self.transform == preprocess_val_image:
+        if (
+            self.transform is None
+            or self.load_training_images_for_val
+            or self.transform == preprocess_val_image
+        ):
             img = Image.open(image_path).convert("RGB")
             if self.transform:
                 img = self.transform(img)
@@ -347,7 +358,9 @@ def get_training_datasets(phase, prev_train_sets=[], prev_val_sets=[]):
     dataset = trainingImageDatasets[phase - 1]
 
     train_len = int(len(dataset) * 7 / 10)
-    train_set, val_set = random_split(dataset, [train_len, len(dataset) - train_len])
+    train_set, val_set = torch.utils.data.random_split(
+        dataset, [train_len, len(dataset) - train_len]
+    )
 
     counts = dict()
     for prev_train_set in prev_train_sets:
@@ -428,9 +441,11 @@ def get_k_fold_training_datasets(phase, fold, use_memory=True):
     return train_subset, val_subset
 
 
-def get_final_validation_dataset(phase):
+def get_final_validation_dataset(phase, transform=preprocess_val_image):
     datasets = [
-        TrainingImageDataset(i + 1, transform=preprocess_val_image)
+        TrainingImageDataset(
+            i + 1, transform=transform, load_training_images_for_val=True
+        )
         for i in range(phase)
     ]
 

@@ -30,7 +30,7 @@ parser.add_argument(
 )
 parser.add_argument("-b", "--batch", type=int, help="Batch size", default=32)
 parser.add_argument(
-    "-v", "--val_or_test", type=int, help="val_or_test: 0=validation 1=test", default=0
+    "-v", "--val_or_test", type=int, help="val_or_test: 0=validation -1=test", default=0
 )
 
 # Parse the arguments
@@ -68,7 +68,9 @@ torch.backends.cudnn.deterministic = True
 
 start_time = time.time()
 
-RESULT_PATH = os.path.join(os.getcwd(), "results/")
+RESULT_PATH = os.path.join(
+    os.getcwd(), "test_results/" if val_or_test < 0 else "results"
+)
 SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
 
 # make checkpoints and results dir

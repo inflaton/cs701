@@ -10,12 +10,12 @@ nvidia-smi
 # lscpu
 # grep MemTotal /proc/meminfo
 
-EPOCHS=10
+EPOCHS=100
 BATCH=128
 MODEL=1
 
-echo Running python train-timm.py --epochs=$EPOCHS --batch=$BATCH --model=$MODEL
-python train-timm.py --epochs=$EPOCHS --batch=$BATCH --model=$MODEL
+echo Running python train-timm.py --epochs=$EPOCHS --batch=$BATCH
+python train-timm.py --epochs=$EPOCHS --batch=$BATCH
 
 a=1
 until [ $a -gt 10 ]

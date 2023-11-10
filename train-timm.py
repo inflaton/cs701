@@ -123,7 +123,11 @@ def train_and_evaluate(
 
     criterion = DistillationLoss() if teacher_model else nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
-    scheduler = lr_scheduler.StepLR(optimizer, step_size=44, gamma=0.1)
+    scheduler = lr_scheduler.StepLR(
+        optimizer,
+        step_size=44 if config is None else config["step_size"][f"phase_{phase}"],
+        gamma=0.1,
+    )
 
     train_set, val_set = random_split(train_dataset, [0.9, 0.1])
     print(f"training phase: {phase}")
@@ -168,7 +172,7 @@ def train_and_evaluate(
             optimizer.step()
             running_loss += loss.item() * inputs.size(0)
 
-        # scheduler.step()
+        scheduler.step()
         epoch_loss = running_loss / len(train_set)
         print(
             f"\tLoss: {epoch_loss}",

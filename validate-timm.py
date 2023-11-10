@@ -68,9 +68,8 @@ torch.backends.cudnn.deterministic = True
 
 start_time = time.time()
 
-RESULT_PATH = os.path.join(
-    os.getcwd(), "test_results/" if val_or_test < 0 else "results"
-)
+results_folder = "test_results/" if val_or_test < 0 else "results/"
+RESULT_PATH = os.path.join(os.getcwd(), results_folder)
 SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
 
 # make checkpoints and results dir
@@ -124,8 +123,9 @@ for _, _, files in os.walk(SAVE_PATH):
                 topk=(1,),
             )[0]
             print(
-                "phase:{:2d} - final accuracy:{:.3f}".format(
+                "phase:{:2d} checkpoint:{:2d} - final accuracy:{:.3f}".format(
                     phase,
+                    cp,
                     accuracy,
                 ),
                 flush=True,
@@ -142,9 +142,12 @@ file_exists = path.is_file()
 
 file = open(filename, "a")
 if not file_exists:
-    file.write(f"phase,accuracy\n")
+    file.write(f"phase,checkpoint,accuracy\n")
 
 file.write(f"{phase},{checkpoint},{highest_acc1:.3f}\n")
+print(
+    f"*** finished evaluation of phase: {phase} - best_epoch: {checkpoint} highest_accuracy: {highest_acc1:.3f}%"
+)
 
 checkpoint_load(model, SAVE_PATH, checkpoint)
 model = model.to(device)
@@ -179,7 +182,7 @@ path = Path(filename)
 if path.is_file():
     os.remove(filename)
 with zipfile.ZipFile(filename, "w") as zipf:
-    for dirname, subdirs, files in os.walk("results"):
+    for dirname, subdirs, files in os.walk(results_folder):
         zipf.write(dirname)
         for filename in files:
             zipf.write(os.path.join(dirname, filename))

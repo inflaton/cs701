@@ -16,6 +16,7 @@ import numpy as np
 import timm
 
 from utils import (
+    checkpoint_delete,
     checkpoint_load,
     checkpoint_save,
     preprocess_image,
@@ -205,6 +206,9 @@ def train_and_evaluate(
                 best_epoch = epoch
                 checkpoint_save(model, SAVE_PATH, epoch)
 
+    print(
+        f"*** finished training of phase: {phase} - best_epoch: {best_epoch} highest_accuracy: {highest_accuracy:.3f}%"
+    )
     checkpoint_load(model, SAVE_PATH, best_epoch)
 
     model.eval()
@@ -259,12 +263,14 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 teacher_model = None
 
 config = None
-filename = "configs-timm-x.yaml"
+filename = "configs-timm.yaml"
 path = Path(filename)
 if path.is_file():
     # Load the YAML file
     with open(filename, "r") as file:
         config = yaml.safe_load(file)
+
+    print(f"loaded config from {filename}: ", config)
 
 phase_accuracy = []
 

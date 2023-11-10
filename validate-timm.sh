@@ -10,11 +10,11 @@ nvidia-smi
 # lscpu
 # grep MemTotal /proc/meminfo
 
-# BATCH=128
-# MODEL=1
-
-BATCH=64
+BATCH=128
 MODEL=1
+
+# BATCH=64
+# MODEL=1
 
 a=1
 until [ $a -gt 10 ]

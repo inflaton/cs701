@@ -1,0 +1,11 @@
+num_epoch:
+  phase_1: 40
+  phase_2: 40
+  phase_3: 50
+  phase_4: 50
+  phase_5: 50
+  phase_6: 50
+  phase_7: 50
+  phase_8: 50
+  phase_9: 100
+  phase_10: 100

@@ -1,0 +1,654 @@
+Submitting job: /common/home/users/d/dh.huang.2023/code/cs701/train.sh
+Current Directory:
+/common/home/users/d/dh.huang.2023/code/cs701
+Sat Nov 11 07:34:30 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:C1:00.0 Off |                    0 |
+| N/A   37C    P8              34W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Running python validate-timm.py --batch=128 --phase=1 --model=1
+device:  cuda
+model:  1 
+classes:  10 
+checkpoint:  0 
+batch:  128 
+phase:  1
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+phase: 1 checkpoint:11 - final accuracy:90.476
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+phase: 1 checkpoint:12 - final accuracy:92.517
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+phase: 1 checkpoint:22 - final accuracy:95.918
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+phase: 1 checkpoint: 9 - final accuracy:83.673
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+phase: 1 checkpoint:10 - final accuracy:87.075
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+phase: 1 checkpoint: 7 - final accuracy:73.469
+*** finished evaluation of phase: 1 - best_epoch: 22 highest_accuracy: 95.918%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_1.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 22.529 seconds
+Running python validate-timm.py --batch=128 --phase=2 --model=1
+device:  cuda
+model:  1 
+classes:  20 
+checkpoint:  0 
+batch:  128 
+phase:  2
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-029.pth
+phase: 2 checkpoint:29 - final accuracy:94.941
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+phase: 2 checkpoint: 8 - final accuracy:83.642
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+phase: 2 checkpoint: 5 - final accuracy:71.332
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+phase: 2 checkpoint:32 - final accuracy:95.953
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+phase: 2 checkpoint: 4 - final accuracy:67.622
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+phase: 2 checkpoint: 9 - final accuracy:84.148
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+phase: 2 checkpoint: 3 - final accuracy:61.214
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-025.pth
+phase: 2 checkpoint:25 - final accuracy:93.086
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+phase: 2 checkpoint: 6 - final accuracy:77.066
+*** finished evaluation of phase: 2 - best_epoch: 32 highest_accuracy: 95.953%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_2.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 49.236 seconds
+Running python validate-timm.py --batch=128 --phase=3 --model=1
+device:  cuda
+model:  1 
+classes:  30 
+checkpoint:  0 
+batch:  128 
+phase:  3
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+phase: 3 checkpoint:35 - final accuracy:97.291
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+phase: 3 checkpoint:11 - final accuracy:91.761
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+phase: 3 checkpoint:14 - final accuracy:92.099
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+phase: 3 checkpoint:19 - final accuracy:94.921
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+phase: 3 checkpoint: 8 - final accuracy:88.262
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+phase: 3 checkpoint:12 - final accuracy:91.535
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-026.pth
+phase: 3 checkpoint:26 - final accuracy:96.614
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+phase: 3 checkpoint: 5 - final accuracy:78.104
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase: 3 checkpoint: 4 - final accuracy:77.088
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+phase: 3 checkpoint: 3 - final accuracy:66.366
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+phase: 3 checkpoint: 7 - final accuracy:87.020
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+phase: 3 checkpoint: 2 - final accuracy:61.512
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+phase: 3 checkpoint: 6 - final accuracy:84.989
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-033.pth
+phase: 3 checkpoint:33 - final accuracy:97.291
+*** finished evaluation of phase: 3 - best_epoch: 35 highest_accuracy: 97.291%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_3.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 44.266 seconds
+Running python validate-timm.py --batch=128 --phase=4 --model=1
+device:  cuda
+model:  1 
+classes:  40 
+checkpoint:  0 
+batch:  128 
+phase:  4
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+phase: 4 checkpoint:11 - final accuracy:93.633
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+phase: 4 checkpoint: 4 - final accuracy:88.200
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+phase: 4 checkpoint:24 - final accuracy:97.114
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+phase: 4 checkpoint: 3 - final accuracy:85.484
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+phase: 4 checkpoint: 1 - final accuracy:67.487
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+phase: 4 checkpoint:27 - final accuracy:97.284
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+phase: 4 checkpoint: 2 - final accuracy:80.900
+*** finished evaluation of phase: 4 - best_epoch: 27 highest_accuracy: 97.284%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_4.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 11.986 seconds
+Running python validate-timm.py --batch=128 --phase=5 --model=1
+device:  cuda
+model:  1 
+classes:  50 
+checkpoint:  0 
+batch:  128 
+phase:  5
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+phase: 5 checkpoint:11 - final accuracy:93.831
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+phase: 5 checkpoint: 4 - final accuracy:89.085
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+phase: 5 checkpoint:24 - final accuracy:96.407
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+phase: 5 checkpoint: 3 - final accuracy:87.322
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+phase: 5 checkpoint:18 - final accuracy:96.068
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+phase: 5 checkpoint: 1 - final accuracy:73.085
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+phase: 5 checkpoint: 7 - final accuracy:92.068
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+phase: 5 checkpoint: 2 - final accuracy:82.169
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+phase: 5 checkpoint:44 - final accuracy:97.898
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+phase: 5 checkpoint:13 - final accuracy:94.373
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-033.pth
+phase: 5 checkpoint:33 - final accuracy:97.695
+*** finished evaluation of phase: 5 - best_epoch: 44 highest_accuracy: 97.898%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_5.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 13.282 seconds
+Running python validate-timm.py --batch=128 --phase=6 --model=1
+device:  cuda
+model:  1 
+classes:  60 
+checkpoint:  0 
+batch:  128 
+phase:  6
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+phase: 6 checkpoint:34 - final accuracy:98.422
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+phase: 6 checkpoint:12 - final accuracy:96.731
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+phase: 6 checkpoint:31 - final accuracy:98.534
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+phase: 6 checkpoint: 0 - final accuracy:59.414
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+phase: 6 checkpoint: 3 - final accuracy:91.375
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+phase: 6 checkpoint: 1 - final accuracy:81.398
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+phase: 6 checkpoint: 2 - final accuracy:89.797
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+phase: 6 checkpoint:44 - final accuracy:98.591
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+phase: 6 checkpoint: 6 - final accuracy:93.574
+*** finished evaluation of phase: 6 - best_epoch: 44 highest_accuracy: 98.591%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_6.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 11.347 seconds
+Running python validate-timm.py --batch=128 --phase=7 --model=1
+device:  cuda
+model:  1 
+classes:  70 
+checkpoint:  0 
+batch:  128 
+phase:  7
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+phase: 7 checkpoint:11 - final accuracy:96.379
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+phase: 7 checkpoint:14 - final accuracy:96.717
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+phase: 7 checkpoint:45 - final accuracy:98.213
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+phase: 7 checkpoint: 5 - final accuracy:92.999
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-047.pth
+phase: 7 checkpoint:47 - final accuracy:98.165
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+phase: 7 checkpoint:16 - final accuracy:96.861
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+phase: 7 checkpoint: 4 - final accuracy:92.129
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+phase: 7 checkpoint:37 - final accuracy:98.069
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+phase: 7 checkpoint: 9 - final accuracy:95.027
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+phase: 7 checkpoint:10 - final accuracy:95.220
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+phase: 7 checkpoint:28 - final accuracy:97.972
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+phase: 7 checkpoint: 0 - final accuracy:66.924
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+phase: 7 checkpoint: 3 - final accuracy:90.922
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+phase: 7 checkpoint: 1 - final accuracy:83.969
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+phase: 7 checkpoint: 2 - final accuracy:89.136
+*** finished evaluation of phase: 7 - best_epoch: 45 highest_accuracy: 98.213%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_7.txt
+Validation is completed in 0.0 hours, 4.0 minutes, 7.662 seconds
+Running python validate-timm.py --batch=128 --phase=8 --model=1
+device:  cuda
+model:  1 
+classes:  80 
+checkpoint:  0 
+batch:  128 
+phase:  8
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+phase: 8 checkpoint:12 - final accuracy:96.919
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+phase: 8 checkpoint: 4 - final accuracy:93.626
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+phase: 8 checkpoint: 0 - final accuracy:72.436
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+phase: 8 checkpoint:39 - final accuracy:98.185
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+phase: 8 checkpoint:24 - final accuracy:97.974
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+phase: 8 checkpoint: 1 - final accuracy:87.632
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+phase: 8 checkpoint: 2 - final accuracy:91.347
+*** finished evaluation of phase: 8 - best_epoch: 39 highest_accuracy: 98.185%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_8.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 16.023 seconds
+Running python validate-timm.py --batch=128 --phase=9 --model=1
+device:  cuda
+model:  1 
+classes:  90 
+checkpoint:  0 
+batch:  128 
+phase:  9
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+phase: 9 checkpoint:23 - final accuracy:98.347
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+phase: 9 checkpoint: 8 - final accuracy:95.905
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+phase: 9 checkpoint:12 - final accuracy:97.070
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+phase: 9 checkpoint: 4 - final accuracy:94.365
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+phase: 9 checkpoint: 0 - final accuracy:74.155
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+phase: 9 checkpoint:17 - final accuracy:97.971
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+phase: 9 checkpoint:43 - final accuracy:98.760
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+phase: 9 checkpoint: 1 - final accuracy:89.857
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+phase: 9 checkpoint: 2 - final accuracy:92.449
+*** finished evaluation of phase: 9 - best_epoch: 43 highest_accuracy: 98.760%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_9.txt
+Validation is completed in 0.0 hours, 3.0 minutes, 13.112 seconds
+Running python validate-timm.py --batch=128 --phase=10 --model=1
+device:  cuda
+model:  1 
+classes:  100 
+checkpoint:  0 
+batch:  128 
+phase:  10
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+phase:10 checkpoint: 8 - final accuracy:96.419
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+phase:10 checkpoint: 0 - final accuracy:77.466
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+phase:10 checkpoint: 3 - final accuracy:94.459
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+phase:10 checkpoint: 1 - final accuracy:90.135
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+phase:10 checkpoint: 7 - final accuracy:95.878
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+phase:10 checkpoint: 2 - final accuracy:92.703
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+phase:10 checkpoint: 6 - final accuracy:95.946
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+phase:10 checkpoint:13 - final accuracy:97.264
+*** finished evaluation of phase: 10 - best_epoch: 13 highest_accuracy: 97.264%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+data_dir:  data/Val
+886 results saved to: /common2/dh.huang.2023/code/cs701/results/result_10.txt
+Validation is completed in 0.0 hours, 3.0 minutes, 10.527 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=1 --model=1
+device:  cuda
+model:  1 
+classes:  10 
+checkpoint:  0 
+batch:  128 
+phase:  1
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-011.pth
+phase: 1 checkpoint:11 - final accuracy:90.476
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-012.pth
+phase: 1 checkpoint:12 - final accuracy:92.517
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+phase: 1 checkpoint:22 - final accuracy:95.918
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-009.pth
+phase: 1 checkpoint: 9 - final accuracy:83.673
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-010.pth
+phase: 1 checkpoint:10 - final accuracy:87.075
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-007.pth
+phase: 1 checkpoint: 7 - final accuracy:73.469
+*** finished evaluation of phase: 1 - best_epoch: 22 highest_accuracy: 95.918%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_1/checkpoint-022.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_1.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 32.636 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=2 --model=1
+device:  cuda
+model:  1 
+classes:  20 
+checkpoint:  0 
+batch:  128 
+phase:  2
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-029.pth
+phase: 2 checkpoint:29 - final accuracy:94.941
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-008.pth
+phase: 2 checkpoint: 8 - final accuracy:83.642
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+phase: 2 checkpoint: 5 - final accuracy:71.332
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+phase: 2 checkpoint:32 - final accuracy:95.953
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+phase: 2 checkpoint: 4 - final accuracy:67.622
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-009.pth
+phase: 2 checkpoint: 9 - final accuracy:84.148
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+phase: 2 checkpoint: 3 - final accuracy:61.214
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-025.pth
+phase: 2 checkpoint:25 - final accuracy:93.086
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+phase: 2 checkpoint: 6 - final accuracy:77.066
+*** finished evaluation of phase: 2 - best_epoch: 32 highest_accuracy: 95.953%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_2/checkpoint-032.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_2.txt
+Validation is completed in 0.0 hours, 0.0 minutes, 59.168 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=3 --model=1
+device:  cuda
+model:  1 
+classes:  30 
+checkpoint:  0 
+batch:  128 
+phase:  3
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+phase: 3 checkpoint:35 - final accuracy:97.291
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-011.pth
+phase: 3 checkpoint:11 - final accuracy:91.761
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-014.pth
+phase: 3 checkpoint:14 - final accuracy:92.099
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-019.pth
+phase: 3 checkpoint:19 - final accuracy:94.921
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+phase: 3 checkpoint: 8 - final accuracy:88.262
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-012.pth
+phase: 3 checkpoint:12 - final accuracy:91.535
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-026.pth
+phase: 3 checkpoint:26 - final accuracy:96.614
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+phase: 3 checkpoint: 5 - final accuracy:78.104
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+phase: 3 checkpoint: 4 - final accuracy:77.088
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+phase: 3 checkpoint: 3 - final accuracy:66.366
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+phase: 3 checkpoint: 7 - final accuracy:87.020
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+phase: 3 checkpoint: 2 - final accuracy:61.512
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+phase: 3 checkpoint: 6 - final accuracy:84.989
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-033.pth
+phase: 3 checkpoint:33 - final accuracy:97.291
+*** finished evaluation of phase: 3 - best_epoch: 35 highest_accuracy: 97.291%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_3/checkpoint-035.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_3.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 54.310 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=4 --model=1
+device:  cuda
+model:  1 
+classes:  40 
+checkpoint:  0 
+batch:  128 
+phase:  4
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+phase: 4 checkpoint:11 - final accuracy:93.633
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+phase: 4 checkpoint: 4 - final accuracy:88.200
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+phase: 4 checkpoint:24 - final accuracy:97.114
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+phase: 4 checkpoint: 3 - final accuracy:85.484
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+phase: 4 checkpoint: 1 - final accuracy:67.487
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+phase: 4 checkpoint:27 - final accuracy:97.284
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+phase: 4 checkpoint: 2 - final accuracy:80.900
+*** finished evaluation of phase: 4 - best_epoch: 27 highest_accuracy: 97.284%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_4/checkpoint-027.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_4.txt
+Validation is completed in 0.0 hours, 1.0 minutes, 21.038 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=5 --model=1
+device:  cuda
+model:  1 
+classes:  50 
+checkpoint:  0 
+batch:  128 
+phase:  5
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+phase: 5 checkpoint:11 - final accuracy:93.831
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+phase: 5 checkpoint: 4 - final accuracy:89.085
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+phase: 5 checkpoint:24 - final accuracy:96.407
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+phase: 5 checkpoint: 3 - final accuracy:87.322
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+phase: 5 checkpoint:18 - final accuracy:96.068
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+phase: 5 checkpoint: 1 - final accuracy:73.085
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+phase: 5 checkpoint: 7 - final accuracy:92.068
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+phase: 5 checkpoint: 2 - final accuracy:82.169
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+phase: 5 checkpoint:44 - final accuracy:97.898
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+phase: 5 checkpoint:13 - final accuracy:94.373
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-033.pth
+phase: 5 checkpoint:33 - final accuracy:97.695
+*** finished evaluation of phase: 5 - best_epoch: 44 highest_accuracy: 97.898%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_5/checkpoint-044.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_5.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 23.266 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=6 --model=1
+device:  cuda
+model:  1 
+classes:  60 
+checkpoint:  0 
+batch:  128 
+phase:  6
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+phase: 6 checkpoint:34 - final accuracy:98.422
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+phase: 6 checkpoint:12 - final accuracy:96.731
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+phase: 6 checkpoint:31 - final accuracy:98.534
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+phase: 6 checkpoint: 0 - final accuracy:59.414
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+phase: 6 checkpoint: 3 - final accuracy:91.375
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+phase: 6 checkpoint: 1 - final accuracy:81.398
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+phase: 6 checkpoint: 2 - final accuracy:89.797
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+phase: 6 checkpoint:44 - final accuracy:98.591
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+phase: 6 checkpoint: 6 - final accuracy:93.574
+*** finished evaluation of phase: 6 - best_epoch: 44 highest_accuracy: 98.591%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_6/checkpoint-044.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_6.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 21.473 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=7 --model=1
+device:  cuda
+model:  1 
+classes:  70 
+checkpoint:  0 
+batch:  128 
+phase:  7
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+phase: 7 checkpoint:11 - final accuracy:96.379
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+phase: 7 checkpoint:14 - final accuracy:96.717
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+phase: 7 checkpoint:45 - final accuracy:98.213
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+phase: 7 checkpoint: 5 - final accuracy:92.999
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-047.pth
+phase: 7 checkpoint:47 - final accuracy:98.165
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+phase: 7 checkpoint:16 - final accuracy:96.861
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+phase: 7 checkpoint: 4 - final accuracy:92.129
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+phase: 7 checkpoint:37 - final accuracy:98.069
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+phase: 7 checkpoint: 9 - final accuracy:95.027
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+phase: 7 checkpoint:10 - final accuracy:95.220
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+phase: 7 checkpoint:28 - final accuracy:97.972
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+phase: 7 checkpoint: 0 - final accuracy:66.924
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+phase: 7 checkpoint: 3 - final accuracy:90.922
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+phase: 7 checkpoint: 1 - final accuracy:83.969
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+phase: 7 checkpoint: 2 - final accuracy:89.136
+*** finished evaluation of phase: 7 - best_epoch: 45 highest_accuracy: 98.213%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_7/checkpoint-045.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_7.txt
+Validation is completed in 0.0 hours, 4.0 minutes, 16.576 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=8 --model=1
+device:  cuda
+model:  1 
+classes:  80 
+checkpoint:  0 
+batch:  128 
+phase:  8
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+phase: 8 checkpoint:12 - final accuracy:96.919
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+phase: 8 checkpoint: 4 - final accuracy:93.626
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+phase: 8 checkpoint: 0 - final accuracy:72.436
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+phase: 8 checkpoint:39 - final accuracy:98.185
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+phase: 8 checkpoint:24 - final accuracy:97.974
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+phase: 8 checkpoint: 1 - final accuracy:87.632
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+phase: 8 checkpoint: 2 - final accuracy:91.347
+*** finished evaluation of phase: 8 - best_epoch: 39 highest_accuracy: 98.185%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_8.txt
+Validation is completed in 0.0 hours, 2.0 minutes, 26.067 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=9 --model=1
+device:  cuda
+model:  1 
+classes:  90 
+checkpoint:  0 
+batch:  128 
+phase:  9
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+phase: 9 checkpoint:23 - final accuracy:98.347
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+phase: 9 checkpoint: 8 - final accuracy:95.905
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+phase: 9 checkpoint:12 - final accuracy:97.070
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+phase: 9 checkpoint: 4 - final accuracy:94.365
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+phase: 9 checkpoint: 0 - final accuracy:74.155
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+phase: 9 checkpoint:17 - final accuracy:97.971
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+phase: 9 checkpoint:43 - final accuracy:98.760
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+phase: 9 checkpoint: 1 - final accuracy:89.857
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+phase: 9 checkpoint: 2 - final accuracy:92.449
+*** finished evaluation of phase: 9 - best_epoch: 43 highest_accuracy: 98.760%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_9.txt
+Validation is completed in 0.0 hours, 3.0 minutes, 22.053 seconds
+Running python validate-timm.py -v -1 --batch=128 --phase=10 --model=1
+device:  cuda
+model:  1 
+classes:  100 
+checkpoint:  0 
+batch:  128 
+phase:  10
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+phase:10 checkpoint: 8 - final accuracy:96.419
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+phase:10 checkpoint: 0 - final accuracy:77.466
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+phase:10 checkpoint: 3 - final accuracy:94.459
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+phase:10 checkpoint: 1 - final accuracy:90.135
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+phase:10 checkpoint: 7 - final accuracy:95.878
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+phase:10 checkpoint: 2 - final accuracy:92.703
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+phase:10 checkpoint: 6 - final accuracy:95.946
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+phase:10 checkpoint:13 - final accuracy:97.264
+*** finished evaluation of phase: 10 - best_epoch: 13 highest_accuracy: 97.264%
+loaded checkpoint: /common2/dh.huang.2023/code/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+data_dir:  data/Test
+2087 results saved to: /common2/dh.huang.2023/code/cs701/test_results/result_10.txt
+Validation is completed in 0.0 hours, 3.0 minutes, 20.454 seconds
+Job ID: 33235
+Cluster: crimson
+User/Group: dh.huang.2023/dh.huang.2023
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 07:19:30
+CPU Efficiency: 96.98% of 07:33:10 core-walltime
+Job Wall-clock time: 00:45:19
+Memory Utilized: 941.03 MB
+Memory Efficiency: 1.44% of 64.00 GB

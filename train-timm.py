@@ -120,6 +120,10 @@ def train_and_evaluate(
 ):
     SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
     os.makedirs(SAVE_PATH, exist_ok=True)
+    for _, _, files in os.walk(SAVE_PATH):
+        for filename in files:
+            f = os.path.join(SAVE_PATH, filename)
+            os.unlink(f)
 
     criterion = DistillationLoss() if teacher_model else nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
@@ -206,6 +210,8 @@ def train_and_evaluate(
                 flush=True,
             )
             if acc1_cls > highest_accuracy:
+                if best_epoch >= 0:
+                    checkpoint_delete(SAVE_PATH, best_epoch)
                 highest_accuracy = acc1_cls
                 best_epoch = epoch
                 checkpoint_save(model, SAVE_PATH, epoch)

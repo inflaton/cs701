@@ -11,13 +11,13 @@ num_epoch:
   phase_10: 70
 
 step_size:
-  phase_1: 17
-  phase_2: 31
-  phase_3: 35
-  phase_4: 29
-  phase_5: 33
-  phase_6: 24
-  phase_7: 25
-  phase_8: 22
-  phase_9: 26
-  phase_10: 46
+  phase_1: 16
+  phase_2: 30
+  phase_3: 34
+  phase_4: 28
+  phase_5: 32
+  phase_6: 23
+  phase_7: 24
+  phase_8: 21
+  phase_9: 25
+  phase_10: 45

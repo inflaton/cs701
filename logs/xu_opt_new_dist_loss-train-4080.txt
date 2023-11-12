@@ -1,0 +1,1217 @@
+device:  cuda
+epochs:  50 
+batch:  16
+Phase 1, Epoch 0, Loss: 2.1162330993386202
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+Phase 1, Epoch 1, Loss: 1.1578822482463926
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+Phase 1, Epoch 2, Loss: 0.6509710467138956
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+Phase 1, Epoch 3, Loss: 0.4101551209771356
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+Phase 1, Epoch 4, Loss: 0.3011883899222973
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.672
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.945
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+checkpoint: 4 - final accuracy:1.000
+*** phase: 1 epoch: 4 - top accuracy:1.000
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_1/checkpoint-004.pth
+saved results to file: results/result_1.txt
+Phase 2, Epoch 0, Loss: 2.3539908324485217
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+Phase 2, Epoch 1, Loss: 1.1670387594558804
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+Phase 2, Epoch 2, Loss: 0.7403455703461497
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+Phase 2, Epoch 3, Loss: 0.5308013929949178
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+Phase 2, Epoch 4, Loss: 0.4157306007492594
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+Phase 2, Epoch 5, Loss: 0.3462085622385639
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+Phase 2, Epoch 6, Loss: 0.300644008972256
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.694
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.880
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.931
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.944
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.960
+*** phase: 2 epoch: 5 - top accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_2/checkpoint-005.pth
+saved results to file: results/result_2.txt
+Phase 3, Epoch 0, Loss: 2.4627318856338736
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+Phase 3, Epoch 1, Loss: 1.1799814793133827
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+Phase 3, Epoch 2, Loss: 0.759574654249611
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+Phase 3, Epoch 3, Loss: 0.5818507542481294
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+Phase 3, Epoch 4, Loss: 0.44171268518827134
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+Phase 3, Epoch 5, Loss: 0.3557491203532716
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+Phase 3, Epoch 6, Loss: 0.30740891000018616
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+Phase 3, Epoch 7, Loss: 0.26621853885273217
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+Phase 3, Epoch 8, Loss: 0.25009275391755414
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.716
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.867
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.895
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.981
+*** phase: 3 epoch: 6 - top accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_3/checkpoint-006.pth
+saved results to file: results/result_3.txt
+Phase 4, Epoch 0, Loss: 2.5055034489347903
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+Phase 4, Epoch 1, Loss: 1.0508373698925246
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+Phase 4, Epoch 2, Loss: 0.6970680099094209
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+Phase 4, Epoch 3, Loss: 0.4953039320529113
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+Phase 4, Epoch 4, Loss: 0.39926308090697177
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+Phase 4, Epoch 5, Loss: 0.3400464947234044
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+Phase 4, Epoch 6, Loss: 0.28087099413394234
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+Phase 4, Epoch 7, Loss: 0.2452872876505028
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+Phase 4, Epoch 8, Loss: 0.22768990740893713
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+Phase 4, Epoch 9, Loss: 0.2303263187754483
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+Phase 4, Epoch 10, Loss: 0.23345549791748535
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+Phase 4, Epoch 11, Loss: 0.23948066994136927
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+Phase 4, Epoch 12, Loss: 0.23096695676424334
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+Phase 4, Epoch 13, Loss: 0.21373673975035137
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+Phase 4, Epoch 14, Loss: 0.20717292591518519
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+Phase 4, Epoch 15, Loss: 0.20964909127557918
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+Phase 4, Epoch 16, Loss: 0.2164713712665962
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+Phase 4, Epoch 17, Loss: 0.21554389063955565
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+Phase 4, Epoch 18, Loss: 0.21476334134449288
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+Phase 4, Epoch 19, Loss: 0.21272978865702372
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+Phase 4, Epoch 20, Loss: 0.22056690805709242
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+Phase 4, Epoch 21, Loss: 0.22330417826836618
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+Phase 4, Epoch 22, Loss: 0.20280423141875356
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-022.pth
+Phase 4, Epoch 23, Loss: 0.2083319248239603
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-023.pth
+Phase 4, Epoch 24, Loss: 0.19919470251039081
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.817
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.915
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.925
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.938
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.986
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.983
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.977
+*** phase: 4 epoch:19 - top accuracy:0.986
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_4/checkpoint-019.pth
+saved results to file: results/result_4.txt
+Phase 5, Epoch 0, Loss: 2.5275495788325433
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+Phase 5, Epoch 1, Loss: 1.0406122726979463
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+Phase 5, Epoch 2, Loss: 0.6758006687440734
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+Phase 5, Epoch 3, Loss: 0.4976516057788462
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+Phase 5, Epoch 4, Loss: 0.38859084652817766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+Phase 5, Epoch 5, Loss: 0.33182353662407915
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+Phase 5, Epoch 6, Loss: 0.2784362206251725
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+Phase 5, Epoch 7, Loss: 0.2299202067091845
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+Phase 5, Epoch 8, Loss: 0.24070851883162622
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+Phase 5, Epoch 9, Loss: 0.2266503738147625
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+Phase 5, Epoch 10, Loss: 0.2154808219101118
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+Phase 5, Epoch 11, Loss: 0.20568667920603267
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+Phase 5, Epoch 12, Loss: 0.21394835328710252
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+Phase 5, Epoch 13, Loss: 0.22321252619010815
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+Phase 5, Epoch 14, Loss: 0.20226107820220615
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+Phase 5, Epoch 15, Loss: 0.21221217071664505
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+Phase 5, Epoch 16, Loss: 0.19966063286083333
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+Phase 5, Epoch 17, Loss: 0.21486702522505885
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+Phase 5, Epoch 18, Loss: 0.20238326317158298
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+Phase 5, Epoch 19, Loss: 0.199683440733647
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+Phase 5, Epoch 20, Loss: 0.20061351866825766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+Phase 5, Epoch 21, Loss: 0.21842425735100457
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-021.pth
+Phase 5, Epoch 22, Loss: 0.2128021154973818
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+Phase 5, Epoch 23, Loss: 0.19636060002921285
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-023.pth
+Phase 5, Epoch 24, Loss: 0.2045270035750624
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+Phase 5, Epoch 25, Loss: 0.20590948035751563
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-025.pth
+Phase 5, Epoch 26, Loss: 0.21258107854404312
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-026.pth
+Phase 5, Epoch 27, Loss: 0.20718159038087597
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-027.pth
+Phase 5, Epoch 28, Loss: 0.20046535120494124
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+Phase 5, Epoch 29, Loss: 0.21524079793605252
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-029.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.748
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.852
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.902
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.933
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.930
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.959
+*** phase: 5 epoch:22 - top accuracy:0.966
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_5/checkpoint-022.pth
+saved results to file: results/result_5.txt
+Phase 6, Epoch 0, Loss: 2.5599810660977487
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+Phase 6, Epoch 1, Loss: 0.956633214435559
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+Phase 6, Epoch 2, Loss: 0.6141877001656171
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+Phase 6, Epoch 3, Loss: 0.466555414917154
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+Phase 6, Epoch 4, Loss: 0.3617341510067795
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+Phase 6, Epoch 5, Loss: 0.30449275748594057
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+Phase 6, Epoch 6, Loss: 0.2647275362691861
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+Phase 6, Epoch 7, Loss: 0.21730809716962227
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+Phase 6, Epoch 8, Loss: 0.2158049840189107
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+Phase 6, Epoch 9, Loss: 0.20124809556032675
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+Phase 6, Epoch 10, Loss: 0.19518380908864905
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+Phase 6, Epoch 11, Loss: 0.2002659334855921
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+Phase 6, Epoch 12, Loss: 0.20139569716605293
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+Phase 6, Epoch 13, Loss: 0.2038496660289562
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+Phase 6, Epoch 14, Loss: 0.1899377228036566
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+Phase 6, Epoch 15, Loss: 0.19275231083195832
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+Phase 6, Epoch 16, Loss: 0.18423295498124198
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+Phase 6, Epoch 17, Loss: 0.19447979365503318
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+Phase 6, Epoch 18, Loss: 0.1907242088073015
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+Phase 6, Epoch 19, Loss: 0.18093512810069776
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+Phase 6, Epoch 20, Loss: 0.17828952424091682
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+Phase 6, Epoch 21, Loss: 0.17946320211760908
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-021.pth
+Phase 6, Epoch 22, Loss: 0.1841852596692432
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+Phase 6, Epoch 23, Loss: 0.1780770956435337
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+Phase 6, Epoch 24, Loss: 0.19167157491038597
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+Phase 6, Epoch 25, Loss: 0.18347424343443883
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-025.pth
+Phase 6, Epoch 26, Loss: 0.1794506956175645
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-026.pth
+Phase 6, Epoch 27, Loss: 0.19974038055168397
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-027.pth
+Phase 6, Epoch 28, Loss: 0.1955413186245507
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-028.pth
+Phase 6, Epoch 29, Loss: 0.1841578568505229
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-029.pth
+Phase 6, Epoch 30, Loss: 0.18815269234267817
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-030.pth
+Phase 6, Epoch 31, Loss: 0.20001540963134748
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+Phase 6, Epoch 32, Loss: 0.1754852125965411
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-032.pth
+Phase 6, Epoch 33, Loss: 0.1816975793935064
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-033.pth
+Phase 6, Epoch 34, Loss: 0.18050558842797634
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.789
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.872
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.899
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.928
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.939
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.953
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.966
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.970
+*** phase: 6 epoch:34 - top accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_6/checkpoint-034.pth
+saved results to file: results/result_6.txt
+Phase 7, Epoch 0, Loss: 2.54220815913237
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+Phase 7, Epoch 1, Loss: 0.9223541953454378
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+Phase 7, Epoch 2, Loss: 0.5859914081296562
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+Phase 7, Epoch 3, Loss: 0.4219049572673823
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+Phase 7, Epoch 4, Loss: 0.3565606663464417
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+Phase 7, Epoch 5, Loss: 0.28789878615363973
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+Phase 7, Epoch 6, Loss: 0.253472683081101
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+Phase 7, Epoch 7, Loss: 0.223097960868191
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+Phase 7, Epoch 8, Loss: 0.20180141497426465
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+Phase 7, Epoch 9, Loss: 0.20811257698180408
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+Phase 7, Epoch 10, Loss: 0.1898060683399525
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+Phase 7, Epoch 11, Loss: 0.19073980613367364
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+Phase 7, Epoch 12, Loss: 0.19513442729534763
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+Phase 7, Epoch 13, Loss: 0.18658740382113767
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+Phase 7, Epoch 14, Loss: 0.18162399355609868
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+Phase 7, Epoch 15, Loss: 0.16960809157929702
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+Phase 7, Epoch 16, Loss: 0.18149227708984336
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+Phase 7, Epoch 17, Loss: 0.17927949948529476
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+Phase 7, Epoch 18, Loss: 0.1742741862932841
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+Phase 7, Epoch 19, Loss: 0.18178843511426218
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+Phase 7, Epoch 20, Loss: 0.18692759550932467
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+Phase 7, Epoch 21, Loss: 0.16486897305091125
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+Phase 7, Epoch 22, Loss: 0.1766875553406846
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+Phase 7, Epoch 23, Loss: 0.18492307866323787
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+Phase 7, Epoch 24, Loss: 0.17432890914285148
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+Phase 7, Epoch 25, Loss: 0.18961384210493978
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+Phase 7, Epoch 26, Loss: 0.17311522205818394
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+Phase 7, Epoch 27, Loss: 0.1794777448538757
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+Phase 7, Epoch 28, Loss: 0.17733511180978134
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+Phase 7, Epoch 29, Loss: 0.1695024598142127
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+Phase 7, Epoch 30, Loss: 0.17700186552759145
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+Phase 7, Epoch 31, Loss: 0.16698878890273494
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+Phase 7, Epoch 32, Loss: 0.17230297082812762
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+Phase 7, Epoch 33, Loss: 0.1830214275180284
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+Phase 7, Epoch 34, Loss: 0.17395202060318937
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+Phase 7, Epoch 35, Loss: 0.17368357955104602
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+Phase 7, Epoch 36, Loss: 0.18229063435656528
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+Phase 7, Epoch 37, Loss: 0.16877965802055211
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+Phase 7, Epoch 38, Loss: 0.17735333138140505
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+Phase 7, Epoch 39, Loss: 0.18149512985283459
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.838
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.901
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.940
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.944
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.950
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.984
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.982
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.981
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.978
+*** phase: 7 epoch:12 - top accuracy:0.984
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_7/checkpoint-012.pth
+saved results to file: results/result_7.txt
+Phase 8, Epoch 0, Loss: 2.523301670464336
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+Phase 8, Epoch 1, Loss: 0.8577227981652796
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+Phase 8, Epoch 2, Loss: 0.5409133567754952
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+Phase 8, Epoch 3, Loss: 0.41250658241924976
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+Phase 8, Epoch 4, Loss: 0.33364441201935696
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+Phase 8, Epoch 5, Loss: 0.2730301439912795
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+Phase 8, Epoch 6, Loss: 0.23564522106667296
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+Phase 8, Epoch 7, Loss: 0.20492540543670903
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+Phase 8, Epoch 8, Loss: 0.19109013770280137
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+Phase 8, Epoch 9, Loss: 0.18787965655283792
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+Phase 8, Epoch 10, Loss: 0.17810665476231766
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+Phase 8, Epoch 11, Loss: 0.17015093326051986
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+Phase 8, Epoch 12, Loss: 0.165337514214328
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+Phase 8, Epoch 13, Loss: 0.16865035121989363
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+Phase 8, Epoch 14, Loss: 0.17274269863085956
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+Phase 8, Epoch 15, Loss: 0.17277490868814674
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+Phase 8, Epoch 16, Loss: 0.1572919176261147
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+Phase 8, Epoch 17, Loss: 0.17105235501117508
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+Phase 8, Epoch 18, Loss: 0.16434213085353655
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+Phase 8, Epoch 19, Loss: 0.16553889396346488
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+Phase 8, Epoch 20, Loss: 0.16142244173671932
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+Phase 8, Epoch 21, Loss: 0.16348016946571492
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+Phase 8, Epoch 22, Loss: 0.1619403995560067
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-022.pth
+Phase 8, Epoch 23, Loss: 0.15847361785231537
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-023.pth
+Phase 8, Epoch 24, Loss: 0.15445064915005763
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+Phase 8, Epoch 25, Loss: 0.15472735138996796
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-025.pth
+Phase 8, Epoch 26, Loss: 0.16443887825432388
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+Phase 8, Epoch 27, Loss: 0.1628181630844414
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-027.pth
+Phase 8, Epoch 28, Loss: 0.15765834612379698
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-028.pth
+Phase 8, Epoch 29, Loss: 0.15792006252043597
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-029.pth
+Phase 8, Epoch 30, Loss: 0.1569243445857934
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+Phase 8, Epoch 31, Loss: 0.16198845984230578
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-031.pth
+Phase 8, Epoch 32, Loss: 0.16109087701608404
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-032.pth
+Phase 8, Epoch 33, Loss: 0.16068900462392005
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-033.pth
+Phase 8, Epoch 34, Loss: 0.1639430845373587
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-034.pth
+Phase 8, Epoch 35, Loss: 0.1558221180372696
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-035.pth
+Phase 8, Epoch 36, Loss: 0.17572529236733936
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-036.pth
+Phase 8, Epoch 37, Loss: 0.16695775187975578
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-037.pth
+Phase 8, Epoch 38, Loss: 0.1566127857907062
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-038.pth
+Phase 8, Epoch 39, Loss: 0.1609526342134176
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+Phase 8, Epoch 40, Loss: 0.15973916678878106
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+Phase 8, Epoch 41, Loss: 0.15675879125347117
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-041.pth
+Phase 8, Epoch 42, Loss: 0.16455078521072758
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-042.pth
+Phase 8, Epoch 43, Loss: 0.1661881784016839
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+Phase 8, Epoch 44, Loss: 0.1596826447954932
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-044.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.838
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.891
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.919
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.936
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.979
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.978
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.980
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.982
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.980
+*** phase: 8 epoch:43 - top accuracy:0.982
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_8/checkpoint-043.pth
+saved results to file: results/result_8.txt
+Phase 9, Epoch 0, Loss: 2.508708787148287
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+Phase 9, Epoch 1, Loss: 0.818760530960897
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+Phase 9, Epoch 2, Loss: 0.49953437035371834
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+Phase 9, Epoch 3, Loss: 0.374140156725072
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+Phase 9, Epoch 4, Loss: 0.29473160908277357
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+Phase 9, Epoch 5, Loss: 0.24845391500425215
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+Phase 9, Epoch 6, Loss: 0.19524640429065895
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+Phase 9, Epoch 7, Loss: 0.17432124966367657
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+Phase 9, Epoch 8, Loss: 0.15780026490553486
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+Phase 9, Epoch 9, Loss: 0.16552495113681706
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+Phase 9, Epoch 10, Loss: 0.16009164335335435
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+Phase 9, Epoch 11, Loss: 0.1536601094629587
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+Phase 9, Epoch 12, Loss: 0.15759367363618396
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+Phase 9, Epoch 13, Loss: 0.14960679577562988
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+Phase 9, Epoch 14, Loss: 0.1412701739098848
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+Phase 9, Epoch 15, Loss: 0.15433344258364184
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+Phase 9, Epoch 16, Loss: 0.15642797180803392
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+Phase 9, Epoch 17, Loss: 0.14379412322700177
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+Phase 9, Epoch 18, Loss: 0.13792228285022137
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+Phase 9, Epoch 19, Loss: 0.14645487566150553
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+Phase 9, Epoch 20, Loss: 0.1474669404653473
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+Phase 9, Epoch 21, Loss: 0.14958798425669534
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-021.pth
+Phase 9, Epoch 22, Loss: 0.1398390873615417
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-022.pth
+Phase 9, Epoch 23, Loss: 0.1428765011209142
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+Phase 9, Epoch 24, Loss: 0.14403965548255449
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-024.pth
+Phase 9, Epoch 25, Loss: 0.146640748752803
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+Phase 9, Epoch 26, Loss: 0.12844151754535563
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-026.pth
+Phase 9, Epoch 27, Loss: 0.14902209457977267
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-027.pth
+Phase 9, Epoch 28, Loss: 0.13958408344527443
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+Phase 9, Epoch 29, Loss: 0.14226189707729076
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-029.pth
+Phase 9, Epoch 30, Loss: 0.14518609133508334
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-030.pth
+Phase 9, Epoch 31, Loss: 0.14710214129795146
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-031.pth
+Phase 9, Epoch 32, Loss: 0.14403917853047732
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-032.pth
+Phase 9, Epoch 33, Loss: 0.14432391143166928
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-033.pth
+Phase 9, Epoch 34, Loss: 0.13890999548884161
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-034.pth
+Phase 9, Epoch 35, Loss: 0.1425705852805802
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-035.pth
+Phase 9, Epoch 36, Loss: 0.14396205123102143
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-036.pth
+Phase 9, Epoch 37, Loss: 0.1496157374012746
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-037.pth
+Phase 9, Epoch 38, Loss: 0.1540389527928247
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-038.pth
+Phase 9, Epoch 39, Loss: 0.1319164473630469
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-039.pth
+Phase 9, Epoch 40, Loss: 0.14514732332110097
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-040.pth
+Phase 9, Epoch 41, Loss: 0.1428372971617777
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-041.pth
+Phase 9, Epoch 42, Loss: 0.14799842790994974
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-042.pth
+Phase 9, Epoch 43, Loss: 0.13544748708184395
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+Phase 9, Epoch 44, Loss: 0.14266319122826226
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-044.pth
+Phase 9, Epoch 45, Loss: 0.13894608974993075
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-045.pth
+Phase 9, Epoch 46, Loss: 0.14161463441916175
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-046.pth
+Phase 9, Epoch 47, Loss: 0.1344402998226161
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-047.pth
+Phase 9, Epoch 48, Loss: 0.1511173323179885
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-048.pth
+Phase 9, Epoch 49, Loss: 0.1388152998639869
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.837
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.924
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.944
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.954
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.968
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.972
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.969
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.974
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.970
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.976
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.971
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.975
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.973
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.974
+*** phase: 9 epoch:12 - top accuracy:0.977
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_9/checkpoint-012.pth
+saved results to file: results/result_9.txt
+Phase 10, Epoch 0, Loss: 2.4709053419917995
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+Phase 10, Epoch 1, Loss: 0.7653563675852869
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+Phase 10, Epoch 2, Loss: 0.48981426878471596
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+Phase 10, Epoch 3, Loss: 0.344721039940167
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+Phase 10, Epoch 4, Loss: 0.29891218591287644
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+Phase 10, Epoch 5, Loss: 0.24698495444534832
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+Phase 10, Epoch 6, Loss: 0.20826994170343255
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+Phase 10, Epoch 7, Loss: 0.16651907160102977
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+Phase 10, Epoch 8, Loss: 0.16971082656369732
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+Phase 10, Epoch 9, Loss: 0.16411525386606338
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+Phase 10, Epoch 10, Loss: 0.15716523276588132
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+Phase 10, Epoch 11, Loss: 0.14990183769622978
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+Phase 10, Epoch 12, Loss: 0.14431921863831537
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+Phase 10, Epoch 13, Loss: 0.13969862740163858
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+Phase 10, Epoch 14, Loss: 0.13797740242040227
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+Phase 10, Epoch 15, Loss: 0.14674519502014094
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-015.pth
+Phase 10, Epoch 16, Loss: 0.1391551174180356
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-016.pth
+Phase 10, Epoch 17, Loss: 0.13687630729868233
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-017.pth
+Phase 10, Epoch 18, Loss: 0.14664352200279346
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-018.pth
+Phase 10, Epoch 19, Loss: 0.1392294814476388
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-019.pth
+Phase 10, Epoch 20, Loss: 0.13242954913246838
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-020.pth
+Phase 10, Epoch 21, Loss: 0.151491922751672
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+Phase 10, Epoch 22, Loss: 0.14237319384351632
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+Phase 10, Epoch 23, Loss: 0.1326207819184816
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+Phase 10, Epoch 24, Loss: 0.14055219423564183
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-024.pth
+Phase 10, Epoch 25, Loss: 0.14645086557878925
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-025.pth
+Phase 10, Epoch 26, Loss: 0.14140015278937498
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-026.pth
+Phase 10, Epoch 27, Loss: 0.13822259098463666
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-027.pth
+Phase 10, Epoch 28, Loss: 0.13874869797960182
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-028.pth
+Phase 10, Epoch 29, Loss: 0.14155271907762296
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+Phase 10, Epoch 30, Loss: 0.1434450481668373
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-030.pth
+Phase 10, Epoch 31, Loss: 0.1496331745661752
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+Phase 10, Epoch 32, Loss: 0.13296368223738808
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-032.pth
+Phase 10, Epoch 33, Loss: 0.13647096505054848
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-033.pth
+Phase 10, Epoch 34, Loss: 0.14840421745542845
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-034.pth
+Phase 10, Epoch 35, Loss: 0.1478783361312282
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-035.pth
+Phase 10, Epoch 36, Loss: 0.13368036350762913
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-036.pth
+Phase 10, Epoch 37, Loss: 0.13703900584251205
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-037.pth
+Phase 10, Epoch 38, Loss: 0.139222035931714
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-038.pth
+Phase 10, Epoch 39, Loss: 0.1397623081600046
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+Phase 10, Epoch 40, Loss: 0.13972927693686735
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-040.pth
+Phase 10, Epoch 41, Loss: 0.13529805024235234
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-041.pth
+Phase 10, Epoch 42, Loss: 0.13501839996934625
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-042.pth
+Phase 10, Epoch 43, Loss: 0.14490980609303955
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-043.pth
+Phase 10, Epoch 44, Loss: 0.13674088251384006
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-044.pth
+Phase 10, Epoch 45, Loss: 0.13818024188452374
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-045.pth
+Phase 10, Epoch 46, Loss: 0.14007394272467993
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-046.pth
+Phase 10, Epoch 47, Loss: 0.14089014660244042
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+Phase 10, Epoch 48, Loss: 0.1380113604010185
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-048.pth
+Phase 10, Epoch 49, Loss: 0.1409754788944487
+saved checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-049.pth
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-000.pth
+checkpoint: 0 - final accuracy:0.815
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-001.pth
+checkpoint: 1 - final accuracy:0.869
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-002.pth
+checkpoint: 2 - final accuracy:0.914
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-003.pth
+checkpoint: 3 - final accuracy:0.919
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-004.pth
+checkpoint: 4 - final accuracy:0.925
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-005.pth
+checkpoint: 5 - final accuracy:0.943
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-006.pth
+checkpoint: 6 - final accuracy:0.948
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-007.pth
+checkpoint: 7 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-008.pth
+checkpoint: 8 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-009.pth
+checkpoint: 9 - final accuracy:0.955
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-010.pth
+checkpoint:10 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-011.pth
+checkpoint:11 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-012.pth
+checkpoint:12 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-013.pth
+checkpoint:13 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-014.pth
+checkpoint:14 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-015.pth
+checkpoint:15 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-016.pth
+checkpoint:16 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-017.pth
+checkpoint:17 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-018.pth
+checkpoint:18 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-019.pth
+checkpoint:19 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-020.pth
+checkpoint:20 - final accuracy:0.964
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-021.pth
+checkpoint:21 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-022.pth
+checkpoint:22 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-023.pth
+checkpoint:23 - final accuracy:0.956
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-024.pth
+checkpoint:24 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-025.pth
+checkpoint:25 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-026.pth
+checkpoint:26 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-027.pth
+checkpoint:27 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-028.pth
+checkpoint:28 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-029.pth
+checkpoint:29 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-030.pth
+checkpoint:30 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+checkpoint:31 - final accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-032.pth
+checkpoint:32 - final accuracy:0.965
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-033.pth
+checkpoint:33 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-034.pth
+checkpoint:34 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-035.pth
+checkpoint:35 - final accuracy:0.958
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-036.pth
+checkpoint:36 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-037.pth
+checkpoint:37 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-038.pth
+checkpoint:38 - final accuracy:0.962
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-039.pth
+checkpoint:39 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-040.pth
+checkpoint:40 - final accuracy:0.963
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-041.pth
+checkpoint:41 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-042.pth
+checkpoint:42 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-043.pth
+checkpoint:43 - final accuracy:0.959
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-044.pth
+checkpoint:44 - final accuracy:0.957
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-045.pth
+checkpoint:45 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-046.pth
+checkpoint:46 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-047.pth
+checkpoint:47 - final accuracy:0.960
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-048.pth
+checkpoint:48 - final accuracy:0.961
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-049.pth
+checkpoint:49 - final accuracy:0.963
+*** phase:10 epoch:31 - top accuracy:0.967
+loaded checkpoint: /home/inflaton/code/projects/cs701/data/checkpoints_phase_10/checkpoint-031.pth
+saved results to file: results/result_10.txt

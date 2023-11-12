@@ -101,6 +101,19 @@ class DistillationLoss(nn.Module):
         self.criterion = nn.CrossEntropyLoss()
 
     def forward(self, outputs, labels, teacher_outputs):
+        loss = (1 - self.alpha) * self.criterion(outputs, labels)
+
+        num_new_classes = outputs.shape[1] - teacher_outputs.shape[1]
+        prev_outputs = outputs[:, :-num_new_classes]
+
+        distillation_loss = nn.KLDivLoss(reduction="batchmean")(
+            nn.functional.log_softmax(prev_outputs / self.temperature, dim=1),
+            nn.functional.softmax(teacher_outputs / self.temperature, dim=1),
+        )
+        loss += self.alpha * distillation_loss
+        return loss
+
+    def x_forward(self, outputs, labels, teacher_outputs):
         if outputs.shape[1] != teacher_outputs.shape[1]:
             padding = torch.zeros(
                 (teacher_outputs.shape[0], outputs.shape[1] - teacher_outputs.shape[1]),

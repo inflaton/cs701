@@ -71,7 +71,9 @@ torch.backends.cudnn.deterministic = True
 
 start_time = time.time()
 
-RESULT_PATH = os.path.join(os.getcwd(), "results/")
+RESULT_PATH = os.path.join(
+    os.getcwd(), "results/" if val_or_test == 0 else "test_results/"
+)
 SAVE_PATH = os.path.join(os.getcwd(), "data", f"checkpoints_phase_{phase}/")
 
 # make checkpoints and results dir
